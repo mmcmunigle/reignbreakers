@@ -1,0 +1,40 @@
+<div id="inventory-dashboard">
+  <app-collection-overview [collection]="filteredCards"></app-collection-overview>
+  <div id="filter-options">
+    <mat-chip-list aria-label="Fish selection">
+      <mat-chip [selectable]="true" selected
+                (selectionChange)="toggleAll($event.selected)"
+                (click)="chip.toggleSelected()"
+                #chip="matChip">
+          All
+      </mat-chip>
+      <mat-chip [selectable]="true" 
+                (selectionChange)="toggleUfc($event.selected)"
+                (click)="chip1.toggleSelected()"
+                #chip1="matChip">
+          UFC
+      </mat-chip>
+      <mat-chip [selectable]="true"
+                (selectionChange)="toggleFootball($event.selected)"
+                (click)="chip2.toggleSelected()"
+                #chip2="matChip">
+          Football
+      </mat-chip>
+    </mat-chip-list>
+    <mat-form-field appearance="fill">
+      <mat-label>Sort By</mat-label>
+      <mat-select [(value)]="sortBySelection" (selectionChange)="sortCards($event.value)">
+        <mat-option>None</mat-option>
+        <mat-option value="name">Name</mat-option>
+        <mat-option value="purchase">Purchase</mat-option>
+        <mat-option value="diff">Diff</mat-option>
+      </mat-select>
+    </mat-form-field>
+  </div>
+  
+  <mat-grid-list cols="2" rowHeight="122px" gutterSize="12px">
+    <mat-grid-tile *ngFor="let card of filteredCards">
+      <app-player-card [card]=card style="width:100%"></app-player-card>
+    </mat-grid-tile>
+  </mat-grid-list>
+</div>

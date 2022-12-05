@@ -1,0 +1,42 @@
+h2 {
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+h5 {
+    margin-bottom: 20px;
+}
+
+.gain {
+    background-color: darkgreen;
+    border-radius: 10px;
+    margin-left: 5px;
+    padding: 0px 4px;
+}
+
+.loss {
+    background-color: darkred;
+    border-radius: 5px;
+    margin-left: 5px;
+    padding: 0px 4px;
+}
+
+.crop {
+    width: 150px;
+    height: 100px;
+    overflow: hidden;
+}
+
+.crop img {
+    width: 230px;
+    height: 200px;
+    margin: -45px 0 0 -40px;
+}
+
+.content {
+    margin-left: 20px;
+}
+
+.links {
+    margin-right: 20px;
+}

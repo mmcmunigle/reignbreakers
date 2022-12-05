@@ -1,0 +1,178 @@
+{
+    "collectibleListing": {
+        "lowestListedEditionPrice": 13.50,
+        "highestListedEditionPrice": 50.00,
+        "listedEditionsCount": 9,
+        "salePriceCurrencyCode": "USD",
+        "uniqueOwnerCount": 36,
+        "sortDate": "2022-07-29T03:57:25.0000000+00:00",
+        "forSaleMerchandiseEditions": [
+            {
+                "thumbnailUrl": "https://marketplace.draftkings.com/_assets/Staging/Genesis_master/Thumbnails/set_summer2022_cyril_grayson_18450_rare_thumbnail.png",
+                "thumbnailType": "Image",
+                "thumbnailMediaType": "image/png",
+                "editionNumber": 11,
+                "saleListingPrice": 13.50,
+                "merchandiseEditionKey": "00000000000000000000000000000000"
+            },
+            {
+                "thumbnailUrl": "https://marketplace.draftkings.com/_assets/Staging/Genesis_master/Thumbnails/set_summer2022_cyril_grayson_18450_rare_thumbnail.png",
+                "thumbnailType": "Image",
+                "thumbnailMediaType": "image/png",
+                "editionNumber": 34,
+                "saleListingPrice": 13.99,
+                "merchandiseEditionKey": "00000000000000000000000000000000"
+            },
+            {
+                "thumbnailUrl": "https://marketplace.draftkings.com/_assets/Staging/Genesis_master/Thumbnails/set_summer2022_cyril_grayson_18450_rare_thumbnail.png",
+                "thumbnailType": "Image",
+                "thumbnailMediaType": "image/png",
+                "editionNumber": 29,
+                "saleListingPrice": 14.00,
+                "merchandiseEditionKey": "00000000000000000000000000000000"
+            },
+            {
+                "thumbnailUrl": "https://marketplace.draftkings.com/_assets/Staging/Genesis_master/Thumbnails/set_summer2022_cyril_grayson_18450_rare_thumbnail.png",
+                "thumbnailType": "Image",
+                "thumbnailMediaType": "image/png",
+                "editionNumber": 22,
+                "saleListingPrice": 15.00,
+                "merchandiseEditionKey": "00000000000000000000000000000000"
+            },
+            {
+                "thumbnailUrl": "https://marketplace.draftkings.com/_assets/Staging/Genesis_master/Thumbnails/set_summer2022_cyril_grayson_18450_rare_thumbnail.png",
+                "thumbnailType": "Image",
+                "thumbnailMediaType": "image/png",
+                "editionNumber": 4,
+                "saleListingPrice": 16.99,
+                "merchandiseEditionKey": "00000000000000000000000000000000"
+            },
+            {
+                "thumbnailUrl": "https://marketplace.draftkings.com/_assets/Staging/Genesis_master/Thumbnails/set_summer2022_cyril_grayson_18450_rare_thumbnail.png",
+                "thumbnailType": "Image",
+                "thumbnailMediaType": "image/png",
+                "editionNumber": 3,
+                "saleListingPrice": 17.00,
+                "merchandiseEditionKey": "00000000000000000000000000000000"
+            },
+            {
+                "thumbnailUrl": "https://marketplace.draftkings.com/_assets/Staging/Genesis_master/Thumbnails/set_summer2022_cyril_grayson_18450_rare_thumbnail.png",
+                "thumbnailType": "Image",
+                "thumbnailMediaType": "image/png",
+                "editionNumber": 38,
+                "saleListingPrice": 24.00,
+                "merchandiseEditionKey": "00000000000000000000000000000000"
+            },
+            {
+                "thumbnailUrl": "https://marketplace.draftkings.com/_assets/Staging/Genesis_master/Thumbnails/set_summer2022_cyril_grayson_18450_rare_thumbnail.png",
+                "thumbnailType": "Image",
+                "thumbnailMediaType": "image/png",
+                "editionNumber": 19,
+                "saleListingPrice": 24.95,
+                "merchandiseEditionKey": "00000000000000000000000000000000"
+            }
+        ],
+        "collectibleKey": "6022ac30bfb3493096df9e2c12f8461f",
+        "name": "Cyril Grayson: 2022 Genesis Set (RARE)",
+        "description": "Genesis is the first Main Set for Reignmakers Football.  To learn more about Reignmakers Football visit (https://www.draftkings.com/reignmakers-about).  All purchases are subject to DraftKings Terms & Conditions (https://myaccount.draftkings.com/documents/us-mkt-terms-of-use).",
+        "partnerName": "DraftKings x NFLPA",
+        "totalQuantity": 40,
+        "collectionName": "Reignmakers Football Collection",
+        "collectionKey": "5eae2563006d4fe0ae1405a31567c60c",
+        "contractAddress": "0x59b25ab069a9134463d588ee40f803665d0cf4b0",
+        "blockchainName": "Polygon",
+        "thumbnailUrl": "https://marketplace.draftkings.com/_assets/Staging/Genesis_master/Thumbnails/set_summer2022_cyril_grayson_18450_rare_thumbnail.png",
+        "thumbnailType": "Image",
+        "thumbnailMediaType": "image/png",
+        "previewUrl": "https://marketplace.draftkings.com/_assets/Staging/Genesis_master/Videos/set_summer2022_cyril_grayson_18450_rare_asset.mp4",
+        "previewType": "Video",
+        "previewMediaType": "video/mp4",
+        "assetUrl": "https://marketplace.draftkings.com/_assets/Staging/Genesis_master/Videos/set_summer2022_cyril_grayson_18450_rare_asset.mp4",
+        "assetType": "Video",
+        "assetMediaType": "video/mp4",
+        "supplierTermsOfServiceUrl": "https://myaccount.draftkings.com/documents/us-mkt-terms-of-use",
+        "rarityCallout": "RARE",
+        "royaltyFeeRate": 0.0500,
+        "transactionFeeRate": 0.0500,
+        "isTransferrable": false,
+        "tokenStandard": "ERC-721",
+        "merchandiseCtaCopy": "Play Game",
+        "merchandiseCtaUrl": "https://www.draftkings.com/nftgames/lobby",
+        "collectibleAttributes": [
+            {
+                "valueType": "Text",
+                "displayValueType": "Text",
+                "displayName": "Series",
+                "value": "2022",
+                "merchandiseAttributeId": 8,
+                "merchandiseAttributeValueId": 44
+            },
+            {
+                "valueType": "Text",
+                "displayValueType": "Text",
+                "displayName": "Set Name",
+                "value": "Genesis",
+                "merchandiseAttributeId": 9,
+                "merchandiseAttributeValueId": 46
+            },
+            {
+                "valueType": "Text",
+                "displayValueType": "Text",
+                "displayName": "Rarity Tier",
+                "value": "Rare",
+                "merchandiseAttributeId": 10,
+                "merchandiseAttributeValueId": 48
+            },
+            {
+                "valueType": "Text",
+                "displayValueType": "Text",
+                "displayName": "Athlete Name",
+                "value": "Cyril Grayson",
+                "valueUrl": "",
+                "merchandiseAttributeId": 12,
+                "merchandiseAttributeValueId": 401
+            },
+            {
+                "valueType": "Text",
+                "displayValueType": "Text",
+                "displayName": "Team",
+                "value": "TB",
+                "merchandiseAttributeId": 15,
+                "merchandiseAttributeValueId": 101
+            },
+            {
+                "valueType": "Text",
+                "displayValueType": "Text",
+                "displayName": "Position",
+                "value": "WR",
+                "merchandiseAttributeId": 16,
+                "merchandiseAttributeValueId": 56
+            },
+            {
+                "valueType": "Text",
+                "displayValueType": "Text",
+                "displayName": "SuperStar Status",
+                "value": "No",
+                "merchandiseAttributeId": 17,
+                "merchandiseAttributeValueId": 61
+            },
+            {
+                "valueType": "Text",
+                "displayValueType": "Text",
+                "displayName": "Edition Tier",
+                "value": "Additional Depth",
+                "merchandiseAttributeId": 18,
+                "merchandiseAttributeValueId": 65
+            },
+            {
+                "valueType": "Text",
+                "displayValueType": "Text",
+                "displayName": "Rookie Status",
+                "value": "No",
+                "merchandiseAttributeId": 19,
+                "merchandiseAttributeValueId": 71
+            }
+        ],
+        "secondarySaleEligibilityStatus": "Eligible"
+    }
+}

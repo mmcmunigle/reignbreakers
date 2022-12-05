@@ -1,0 +1,17 @@
+::ng-deep {
+    .mat-card {
+        width: 100%;
+        padding: 0px !important;
+    }
+    a {
+        all: unset;
+    }
+}
+
+.nav-spacer {
+    flex: 1 1 auto;
+  }
+
+mat-toolbar {
+    margin-bottom: 15px;
+}

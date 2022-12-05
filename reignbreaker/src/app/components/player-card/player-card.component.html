@@ -1,0 +1,26 @@
+<mat-card>
+    <mat-card-header>
+        <div class="crop">
+            <img src={{card.thumbnailUrl}}>
+        </div>
+        <div class="content">
+            <h2>{{card.name}}</h2>
+            <div style="display: flex">
+                <h5>{{card.team}}</h5>
+                <h5>&nbsp;&nbsp;#{{card.edition}}</h5>
+            </div>
+            <div style="display: flex">
+                <h4>Purchase: ${{card.pp}}</h4>
+                <h4 [ngClass]="{'gain': card.diff > 0, 'loss': card.diff <= 0}">{{card.diff}}</h4>
+            </div>
+        </div>
+        <span style="flex: 1 1 auto"></span>
+        <span class="links">
+            <button mat-mini-fab color="primary">
+                <a href="{{card.link}}" target="_blank">
+                    <mat-icon>shopping_cart</mat-icon>
+                </a>
+            </button>
+        </span>
+    </mat-card-header>
+</mat-card>

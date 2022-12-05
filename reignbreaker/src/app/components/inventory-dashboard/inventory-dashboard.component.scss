@@ -1,0 +1,23 @@
+mat-grid-list {
+  margin: 0px 20px;
+}
+
+mat-chip-list {
+  margin: 5px 10px;
+}
+
+mat-form-field {
+  width: 100px;
+  margin-right: 20px;
+  padding-bottom: 0px;
+}
+
+::ng-deep .mat-form-field-wrapper{
+  margin-bottom: -1.25em;
+}
+
+#filter-options {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: -40px;
+}
