@@ -6,9 +6,12 @@ mat-chip-list {
   margin: 5px 10px;
 }
 
+::ng-deep .mat-checkbox-label {
+  color: white;
+}
+
 mat-form-field {
   width: 100px;
-  margin-right: 20px;
   padding-bottom: 0px;
 }
 
@@ -18,6 +21,30 @@ mat-form-field {
 
 #filter-options {
   display: flex;
-  justify-content: flex-end;
-  margin-top: -40px;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.left-options {
+  display: flex;
+  margin-left: 20px;
+}
+
+.right-options {
+  display: flex;
+  margin-right: 20px;
+}
+
+
+#raritySelection {
+  display: flex;
+  align-items: center;
+}
+
+.checkSpacing {
+  margin-right: 10px;
+}
+
+::ng-deep mat-checkbox .mat-checkbox-checkmark-path {
+  stroke: lightgray !important;
 }

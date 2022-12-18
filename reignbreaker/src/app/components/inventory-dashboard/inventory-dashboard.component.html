@@ -1,35 +1,45 @@
 <div id="inventory-dashboard">
   <app-collection-overview [collection]="filteredCards"></app-collection-overview>
   <div id="filter-options">
-    <mat-chip-list aria-label="Fish selection">
-      <mat-chip [selectable]="true" selected
-                (selectionChange)="toggleAll($event.selected)"
-                (click)="chip.toggleSelected()"
-                #chip="matChip">
-          All
-      </mat-chip>
-      <mat-chip [selectable]="true" 
-                (selectionChange)="toggleUfc($event.selected)"
-                (click)="chip1.toggleSelected()"
-                #chip1="matChip">
-          UFC
-      </mat-chip>
-      <mat-chip [selectable]="true"
-                (selectionChange)="toggleFootball($event.selected)"
-                (click)="chip2.toggleSelected()"
-                #chip2="matChip">
-          Football
-      </mat-chip>
-    </mat-chip-list>
-    <mat-form-field appearance="fill">
-      <mat-label>Sort By</mat-label>
-      <mat-select [(value)]="sortBySelection" (selectionChange)="sortCards($event.value)">
-        <mat-option>None</mat-option>
-        <mat-option value="name">Name</mat-option>
-        <mat-option value="purchase">Purchase</mat-option>
-        <mat-option value="diff">Diff</mat-option>
-      </mat-select>
-    </mat-form-field>
+    <div class="left-options">
+      <section id="raritySelection">
+        <mat-checkbox class="checkSpacing core" color=primary [(ngModel)]="showCore">Core</mat-checkbox>
+        <mat-checkbox class="checkSpacing rare" color=primary [(ngModel)]="showRare">Rare</mat-checkbox>
+        <mat-checkbox class="checkSpacing elite" color=primary [(ngModel)]="showElite">Elite</mat-checkbox>
+        <mat-checkbox class="checkSpacing legendary" color=primary [(ngModel)]="showLegendary">Legendary</mat-checkbox>
+      </section>
+    </div>
+    <div class="right-options">
+      <mat-chip-list aria-label="Sport Selector">
+        <mat-chip [selectable]="true" selected
+                  (selectionChange)="toggleAll($event.selected)"
+                  (click)="chip.toggleSelected()"
+                  #chip="matChip">
+            All
+        </mat-chip>
+        <mat-chip [selectable]="true" 
+                  (selectionChange)="toggleUfc($event.selected)"
+                  (click)="chip1.toggleSelected()"
+                  #chip1="matChip">
+            UFC
+        </mat-chip>
+        <mat-chip [selectable]="true"
+                  (selectionChange)="toggleFootball($event.selected)"
+                  (click)="chip2.toggleSelected()"
+                  #chip2="matChip">
+            Football
+        </mat-chip>
+      </mat-chip-list>
+      <mat-form-field appearance="fill">
+        <mat-label>Sort By</mat-label>
+        <mat-select [(value)]="sortBySelection" (selectionChange)="sortCards($event.value)">
+          <mat-option>None</mat-option>
+          <mat-option value="name">Name</mat-option>
+          <mat-option value="purchase">Purchase</mat-option>
+          <mat-option value="diff">Diff</mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div>
   </div>
   
   <mat-grid-list cols="2" rowHeight="122px" gutterSize="12px">

@@ -11,6 +11,10 @@ export class InventoryDashboardComponent implements OnInit {
   filteredCards: any = [];
   typeFilter?: string = 'all';
   sortBySelection: string = 'name';
+  showCore = true;
+  showRare = true;
+  showElite = true;
+  showLegendary = true;
 
   constructor(
     public apiService: ReignmakerApiService,
