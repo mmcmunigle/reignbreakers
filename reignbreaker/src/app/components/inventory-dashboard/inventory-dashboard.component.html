@@ -8,43 +8,71 @@
         <mat-checkbox class="checkSpacing elite" color=primary [(ngModel)]="showElite">Elite</mat-checkbox>
         <mat-checkbox class="checkSpacing legendary" color=primary [(ngModel)]="showLegendary">Legendary</mat-checkbox>
       </section>
-    </div>
-    <div class="right-options">
       <mat-chip-list aria-label="Sport Selector">
         <mat-chip [selectable]="true" selected
-                  (selectionChange)="toggleAll($event.selected)"
+                  (selectionChange)="setCardTypeFilter($event.selected, 'all')"
                   (click)="chip.toggleSelected()"
                   #chip="matChip">
             All
         </mat-chip>
         <mat-chip [selectable]="true" 
-                  (selectionChange)="toggleUfc($event.selected)"
+                  (selectionChange)="setCardTypeFilter($event.selected, 'players')"
                   (click)="chip1.toggleSelected()"
                   #chip1="matChip">
+            Players
+        </mat-chip>
+        <mat-chip [selectable]="true"
+                  (selectionChange)="setCardTypeFilter($event.selected, 'passes')"
+                  (click)="chip3.toggleSelected()"
+                  #chip3="matChip">
+            Passes
+          </mat-chip>
+        <mat-chip [selectable]="true"
+                  (selectionChange)="setCardTypeFilter($event.selected, 'packs')"
+                  (click)="chip2.toggleSelected()"
+                  #chip2="matChip">
+            Packs
+        </mat-chip>
+      </mat-chip-list>
+    </div>
+    <div class="right-options">
+      <mat-chip-list aria-label="Sport Selector">
+        <mat-chip [selectable]="true" selected
+                  (selectionChange)="setSportsSelector($event.selected, 'all')"
+                  (click)="chip4.toggleSelected()"
+                  #chip4="matChip">
+            All
+        </mat-chip>
+        <mat-chip [selectable]="true" 
+                  (selectionChange)="setSportsSelector($event.selected, 'ufc')"
+                  (click)="chip5.toggleSelected()"
+                  #chip5="matChip">
             UFC
         </mat-chip>
         <mat-chip [selectable]="true"
-                  (selectionChange)="toggleFootball($event.selected)"
-                  (click)="chip2.toggleSelected()"
-                  #chip2="matChip">
+                  (selectionChange)="setSportsSelector($event.selected, 'football')"
+                  (click)="chip6.toggleSelected()"
+                  #chip6="matChip">
             Football
         </mat-chip>
       </mat-chip-list>
       <mat-form-field appearance="fill">
         <mat-label>Sort By</mat-label>
         <mat-select [(value)]="sortBySelection" (selectionChange)="sortCards($event.value)">
-          <mat-option>None</mat-option>
           <mat-option value="name">Name</mat-option>
           <mat-option value="purchase">Purchase</mat-option>
+          <mat-option value="market">Market</mat-option>
+          <mat-option value="list">Listed</mat-option>
           <mat-option value="diff">Diff</mat-option>
         </mat-select>
       </mat-form-field>
     </div>
   </div>
   
-  <mat-grid-list cols="2" rowHeight="122px" gutterSize="12px">
+  <mat-grid-list  *ngIf="filteredCards.length" [cols]="cols" rowHeight="150px" gutterSize="15px">
     <mat-grid-tile *ngFor="let card of filteredCards">
       <app-player-card [card]=card style="width:100%"></app-player-card>
     </mat-grid-tile>
   </mat-grid-list>
+  <h3 *ngIf="!filteredCards.length" style="color: white">No Matching Items</h3>
 </div>

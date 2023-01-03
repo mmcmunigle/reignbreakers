@@ -1,9 +1,9 @@
 <div id="collection-container">
     <mat-card>
-        <mat-grid-list cols="3" rowHeight="10:1">
-            <mat-grid-tile><b># CARDS</b></mat-grid-tile>
-            <mat-grid-tile><b>MARKETPLACE SPEND</b></mat-grid-tile>
-            <mat-grid-tile><b>MARKET VALUE</b></mat-grid-tile>
+        <mat-grid-list cols="3" rowHeight="36">
+            <mat-grid-tile><h3><b># CARDS</b></h3></mat-grid-tile>
+            <mat-grid-tile><h3><b>TOTAL SPEND</b></h3></mat-grid-tile>
+            <mat-grid-tile><h3><b>MARKET VALUE</b></h3></mat-grid-tile>
             <mat-grid-tile>{{collection | collectionCount}}</mat-grid-tile>
             <mat-grid-tile>${{collection | collectionSpend}}</mat-grid-tile>
             <mat-grid-tile>${{collection | collectionValue}}</mat-grid-tile>

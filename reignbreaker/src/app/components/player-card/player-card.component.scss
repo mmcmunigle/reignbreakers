@@ -1,10 +1,27 @@
+mat-card-header {
+    height: 150px;
+}
+
 h2 {
     margin-top: 10px;
     margin-bottom: 0px;
 }
 
 h5 {
-    margin-bottom: 20px;
+    margin-bottom: 45px;
+}
+
+h4 {
+    margin-bottom: 10px;
+    margin-right: 5px;
+}
+
+.card-property {
+    background-color: #444;
+    border-radius: 5px;
+    color: white;
+    width: fit-content;
+    padding: 0px 5px;
 }
 
 .gain {
@@ -22,15 +39,15 @@ h5 {
 }
 
 .crop {
-    width: 150px;
-    height: 100px;
+    width: 180px;
+    height: 135px;
     overflow: hidden;
 }
 
 .crop img {
-    width: 230px;
-    height: 200px;
-    margin: -45px 0 0 -40px;
+    width: 240px;
+    height: 260px;
+    margin: -55px 0 0 -28px;
 }
 
 .content {

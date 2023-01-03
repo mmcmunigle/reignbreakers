@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { PlayerCard } from 'src/app/interfaces/player-card';
 
 @Component({
   selector: 'app-player-card',
@@ -6,7 +7,7 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./player-card.component.scss']
 })
 export class PlayerCardComponent implements OnInit {
-  @Input() card: any
+  @Input() card!: PlayerCard;
   constructor() {
     console.log(this.card)
   }

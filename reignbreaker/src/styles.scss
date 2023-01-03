@@ -16,5 +16,9 @@ $my-app-dark-theme: mat-dark-theme($my-app-primary, $my-app-accent, $my-app-warn
 
 mat-card-header, mat-card {
     align-items: center !important;
-    background-color: rgb(25, 25, 25);
+    background-color: rgb(30, 30, 30);
+}
+
+.mat-toolbar-row, .mat-toolbar-single-row {
+    height: 48px;
 }
