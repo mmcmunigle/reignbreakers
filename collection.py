@@ -9,15 +9,6 @@ class Collection:
         self.user = username
         self.portfolio_url = "https://marketplace.draftkings.com/api/users/v1/portfolios/4278d426-173a-4c2c-826d-045a7424859f?format=json"
         self.all_cards = None
-    
-    def to_csv(self):
-        pass
-        # sorted_collection = sorted(self.all_cards, key=lambda d: -d['diff'])
-        # field_names = ['name', 'thumbnailUrl', 'rarity', 'team', 'position', 'pp', 'lp', 'diff', 'diff_p', 'sale', 'link']
-        # with open('collection.csv', 'w') as csvfile:
-        #     writer = csv.DictWriter(csvfile, fieldnames=field_names)
-        #     writer.writeheader()
-        #     writer.writerows(sorted_collection)
 
     def update_collection(self):
         response = requests.get(self.portfolio_url)
@@ -26,7 +17,6 @@ class Collection:
             cards.append(card)
 
         self.all_cards = threaded_process_range(6, cards)
-        self.to_csv()
 
 
 def process_cards(cards, store):

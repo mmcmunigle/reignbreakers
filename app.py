@@ -31,7 +31,7 @@ def update_collection():
 
 
 def initialize_app():
-    scheduler = BackgroundScheduler({'apscheduler.job_defaults.max_instances': 5})
+    scheduler = BackgroundScheduler({'apscheduler.job_defaults.max_instances': 50})
     scheduler.add_job(check_activity, 'interval', seconds=5)
     scheduler.add_job(update_collection, 'interval', minutes=20)
     scheduler.start()

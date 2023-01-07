@@ -18,11 +18,14 @@ import { MatMenuModule } from '@angular/material/menu';
 import { MatSelectModule } from '@angular/material/select';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { FormsModule } from '@angular/forms';
+import { RouterModule } from '@angular/router';
 import { CollectionOverviewComponent } from './components/collection-overview/collection-overview.component';
 import { PlayerCardComponent } from './components/player-card/player-card.component';
 import { CollectionCountPipe } from './pipes/collection-count.pipe';
 import { CollectionSpendPipe } from './pipes/collection-spend.pipe';
 import { CollectionValuePipe } from './pipes/collection-value.pipe';
+import { ScheduleComponent } from './components/schedule/schedule.component';
+
 
 @NgModule({
   declarations: [
@@ -32,7 +35,8 @@ import { CollectionValuePipe } from './pipes/collection-value.pipe';
     CollectionOverviewComponent,
     CollectionCountPipe,
     CollectionSpendPipe,
-    CollectionValuePipe
+    CollectionValuePipe,
+    ScheduleComponent
   ],
   imports: [
     BrowserModule,
@@ -48,6 +52,7 @@ import { CollectionValuePipe } from './pipes/collection-value.pipe';
     MatChipsModule,
     MatSelectModule,
     FormsModule,
+    RouterModule,
     LayoutModule,
     HttpClientModule
   ],

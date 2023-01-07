@@ -17,6 +17,7 @@ export class InventoryDashboardComponent implements OnInit {
   showRare = true;
   showElite = true;
   showLegendary = true;
+  showReignmaker = true;
   cols = "0";
 
   constructor(
@@ -84,6 +85,17 @@ export class InventoryDashboardComponent implements OnInit {
       default:
         this.filteredCards = this.filteredCards;
     }
+
+    this.filteredCards = this.filteredCards.filter((card: any) => {
+      return (
+        this.showCore && card.rarity.toLowerCase() == 'core' ||
+        this.showRare && card.rarity.toLowerCase() == 'rare' ||
+        this.showElite && card.rarity.toLowerCase() == 'elite' ||
+        this.showLegendary && card.rarity.toLowerCase() == 'legendary' ||
+        this.showReignmaker && card.rarity.toLowerCase() == 'reignmaker'
+      )
+      
+    })
       
   }
 
