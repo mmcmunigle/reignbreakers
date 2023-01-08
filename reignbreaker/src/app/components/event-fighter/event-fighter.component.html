@@ -1,0 +1,21 @@
+<mat-card>
+    <mat-card-content style="display:flex">
+        <h2 class="name">{{fighter.name}}</h2>
+        <h4 class="odds">{{fighter.odds}}</h4>
+        <h3 class="sales-property common">
+            <a *ngIf="core" href="{{fighter.details.core.link}}" target="_blank">{{core.toFixed(0)}}</a>
+        </h3>
+        <h3 class="sales-property rare">
+            <a *ngIf="rare" href="{{fighter.details.rare.link}}" target="_blank">{{rare.toFixed(0)}}</a>
+        </h3>
+        <h3 class="sales-property elite">
+            <a *ngIf="elite" href="{{fighter.details.elite.link}}" target="_blank">{{elite.toFixed(0)}}</a>
+        </h3>
+        <h3 class="sales-property legendary">
+            <a *ngIf="legendary" href="{{fighter.details.legendary.link}}" target="_blank">{{legendary.toFixed(0)}}</a>
+        </h3>
+        <h3 class="sales-property reignmaker">
+            <a *ngIf="reignmaker" href="{{fighter.details.reignmaker.link}}" target="_blank">{{reignmaker.toFixed(0)}}</a>
+        </h3>
+    </mat-card-content>
+</mat-card>

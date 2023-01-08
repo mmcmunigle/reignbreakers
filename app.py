@@ -1,16 +1,19 @@
 
 
-import requests
+import json
+
 from apscheduler.schedulers.background import BackgroundScheduler
 from flask import Blueprint, Flask, jsonify
 
 from collection import Collection
+from merchandise import UFCMerchandise
 from ufc_activity import check_activity
 
 app = Flask(__name__)
 api = Blueprint('api', __name__)
 
 my_collection = Collection('goober321')
+ufc_market = UFCMerchandise()
 
 
 @api.after_request
@@ -22,21 +25,43 @@ def after_request(response):
 
 
 @api.route('/inventory', methods=['GET'])
-def home():
+def get_inventory():
     return jsonify(my_collection.all_cards)
+
+
+@api.route('/ufc_market', methods=['GET'])
+def get_ufc_market_data():
+    return jsonify(ufc_market.merchandise)
+
+
+@api.route('/ufc_events', methods=['GET'])
+def get_ufc_events():
+    with open('./ufc_events.json') as events_file:
+        events =  json.load(events_file)
+        for event in events:
+            for matchup in event['matchups']:
+                for fighter in matchup:
+                    fighter['details'] = ufc_market.merchandise.get(fighter['name'].lower())
+        return events
 
 
 def update_collection():
     my_collection.update_collection()
 
 
+def update_market_data():
+    ufc_market.update_merchandise()
+
+
 def initialize_app():
     scheduler = BackgroundScheduler({'apscheduler.job_defaults.max_instances': 50})
     scheduler.add_job(check_activity, 'interval', seconds=5)
     scheduler.add_job(update_collection, 'interval', minutes=20)
+    scheduler.add_job(update_market_data, 'interval', minutes=5)
     scheduler.start()
 
-    update_collection()
+    # update_collection()
+    update_market_data()
 
     app.register_blueprint(api, url_prefix='/api')
     app.run()

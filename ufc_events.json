@@ -1,4 +1,718 @@
-{
-    "event_name": "Test",
-    "event_date": "Test"
-}
+[
+    {
+        "name": "UFC Fight Night: Imavov vs. Gastelum",
+        "date": "January 14, 2023",
+        "type": "Fight Night",
+        "payout": 125000,
+        "matchups": [
+            [
+                {
+                    "name": "Nassourdine Imavov",
+                    "record": "12-3-0",
+                    "odds": "-210",
+                    "card": "Main"
+                },
+                {
+                    "name": "Kelvin Gastelum",
+                    "record": "17-8-0",
+                    "odds": "+175",
+                    "card": "Main"
+                }
+            ],
+            [
+                {
+                    "name": "Dan Ige",
+                    "record": "15-6-0",
+                    "odds": "-135",
+                    "card": "Main"
+                },
+                {
+                    "name": "Damon Jackson",
+                    "record": "22-4-1",
+                    "odds": "+115",
+                    "card": "Main"
+                }
+            ],
+            [
+                {
+                    "name": "Punahele Soriano",
+                    "record": "9-2-0",
+                    "odds": "-165",
+                    "card": "Main"
+                },
+                {
+                    "name": "Roman Kopylov",
+                    "record": "9-2-0",
+                    "odds": "+140",
+                    "card": "Main"
+                }
+            ],
+            [
+                {
+                    "name": "Ketlen Vieira",
+                    "record": "13-2-0",
+                    "odds": "-110",
+                    "card": "Main"
+                },
+                {
+                    "name": "Raquel Pennington",
+                    "record": "14-9-0",
+                    "odds": "-110",
+                    "card": "Main"
+                }
+            ],
+            [
+                {
+                    "name": "Umar Nurmagomedov",
+                    "record": "15-0-0",
+                    "odds": "-575",
+                    "card": "Main"
+                },
+                {
+                    "name": "Raoni Barcelos",
+                    "record": "17-3-0",
+                    "odds": "+425",
+                    "card": "Main"
+                }
+            ],
+            [
+                {
+                    "name": "Abdul Razak Alhassan",
+                    "record": "11-5-0",
+                    "odds": "-115",
+                    "card": "Prelim"
+                },
+                {
+                    "name": "Claudio Ribeiro",
+                    "record": "10-2-0",
+                    "odds": "-105",
+                    "card": "Prelim"
+                }
+            ],
+            [
+                {
+                    "name": "Mateusz Rebecki",
+                    "record": "16-1-0",
+                    "odds": "-700",
+                    "card": "Prelim"
+                },
+                {
+                    "name": "Nick Fiore",
+                    "record": "6-0-0",
+                    "odds": "+500",
+                    "card": "Prelim"
+                }
+            ],
+            [
+                {
+                    "name": "Javid Basharat",
+                    "record": "13-0-0",
+                    "odds": "-360",
+                    "card": "Prelim"
+                },
+                {
+                    "name": "Mateus Mendonca",
+                    "record": "6-0-0",
+                    "odds": "+280",
+                    "card": "Prelim"
+                }
+            ],
+            [
+                {
+                    "name": "Allan Nascimento",
+                    "record": "19-6-0",
+                    "odds": "-400",
+                    "card": "Prelim"
+                },
+                {
+                    "name": "Carlos Hernandez",
+                    "record": "8-1-0",
+                    "odds": "+310",
+                    "card": "Prelim"
+                }
+            ],
+            [
+                {
+                    "name": "Dan Argueta",
+                    "record": "8-1-0",
+                    "odds": "-195",
+                    "card": "Prelim"
+                },
+                {
+                    "name": "Isaac Dulgarian",
+                    "record": "5-0-0",
+                    "odds": "+165",
+                    "card": "Prelim"
+                }
+            ],
+            [
+                {
+                    "name": "Charles Johnson",
+                    "record": "12-3-0",
+                    "odds": "-410",
+                    "card": "Prelim"
+                },
+                {
+                    "name": "Jimmy Flick",
+                    "record": "16-5-0",
+                    "odds": "+320",
+                    "card": "Prelim"
+                }
+            ],
+            [
+                {
+                    "name": "Sijara Eubanks",
+                    "record": "8-7-0",
+                    "odds": "-140",
+                    "card": "Prelim"
+                },
+                {
+                    "name": "Priscila Cachoeira",
+                    "record": "12-4-0",
+                    "odds": "+120",
+                    "card": "Prelim"
+                }
+            ]
+        ]
+    }, 
+    {
+        "name": "UFC 283: Teixeira vs. Hill",
+        "date": "January 21, 2023",
+        "type": "PPV",
+        "payout": 60000,
+        "matchups": [
+            [
+                {
+                    "name": "Jamahal Hill",
+                    "record": "11-1-0",
+                    "odds": "-125",
+                    "card": "Main"
+                },
+                {
+                    "name": "Glover Teixeira",
+                    "record": "33-8-0",
+                    "odds": "+105",
+                    "card": "Main"
+                }
+            ],
+            [
+                {
+                    "name": "Deiveson Figueiredo",
+                    "record": "21-2-1",
+                    "odds": "-115",
+                    "card": "Main",
+                    "champion": true
+                },
+                {
+                    "name": "Brandon Moreno",
+                    "record": "20-6-2",
+                    "odds": "-105",
+                    "card": "Main"
+                }
+            ],
+            [
+                {
+                    "name": "Gilbert Burns",
+                    "record": "20-5-0",
+                    "odds": "-350",
+                    "card": "Main"
+                },
+                {
+                    "name": "Neil Magny",
+                    "record": "27-10-0",
+                    "odds": "+280",
+                    "card": "Main"
+                }
+            ],
+            [
+                {
+                    "name": "Jessica Andrade",
+                    "record": "16-5-0",
+                    "odds": "-450",
+                    "card": "Main"
+                },
+                {
+                    "name": "Lauren Murphy",
+                    "record": "16-5-0",
+                    "odds": "+350",
+                    "card": "Main"
+                }
+            ],
+            [
+                {
+                    "name": "Johnny Walker",
+                    "record": "0-0-0",
+                    "odds": "-170",
+                    "card": "Main"
+                },
+                {
+                    "name": "Paul Craig",
+                    "record": "0-0-0",
+                    "odds": "+145",
+                    "card": "Main"
+                }
+            ],
+            [
+                {
+                    "name": "Ihor Potieria",
+                    "record": "0-0-0",
+                    "odds": "-210",
+                    "card": "Prelim"
+                },
+                {
+                    "name": "Mauricio Rua",
+                    "record": "0-0-0",
+                    "odds": "+180",
+                    "card": "Prelim"
+                }
+            ],
+            [
+                {
+                    "name": "Gregory Rodrigues",
+                    "record": "0-0-0",
+                    "odds": "-210",
+                    "card": "Prelim"
+                },
+                {
+                    "name": "Brad Tavares",
+                    "record": "0-0-0",
+                    "odds": "+180",
+                    "card": "Prelim"
+                }
+            ],
+            [
+                {
+                    "name": "Thiago Moises",
+                    "record": "0-0-0",
+                    "odds": "-",
+                    "card": "Prelim"
+                },
+                {
+                    "name": "Melquizael Costa",
+                    "record": "0-0-0",
+                    "odds": "+",
+                    "card": "Prelim"
+                }
+            ],
+            [
+                {
+                    "name": "Jailton Malhadinho",
+                    "record": "0-0-0",
+                    "odds": "-900",
+                    "card": "Prelim"
+                },
+                {
+                    "name": "Shamil Abdurakhimov",
+                    "record": "0-0-0",
+                    "odds": "+600",
+                    "card": "Prelim"
+                }
+            ],
+            [
+                {
+                    "name": "Gabriel Bonfim",
+                    "record": "0-0-0",
+                    "odds": "-175",
+                    "card": "Early Prelim"
+                },
+                {
+                    "name": "Mounir Lazzez",
+                    "record": "0-0-0",
+                    "odds": "+151",
+                    "card": "Early Prelim"
+                }
+            ], [
+                {
+                    "name": "Cody Stamann",
+                    "record": "0-0-0",
+                    "odds": "-320",
+                    "card": "Early Prelim"
+                },
+                {
+                    "name": "Luan Lacerda",
+                    "record": "0-0-0",
+                    "odds": "+270",
+                    "card": "Early Prelim"
+                }
+            ], [
+                {
+                    "name": "Terrance McKinney",
+                    "record": "0-0-0",
+                    "odds": "-125",
+                    "card": "Early Prelim"
+                },
+                {
+                    "name": "Ismael Bonfim",
+                    "record": "0-0-0",
+                    "odds": "+105",
+                    "card": "Early Prelim"
+                }
+            ], [
+                {
+                    "name": "Nicolas Dalby",
+                    "record": "0-0-0",
+                    "odds": "-170",
+                    "card": "Early Prelim"
+                },
+                {
+                    "name": "Warlley Alves",
+                    "record": "0-0-0",
+                    "odds": "+145",
+                    "card": "Early Prelim"
+                }
+            ], [
+                {
+                    "name": "Josiane Nunes",
+                    "record": "0-0-0",
+                    "odds": "-325",
+                    "card": "Early Prelim"
+                },
+                {
+                    "name": "Zarah Fairn",
+                    "record": "0-0-0",
+                    "odds": "+275",
+                    "card": "Early Prelim"
+                }
+            ], [
+                {
+                    "name": "Saimon Oliveira",
+                    "record": "0-0-0",
+                    "odds": "-155",
+                    "card": "Early Prelim"
+                },
+                {
+                    "name": "Daniel Marcos",
+                    "record": "0-0-0",
+                    "odds": "+135",
+                    "card": "Early Prelim"
+                }
+            ]
+        ]
+    },
+    {
+        "name": "UFC Fight Night: Lewis vs. Spivak",
+        "date": "February 4th, 2023",
+        "type": "Fight Night",
+        "payout": 60000,
+        "matchups": [
+            [
+                {
+                    "name": "Serghei Spivac",
+                    "record": "15-3-0",
+                    "odds": "-200",
+                    "card": "Main"
+                },
+                {
+                    "name": "Derrick Lewis",
+                    "record": "26-10-0",
+                    "odds": "+165",
+                    "card": "Main"
+                }
+            ],
+            [
+                {
+                    "name": "Marcin Tybura",
+                    "record": "0-0-0",
+                    "odds": "N/A",
+                    "card": "Main"
+                },
+                {
+                    "name": "Blagoy Ivanov",
+                    "record": "0-0-0",
+                    "odds": "N/A",
+                    "card": "Main"
+                }
+            ],
+            [
+                {
+                    "name": "Dooho Choi",
+                    "record": "14-4-0",
+                    "odds": "N/A",
+                    "card": "Main"
+                },
+                {
+                    "name": "Kyle Nelson",
+                    "record": "13-5-0",
+                    "odds": "N/A",
+                    "card": "Main"
+                }
+            ],
+            [
+                {
+                    "name": "Junyong Park",
+                    "record": "15-5-0",
+                    "odds": "N/A",
+                    "card": "Main"
+                },
+                {
+                    "name": "Denis Tiuliulin",
+                    "record": "11-6-0",
+                    "odds": "N/A",
+                    "card": "Main"
+                }
+            ],
+            [
+                {
+                    "name": "Tatsuro Taira",
+                    "record": "12-0-0",
+                    "odds": "N/A",
+                    "card": "Main"
+                },
+                {
+                    "name": "Jesus Aguilar",
+                    "record": "8-1-0",
+                    "odds": "N/A",
+                    "card": "Main"
+                }
+            ],
+            [
+                {
+                    "name": "Yusaku Kinoshita",
+                    "record": "6-1-0",
+                    "odds": "N/A",
+                    "card": "Prelim"
+                },
+                {
+                    "name": "Adam Fugitt",
+                    "record": "8-3-0",
+                    "odds": "N/A",
+                    "card": "Prelim"
+                }
+            ],
+            [
+                {
+                    "name": "Ji Yeon Kim",
+                    "record": "9-6-2",
+                    "odds": "N/A",
+                    "card": "Prelim"
+                },
+                {
+                    "name": "Mandy Bohm",
+                    "record": "7-2-0",
+                    "odds": "N/A",
+                    "card": "Prelim"
+                }
+            ]
+        ]
+    },
+    {
+        "name": "UFC 284: Makhachev vs. Volkanovski",
+        "date": "February 11, 2023",
+        "type": "PPV",
+        "payout": 250000,
+        "matchups": [
+            [
+                {
+                    "name": "Islam Makhachev",
+                    "record": "23-1-0",
+                    "odds": "-305",
+                    "card": "Main"
+                },
+                {
+                    "name": "Alexander Volkanovski",
+                    "record": "25-1-0",
+                    "odds": "+255",
+                    "card": "Main"
+                }
+            ],
+            [
+                {
+                    "name": "Yair Rodriguez",
+                    "record": "15-3-0",
+                    "odds": "-120",
+                    "card": "Main"
+                },
+                {
+                    "name": "Josh Emmett",
+                    "record": "18-2-0",
+                    "odds": "+115",
+                    "card": "Main"
+                }
+            ],
+            [
+                {
+                    "name": "Jack Della Maddalena",
+                    "record": "0-0-0",
+                    "odds": "N/A",
+                    "card": "Main"
+                },
+                {
+                    "name": "Randy Brown",
+                    "record": "0-0-0",
+                    "odds": "N/A",
+                    "card": "Main"
+                }
+            ],
+            [
+                {
+                    "name": "Tyson Pedro",
+                    "record": "0-0-0",
+                    "odds": "N/A",
+                    "card": "Prelim"
+                },
+                {
+                    "name": "Zhang Mingyang",
+                    "record": "0-0-0",
+                    "odds": "N/A",
+                    "card": "Prelim"
+                }
+            ],
+            [
+                {
+                    "name": "Jimmy Crute",
+                    "record": "0-0-0",
+                    "odds": "N/A",
+                    "card": "Prelim"
+                },
+                {
+                    "name": "Alonzo Menifield",
+                    "record": "0-0-0",
+                    "odds": "N/A",
+                    "card": "Prelim"
+                }
+            ],
+            [
+                {
+                    "name": "Loma Lookboonmee",
+                    "record": "0-0-0",
+                    "odds": "N/A",
+                    "card": "Prelim"
+                },
+                {
+                    "name": "Elise Reed",
+                    "record": "0-0-0",
+                    "odds": "N/A",
+                    "card": "Prelim"
+                }
+            ],
+            [
+                {
+                    "name": "Joel Alvarez",
+                    "record": "0-0-0",
+                    "odds": "N/A",
+                    "card": "Prelim"
+                },
+                {
+                    "name": "Zubaira Tukhugov",
+                    "record": "0-0-0",
+                    "odds": "N/A",
+                    "card": "Prelim"
+                }
+            ],
+            [
+                {
+                    "name": "Justin Tafa",
+                    "record": "0-0-0",
+                    "odds": "N/A",
+                    "card": "Early Prelim"
+                },
+                {
+                    "name": "Parker Porter",
+                    "record": "0-0-0",
+                    "odds": "N/A",
+                    "card": "Early Prelim"
+                }
+            ],
+            [
+                {
+                    "name": "Josh Culibao",
+                    "record": "0-0-0",
+                    "odds": "N/A",
+                    "card": "Early Prelim"
+                },
+                {
+                    "name": "Melsik Baghdasaryan",
+                    "record": "0-0-0",
+                    "odds": "N/A",
+                    "card": "Early Prelim"
+                }
+            ],
+            [
+                {
+                    "name": "Jack Jenkins",
+                    "record": "0-0-0",
+                    "odds": "N/A",
+                    "card": "Early Prelim"
+                },
+                {
+                    "name": "Don Shainis",
+                    "record": "0-0-0",
+                    "odds": "N/A",
+                    "card": "Early Prelim"
+                }
+            ],
+            [
+                {
+                    "name": "Shannon Ross",
+                    "record": "0-0-0",
+                    "odds": "N/A",
+                    "card": "Early Prelim"
+                },
+                {
+                    "name": "Kleydson Rodrigues",
+                    "record": "0-0-0",
+                    "odds": "N/A",
+                    "card": "Early Prelim"
+                }
+            ],
+            [
+                {
+                    "name": "Shane Young",
+                    "record": "0-0-0",
+                    "odds": "N/A",
+                    "card": "Early Prelim"
+                },
+                {
+                    "name": "Blake Bilder",
+                    "record": "0-0-0",
+                    "odds": "N/A",
+                    "card": "Early Prelim"
+                }
+            ]
+        ]
+    },
+    {
+        "name": "UFC FIght Night: Krylov vs. Spann",
+        "date": "February 24, 2023",
+        "type": "Fight Night",
+        "payout": 125000,
+        "matchups": [
+            [
+                {
+                    "name": "Nikita Krylov",
+                    "record": "0-0-0",
+                    "odds": "-155",
+                    "card": "Main"
+                },
+                {
+                    "name": "Ryan Spann",
+                    "record": "0-0-0",
+                    "odds": "+135",
+                    "card": "Main"
+                }
+            ]
+        ]
+    },
+    {
+        "name": "UFC 285: ",
+        "date": "March 3, 2023",
+        "type": "PPV",
+        "payout": 250000,
+        "matchups": [
+            [
+                {
+                    "name": "Shavkat Rakhmonov",
+                    "record": "0-0-0",
+                    "odds": "-435",
+                    "card": "Main"
+                },
+                {
+                    "name": "Geoff Neal",
+                    "record": "0-0-0",
+                    "odds": "+350",
+                    "card": "Main"
+                }
+            ]
+        ]
+    }
+]

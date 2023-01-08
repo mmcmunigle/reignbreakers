@@ -16,4 +16,14 @@ export class ReignmakerApiService {
     return this.httpClient
     .get(`${this.baseURL}/inventory`)
   }
+
+  getUfcEvents() {
+    return this.httpClient
+    .get(`${this.baseURL}/ufc_events`)
+  }
+
+  getUfcMarketData() {
+    return this.httpClient
+    .get(`${this.baseURL}/ufc_market`)
+  }
 }
