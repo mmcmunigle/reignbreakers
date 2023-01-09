@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { CollectionService } from 'src/app/services/collection.service';
 
 @Component({
   selector: 'app-event-fighter',
@@ -12,8 +13,11 @@ export class EventFighterComponent implements OnInit {
   elite!: number;
   legendary!: number;
   reignmaker!: number;
+  collected: any = {};
 
-  constructor() { }
+  constructor(
+    public collectionService: CollectionService,
+  ) { }
 
   ngOnInit(): void {
     if (this.fighter.details) {
@@ -23,6 +27,14 @@ export class EventFighterComponent implements OnInit {
       this.legendary = this.fighter.details.legendary.price;
       this.reignmaker = this.fighter.details.reignmaker.price;
     }
+
+    setTimeout(() => {
+      const cardsOwned = this.collectionService.fighterCardsOwned(this.fighter.name);
+      cardsOwned.forEach((card: any) => {
+        this.collected[card.rarity.toLowerCase()] = true;
+      });
+    }, 1000);
+    
   }
 
 }

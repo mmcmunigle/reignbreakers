@@ -22,6 +22,11 @@ mat-card-content {
     text-align: center;
 }
 
+.owned {
+    border: 3px solid;
+    border-color: white;
+}
+
 h2, h3, h4, h5 {
     margin-bottom: 5px;
     margin-top: 5px;
@@ -35,14 +40,6 @@ h2, h3, h4, h5 {
 .odds {
     margin-left: 10px;
     width: 30px;
-}
-
-.favorite {
-    background-color:rgb(6, 47, 6);
-}
-
-.dog {
-    background-color:rgb(47, 5, 5);
 }
 
 .common {

@@ -668,12 +668,190 @@
                     "odds": "N/A",
                     "card": "Early Prelim"
                 }
+            ],
+            [
+                {
+                    "name": "Jamie Mullarkey",
+                    "record": "0-0-0",
+                    "odds": "N/A",
+                    "card": "N/A"
+                },
+                {
+                    "name": "Francisco Prado",
+                    "record": "0-0-0",
+                    "odds": "N/A",
+                    "card": "N/A"
+                }
+            ]
+        ]
+    },{
+        "name": "UFC FIght Night: Vera vs Sandhagen",
+        "date": "February 18, 2023",
+        "type": "Fight Night",
+        "payout": 125000,
+        "matchups": [
+            [
+                {
+                    "name": "Marlon Vera",
+                    "record": "0-0-0",
+                    "odds": "N/A",
+                    "card": "Main"
+                },
+                {
+                    "name": "Cory Sandhagen",
+                    "record": "0-0-0",
+                    "odds": "N/A",
+                    "card": "Main"
+                }
+            ], [
+                {
+                    "name": "Taila Santos",
+                    "record": "0-0-0",
+                    "odds": "N/A",
+                    "card": "Main"
+                },
+                {
+                    "name": "Erin Blanchfield",
+                    "record": "0-0-0",
+                    "odds": "N/A",
+                    "card": "Main"
+                }
+            ], [
+                {
+                    "name": "Lina Lansberg",
+                    "record": "0-0-0",
+                    "odds": "N/A",
+                    "card": "Main"
+                },
+                {
+                    "name": "Mayra Bueno",
+                    "record": "0-0-0",
+                    "odds": "N/A",
+                    "card": "Main"
+                }
+            ], [
+                {
+                    "name": "Jim Miller",
+                    "record": "0-0-0",
+                    "odds": "N/A",
+                    "card": "Main"
+                },
+                {
+                    "name": "Gabriel Benitez",
+                    "record": "0-0-0",
+                    "odds": "N/A",
+                    "card": "Main"
+                }
+            ], [
+                {
+                    "name": "Joe Solecki",
+                    "record": "0-0-0",
+                    "odds": "N/A",
+                    "card": "Main"
+                },
+                {
+                    "name": "Benoit Saint Denis",
+                    "record": "0-0-0",
+                    "odds": "N/A",
+                    "card": "Main"
+                }
+            ], [
+                {
+                    "name": "Ovince Saint Preux",
+                    "record": "0-0-0",
+                    "odds": "N/A",
+                    "card": "Main"
+                },
+                {
+                    "name": "Philipe Lins",
+                    "record": "0-0-0",
+                    "odds": "N/A",
+                    "card": "Main"
+                }
+            ], [
+                {
+                    "name": "Jamall Emmers",
+                    "record": "0-0-0",
+                    "odds": "N/A",
+                    "card": "Main"
+                },
+                {
+                    "name": "Khusein Askhabov",
+                    "record": "0-0-0",
+                    "odds": "N/A",
+                    "card": "Main"
+                }
+            ], [
+                {
+                    "name": "William Knight",
+                    "record": "0-0-0",
+                    "odds": "N/A",
+                    "card": "Main"
+                },
+                {
+                    "name": "Marcin Prachnio",
+                    "record": "0-0-0",
+                    "odds": "N/A",
+                    "card": "Main"
+                }
+            ], [
+                {
+                    "name": "Josh Parisian",
+                    "record": "0-0-0",
+                    "odds": "N/A",
+                    "card": "Main"
+                },
+                {
+                    "name": "Jamal Pogues",
+                    "record": "0-0-0",
+                    "odds": "N/A",
+                    "card": "Main"
+                }
+            ], [
+                {
+                    "name": "Evan Elder",
+                    "record": "0-0-0",
+                    "odds": "N/A",
+                    "card": "Main"
+                },
+                {
+                    "name": "Nazim Sadykhov",
+                    "record": "0-0-0",
+                    "odds": "N/A",
+                    "card": "Main"
+                }
+            ], [
+                {
+                    "name": "Juancamilo Ronderos",
+                    "record": "0-0-0",
+                    "odds": "N/A",
+                    "card": "Main"
+                },
+                {
+                    "name": "Clayton Carpenter",
+                    "record": "0-0-0",
+                    "odds": "N/A",
+                    "card": "Main"
+                }
+            ], [
+                {
+                    "name": "Themba Gorimbo",
+                    "record": "0-0-0",
+                    "odds": "N/A",
+                    "card": "Main"
+                },
+                {
+                    "name": "AJ Fletcher",
+                    "record": "0-0-0",
+                    "odds": "N/A",
+                    "card": "Main"
+                }
             ]
         ]
     },
     {
         "name": "UFC FIght Night: Krylov vs. Spann",
-        "date": "February 24, 2023",
+        "date": "February 25, 2023",
         "type": "Fight Night",
         "payout": 125000,
         "matchups": [
@@ -686,6 +864,136 @@
                 },
                 {
                     "name": "Ryan Spann",
+                    "record": "0-0-0",
+                    "odds": "+135",
+                    "card": "Main"
+                }
+            ], [
+                {
+                    "name": "Jordan Leavitt",
+                    "record": "0-0-0",
+                    "odds": "N/A",
+                    "card": "Main"
+                },
+                {
+                    "name": "Victor Martinez",
+                    "record": "0-0-0",
+                    "odds": "+135",
+                    "card": "Main"
+                }
+            ], [
+                {
+                    "name": "Hailey Cowan",
+                    "record": "0-0-0",
+                    "odds": "N/A",
+                    "card": "Main"
+                },
+                {
+                    "name": "Ailin Perez",
+                    "record": "0-0-0",
+                    "odds": "+135",
+                    "card": "Main"
+                }
+            ], [
+                {
+                    "name": "Denys Bondar",
+                    "record": "0-0-0",
+                    "odds": "N/A",
+                    "card": "Main"
+                },
+                {
+                    "name": "Ode Osbourne",
+                    "record": "0-0-0",
+                    "odds": "+135",
+                    "card": "Main"
+                }
+            ], [
+                {
+                    "name": "Cortney Casey",
+                    "record": "0-0-0",
+                    "odds": "N/A",
+                    "card": "Main"
+                },
+                {
+                    "name": "Jasmine Jasudavicius",
+                    "record": "0-0-0",
+                    "odds": "+135",
+                    "card": "Main"
+                }
+            ], [
+                {
+                    "name": "Darrius Flowers ",
+                    "record": "0-0-0",
+                    "odds": "N/A",
+                    "card": "Main"
+                },
+                {
+                    "name": "Erick Gonzalez",
+                    "record": "0-0-0",
+                    "odds": "+135",
+                    "card": "Main"
+                }
+            ], [
+                {
+                    "name": "Lucas Almeida",
+                    "record": "0-0-0",
+                    "odds": "N/A",
+                    "card": "Main"
+                },
+                {
+                    "name": "Andre Fili",
+                    "record": "0-0-0",
+                    "odds": "+135",
+                    "card": "Main"
+                }
+            ], [
+                {
+                    "name": "Don’Tale Mayes",
+                    "record": "0-0-0",
+                    "odds": "N/A",
+                    "card": "Main"
+                },
+                {
+                    "name": "Augusto Sakai",
+                    "record": "0-0-0",
+                    "odds": "+135",
+                    "card": "Main"
+                }
+            ], [
+                {
+                    "name": "Brendan Allen",
+                    "record": "0-0-0",
+                    "odds": "N/A",
+                    "card": "Main"
+                },
+                {
+                    "name": "Andre Muniz",
+                    "record": "0-0-0",
+                    "odds": "+135",
+                    "card": "Main"
+                }
+            ], [
+                {
+                    "name": "Yohan Lainasse",
+                    "record": "0-0-0",
+                    "odds": "N/A",
+                    "card": "Main"
+                },
+                {
+                    "name": "Mike Mallott",
+                    "record": "0-0-0",
+                    "odds": "+135",
+                    "card": "Main"
+                }
+            ], [
+                {
+                    "name": "Trevor Peek",
+                    "record": "0-0-0",
+                    "odds": "N/A",
+                    "card": "Main"
+                },
+                {
+                    "name": "Alex Reyes",
                     "record": "0-0-0",
                     "odds": "+135",
                     "card": "Main"

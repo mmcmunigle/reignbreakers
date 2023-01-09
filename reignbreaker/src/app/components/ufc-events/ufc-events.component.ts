@@ -24,8 +24,4 @@ export class UfcEventsComponent implements OnInit {
     });
   }
 
-  getFighterData(fighter: any) {
-    return this.merchandise[fighter.toLowerCase()];
-  }
-
 }
