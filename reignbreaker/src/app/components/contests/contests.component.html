@@ -1,0 +1,6 @@
+
+<mat-grid-list [cols]="1" rowHeight="40px" gutterSize="10px">
+    <mat-grid-tile *ngFor="let fighter of rankedFighters">
+    <app-event-fighter [fighter]=fighter style="width:100%"></app-event-fighter>
+    </mat-grid-tile>
+</mat-grid-list>

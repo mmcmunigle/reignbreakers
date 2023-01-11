@@ -20,7 +20,10 @@ export class CollectionService implements OnInit {
   }
 
   fighterCardsOwned(fighter: string) {
-    const cards = this.collection.filter((card: any) => card.name == fighter);
+    let cards = []
+    if (this.collection) {
+      cards = this.collection.filter((card: any) => card.name == fighter);
+    }
     return cards
   }
 }

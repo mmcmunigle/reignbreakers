@@ -2,13 +2,12 @@ import { Component, OnInit } from '@angular/core';
 import { ReignmakerApiService } from 'src/app/services/api.service';
 
 @Component({
-  selector: 'app-ufc-events',
-  templateUrl: './ufc-events.component.html',
-  styleUrls: ['./ufc-events.component.scss']
+  selector: 'app-contests',
+  templateUrl: './contests.component.html',
+  styleUrls: ['./contests.component.scss']
 })
-export class UfcEventsComponent implements OnInit {
-
-  events: any;
+export class ContestsComponent implements OnInit {
+  rankedFighters: any;
   merchandise: any;
   constructor(public apiService: ReignmakerApiService) { }
 
@@ -25,10 +24,9 @@ export class UfcEventsComponent implements OnInit {
       this.merchandise = merchandise;
     });
 
-    this.apiService.getUfcEvents()
-    .subscribe((events: any) => {
-      this.events = events;
+    this.apiService.getRankedFighters()
+    .subscribe((fighters: any) => {
+      this.rankedFighters = fighters;
     });
   }
-
 }

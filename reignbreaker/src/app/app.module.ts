@@ -26,6 +26,7 @@ import { CollectionCountPipe } from './pipes/collection-count.pipe';
 import { CollectionSpendPipe } from './pipes/collection-spend.pipe';
 import { CollectionValuePipe } from './pipes/collection-value.pipe';
 import { EventFighterComponent } from './components/event-fighter/event-fighter.component';
+import { ContestsComponent } from './components/contests/contests.component';
 
 
 @NgModule({
@@ -38,7 +39,8 @@ import { EventFighterComponent } from './components/event-fighter/event-fighter.
     CollectionSpendPipe,
     CollectionValuePipe,
     UfcEventsComponent,
-    EventFighterComponent
+    EventFighterComponent,
+    ContestsComponent
   ],
   imports: [
     BrowserModule,

@@ -26,4 +26,9 @@ export class ReignmakerApiService {
     return this.httpClient
     .get(`${this.baseURL}/ufc_market`)
   }
+
+  getRankedFighters() {
+    return this.httpClient
+    .get(`${this.baseURL}/ranked_fighters`)
+  }
 }

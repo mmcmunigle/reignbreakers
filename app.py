@@ -45,6 +45,20 @@ def get_ufc_events():
         return events
 
 
+@api.route('/ranked_fighters', methods=['GET'])
+def get_ranked_fighters():
+    ranked_fighters = []
+    with open('./ranked_fighters.txt') as ranked_file:
+        fighter_names = ranked_file.read().splitlines()
+        for name in fighter_names:
+            ranked_fighters.append({
+                'name': name,
+                'details': ufc_market.merchandise.get(name.lower())
+            })
+
+        return jsonify(ranked_fighters)
+
+
 def update_collection():
     my_collection.update_collection()
 
@@ -57,11 +71,11 @@ def initialize_app():
     scheduler = BackgroundScheduler({'apscheduler.job_defaults.max_instances': 50})
     scheduler.add_job(check_activity, 'interval', seconds=5)
     scheduler.add_job(update_collection, 'interval', minutes=20)
-    scheduler.add_job(update_market_data, 'interval', minutes=5)
+    scheduler.add_job(update_market_data, 'interval', minutes=1)
     scheduler.start()
 
-    # update_collection()
     update_market_data()
+    update_collection()
 
     app.register_blueprint(api, url_prefix='/api')
     app.run()
