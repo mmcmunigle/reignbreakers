@@ -28,27 +28,27 @@ def process_cards(cards):
         name = attributes['athlete_name']
         if name not in merchandise:
             merchandise[name] = {
-                'core': {},
-                'rare': {},
-                'elite': {},
-                'legendary': {},
-                'reignmaker': {}
+                'core': [],
+                'rare': [],
+                'elite': [],
+                'legendary': [],
+                'reignmaker': []
             }
         
         rarity = attributes.get('rarity_tier')
         link = f"https://marketplace.draftkings.com/listings/collectibles/{card['merchandiseKey']}/"
 
-        if (rarity and (not merchandise[name][rarity].get('low_price')
-                or merchandise[name][rarity]['low_price'] > int(card['lowestListedEditionPrice']))):
-            merchandise[name][rarity] = {
-                'price': int(card['lowestListedEditionPrice']),
-                'quantity': card['quantity'],
-                'link': link,
-                'set': attributes.get('set_name'),
-                'division': attributes.get('division'),
-                'champion': attributes.get('champion_status'),
-                'edition_tier': attributes.get('edition_tier'),
-            }
+        merchandise[name][rarity].append({
+            'price': int(card['lowestListedEditionPrice']),
+            'quantity': card['quantity'],
+            'link': link,
+            'set': attributes.get('set_name'),
+            'division': attributes.get('division'),
+            'champion': attributes.get('champion_status'),
+            'edition_tier': attributes.get('edition_tier'),
+        })
+
+        merchandise[name][rarity] = sorted(merchandise[name][rarity], key=lambda d: d['price'])
 
     return merchandise
 

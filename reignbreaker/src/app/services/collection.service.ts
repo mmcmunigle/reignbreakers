@@ -19,10 +19,13 @@ export class CollectionService implements OnInit {
     this.collection = this.apiService.getInventory();
   }
 
-  fighterCardsOwned(fighter: string) {
+  fighterCardsOwned(fighter: string, set: string = '') {
     let cards = []
     if (this.collection) {
       cards = this.collection.filter((card: any) => card.name == fighter);
+    }
+    if (set) {
+      cards = cards.filter((card: any) => card.set == set);
     }
     return cards
   }

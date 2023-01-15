@@ -20,18 +20,19 @@ export class EventFighterComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
+    const cards = this.fighter.details
     if (this.fighter.details) {
-      this.core = this.fighter.details.core.price;
-      this.rare = this.fighter.details.rare.price;
-      this.elite = this.fighter.details.elite.price;
-      this.legendary = this.fighter.details.legendary.price;
-      this.reignmaker = this.fighter.details.reignmaker.price;
+      this.core = cards.core.length ? cards.core[0].price : null;
+      this.rare = cards.rare.length ? cards.rare[0].price : null;
+      this.elite = cards.elite.length ? cards.elite[0].price : null;
+      this.legendary = cards.legendary.length ? cards.legendary[0].price : null;
+      this.reignmaker = cards.reignmaker.length ? cards.reignmaker[0].price : null;
     }
 
     setTimeout(() => {
-      const cardsOwned = this.collectionService.fighterCardsOwned(this.fighter.name);
+      const cardsOwned = this.collectionService.fighterCardsOwned(this.fighter.name, "genesis");
       cardsOwned.forEach((card: any) => {
-        this.collected[card.rarity.toLowerCase()] = true;
+        this.collected[card.rarity] = true;
       });
     }, 1000);
     
