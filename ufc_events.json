@@ -1249,6 +1249,19 @@
         "matchups": [
             [
                 {
+                    "name": "Jon Jones",
+                    "record": "0-0-0",
+                    "odds": "N/A",
+                    "card": "N/A"
+                },
+                {
+                    "name": "Cyril Gane",
+                    "record": "0-0-0",
+                    "odds": "N/A",
+                    "card": "N/A"
+                }
+            ],[
+                {
                     "name": "Joanne Wood",
                     "record": "0-0-0",
                     "odds": "N/A",
@@ -1297,7 +1310,7 @@
                     "card": "N/A"
                 },
                 {
-                    "name": "Ludov\u00edt Klein",
+                    "name": "Ludovt Klein",
                     "record": "0-0-0",
                     "odds": "N/A",
                     "card": "N/A"

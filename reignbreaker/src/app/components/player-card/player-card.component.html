@@ -10,8 +10,8 @@
                 <h5>&nbsp;&nbsp;#{{card.edition}}</h5>
             </div>
             <div style="display: flex">
-                <h4 class="card-property">Cost: ${{card.pp}}</h4>
-                <h4 class="card-property" [ngClass]="{'gain': card.diff > 0, 'loss': card.diff <= 0}">Market: ${{card.lp}}</h4>
+                <h4 class="card-property">Cost: ${{card.purchase}}</h4>
+                <h4 class="card-property" [ngClass]="{'gain': card.diff > 0, 'loss': card.diff <= 0}">Market: ${{card.market}}</h4>
                 <h4 *ngIf="card.sale" class="card-property">List: ${{card.sale}}</h4>
             </div>
                     </div>

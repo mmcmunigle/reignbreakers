@@ -1,4 +1,17 @@
 
+<div id="contest-summary">
+    <mat-card>
+        <mat-grid-list cols="3" rowHeight="36">
+            <mat-grid-tile><h3><b>Core</b></h3></mat-grid-tile>
+            <mat-grid-tile><h3><b>Rare</b></h3></mat-grid-tile>
+            <mat-grid-tile><h3><b>Elite+</b></h3></mat-grid-tile>
+            <mat-grid-tile>{{collected.core}}</mat-grid-tile>
+            <mat-grid-tile>{{collected.rare}}</mat-grid-tile>
+            <mat-grid-tile>{{collected.elite}}</mat-grid-tile>
+        </mat-grid-list>
+    </mat-card>
+</div>
+
 <mat-grid-list [cols]="1" rowHeight="40px" gutterSize="10px">
     <mat-grid-tile *ngFor="let fighter of rankedFighters">
     <app-event-fighter [fighter]=fighter style="width:100%"></app-event-fighter>

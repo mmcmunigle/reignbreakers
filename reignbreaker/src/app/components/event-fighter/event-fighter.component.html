@@ -3,19 +3,19 @@
         <h2 class="name">{{fighter.name}}</h2>
         <h4 class="odds">{{fighter.odds}}</h4>
         <h3 class="sales-property common" [ngClass]="{'owned': collected.core}">
-            <a *ngIf="core" href="{{fighter.details.core.link}}" target="_blank">{{core.toFixed(0)}}</a>
+            <a *ngIf="core?.price" href="{{core.link}}" target="_blank">{{core.price.toFixed(0)}}</a>
         </h3>
         <h3 class="sales-property rare" [ngClass]="{'owned': collected.rare}">
-            <a *ngIf="rare" href="{{fighter.details.rare.link}}" target="_blank">{{rare.toFixed(0)}}</a>
+            <a *ngIf="rare?.price" href="{{rare.link}}" target="_blank">{{rare.price.toFixed(0)}}</a>
         </h3>
         <h3 class="sales-property elite" [ngClass]="{'owned': collected.elite}">
-            <a *ngIf="elite" href="{{fighter.details.elite.link}}" target="_blank">{{elite.toFixed(0)}}</a>
+            <a *ngIf="elite?.price" href="{{elite.link}}" target="_blank">{{elite.price.toFixed(0)}}</a>
         </h3>
         <h3 class="sales-property legendary" [ngClass]="{'owned': collected.legendary}">
-            <a *ngIf="legendary" href="{{fighter.details.legendary.link}}" target="_blank">{{legendary.toFixed(0)}}</a>
+            <a *ngIf="legendary?.price" href="{{legendary.link}}" target="_blank">{{legendary.price.toFixed(0)}}</a>
         </h3>
         <h3 class="sales-property reignmaker" [ngClass]="{'owned': collected.reignmaker}">
-            <a *ngIf="reignmaker" href="{{fighter.details.reignmaker.link}}" target="_blank">{{reignmaker.toFixed(0)}}</a>
+            <a *ngIf="reignmaker?.price" href="{{reignmaker.link}}" target="_blank">{{reignmaker.price.toFixed(0)}}</a>
         </h3>
     </mat-card-content>
 </mat-card>

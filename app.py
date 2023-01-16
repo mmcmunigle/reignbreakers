@@ -26,7 +26,7 @@ def after_request(response):
 
 @api.route('/inventory', methods=['GET'])
 def get_inventory():
-    return jsonify(my_collection.all_cards)
+    return jsonify(my_collection.all_collectables)
 
 
 @api.route('/ufc_market', methods=['GET'])
@@ -41,7 +41,7 @@ def get_ufc_events():
         for event in events:
             for matchup in event['matchups']:
                 for fighter in matchup:
-                    fighter['details'] = ufc_market.merchandise.get(fighter['name'].lower())
+                    fighter['details'] = ufc_market.merchandise.get(fighter['name'])
         return events
 
 
@@ -53,14 +53,14 @@ def get_ranked_fighters():
         for name in fighter_names:
             ranked_fighters.append({
                 'name': name,
-                'details': ufc_market.merchandise.get(name.lower())
+                'details': ufc_market.merchandise.get(name)
             })
 
         return jsonify(ranked_fighters)
 
 
-def update_collection():
-    my_collection.update_collection()
+def update_collectables():
+    my_collection.update_collection(ufc_market.merchandise)
 
 
 def update_market_data():
@@ -70,12 +70,12 @@ def update_market_data():
 def initialize_app():
     scheduler = BackgroundScheduler({'apscheduler.job_defaults.max_instances': 50})
     scheduler.add_job(check_activity, 'interval', seconds=5)
-    scheduler.add_job(update_collection, 'interval', minutes=20)
+    scheduler.add_job(update_collectables, 'interval', minutes=2)
     scheduler.add_job(update_market_data, 'interval', minutes=1)
     scheduler.start()
 
     update_market_data()
-    update_collection()
+    update_collectables()
 
     app.register_blueprint(api, url_prefix='/api')
     app.run()

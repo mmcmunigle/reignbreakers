@@ -8,11 +8,12 @@ import { CollectionService } from 'src/app/services/collection.service';
 })
 export class EventFighterComponent implements OnInit {
   @Input() fighter!: any;
-  core!: number;
-  rare!: number;
-  elite!: number;
-  legendary!: number;
-  reignmaker!: number;
+  @Input() set: string = 'Genesis';
+  core: any = {};
+  rare: any = {};
+  elite: any = {};
+  legendary: any = {};
+  reignmaker: any = {};
   collected: any = {};
 
   constructor(
@@ -22,20 +23,22 @@ export class EventFighterComponent implements OnInit {
   ngOnInit(): void {
     const cards = this.fighter.details
     if (this.fighter.details) {
-      this.core = cards.core.length ? cards.core[0].price : null;
-      this.rare = cards.rare.length ? cards.rare[0].price : null;
-      this.elite = cards.elite.length ? cards.elite[0].price : null;
-      this.legendary = cards.legendary.length ? cards.legendary[0].price : null;
-      this.reignmaker = cards.reignmaker.length ? cards.reignmaker[0].price : null;
+      this.core = this.cardBySet(cards.core);
+      this.rare = this.cardBySet(cards.rare);
+      this.elite = this.cardBySet(cards.elite);
+      this.legendary = this.cardBySet(cards.legendary);
+      this.reignmaker = this.cardBySet(cards.reignmaker);
     }
 
     setTimeout(() => {
-      const cardsOwned = this.collectionService.fighterCardsOwned(this.fighter.name, "genesis");
+      const cardsOwned = this.collectionService.fighterCardsOwned(this.fighter.name, "Genesis");
       cardsOwned.forEach((card: any) => {
         this.collected[card.rarity] = true;
       });
     }, 1000);
-    
   }
 
+  cardBySet(cards: any): any {
+    return cards ? cards[this.set] : null
+  }
 }

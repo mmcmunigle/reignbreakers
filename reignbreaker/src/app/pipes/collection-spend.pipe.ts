@@ -6,7 +6,7 @@ import { Pipe, PipeTransform } from '@angular/core';
 export class CollectionSpendPipe implements PipeTransform {
 
   transform(collection: any[]): number {
-    return (collection.reduce((spend, card) => spend += card.pp, 0)).toFixed(1)
+    return (collection.reduce((spend, card) => spend += card.purchase, 0)).toFixed(1)
   }
 
 }
