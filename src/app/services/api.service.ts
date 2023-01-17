@@ -6,7 +6,7 @@ import { Injectable } from '@angular/core';
 })
 export class ReignmakerApiService {
 
-  public baseURL: string = `http://localhost:5000/api`
+  public baseURL: string = `https://flask-service.pqf2epmnql9p2.us-west-2.cs.amazonlightsail.com/api`
 
   constructor(
     private httpClient: HttpClient
