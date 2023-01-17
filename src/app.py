@@ -78,7 +78,7 @@ def initialize_app():
     update_collectables()
 
     app.register_blueprint(api, url_prefix='/api')
-    app.run()
+    app.run(host='0.0.0.0')
 
 
 if __name__ == '__main__':
