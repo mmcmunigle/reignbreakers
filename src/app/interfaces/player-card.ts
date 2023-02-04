@@ -8,4 +8,5 @@ export interface PlayerCard {
     sale: number,
     diff: number,
     link: string,
+    event: any,
 }

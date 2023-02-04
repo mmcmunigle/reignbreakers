@@ -1,5 +1,10 @@
 mat-card-header {
     height: 150px;
+    margin-left: 0px;
+}
+
+::ng-deep .mat-card-header-text {
+    margin: 0 6px;
 }
 
 h2 {
@@ -8,7 +13,7 @@ h2 {
 }
 
 h5 {
-    margin-bottom: 45px;
+    margin-bottom: 25px;
 }
 
 h4 {
@@ -55,5 +60,5 @@ h4 {
 }
 
 .links {
-    margin-right: 20px;
+    margin-right: 10px;
 }

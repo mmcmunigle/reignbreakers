@@ -26,6 +26,20 @@ def after_request(response):
 
 @api.route('/inventory', methods=['GET'])
 def get_inventory():
+    with open('./ufc_events.json') as events_file:
+        events =  json.load(events_file)
+        fighters = {}
+        for event in events:
+            for matchup in event['matchups']:
+                for fighter in matchup:
+                    fighters[fighter['name']] = {
+                        'name': event['name'],
+                        'date': event['date'],
+                    }
+        for card in my_collection.all_collectables:
+            if fighters.get(card['name'], None):
+                card['event'] = fighters[card['name']]
+
     return jsonify(my_collection.all_collectables)
 
 
@@ -55,7 +69,6 @@ def get_ranked_fighters():
                 'name': name,
                 'details': ufc_market.merchandise.get(name)
             })
-
         return jsonify(ranked_fighters)
 
 

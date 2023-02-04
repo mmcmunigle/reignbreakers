@@ -1,17 +1,23 @@
 <mat-toolbar color="primary">
-    <button mat-icon-button aria-label="More Options">
+    <mat-menu #actionsMenu="matMenu">
+        <a mat-menu-item>
+          Events
+        </a>
+        <a mat-menu-item>
+          Contests
+        </a>
+    </mat-menu>
+    <button mat-icon-button 
+            aria-label="Navigation"
+            [matMenuTriggerFor]="actionsMenu">
         <mat-icon>menu</mat-icon>
     </button>
     <span>ReignBreakers</span>
     <span class="nav-spacer"></span>
-    <button mat-icon-button aria-label="Heart This">
-        <mat-icon>favorite</mat-icon>
-    </button>
-    <button mat-icon-button aria-label="Share">
-        <mat-icon>share</mat-icon>
-    </button>
+    <input class="username userkey" type="text" placeholder="userkey">
+    <input class="username" type="text" placeholder="username">
+
 </mat-toolbar>
 
-<!-- <inventory-dashboard></inventory-dashboard> -->
 <router-outlet></router-outlet>
 

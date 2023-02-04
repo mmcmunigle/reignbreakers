@@ -1,0 +1,40 @@
+.filter-group {
+  margin: 15px 10px;
+}
+
+#filter-options {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+  
+.left-options {
+  display: flex;
+  margin-left: 20px;
+}
+
+.right-options {
+  display: flex;
+  margin-right: 20px;
+}
+
+#raritySelection {
+  display: flex;
+  align-items: center;
+}
+
+.checkSpacing {
+  margin-right: 10px;
+}
+
+::ng-deep .mat-checkbox-label {
+  color: white;
+}
+
+::ng-deep mat-checkbox .mat-checkbox-checkmark-path {
+  stroke: lightgray !important;
+}
+
+.filter-selector {
+  display: block;
+}

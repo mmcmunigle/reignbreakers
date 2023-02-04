@@ -8,7 +8,7 @@ import { CollectionService } from 'src/app/services/collection.service';
 })
 export class EventFighterComponent implements OnInit {
   @Input() fighter!: any;
-  @Input() set: string = 'Genesis';
+  @Input() set: string = '';
   core: any = {};
   rare: any = {};
   elite: any = {};
@@ -31,14 +31,24 @@ export class EventFighterComponent implements OnInit {
     }
 
     setTimeout(() => {
-      const cardsOwned = this.collectionService.fighterCardsOwned(this.fighter.name, "Genesis");
+      const cardsOwned = this.collectionService.fighterCardsOwned(this.fighter.name);
       cardsOwned.forEach((card: any) => {
-        this.collected[card.rarity] = true;
+        if (this.collected[card.rarity]) {
+          this.collected[card.rarity] += 1;
+        } else {
+          this.collected[card.rarity] = 1;
+        }
       });
-    }, 1000);
+    }, 200);
   }
 
   cardBySet(cards: any): any {
-    return cards ? cards[this.set] : null
+    if (!this.set && Object.keys(cards).length) {
+      const result = Object.values(cards).reduce(function(res: any, obj: any) {
+        return (obj.price < res.price) ? obj : res;
+      });
+      return result
+    }
+    return Object.keys(cards).length ? cards[this.set] : null
   }
 }

@@ -9,27 +9,34 @@ with open('./new_fights.txt') as fh:
     lines = fh.read().splitlines()
     for line in lines:
         if 'UFC' in line:
+            event_details = line.split('(')
+            print(event_details[0])
             events.append({
-                "name": line,
-                "date": "N?A",
-                "type": line,
+                "name": event_details[0],
+                "date": event_details[1].split(')')[0],
+                "type": "UFC",
                 "payout": 125000,
                 "matchups": []
             })
         elif line:
-            fighters = line.split(':')[1].split('[')[0].split('vs.')
-            print(fighters)
-            events[len(events)-1]['matchups'].append([{
-                "name": fighters[0].strip(),
-                "record": "0-0-0",
-                "odds": "N/A",
-                "card": "N/A"
-            }, {
-                "name": fighters[1].strip(),
-                "record": "0-0-0",
-                "odds": "N/A",
-                "card": "N/A"
-            }])
+            matchups = line.split('-')
+            for matchup in matchups:
+                if not matchup:
+                    continue
+                fighters = matchup.split('vs.')
+                if len(fighters) < 2:
+                    continue
+                events[len(events)-1]['matchups'].append([{
+                    "name": fighters[0].split('(')[0].split('*')[0].strip().replace('ú', 'u').replace('Ľ', 'L'),
+                    "record": "0-0-0",
+                    "odds": "N/A",
+                    "card": "N/A"
+                }, {
+                    "name": fighters[1].split('(')[0].split('*')[0].strip().replace('ú', 'u').replace('Ľ', 'L'),
+                    "record": "0-0-0",
+                    "odds": "N/A",
+                    "card": "N/A"
+                }])
 
-with open('./new_fights.json', "w") as fh:
+with open('../ufc_events.json', "w") as fh:
     fh.write(json.dumps(events))

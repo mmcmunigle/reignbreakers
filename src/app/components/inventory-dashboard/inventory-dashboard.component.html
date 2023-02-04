@@ -1,79 +1,39 @@
 <div id="inventory-dashboard">
   <app-collection-overview [collection]="filteredCards"></app-collection-overview>
-  <div id="filter-options">
-    <div class="left-options">
-      <section id="raritySelection">
-        <mat-checkbox class="checkSpacing core" color=primary [(ngModel)]="showCore">Core</mat-checkbox>
-        <mat-checkbox class="checkSpacing rare" color=primary [(ngModel)]="showRare">Rare</mat-checkbox>
-        <mat-checkbox class="checkSpacing elite" color=primary [(ngModel)]="showElite">Elite</mat-checkbox>
-        <mat-checkbox class="checkSpacing legendary" color=primary [(ngModel)]="showLegendary">Legendary</mat-checkbox>
-        <mat-checkbox class="checkSpacing reignmaker" color=primary [(ngModel)]="showReignmaker">Reignmaker</mat-checkbox>
-      </section>
-      <mat-chip-list aria-label="Sport Selector">
-        <mat-chip [selectable]="true" selected
-                  (selectionChange)="setCardTypeFilter($event.selected, 'all')"
-                  (click)="chip.toggleSelected()"
-                  #chip="matChip">
-            All
-        </mat-chip>
-        <mat-chip [selectable]="true" 
-                  (selectionChange)="setCardTypeFilter($event.selected, 'players')"
-                  (click)="chip1.toggleSelected()"
-                  #chip1="matChip">
-            Players
-        </mat-chip>
-        <mat-chip [selectable]="true"
-                  (selectionChange)="setCardTypeFilter($event.selected, 'passes')"
-                  (click)="chip3.toggleSelected()"
-                  #chip3="matChip">
-            Passes
-          </mat-chip>
-        <mat-chip [selectable]="true"
-                  (selectionChange)="setCardTypeFilter($event.selected, 'packs')"
-                  (click)="chip2.toggleSelected()"
-                  #chip2="matChip">
-            Packs
-        </mat-chip>
-      </mat-chip-list>
-    </div>
-    <div class="right-options">
-      <mat-chip-list aria-label="Sport Selector">
-        <mat-chip [selectable]="true" selected
-                  (selectionChange)="setSportsSelector($event.selected, 'all')"
-                  (click)="chip4.toggleSelected()"
-                  #chip4="matChip">
-            All
-        </mat-chip>
-        <mat-chip [selectable]="true" 
-                  (selectionChange)="setSportsSelector($event.selected, 'ufc')"
-                  (click)="chip5.toggleSelected()"
-                  #chip5="matChip">
-            UFC
-        </mat-chip>
-        <mat-chip [selectable]="true"
-                  (selectionChange)="setSportsSelector($event.selected, 'football')"
-                  (click)="chip6.toggleSelected()"
-                  #chip6="matChip">
-            Football
-        </mat-chip>
-      </mat-chip-list>
-      <mat-form-field appearance="fill">
-        <mat-label>Sort By</mat-label>
-        <mat-select [(value)]="sortBySelection" (selectionChange)="sortCards($event.value)">
-          <mat-option value="name">Name</mat-option>
-          <mat-option value="purchase">Purchase</mat-option>
-          <mat-option value="market">Market</mat-option>
-          <mat-option value="list">Listed</mat-option>
-          <mat-option value="diff">Diff</mat-option>
-        </mat-select>
-      </mat-form-field>
-    </div>
-  </div>
   
-  <mat-grid-list  *ngIf="filteredCards.length" [cols]="cols" rowHeight="150px" gutterSize="15px">
-    <mat-grid-tile *ngFor="let card of filteredCards">
-      <app-player-card [card]=card style="width:100%"></app-player-card>
-    </mat-grid-tile>
-  </mat-grid-list>
-  <h3 *ngIf="!filteredCards.length" style="color: white">No Matching Items</h3>
+  <mat-drawer-container class="collection-container" autosize>
+    <mat-drawer #drawer class="sidenav-filter" mode="over">
+      <app-card-filter (cardFilterChange)="updateFilters($event)"></app-card-filter>
+    </mat-drawer>
+
+    <button type="button" mat-button (click)="drawer.toggle()">
+      <mat-icon>menu</mat-icon>
+    </button>
+
+    <mat-form-field class="name-lookup" appearance="outline">
+      <mat-label>Search By Name</mat-label>
+      <input
+          type="text"
+          placeholder="Fighter Name"
+          matInput
+          [formControl]="inventoryControl"
+          [matAutocomplete]="auto"/>
+      <mat-autocomplete #auto="matAutocomplete">
+          <mat-option
+              *ngFor="let name of filteredCardNames | async"
+              [value]="name"
+              (onSelectionChange)="selectName(name)">
+          <strong>{{name}}</strong>
+          </mat-option>
+      </mat-autocomplete>
+    </mat-form-field>
+
+    <mat-grid-list  *ngIf="filteredCards.length" [cols]="cols" rowHeight="150px" gutterSize="20px">
+      <mat-grid-tile *ngFor="let card of filteredCards">
+        <app-player-card [card]=card style="width:100%"></app-player-card>
+      </mat-grid-tile>
+    </mat-grid-list>
+    <h3 *ngIf="!filteredCards.length" style="color: white">No Matching Items</h3>
+
+  </mat-drawer-container>
 </div>

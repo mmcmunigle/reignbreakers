@@ -9,6 +9,9 @@
                 <h5>{{card.team}}</h5>
                 <h5>&nbsp;&nbsp;#{{card.edition}}</h5>
             </div>
+            <div>
+                <h4 class="clickable"><i>{{card.event?.name || " "}}</i></h4>
+            </div>
             <div style="display: flex">
                 <h4 class="card-property">Cost: ${{card.purchase}}</h4>
                 <h4 class="card-property" [ngClass]="{'gain': card.diff > 0, 'loss': card.diff <= 0}">Market: ${{card.market}}</h4>

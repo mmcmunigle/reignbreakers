@@ -22,7 +22,7 @@ export class CollectionService implements OnInit {
   fighterCardsOwned(fighter: string, set_name: string = '') {
     let cards = []
     if (this.collection) {
-      cards = this.collection.map((card:any) => card).filter((card: any) => card.name == fighter);
+      cards = this.collection.map((card: any) => card).filter((card: any) => card.name == fighter);
     }
     if (set_name) {
       cards = cards.filter((card: any) => card.set_name == set_name);

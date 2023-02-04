@@ -43,7 +43,7 @@ def process_cards(cards):
              merchandise[name][rarity][set_name] = {}
 
         merchandise[name][rarity][set_name] = {
-            'price': int(card['lowestListedEditionPrice']),
+            'price': round(card['lowestListedEditionPrice'], 2),
             'quantity': card['quantity'],
             'link': link,
             'division': attributes.get('division'),
