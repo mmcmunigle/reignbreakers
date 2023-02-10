@@ -1,39 +1,54 @@
 <div id="inventory-dashboard">
-  <app-collection-overview [collection]="filteredCards"></app-collection-overview>
-  
-  <mat-drawer-container class="collection-container" autosize>
-    <mat-drawer #drawer class="sidenav-filter" mode="over">
-      <app-card-filter (cardFilterChange)="updateFilters($event)"></app-card-filter>
+  <mat-drawer-container class="collection-container" autosize hasBackdrop="false">
+    <mat-drawer #drawer class="sidenav-filter" mode="over" [(opened)]="filterOpened">
+      <app-card-filter 
+        (cardFilterChange)="updateFilters($event)"
+        (closeClicked)="closeFilters()">
+      </app-card-filter>
     </mat-drawer>
 
-    <button type="button" mat-button (click)="drawer.toggle()">
-      <mat-icon>menu</mat-icon>
-    </button>
+  <app-collection-overview [collection]="filteredCards"></app-collection-overview>
 
-    <mat-form-field class="name-lookup" appearance="outline">
-      <mat-label>Search By Name</mat-label>
-      <input
-          type="text"
-          placeholder="Fighter Name"
-          matInput
-          [formControl]="inventoryControl"
-          [matAutocomplete]="auto"/>
-      <mat-autocomplete #auto="matAutocomplete">
-          <mat-option
-              *ngFor="let name of filteredCardNames | async"
-              [value]="name"
-              (onSelectionChange)="selectName(name)">
-          <strong>{{name}}</strong>
-          </mat-option>
-      </mat-autocomplete>
-    </mat-form-field>
+    <div id="flex-container">
+      <button type="button" mat-button (click)="drawer.toggle()" >
+        <mat-icon>menu</mat-icon> Filters
+      </button>
+  
+      <mat-form-field id="name-lookup" appearance="outline">
+          <mat-label>Search By Name</mat-label>
+          <mat-chip-list #chipList aria-label="Fruit selection">
+            <mat-chip
+              *ngFor="let name of selectedNames"
+              selectable="true"
+              removable="true"
+              (removed)="removeName(name)">
+              {{name}}
+              <button matChipRemove>
+                <mat-icon>cancel</mat-icon>
+              </button>
+            </mat-chip>
+            <input
+              placeholder="Search By Name..."
+              #nameInput
+              [formControl]="nameControl"
+              [matAutocomplete]="auto"
+              [matChipInputFor]="chipList"
+              (matChipInputTokenEnd)="addName($event)">
+          </mat-chip-list>
+        <mat-autocomplete #auto="matAutocomplete" autoActiveFirstOption="tre" (optionSelected)="nameSelected($event)">
+            <mat-option *ngFor="let name of filteredCardNames | async" [value]="name" >
+            <strong>{{name}}</strong>
+            </mat-option>
+        </mat-autocomplete>
+      </mat-form-field>
+    </div>
 
     <mat-grid-list  *ngIf="filteredCards.length" [cols]="cols" rowHeight="150px" gutterSize="20px">
       <mat-grid-tile *ngFor="let card of filteredCards">
         <app-player-card [card]=card style="width:100%"></app-player-card>
       </mat-grid-tile>
     </mat-grid-list>
-    <h3 *ngIf="!filteredCards.length" style="color: white">No Matching Items</h3>
+    <h3 *ngIf="!filteredCards.length" style="color: white; height: 800px;">No Matching Items</h3>
 
   </mat-drawer-container>
 </div>

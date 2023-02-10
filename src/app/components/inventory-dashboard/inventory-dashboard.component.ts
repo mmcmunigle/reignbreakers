@@ -1,5 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { FormControl } from '@angular/forms';
+import { MatAutocompleteSelectedEvent } from '@angular/material/autocomplete';
+import { MatChipInputEvent } from '@angular/material/chips';
 import { Observable, of } from 'rxjs';
 import { debounceTime, switchMap } from 'rxjs/operators';
 import { PlayerCard } from 'src/app/interfaces/player-card';
@@ -11,13 +13,17 @@ import { ReignmakerApiService } from 'src/app/services/api.service';
   styleUrls: ['./inventory-dashboard.component.scss']
 })
 export class InventoryDashboardComponent implements OnInit {
-  inventoryControl = new FormControl();
-  cards: PlayerCard[] = [];
-  filteredCards: PlayerCard[] = [];
-  filteredCardNames?: Observable<any>;
-  selectedName?: string;
-  cols = "0";
-  filters: any = {
+  public cols = "0";
+  public menuOpen: boolean = false;
+  public nameControl = new FormControl();
+  public cards: PlayerCard[] = [];
+  public filteredCards: PlayerCard[] = [];
+  public names: string[] = [];
+  public filteredCardNames?: Observable<any>;
+  public filterOpened: boolean = false;
+  public selectedNames: string[] = []; 
+
+  private filters: any = {
     sportsFilter: 'ufc',
     cardTypeFilter: 'all',
     eventFilter: 'all',
@@ -28,13 +34,11 @@ export class InventoryDashboardComponent implements OnInit {
     showElite: true,
     showLegendary: true,
     showReignmaker: true,
-
   };
-  public menuOpen: boolean = false;
 
-  constructor(
-    public apiService: ReignmakerApiService,
-  ) {}
+  @ViewChild('nameInput') nameInput: ElementRef<HTMLInputElement>;
+
+  constructor(public apiService: ReignmakerApiService) {}
 
   ngOnInit(): void {
     this.apiService.getInventory()
@@ -49,30 +53,48 @@ export class InventoryDashboardComponent implements OnInit {
       this.setCols();
     }, 500);
 
-    this.filteredCardNames = this.inventoryControl.valueChanges.pipe(
+    this.filteredCardNames = this.nameControl.valueChanges.pipe(
       debounceTime(200),
       switchMap((value: string) => {
-        const matchingCards = this.cards
-          .filter(card => {
-            return card.name?.toLowerCase()?.includes(value?.toLowerCase());
+        const matches = this.names
+          .filter(name => {
+            return name?.toLowerCase()?.includes(value?.toLowerCase());
           });
+        
         const matchingNames = new Set()
-        matchingCards.forEach((card: PlayerCard) => matchingNames.add(card.name));
+        matches.forEach((name) => matchingNames.add(name));
         return of(matchingNames);
-      }));
+      }
+    ));
   }
   
-  selectName(name: string) {
-    this.selectedName = name;
+  nameSelected(event: MatAutocompleteSelectedEvent) {
+    this.selectedNames.push(event.option.viewValue);
+    this.nameInput.nativeElement.value = '';
+    this.nameControl.setValue(null);
     this.applyFilters();
   }
 
-  openMenu() {
-    this.menuOpen = true;
+  addName(event: MatChipInputEvent): void {
+    const value = (event.value || '').trim();
+
+    if (value && this.names?.includes(value)) {
+      this.selectedNames.push(value);
+      this.applyFilters();
+    }
+
+    event.chipInput!.clear();
+    this.nameControl.setValue(null);
   }
 
-  menuOpenChange(openned: boolean) {
-    this.menuOpen = openned;
+
+  removeName(name: string): void {
+    const index = this.selectedNames.indexOf(name);
+
+    if (index >= 0) {
+      this.selectedNames.splice(index, 1);
+      this.applyFilters();
+    }
   }
 
   setCols() {
@@ -83,6 +105,10 @@ export class InventoryDashboardComponent implements OnInit {
     }else {
       this.cols = "3";
     }
+  }
+
+  closeFilters() {
+    this.filterOpened = false;
   }
 
   applyFilters() {
@@ -98,7 +124,7 @@ export class InventoryDashboardComponent implements OnInit {
     };
 
     this.filteredCards = this.filteredCards.filter((card: any) => {
-      return this.selectedName ? card.name === this.selectedName : true;
+      return this.selectedNames.length ? this.selectedNames.includes(card.name) : true;
     });
 
     switch (this.filters.cardTypeFilter) {
@@ -154,6 +180,8 @@ export class InventoryDashboardComponent implements OnInit {
         this.filteredCards.sort((a: any, b: any) => (a.diff < b.diff) ? 1 : -1);
         break;
     };
+
+    this.names = this.cards.map(card => card.name);
   }
 
   updateFilters(newFilters: any) {

@@ -6,8 +6,8 @@ import { UfcEventsComponent } from './components/ufc-events/ufc-events.component
 
 const routes: Routes = [
   { path: 'events', component: UfcEventsComponent },
-  { path: '', component: ContestsComponent },
-  { path: 'inventory', component: InventoryDashboardComponent }
+  { path: 'contests', component: ContestsComponent },
+  { path: '', component: InventoryDashboardComponent }
 ];
 
 @NgModule({

@@ -2,24 +2,34 @@ mat-grid-list {
   margin: 0px 20px;
 }
 
-mat-chip-list {
-  margin: 5px 10px;
-}
-
-mat-form-field {
-  width: 100px;
-  padding-bottom: 0px;
-}
-
-::ng-deep .mat-form-field-wrapper{
-  margin-bottom: -1.25em;
-}
-
 .collection-container {
   background: none;
   margin-top: 10px;
 }
 
-.name-lookup {
-  width: 200px;
+#name-lookup {
+  width: 80%;
+  margin-right: 20px;
+}
+
+#flex-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+#flex-container>button:first-child {
+  flex: 1;
+  text-align: left;
+}
+
+#flex-container::after {
+  content: "";
+  flex: 1;
+}
+
+::ng-deep #flex-container .mat-form-field-wrapper {
+  padding: 0px !important;
 }

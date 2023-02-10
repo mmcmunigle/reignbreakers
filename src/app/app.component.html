@@ -1,18 +1,8 @@
 <mat-toolbar color="primary">
-    <mat-menu #actionsMenu="matMenu">
-        <a mat-menu-item>
-          Events
-        </a>
-        <a mat-menu-item>
-          Contests
-        </a>
-    </mat-menu>
-    <button mat-icon-button 
-            aria-label="Navigation"
-            [matMenuTriggerFor]="actionsMenu">
-        <mat-icon>menu</mat-icon>
-    </button>
-    <span>ReignBreakers</span>
+    <span id="title"><i><b>REIGNBREAKER</b></i></span>
+    <button mat-button [routerLink]="['']">Inventory</button>
+    <button mat-button [routerLink]="['events']">Events</button>
+    <button mat-button [routerLink]="['contests']">Contests</button>
     <span class="nav-spacer"></span>
     <input class="username userkey" type="text" placeholder="userkey">
     <input class="username" type="text" placeholder="username">

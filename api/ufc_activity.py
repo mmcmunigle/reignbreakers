@@ -21,7 +21,7 @@ def check_activity():
         key = transaction['merchandiseKey']
         amount = transaction['amount']
         edition = transaction['editionNumber']
-        if key + str(amount) in SEEN_CeARDS:
+        if key + str(amount) in SEEN_CARDS:
             print("Repeat Card Found")
             return
         SEEN_CARDS.add(key + str(amount))
@@ -36,22 +36,12 @@ def check_activity():
             elif attribute['name'] == 'Set Name':
                 set_name = attribute['value']
 
-        if set_name == "UFC Fight Night 1.14.23":
-            if (rarity == 'Core' and int(amount) < 0.5
-                or rarity == 'Rare' and int(amount) < 5.0
-                or rarity == 'Elite' and int(amount) < 20.0
-                or rarity == 'Legendary' and int(amount) < 100.0
-                or rarity == 'Reignmaker' and int(amount) < 400.0):
-                print("Found a potential Fight Night card")
-            else:
-                continue
-
         if set_name == "Genesis":
             if (rarity == 'Core' and int(amount) < 2.0
-                or rarity == 'Rare' and int(amount) < 13.0
-                or rarity == 'Elite' and int(amount) < 75.0
-                or rarity == 'Legendary' and int(amount) < 300.0
-                or rarity == 'Reignmaker' and int(amount) < 800.0):
+                or rarity == 'Rare' and int(amount) < 9.0
+                or rarity == 'Elite' and int(amount) < 50.0
+                or rarity == 'Legendary' and int(amount) < 150.0
+                or rarity == 'Reignmaker' and int(amount) < 500.0):
                 print("Found a potential Fight Night card")
             else:
                 continue

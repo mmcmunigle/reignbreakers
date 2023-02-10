@@ -8,13 +8,18 @@
     }
 }
 
-.nav-spacer {
-    flex: 1 1 auto;
-  }
-
 mat-toolbar {
     margin-bottom: 15px;
 }
+
+#title {
+    margin-right: 20px;
+    font-size: 24px;
+}
+
+.nav-spacer {
+    flex: 1 1 auto;
+  }
 
 .username {
     background-color: black;
