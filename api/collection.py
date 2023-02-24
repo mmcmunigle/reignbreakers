@@ -16,10 +16,12 @@ class Collection:
         for card in response.json()['collectibleEditions']:
             cards.append(card)
 
-        self.all_collectables = process_cards(cards, market)
+        lineup_cards = {}
+
+        self.all_collectables = process_cards(cards, market, lineup_cards)
 
 
-def process_cards(cards, market):
+def process_cards(cards, market, lineup_cards):
     """process a number of ids, storing the results in a dict"""
     collectables = []
     for card in cards:
@@ -27,14 +29,21 @@ def process_cards(cards, market):
         ckey = card['collectibleKey']
         edition = card['editionNumber']
         rarity = attributes['rarity_tier'].lower()
-        set_name = attributes['set_name']
+        set_name = attributes.get('set_name')
 
+        if not set_name:
+            print(attributes)
         name = attributes.get('athlete_name')
         if not name:
             name = card['name']
 
-        if market.get(name):
+        market_data = market_price = diff = diff_p = None
+        if market.get(name) and set_name:
             market_data = market[name][rarity].get(set_name, None)
+        
+        lineup = True if lineup_cards.get(f"{ckey}{edition}") else False
+        if lineup:
+            print(f"LINEUP: {name}")
 
         purchase_price = card.get('purchasePrice', 0)
 
@@ -49,6 +58,7 @@ def process_cards(cards, market):
             'thumbnailUrl': card.get('thumbnailUrl'),
             'rarity': rarity,
             'set_name': set_name,
+            'lineup': lineup,
             'team': attributes.get('team') if attributes.get('team') else 'UFC',
             'position': attributes.get('position') if attributes.get('position') else None,
             'purchase': card.get('purchasePrice', 0),
@@ -61,6 +71,28 @@ def process_cards(cards, market):
 
     return collectables
 
+
+def get_current_lineups():
+    lineup_url = "https://api.draftkings.com/nftgames/v1/lineups/users/4278d426-173a-4c2c-826d-045a7424859f/entries/nft/upcomingandlive?format=json&includeUpcoming=True&includeLive=True"
+    resp = requests.get(lineup_url)
+    if not resp.ok:
+        print("Failed to get lineup informatin")
+        print(resp.text)
+        resp = LINEUPS
+    else:
+        resp = resp.json()
+    
+    cards_in_lineups = {}
+    entries = resp['contests']['upcomingContestEntries']
+    for entry in entries:
+        for card in entry['draftedCollectibleEditions']:
+            card_id = card['collectibleEditionIdentifier'].replace('-','')
+            cards_in_lineups[card_id] = {
+                'gameKey': card['gameKey'],
+                'status': card['competitionSummaries']['competitionStatus']
+            }
+    print(cards_in_lineups)
+    return cards_in_lineups
 
 def parse_attributes(card):
     attributes = {}

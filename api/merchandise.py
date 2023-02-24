@@ -6,7 +6,7 @@ import requests
 
 class UFCMerchandise:
     def __init__(self):
-        self.merchandise_url = "https://marketplace.draftkings.com/collection/8b8f14fb451944aca580a1e6bcb95cd4/merchandise?offset=0&limit=50000&orderByType=ListDate&selectedValueIdsByAttributeId=%7B%7D&collectionKey=8b8f14fb451944aca580a1e6bcb95cd4&isDescending=true&resultType=Collectible&rangeFilterValuesByAttributeId=%7B%7D&_data=routes%2F__main%2Fcollection%2F%24collectionKey%2Fmerchandise"
+        self.merchandise_url = "https://marketplace.draftkings.com/fetcher/8b8f14fb451944aca580a1e6bcb95cd4/merchandise?offset=0&limit=50000&orderByType=ListDate&collectionKey=8b8f14fb451944aca580a1e6bcb95cd4&isDescending=true&resultType=Collectible&rangeFilterValuesByAttributeId=%7B%7D&_data=routes%2F__main%2Ffetcher%2F%24collectionKey%2Fmerchandise"
         self.merchandise = {}
 
     def update_merchandise(self):

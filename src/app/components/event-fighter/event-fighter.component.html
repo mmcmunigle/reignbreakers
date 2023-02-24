@@ -1,7 +1,7 @@
 <mat-card>
     <mat-card-content style="display:flex">
-        <h2 class="name">{{fighter.name}}</h2>
-        <h4 class="odds">{{fighter.odds}}</h4>
+        <h3 class="name">{{fighter.name}}</h3>
+        <h4 class="odds">{{fighter.odds || fighter.vote}}</h4>
         <h3 class="sales-property common" matBadge="{{collected.core}}" matBadgeColor="primary">
             <a *ngIf="core?.price" href="{{core.link}}" target="_blank">{{core.price}}</a>
         </h3>

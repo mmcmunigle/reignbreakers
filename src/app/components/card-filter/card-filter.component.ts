@@ -29,7 +29,7 @@ export class CardFilterComponent implements OnInit {
     this.apiService.getUfcEvents()
     .subscribe((events: any) => {
       events.forEach((event: any) => {
-        this.events.push(event.name)
+        this.events.push(event.title)
       });
     });
   }

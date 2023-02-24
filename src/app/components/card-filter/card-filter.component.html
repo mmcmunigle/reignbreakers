@@ -100,11 +100,14 @@
   <mat-form-field class="filter-group filter-selector" appearance="fill">
     <mat-label>Set</mat-label>
     <mat-select [(value)]="setFilter" (selectionChange)="setSetFilter($event.value)">
+      <mat-option value="Genesis">All</mat-option>
       <mat-option value="Genesis">Genesis</mat-option>
       <mat-option value="Heatwave">Heatwave</mat-option>
-      <mat-option value="UFC 283">UFC 283</mat-option>
-      <mat-option value="UFC Fight Night 2.4.23">Fight Night 2.4.23</mat-option>
+      <mat-option value="UFC Fight Night 2.25.23">Fight Night 2.25.23</mat-option>
+      <mat-option value="UFC Fight Night 2.18.23">Fight Night 2.18.23</mat-option>
       <mat-option value="UFC 284">UFC 284</mat-option>
+      <mat-option value="UFC Fight Night 2.4.23">Fight Night 2.4.23</mat-option>
+      <mat-option value="UFC 283">UFC 283</mat-option>
     </mat-select>
   </mat-form-field>
 

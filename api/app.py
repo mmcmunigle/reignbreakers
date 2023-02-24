@@ -14,7 +14,7 @@ api = Blueprint('api', __name__)
 
 my_collection = Collection('goober321')
 ufc_market = UFCMerchandise()
-
+events_file = "./events.json"
 
 @api.after_request
 def after_request(response):
@@ -26,14 +26,14 @@ def after_request(response):
 
 @api.route('/inventory', methods=['GET'])
 def get_inventory():
-    with open('./ufc_events.json') as events_file:
-        events =  json.load(events_file)
+    with open(events_file) as f:
+        events =  json.load(f)
         fighters = {}
         for event in events:
             for matchup in event['matchups']:
                 for fighter in matchup:
                     fighters[fighter['name']] = {
-                        'name': event['name'],
+                        'name': event['title'],
                         'date': event['date'],
                     }
         for card in my_collection.all_collectables:
@@ -50,8 +50,8 @@ def get_ufc_market_data():
 
 @api.route('/ufc_events', methods=['GET'])
 def get_ufc_events():
-    with open('./ufc_events.json') as events_file:
-        events =  json.load(events_file)
+    with open(events_file) as f:
+        events =  json.load(f)
         for event in events:
             for matchup in event['matchups']:
                 for fighter in matchup:

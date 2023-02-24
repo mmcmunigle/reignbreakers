@@ -1,195 +1,5 @@
 [
     {
-        "name": "UFC 284",
-        "date": "February 11th",
-        "type": "UFC",
-        "payout": 125000,
-        "matchups": [
-            [
-                {
-                    "name": "Islam Makhachev",
-                    "record": "0-0-0",
-                    "odds": "-375",
-                    "card": "N/A"
-                },
-                {
-                    "name": "Alexander Volkanovski",
-                    "record": "0-0-0",
-                    "odds": "+300",
-                    "card": "N/A"
-                }
-            ],
-            [
-                {
-                    "name": "Yair Rodriguez",
-                    "record": "0-0-0",
-                    "odds": "-165",
-                    "card": "N/A"
-                },
-                {
-                    "name": "Josh Emmett",
-                    "record": "0-0-0",
-                    "odds": "+140",
-                    "card": "N/A"
-                }
-            ],
-            [
-                {
-                    "name": "Jack Della Maddalena",
-                    "record": "0-0-0",
-                    "odds": "-325",
-                    "card": "N/A"
-                },
-                {
-                    "name": "Randy Brown",
-                    "record": "0-0-0",
-                    "odds": "+270",
-                    "card": "N/A"
-                }
-            ],
-            [
-                {
-                    "name": "Justin Tafa",
-                    "record": "0-0-0",
-                    "odds": "-140",
-                    "card": "N/A"
-                },
-                {
-                    "name": "Parker Porter",
-                    "record": "0-0-0",
-                    "odds": "+120",
-                    "card": "N/A"
-                }
-            ],
-            [
-                {
-                    "name": "Jim Crute",
-                    "record": "0-0-0",
-                    "odds": "-225",
-                    "card": "N/A"
-                },
-                {
-                    "name": "Alonzo Menifield",
-                    "record": "0-0-0",
-                    "odds": "+185",
-                    "card": "N/A"
-                }
-            ],
-            [
-                {
-                    "name": "Tyson Pedro",
-                    "record": "0-0-0",
-                    "odds": "-240",
-                    "card": "N/A"
-                },
-                {
-                    "name": "Modestas Bukauskas",
-                    "record": "0-0-0",
-                    "odds": "+200",
-                    "card": "N/A"
-                }
-            ],
-            [
-                {
-                    "name": "Joshua Culibao",
-                    "record": "0-0-0",
-                    "odds": "-110",
-                    "card": "N/A"
-                },
-                {
-                    "name": "Melsik Baghdasaryan",
-                    "record": "0-0-0",
-                    "odds": "-110",
-                    "card": "N/A"
-                }
-            ],
-            [
-                {
-                    "name": "Kleidison Rodrigues",
-                    "record": "0-0-0",
-                    "odds": "-280",
-                    "card": "N/A"
-                },
-                {
-                    "name": "Shannon Ross",
-                    "record": "0-0-0",
-                    "odds": "+235",
-                    "card": "N/A"
-                }
-            ],
-            [
-                {
-                    "name": "Jamie Mullarkey",
-                    "record": "0-0-0",
-                    "odds": "-255",
-                    "card": "N/A"
-                },
-                {
-                    "name": "Francisco Prado",
-                    "record": "0-0-0",
-                    "odds": "+215",
-                    "card": "N/A"
-                }
-            ],
-            [
-                {
-                    "name": "Jack Jenkins",
-                    "record": "0-0-0",
-                    "odds": "-320",
-                    "card": "N/A"
-                },
-                {
-                    "name": "Don Shainis",
-                    "record": "0-0-0",
-                    "odds": "+265",
-                    "card": "N/A"
-                }
-            ],
-            [
-                {
-                    "name": "Loma Lookboonmee",
-                    "record": "0-0-0",
-                    "odds": "-275",
-                    "card": "N/A"
-                },
-                {
-                    "name": "Elise Reed",
-                    "record": "0-0-0",
-                    "odds": "+230",
-                    "card": "N/A"
-                }
-            ],
-            [
-                {
-                    "name": "Shane Young",
-                    "record": "0-0-0",
-                    "odds": "-135",
-                    "card": "N/A"
-                },
-                {
-                    "name": "Blake Bilder",
-                    "record": "0-0-0",
-                    "odds": "+115",
-                    "card": "N/A"
-                }
-            ],
-            [
-                {
-                    "name": "Zubaira Tukhugov",
-                    "record": "0-0-0",
-                    "odds": "-500",
-                    "card": "N/A"
-                },
-                {
-                    "name": "Elves Brenner",
-                    "record": "0-0-0",
-                    "odds": "+400",
-                    "card": "N/A"
-                }
-            ]
-        ]
-    },
-    {
         "name": "UFC FN 219 Las Vegas ",
         "date": "February 18th",
         "type": "UFC",
@@ -197,198 +7,361 @@
         "matchups": [
             [
                 {
-                    "name": "Marlon Vera",
+                    "name": "Jessica Andrade",
                     "record": "0-0-0",
-                    "odds": "N/A",
-                    "card": "N/A"
-                },
-                {
-                    "name": "Cory Sandhagen",
-                    "record": "0-0-0",
-                    "odds": "N/A",
-                    "card": "N/A"
-                }
-            ],
-            [
-                {
-                    "name": "Taila Santos",
-                    "record": "0-0-0",
-                    "odds": "N/A",
-                    "card": "N/A"
+                    "odds": "-190",
+                    "card": ""
                 },
                 {
                     "name": "Erin Blanchfield",
                     "record": "0-0-0",
-                    "odds": "N/A",
-                    "card": "N/A"
+                    "odds": "+155",
+                    "card": ""
                 }
             ],
             [
+                {
+                    "name": "Mayra Bueno",
+                    "record": "0-0-0",
+                    "odds": "-400",
+                    "card": ""
+                },
                 {
                     "name": "Lina Lansberg",
                     "record": "0-0-0",
-                    "odds": "N/A",
-                    "card": "N/A"
-                },
-                {
-                    "name": "Mayra Bueno Silva",
-                    "record": "0-0-0",
-                    "odds": "N/A",
-                    "card": "N/A"
+                    "odds": "+300",
+                    "card": ""
                 }
+                
             ],
             [
+                {
+                    "name": "Alex Hernandez",
+                    "record": "0-0-0",
+                    "odds": "-235",
+                    "card": ""
+                },
                 {
                     "name": "Jim Miller",
                     "record": "0-0-0",
-                    "odds": "N/A",
-                    "card": "N/A"
-                },
-                {
-                    "name": "Gabriel Benitez",
-                    "record": "0-0-0",
-                    "odds": "N/A",
-                    "card": "N/A"
+                    "odds": "+200",
+                    "card": ""
                 }
             ],
             [
-                {
-                    "name": "Joe Solecki",
-                    "record": "0-0-0",
-                    "odds": "N/A",
-                    "card": "N/A"
-                },
-                {
-                    "name": "Beno\u00eet St. Denis",
-                    "record": "0-0-0",
-                    "odds": "N/A",
-                    "card": "N/A"
-                }
-            ],
-            [
-                {
-                    "name": "Ovince St.Preux",
-                    "record": "0-0-0",
-                    "odds": "N/A",
-                    "card": "N/A"
-                },
                 {
                     "name": "Philipe Lins",
                     "record": "0-0-0",
-                    "odds": "N/A",
-                    "card": "N/A"
+                    "odds": "-225",
+                    "card": ""
+                },
+                {
+                    "name": "Ovince Saint Preux",
+                    "record": "0-0-0",
+                    "odds": "+190",
+                    "card": ""
                 }
             ],
             [
-                {
-                    "name": "Jamall Emmers",
-                    "record": "0-0-0",
-                    "odds": "N/A",
-                    "card": "N/A"
-                },
                 {
                     "name": "Khusein Askhabov",
                     "record": "0-0-0",
-                    "odds": "N/A",
-                    "card": "N/A"
+                    "odds": "-135",
+                    "card": ""
+                },
+                {
+                    "name": "Jamall Emmers",
+                    "record": "0-0-0",
+                    "odds": "+115",
+                    "card": ""
                 }
             ],
             [
-                {
-                    "name": "William Knight",
-                    "record": "0-0-0",
-                    "odds": "N/A",
-                    "card": "N/A"
-                },
                 {
                     "name": "Marcin Prachnio",
                     "record": "0-0-0",
-                    "odds": "N/A",
-                    "card": "N/A"
+                    "odds": "-120",
+                    "card": ""
+                },
+                {
+                    "name": "William Knight",
+                    "record": "0-0-0",
+                    "odds": "-110",
+                    "card": ""
                 }
             ],
             [
-                {
-                    "name": "Ramiz Brahimaj",
-                    "record": "0-0-0",
-                    "odds": "N/A",
-                    "card": "N/A"
-                },
-                {
-                    "name": "Carlston Harris",
-                    "record": "0-0-0",
-                    "odds": "N/A",
-                    "card": "N/A"
-                }
-            ],
-            [
-                {
-                    "name": "Jordan Wright",
-                    "record": "0-0-0",
-                    "odds": "N/A",
-                    "card": "N/A"
-                },
                 {
                     "name": "Zac Pauga",
                     "record": "0-0-0",
-                    "odds": "N/A",
-                    "card": "N/A"
+                    "odds": "-300",
+                    "card": ""
+                },
+                {
+                    "name": "Jordan Wright",
+                    "record": "0-0-0",
+                    "odds": "+250",
+                    "card": ""
                 }
             ],
             [
-                {
-                    "name": "Josh Parisian",
-                    "record": "0-0-0",
-                    "odds": "N/A",
-                    "card": "N/A"
-                },
                 {
                     "name": "Jamal Pogues",
                     "record": "0-0-0",
-                    "odds": "N/A",
-                    "card": "N/A"
+                    "odds": "-230",
+                    "card": ""
+                },
+                {
+                    "name": "Josh Parisian",
+                    "record": "0-0-0",
+                    "odds": "+163",
+                    "card": ""
                 }
             ],
             [
-                {
-                    "name": "Evan Elder",
-                    "record": "0-0-0",
-                    "odds": "N/A",
-                    "card": "N/A"
-                },
                 {
                     "name": "Nazim Sadykhov",
                     "record": "0-0-0",
-                    "odds": "N/A",
-                    "card": "N/A"
+                    "odds": "-175",
+                    "card": ""
+                },
+                {
+                    "name": "Evan Elder",
+                    "record": "0-0-0",
+                    "odds": "+140",
+                    "card": ""
                 }
             ],
             [
-                {
-                    "name": "Juancamilo Ronderos",
-                    "record": "0-0-0",
-                    "odds": "N/A",
-                    "card": "N/A"
-                },
                 {
                     "name": "Clayton Carpenter",
                     "record": "0-0-0",
-                    "odds": "N/A",
-                    "card": "N/A"
+                    "odds": "-290",
+                    "card": ""
+                },
+                {
+                    "name": "Juancamilo Ronderos",
+                    "record": "0-0-0",
+                    "odds": "+235",
+                    "card": ""
                 }
             ],
             [
                 {
-                    "name": "Themba Gorimbo",
-                    "record": "0-0-0",
-                    "odds": "N/A",
-                    "card": "N/A"
-                },
-                {
                     "name": "AJ Fletcher",
                     "record": "0-0-0",
-                    "odds": "N/A",
-                    "card": "N/A"
+                    "odds": "-250",
+                    "card": ""
+                },
+                {
+                    "name": "Themba Gorimbo",
+                    "record": "0-0-0",
+                    "odds": "+200",
+                    "card": ""
+                } 
+            ]
+        ]
+    },
+    {
+        "name": "UFC FN 220 Las Vegas ",
+        "date": "February 25th",
+        "type": "UFC",
+        "payout": 125000,
+        "matchups": [
+            [
+                {
+                    "name": "Nikita Krylov",
+                    "record": "0-0-0",
+                    "odds": "-155",
+                    "card": ""
+                },
+                {
+                    "name": "Ryan Spann",
+                    "record": "0-0-0",
+                    "odds": "+135",
+                    "card": ""
+                }
+            ],
+            [
+                {
+                    "name": "Andre Muniz",
+                    "record": "0-0-0",
+                    "odds": "-130",
+                    "card": ""
+                },
+                {
+                    "name": "Brendan Allen",
+                    "record": "0-0-0",
+                    "odds": "+100",
+                    "card": ""
+                }
+            ],
+            [
+                {
+                    "name": "Tatiana Suarez",
+                    "record": "0-0-0",
+                    "odds": "-400",
+                    "card": ""
+                },
+                {
+                    "name": "Montana De La Rosa",
+                    "record": "0-0-0",
+                    "odds": "+270",
+                    "card": ""
+                }
+            ],
+            [
+                {
+                    "name": "Andre Fili",
+                    "record": "0-0-0",
+                    "odds": "-140",
+                    "card": ""
+                },
+                {
+                    "name": "Lucas Almeida",
+                    "record": "0-0-0",
+                    "odds": "+105",
+                    "card": ""
+                }
+            ],
+            [
+                {
+                    "name": "Augusto Sakai",
+                    "record": "0-0-0",
+                    "odds": "",
+                    "card": ""
+                },
+                {
+                    "name": "Don'Tale Mayes",
+                    "record": "0-0-0",
+                    "odds": "",
+                    "card": ""
+                }
+            ],
+            [
+                {
+                    "name": "Nurullo Aliev",
+                    "record": "0-0-0",
+                    "odds": "-333",
+                    "card": ""
+                },
+                {
+                    "name": "Rafael Alves",
+                    "record": "0-0-0",
+                    "odds": "+230",
+                    "card": ""
+                }
+            ],
+            [
+                {
+                    "name": "Ode' Osbourne",
+                    "record": "0-0-0",
+                    "odds": "-172",
+                    "card": ""
+                },
+                {
+                    "name": "Denys Bondar",
+                    "record": "0-0-0",
+                    "odds": "+130",
+                    "card": ""
+                }
+            ],
+            [
+                {
+                    "name": "Jasmine Jasudavicius",
+                    "record": "0-0-0",
+                    "odds": "",
+                    "card": ""
+                },
+                {
+                    "name": "Gabriella Fernandes",
+                    "record": "0-0-0",
+                    "odds": "",
+                    "card": ""
+                }
+            ],
+            [
+                {
+                    "name": "Mike Malott",
+                    "record": "0-0-0",
+                    "odds": "",
+                    "card": ""
+                },
+                {
+                    "name": "Yohan Lainesse",
+                    "record": "0-0-0",
+                    "odds": "",
+                    "card": ""
+                }
+            ],
+            [
+                {
+                    "name": "Jordan Leavitt",
+                    "record": "0-0-0",
+                    "odds": "-190",
+                    "card": ""
+                },
+                {
+                    "name": "Victor Martinez",
+                    "record": "0-0-0",
+                    "odds": "+140",
+                    "card": ""
+                }
+            ],
+            [
+                {
+                    "name": "Darrius Flowers",
+                    "record": "0-0-0",
+                    "odds": "-265",
+                    "card": ""
+                },
+                {
+                    "name": "Erick Gonzalez",
+                    "record": "0-0-0",
+                    "odds": "+190",
+                    "card": ""
+                }
+            ],
+            [
+                {
+                    "name": "Hailey Cowan",
+                    "record": "0-0-0",
+                    "odds": "-190",
+                    "card": ""
+                },
+                {
+                    "name": "Ailin Perez",
+                    "record": "0-0-0",
+                    "odds": "+140",
+                    "card": ""
+                }
+            ],
+            [
+                {
+                    "name": "Alex Reyes",
+                    "record": "0-0-0",
+                    "odds": "",
+                    "card": ""
+                },
+                {
+                    "name": "Trevor Peek",
+                    "record": "0-0-0",
+                    "odds": "",
+                    "card": ""
+                }
+            ],
+            [
+                {
+                    "name": "Jose Johnson",
+                    "record": "0-0-0",
+                    "odds": "-235",
+                    "card": ""
+                },
+                {
+                    "name": "Garrett Armfield",
+                    "record": "0-0-0",
+                    "odds": "+170",
+                    "card": ""
                 }
             ]
         ]
@@ -404,13 +377,13 @@
                     "name": "Jon Jones",
                     "record": "0-0-0",
                     "odds": "-145",
-                    "card": "N/A"
+                    "card": ""
                 },
                 {
                     "name": "Ciryl Gane",
                     "record": "0-0-0",
                     "odds": "+120",
-                    "card": "N/A"
+                    "card": ""
                 }
             ],
             [
@@ -418,27 +391,27 @@
                     "name": "Valentina Shevchenko",
                     "record": "0-0-0",
                     "odds": "-600",
-                    "card": "N/A"
+                    "card": ""
                 },
                 {
                     "name": "Alexa Grasso",
                     "record": "0-0-0",
-                    "odds": "450",
-                    "card": "N/A"
+                    "odds": "+450",
+                    "card": ""
                 }
             ],
             [
                 {
-                    "name": "Geoff Neal",
-                    "record": "0-0-0",
-                    "odds": "+350",
-                    "card": "N/A"
-                },
-                {
                     "name": "Shavkat Rakhmonov",
                     "record": "0-0-0",
                     "odds": "-435",
-                    "card": "N/A"
+                    "card": ""
+                },
+                {
+                    "name": "Geoff Neal",
+                    "record": "0-0-0",
+                    "odds": "+350",
+                    "card": ""
                 }
             ],
             [
@@ -446,153 +419,155 @@
                     "name": "Bo Nickal",
                     "record": "0-0-0",
                     "odds": "-455",
-                    "card": "N/A"
+                    "card": ""
                 },
                 {
                     "name": "Jamie Pickett",
                     "record": "0-0-0",
                     "odds": "+300",
-                    "card": "N/A"
+                    "card": ""
                 }
             ],
             [
+                {
+                    "name": "Mateusz Gamrot ",
+                    "record": "0-0-0",
+                    "odds": "-200",
+                    "card": ""
+                },
                 {
                     "name": "Jalin Turner",
                     "record": "0-0-0",
-                    "odds": "N/A",
-                    "card": "N/A"
-                },
-                {
-                    "name": "Dan Hooker",
-                    "record": "0-0-0",
-                    "odds": "N/A",
-                    "card": "N/A"
+                    "odds": "+180",
+                    "card": ""
                 }
+
             ],
             [
-                {
-                    "name": "Derek Brunson",
-                    "record": "0-0-0",
-                    "odds": "N/A",
-                    "card": "N/A"
-                },
                 {
                     "name": "Dricus Du Plessis",
                     "record": "0-0-0",
-                    "odds": "N/A",
-                    "card": "N/A"
+                    "odds": "-190",
+                    "card": ""
+                },
+                {
+                    "name": "Derek Brunson",
+                    "record": "0-0-0",
+                    "odds": "+180",
+                    "card": ""
                 }
+                
             ],
             [
                 {
-                    "name": "Viviane Araujo",
-                    "record": "0-0-0",
-                    "odds": "N/A",
-                    "card": "N/A"
-                },
-                {
                     "name": "Amanda Ribas",
                     "record": "0-0-0",
-                    "odds": "N/A",
-                    "card": "N/A"
+                    "odds": "-250",
+                    "card": ""
+                },
+                {
+                    "name": "Viviane Araujo",
+                    "record": "0-0-0",
+                    "odds": "+180",
+                    "card": ""
                 }
             ],
             [
                 {
                     "name": "Cody Garbrandt",
                     "record": "0-0-0",
-                    "odds": "N/A",
-                    "card": "N/A"
+                    "odds": "-250",
+                    "card": ""
                 },
                 {
-                    "name": "Julio Arce",
+                    "name": "Trevin Jones",
                     "record": "0-0-0",
-                    "odds": "N/A",
-                    "card": "N/A"
+                    "odds": "+190",
+                    "card": ""
                 }
             ],
             [
                 {
                     "name": "Ian Garry Machado",
                     "record": "0-0-0",
-                    "odds": "N/A",
-                    "card": "N/A"
+                    "odds": "",
+                    "card": ""
                 },
                 {
                     "name": "Song Kenan",
                     "record": "0-0-0",
-                    "odds": "N/A",
-                    "card": "N/A"
+                    "odds": "",
+                    "card": ""
                 }
             ],
             [
                 {
                     "name": "Jessica Penne",
                     "record": "0-0-0",
-                    "odds": "N/A",
-                    "card": "N/A"
+                    "odds": "",
+                    "card": ""
                 },
                 {
                     "name": "Tabatha Ricci",
                     "record": "0-0-0",
-                    "odds": "N/A",
-                    "card": "N/A"
+                    "odds": "",
+                    "card": ""
                 }
             ],
             [
                 {
                     "name": "Julian Marquez",
                     "record": "0-0-0",
-                    "odds": "N/A",
-                    "card": "N/A"
+                    "odds": "",
+                    "card": ""
                 },
                 {
                     "name": "Marc",
                     "record": "0-0-0",
-                    "odds": "N/A",
-                    "card": "N/A"
+                    "odds": "",
+                    "card": ""
                 }
             ],
             [
                 {
                     "name": "Mana Martinez",
                     "record": "0-0-0",
-                    "odds": "N/A",
-                    "card": "N/A"
+                    "odds": "",
+                    "card": ""
                 },
                 {
                     "name": "Cameron Saaiman",
                     "record": "0-0-0",
-                    "odds": "N/A",
-                    "card": "N/A"
+                    "odds": "",
+                    "card": ""
                 }
             ],
             [
                 {
                     "name": "Kamuela Kirk",
                     "record": "0-0-0",
-                    "odds": "N/A",
-                    "card": "N/A"
+                    "odds": "",
+                    "card": ""
                 },
                 {
                     "name": "Esteban Ribovics",
                     "record": "0-0-0",
-                    "odds": "N/A",
-                    "card": "N/A"
+                    "odds": "",
+                    "card": ""
                 }
             ],
             [
                 {
                     "name": "Da'Mon Blackshear",
                     "record": "0-0-0",
-                    "odds": "N/A",
-                    "card": "N/A"
+                    "odds": "",
+                    "card": ""
                 },
                 {
                     "name": "Farid Basharat",
                     "record": "0-0-0",
-                    "odds": "N/A",
-                    "card": "N/A"
+                    "odds": "",
+                    "card": ""
                 }
             ]
         ]
@@ -607,168 +582,182 @@
                 {
                     "name": "Petr Yan",
                     "record": "0-0-0",
-                    "odds": "N/A",
-                    "card": "N/A"
+                    "odds": "-188",
+                    "card": ""
                 },
                 {
                     "name": "Merab Dvalishvili",
                     "record": "0-0-0",
-                    "odds": "N/A",
-                    "card": "N/A"
+                    "odds": "+147",
+                    "card": ""
                 }
             ],
             [
                 {
                     "name": "Alexander Volkov",
                     "record": "0-0-0",
-                    "odds": "N/A",
-                    "card": "N/A"
+                    "odds": "",
+                    "card": ""
                 },
                 {
                     "name": "Alexandr Romanov",
                     "record": "0-0-0",
-                    "odds": "N/A",
-                    "card": "N/A"
+                    "odds": "",
+                    "card": ""
                 }
             ],
             [
                 {
                     "name": "Ricardo Ramos",
                     "record": "0-0-0",
-                    "odds": "N/A",
-                    "card": "N/A"
+                    "odds": "",
+                    "card": ""
                 },
                 {
                     "name": "Austin Lingo",
                     "record": "0-0-0",
-                    "odds": "N/A",
-                    "card": "N/A"
+                    "odds": "",
+                    "card": ""
+                }
+            ],
+            [
+                {
+                    "name": "Abubakar Nurmagomedov",
+                    "record": "0-0-0",
+                    "odds": "",
+                    "card": ""
+                },
+                {
+                    "name": "Carlston Harris",
+                    "record": "0-0-0",
+                    "odds": "",
+                    "card": ""
                 }
             ],
             [
                 {
                     "name": "Raphael Assun\u00e7\u00e3o",
                     "record": "0-0-0",
-                    "odds": "N/A",
-                    "card": "N/A"
+                    "odds": "",
+                    "card": ""
                 },
                 {
                     "name": "Kyler Phillips",
                     "record": "0-0-0",
-                    "odds": "N/A",
-                    "card": "N/A"
+                    "odds": "",
+                    "card": ""
                 }
             ],
             [
                 {
                     "name": "Vitor Petrino",
                     "record": "0-0-0",
-                    "odds": "N/A",
-                    "card": "N/A"
+                    "odds": "",
+                    "card": ""
                 },
                 {
                     "name": "Anton Turkalj",
                     "record": "0-0-0",
-                    "odds": "N/A",
-                    "card": "N/A"
+                    "odds": "",
+                    "card": ""
                 }
             ],
             [
                 {
                     "name": "Karl Williams",
                     "record": "0-0-0",
-                    "odds": "N/A",
-                    "card": "N/A"
+                    "odds": "",
+                    "card": ""
                 },
                 {
                     "name": "Lukasz Brzeski",
                     "record": "0-0-0",
-                    "odds": "N/A",
-                    "card": "N/A"
+                    "odds": "",
+                    "card": ""
                 }
             ],
             [
                 {
                     "name": "Mario Bautista",
                     "record": "0-0-0",
-                    "odds": "N/A",
-                    "card": "N/A"
+                    "odds": "",
+                    "card": ""
                 },
                 {
                     "name": "Guido Cannetti",
                     "record": "0-0-0",
-                    "odds": "N/A",
-                    "card": "N/A"
+                    "odds": "",
+                    "card": ""
                 }
             ],
             [
                 {
                     "name": "Said Nurmagomedov",
                     "record": "0-0-0",
-                    "odds": "N/A",
-                    "card": "N/A"
+                    "odds": "",
+                    "card": ""
                 },
                 {
                     "name": "Jonathan Martinez",
                     "record": "0-0-0",
-                    "odds": "N/A",
-                    "card": "N/A"
+                    "odds": "",
+                    "card": ""
                 }
             ],
             [
                 {
                     "name": "Victor Henry",
                     "record": "0-0-0",
-                    "odds": "N/A",
-                    "card": "N/A"
+                    "odds": "",
+                    "card": ""
                 },
                 {
                     "name": "Tony Gravely",
                     "record": "0-0-0",
-                    "odds": "N/A",
-                    "card": "N/A"
+                    "odds": "",
+                    "card": ""
                 }
             ],
             [
                 {
                     "name": "Sedriques Dumas",
                     "record": "0-0-0",
-                    "odds": "N/A",
-                    "card": "N/A"
+                    "odds": "",
+                    "card": ""
                 },
                 {
                     "name": "Abu Azaitar",
                     "record": "0-0-0",
-                    "odds": "N/A",
-                    "card": "N/A"
+                    "odds": "",
+                    "card": ""
                 }
             ],
             [
                 {
                     "name": "Ariane Lipski",
                     "record": "0-0-0",
-                    "odds": "N/A",
-                    "card": "N/A"
+                    "odds": "",
+                    "card": ""
                 },
                 {
                     "name": "JJ Aldrich",
                     "record": "0-0-0",
-                    "odds": "N/A",
-                    "card": "N/A"
+                    "odds": "",
+                    "card": ""
                 }
             ],
             [
                 {
                     "name": "Tyson Nam",
                     "record": "0-0-0",
-                    "odds": "N/A",
-                    "card": "N/A"
+                    "odds": "",
+                    "card": ""
                 },
                 {
                     "name": "Bruno Silva",
                     "record": "0-0-0",
-                    "odds": "N/A",
-                    "card": "N/A"
+                    "odds": "",
+                    "card": ""
                 }
             ]
         ]
@@ -783,414 +772,210 @@
                 {
                     "name": "Leon Edwards",
                     "record": "0-0-0",
-                    "odds": "N/A",
-                    "card": "N/A"
+                    "odds": "",
+                    "card": ""
                 },
                 {
                     "name": "Kamaru Usman",
                     "record": "0-0-0",
-                    "odds": "N/A",
-                    "card": "N/A"
+                    "odds": "",
+                    "card": ""
                 }
             ],
             [
                 {
                     "name": "Justin Gaethje",
                     "record": "0-0-0",
-                    "odds": "N/A",
-                    "card": "N/A"
+                    "odds": "",
+                    "card": ""
                 },
                 {
                     "name": "Rafael Fiziev",
                     "record": "0-0-0",
-                    "odds": "N/A",
-                    "card": "N/A"
+                    "odds": "",
+                    "card": ""
                 }
             ],
             [
                 {
                     "name": "Marvin Vettori",
                     "record": "0-0-0",
-                    "odds": "N/A",
-                    "card": "N/A"
+                    "odds": "-150",
+                    "card": ""
                 },
                 {
                     "name": "Roman Dolidze",
                     "record": "0-0-0",
-                    "odds": "N/A",
-                    "card": "N/A"
+                    "odds": "+140",
+                    "card": ""
                 }
             ],
             [
                 {
                     "name": "Jennifer Maia",
                     "record": "0-0-0",
-                    "odds": "N/A",
-                    "card": "N/A"
+                    "odds": "",
+                    "card": ""
                 },
                 {
                     "name": "Casey O'Neill",
                     "record": "0-0-0",
-                    "odds": "N/A",
-                    "card": "N/A"
+                    "odds": "",
+                    "card": ""
                 }
             ],
             [
                 {
                     "name": "Muhammad Mokaev",
                     "record": "0-0-0",
-                    "odds": "N/A",
-                    "card": "N/A"
+                    "odds": "",
+                    "card": ""
                 },
                 {
                     "name": "Jafel Filho",
                     "record": "0-0-0",
-                    "odds": "N/A",
-                    "card": "N/A"
+                    "odds": "",
+                    "card": ""
                 }
             ],
             [
                 {
                     "name": "Gunnar Nelson",
                     "record": "0-0-0",
-                    "odds": "N/A",
-                    "card": "N/A"
+                    "odds": "",
+                    "card": ""
                 },
                 {
                     "name": "Daniel Rodriguez",
                     "record": "0-0-0",
-                    "odds": "N/A",
-                    "card": "N/A"
+                    "odds": "",
+                    "card": ""
                 }
             ],
             [
                 {
                     "name": "Jack Shore",
                     "record": "0-0-0",
-                    "odds": "N/A",
-                    "card": "N/A"
+                    "odds": "",
+                    "card": ""
                 },
                 {
                     "name": "Makwan Amirkhani",
                     "record": "0-0-0",
-                    "odds": "N/A",
-                    "card": "N/A"
+                    "odds": "",
+                    "card": ""
                 }
             ],
             [
                 {
                     "name": "Joanne Wood",
                     "record": "0-0-0",
-                    "odds": "N/A",
-                    "card": "N/A"
+                    "odds": "",
+                    "card": ""
                 },
                 {
                     "name": "Luana Carolina",
                     "record": "0-0-0",
-                    "odds": "N/A",
-                    "card": "N/A"
+                    "odds": "",
+                    "card": ""
                 }
             ],
             [
                 {
                     "name": "Nathaniel Wood",
                     "record": "0-0-0",
-                    "odds": "N/A",
-                    "card": "N/A"
+                    "odds": "",
+                    "card": ""
                 },
                 {
                     "name": "Lerone Murphy",
                     "record": "0-0-0",
-                    "odds": "N/A",
-                    "card": "N/A"
+                    "odds": "",
+                    "card": ""
                 }
             ],
             [
                 {
                     "name": "Jai Herbert",
                     "record": "0-0-0",
-                    "odds": "N/A",
-                    "card": "N/A"
+                    "odds": "",
+                    "card": ""
                 },
                 {
                     "name": "Ludov\u00edt Klein",
                     "record": "0-0-0",
-                    "odds": "N/A",
-                    "card": "N/A"
+                    "odds": "",
+                    "card": ""
                 }
             ],
             [
                 {
                     "name": "Jake Hadley",
                     "record": "0-0-0",
-                    "odds": "N/A",
-                    "card": "N/A"
+                    "odds": "",
+                    "card": ""
                 },
                 {
                     "name": "Malcolm Gordon",
                     "record": "0-0-0",
-                    "odds": "N/A",
-                    "card": "N/A"
+                    "odds": "",
+                    "card": ""
                 }
             ],
             [
                 {
                     "name": "Juliana Miller",
                     "record": "0-0-0",
-                    "odds": "N/A",
-                    "card": "N/A"
+                    "odds": "",
+                    "card": ""
                 },
                 {
                     "name": "Veronica Macedo",
                     "record": "0-0-0",
-                    "odds": "N/A",
-                    "card": "N/A"
+                    "odds": "",
+                    "card": ""
                 }
             ],
             [
                 {
                     "name": "Christian Leroy Duncan",
                     "record": "0-0-0",
-                    "odds": "N/A",
-                    "card": "N/A"
+                    "odds": "",
+                    "card": ""
                 },
                 {
                     "name": "Dusko Todorovic",
                     "record": "0-0-0",
-                    "odds": "N/A",
-                    "card": "N/A"
+                    "odds": "",
+                    "card": ""
                 }
             ],
             [
                 {
                     "name": "Sam Patterson",
                     "record": "0-0-0",
-                    "odds": "N/A",
-                    "card": "N/A"
+                    "odds": "",
+                    "card": ""
                 },
                 {
                     "name": "Yanal Ashmoz",
                     "record": "0-0-0",
-                    "odds": "N/A",
-                    "card": "N/A"
+                    "odds": "",
+                    "card": ""
                 }
             ],
             [
                 {
                     "name": "Chris Duncan",
                     "record": "0-0-0",
-                    "odds": "N/A",
-                    "card": "N/A"
+                    "odds": "",
+                    "card": ""
                 },
                 {
                     "name": "TBA",
                     "record": "0-0-0",
-                    "odds": "N/A",
-                    "card": "N/A"
-                }
-            ]
-        ]
-    },
-    {
-        "name": "UFC FN 220 Las Vegas ",
-        "date": "February 25th",
-        "type": "UFC",
-        "payout": 125000,
-        "matchups": [
-            [
-                {
-                    "name": "Nikita Krylov",
-                    "record": "0-0-0",
-                    "odds": "N/A",
-                    "card": "N/A"
-                },
-                {
-                    "name": "Ryan Spann",
-                    "record": "0-0-0",
-                    "odds": "N/A",
-                    "card": "N/A"
-                }
-            ],
-            [
-                {
-                    "name": "Andre Muniz",
-                    "record": "0-0-0",
-                    "odds": "N/A",
-                    "card": "N/A"
-                },
-                {
-                    "name": "Brendan Allen",
-                    "record": "0-0-0",
-                    "odds": "N/A",
-                    "card": "N/A"
-                }
-            ],
-            [
-                {
-                    "name": "Tatiana Suarez",
-                    "record": "0-0-0",
-                    "odds": "N/A",
-                    "card": "N/A"
-                },
-                {
-                    "name": "Montana De La Rosa",
-                    "record": "0-0-0",
-                    "odds": "N/A",
-                    "card": "N/A"
-                }
-            ],
-            [
-                {
-                    "name": "Andre Fili",
-                    "record": "0-0-0",
-                    "odds": "N/A",
-                    "card": "N/A"
-                },
-                {
-                    "name": "Lucas Almeida",
-                    "record": "0-0-0",
-                    "odds": "N/A",
-                    "card": "N/A"
-                }
-            ],
-            [
-                {
-                    "name": "Augusto Sakai",
-                    "record": "0-0-0",
-                    "odds": "N/A",
-                    "card": "N/A"
-                },
-                {
-                    "name": "Don'Tale Mayes",
-                    "record": "0-0-0",
-                    "odds": "N/A",
-                    "card": "N/A"
-                }
-            ],
-            [
-                {
-                    "name": "Rafael Alves",
-                    "record": "0-0-0",
-                    "odds": "N/A",
-                    "card": "N/A"
-                },
-                {
-                    "name": "Nurullo Aliev",
-                    "record": "0-0-0",
-                    "odds": "N/A",
-                    "card": "N/A"
-                }
-            ],
-            [
-                {
-                    "name": "Ode' Osbourne",
-                    "record": "0-0-0",
-                    "odds": "N/A",
-                    "card": "N/A"
-                },
-                {
-                    "name": "Denys Bondar",
-                    "record": "0-0-0",
-                    "odds": "N/A",
-                    "card": "N/A"
-                }
-            ],
-            [
-                {
-                    "name": "Jasmine Jasudavicius",
-                    "record": "0-0-0",
-                    "odds": "N/A",
-                    "card": "N/A"
-                },
-                {
-                    "name": "Gabriella Fernandes",
-                    "record": "0-0-0",
-                    "odds": "N/A",
-                    "card": "N/A"
-                }
-            ],
-            [
-                {
-                    "name": "Mike Malott",
-                    "record": "0-0-0",
-                    "odds": "N/A",
-                    "card": "N/A"
-                },
-                {
-                    "name": "Yohan Lainesse",
-                    "record": "0-0-0",
-                    "odds": "N/A",
-                    "card": "N/A"
-                }
-            ],
-            [
-                {
-                    "name": "Jordan Leavitt",
-                    "record": "0-0-0",
-                    "odds": "N/A",
-                    "card": "N/A"
-                },
-                {
-                    "name": "Victor Martinez",
-                    "record": "0-0-0",
-                    "odds": "N/A",
-                    "card": "N/A"
-                }
-            ],
-            [
-                {
-                    "name": "Erick Gonzalez",
-                    "record": "0-0-0",
-                    "odds": "N/A",
-                    "card": "N/A"
-                },
-                {
-                    "name": "Darrius Flowers",
-                    "record": "0-0-0",
-                    "odds": "N/A",
-                    "card": "N/A"
-                }
-            ],
-            [
-                {
-                    "name": "Hailey Cowan",
-                    "record": "0-0-0",
-                    "odds": "N/A",
-                    "card": "N/A"
-                },
-                {
-                    "name": "Ail\u00edn P\u00e9rez",
-                    "record": "0-0-0",
-                    "odds": "N/A",
-                    "card": "N/A"
-                }
-            ],
-            [
-                {
-                    "name": "Alex Reyes",
-                    "record": "0-0-0",
-                    "odds": "N/A",
-                    "card": "N/A"
-                },
-                {
-                    "name": "Trevor Peek",
-                    "record": "0-0-0",
-                    "odds": "N/A",
-                    "card": "N/A"
-                }
-            ],
-            [
-                {
-                    "name": "Jos\u00e9 Johnson",
-                    "record": "0-0-0",
-                    "odds": "N/A",
-                    "card": "N/A"
-                },
-                {
-                    "name": "Garrett Armfield",
-                    "record": "0-0-0",
-                    "odds": "N/A",
-                    "card": "N/A"
+                    "odds": "",
+                    "card": ""
                 }
             ]
         ]
@@ -1203,156 +988,170 @@
         "matchups": [
             [
                 {
+                    "name": "Cory Sandhagen",
+                    "record": "0-0-0",
+                    "odds": "-200",
+                    "card": ""
+                },
+                {
+                    "name": "Marlon Vera",
+                    "record": "0-0-0",
+                    "odds": "+170",
+                    "card": ""
+                }
+            ],
+            [
+                {
                     "name": "Raquel Pennington",
                     "record": "0-0-0",
-                    "odds": "N/A",
-                    "card": "N/A"
+                    "odds": "",
+                    "card": ""
                 },
                 {
                     "name": "Irene Aldana",
                     "record": "0-0-0",
-                    "odds": "N/A",
-                    "card": "N/A"
+                    "odds": "",
+                    "card": ""
                 }
             ],
             [
                 {
                     "name": "Holly Holm",
                     "record": "0-0-0",
-                    "odds": "N/A",
-                    "card": "N/A"
+                    "odds": "",
+                    "card": ""
                 },
                 {
                     "name": "Yana Kunitskaya",
                     "record": "0-0-0",
-                    "odds": "N/A",
-                    "card": "N/A"
+                    "odds": "",
+                    "card": ""
                 }
             ],
             [
                 {
                     "name": "Alex Perez",
                     "record": "0-0-0",
-                    "odds": "N/A",
-                    "card": "N/A"
+                    "odds": "",
+                    "card": ""
                 },
                 {
                     "name": "Manel Kape",
                     "record": "0-0-0",
-                    "odds": "N/A",
-                    "card": "N/A"
+                    "odds": "",
+                    "card": ""
                 }
             ],
             [
                 {
                     "name": "Sean Brady",
                     "record": "0-0-0",
-                    "odds": "N/A",
-                    "card": "N/A"
+                    "odds": "",
+                    "card": ""
                 },
                 {
                     "name": "Michel Pereira",
                     "record": "0-0-0",
-                    "odds": "N/A",
-                    "card": "N/A"
+                    "odds": "",
+                    "card": ""
                 }
             ],
             [
                 {
                     "name": "Andrea Lee",
                     "record": "0-0-0",
-                    "odds": "N/A",
-                    "card": "N/A"
+                    "odds": "",
+                    "card": ""
                 },
                 {
                     "name": "Maycee Barber",
                     "record": "0-0-0",
-                    "odds": "N/A",
-                    "card": "N/A"
+                    "odds": "",
+                    "card": ""
                 }
             ],
             [
                 {
                     "name": "Alex Caceres",
                     "record": "0-0-0",
-                    "odds": "N/A",
-                    "card": "N/A"
+                    "odds": "",
+                    "card": ""
                 },
                 {
                     "name": "Nate Landwehr",
                     "record": "0-0-0",
-                    "odds": "N/A",
-                    "card": "N/A"
+                    "odds": "",
+                    "card": ""
                 }
             ],
             [
                 {
                     "name": "Chidi Njokuani",
                     "record": "0-0-0",
-                    "odds": "N/A",
-                    "card": "N/A"
+                    "odds": "",
+                    "card": ""
                 },
                 {
                     "name": "Albert Duraev",
                     "record": "0-0-0",
-                    "odds": "N/A",
-                    "card": "N/A"
+                    "odds": "",
+                    "card": ""
                 }
             ],
             [
                 {
                     "name": "Trevin Giles",
                     "record": "0-0-0",
-                    "odds": "N/A",
-                    "card": "N/A"
+                    "odds": "",
+                    "card": ""
                 },
                 {
                     "name": "Preston Parsons",
                     "record": "0-0-0",
-                    "odds": "N/A",
-                    "card": "N/A"
+                    "odds": "",
+                    "card": ""
                 }
             ],
             [
                 {
                     "name": "Steven Peterson",
                     "record": "0-0-0",
-                    "odds": "N/A",
-                    "card": "N/A"
+                    "odds": "",
+                    "card": ""
                 },
                 {
                     "name": "Lucas Alexander",
                     "record": "0-0-0",
-                    "odds": "N/A",
-                    "card": "N/A"
+                    "odds": "",
+                    "card": ""
                 }
             ],
             [
                 {
                     "name": "Daniel Pineda",
                     "record": "0-0-0",
-                    "odds": "N/A",
-                    "card": "N/A"
+                    "odds": "",
+                    "card": ""
                 },
                 {
                     "name": "Tucker Lutz",
                     "record": "0-0-0",
-                    "odds": "N/A",
-                    "card": "N/A"
+                    "odds": "",
+                    "card": ""
                 }
             ],
             [
                 {
                     "name": "CJ Vergara",
                     "record": "0-0-0",
-                    "odds": "N/A",
-                    "card": "N/A"
+                    "odds": "",
+                    "card": ""
                 },
                 {
                     "name": "Daniel da Silva",
                     "record": "0-0-0",
-                    "odds": "N/A",
-                    "card": "N/A"
+                    "odds": "",
+                    "card": ""
                 }
             ]
         ]
@@ -1367,126 +1166,126 @@
                 {
                     "name": "Alex Pereira",
                     "record": "0-0-0",
-                    "odds": "N/A",
-                    "card": "N/A"
+                    "odds": "",
+                    "card": ""
                 },
                 {
                     "name": "Israel Adesanya",
                     "record": "0-0-0",
-                    "odds": "N/A",
-                    "card": "N/A"
+                    "odds": "",
+                    "card": ""
                 }
             ],
             [
                 {
                     "name": "Gilbert Burns",
                     "record": "0-0-0",
-                    "odds": "N/A",
-                    "card": "N/A"
+                    "odds": "",
+                    "card": ""
                 },
                 {
                     "name": "Jorge Masvidal",
                     "record": "0-0-0",
-                    "odds": "N/A",
-                    "card": "N/A"
+                    "odds": "",
+                    "card": ""
                 }
             ],
             [
                 {
                     "name": "Raul Rosas Jr.",
                     "record": "0-0-0",
-                    "odds": "N/A",
-                    "card": "N/A"
+                    "odds": "",
+                    "card": ""
                 },
                 {
                     "name": "Christian Rodriguez",
                     "record": "0-0-0",
-                    "odds": "N/A",
-                    "card": "N/A"
+                    "odds": "",
+                    "card": ""
                 }
             ],
             [
                 {
                     "name": "Kevin Holland",
                     "record": "0-0-0",
-                    "odds": "N/A",
-                    "card": "N/A"
+                    "odds": "",
+                    "card": ""
                 },
                 {
                     "name": "Santiago Ponzinibbio",
                     "record": "0-0-0",
-                    "odds": "N/A",
-                    "card": "N/A"
+                    "odds": "",
+                    "card": ""
                 }
             ],
             [
                 {
                     "name": "Kelvin Gastelum",
                     "record": "0-0-0",
-                    "odds": "N/A",
-                    "card": "N/A"
+                    "odds": "",
+                    "card": ""
                 },
                 {
                     "name": "Chris Curtis",
                     "record": "0-0-0",
-                    "odds": "N/A",
-                    "card": "N/A"
+                    "odds": "",
+                    "card": ""
                 }
             ],
             [
                 {
                     "name": "Michelle Waterson",
                     "record": "0-0-0",
-                    "odds": "N/A",
-                    "card": "N/A"
+                    "odds": "",
+                    "card": ""
                 },
                 {
                     "name": "Luana Pinheiro",
                     "record": "0-0-0",
-                    "odds": "N/A",
-                    "card": "N/A"
+                    "odds": "",
+                    "card": ""
                 }
             ],
             [
                 {
                     "name": "Cynthia Calvillo",
                     "record": "0-0-0",
-                    "odds": "N/A",
-                    "card": "N/A"
+                    "odds": "",
+                    "card": ""
                 },
                 {
                     "name": "Loopy Godinez",
                     "record": "0-0-0",
-                    "odds": "N/A",
-                    "card": "N/A"
+                    "odds": "",
+                    "card": ""
                 }
             ],
             [
                 {
                     "name": "Gerald Meerschaert",
                     "record": "0-0-0",
-                    "odds": "N/A",
-                    "card": "N/A"
+                    "odds": "",
+                    "card": ""
                 },
                 {
                     "name": "Joe Pyfer",
                     "record": "0-0-0",
-                    "odds": "N/A",
-                    "card": "N/A"
+                    "odds": "",
+                    "card": ""
                 }
             ],
             [
                 {
                     "name": "Steve Garcia Jr.",
                     "record": "0-0-0",
-                    "odds": "N/A",
-                    "card": "N/A"
+                    "odds": "",
+                    "card": ""
                 },
                 {
                     "name": "Shayilan Nuerdanbieke",
                     "record": "0-0-0",
-                    "odds": "N/A",
-                    "card": "N/A"
+                    "odds": "",
+                    "card": ""
                 }
             ]
         ]
@@ -1501,154 +1300,154 @@
                 {
                     "name": "Pedro Munhoz",
                     "record": "0-0-0",
-                    "odds": "N/A",
-                    "card": "N/A"
+                    "odds": "",
+                    "card": ""
                 },
                 {
                     "name": "Chris Gutierrez",
                     "record": "0-0-0",
-                    "odds": "N/A",
-                    "card": "N/A"
+                    "odds": "",
+                    "card": ""
                 }
             ],
             [
                 {
                     "name": "Edson Barboza",
                     "record": "0-0-0",
-                    "odds": "N/A",
-                    "card": "N/A"
+                    "odds": "",
+                    "card": ""
                 },
                 {
                     "name": "Billy Quarantillo",
                     "record": "0-0-0",
-                    "odds": "N/A",
-                    "card": "N/A"
+                    "odds": "",
+                    "card": ""
                 }
             ],
             [
                 {
                     "name": "Dustin Jacoby",
                     "record": "0-0-0",
-                    "odds": "N/A",
-                    "card": "N/A"
+                    "odds": "",
+                    "card": ""
                 },
                 {
                     "name": "Azamat Murzakanov",
                     "record": "0-0-0",
-                    "odds": "N/A",
-                    "card": "N/A"
+                    "odds": "",
+                    "card": ""
                 }
             ],
             [
                 {
                     "name": "Lando Vannata",
                     "record": "0-0-0",
-                    "odds": "N/A",
-                    "card": "N/A"
+                    "odds": "",
+                    "card": ""
                 },
                 {
                     "name": "Daniel Zellhuber",
                     "record": "0-0-0",
-                    "odds": "N/A",
-                    "card": "N/A"
+                    "odds": "",
+                    "card": ""
                 }
             ],
             [
                 {
                     "name": "Batgerel Danaa",
                     "record": "0-0-0",
-                    "odds": "N/A",
-                    "card": "N/A"
+                    "odds": "",
+                    "card": ""
                 },
                 {
                     "name": "Brady Hiestand",
                     "record": "0-0-0",
-                    "odds": "N/A",
-                    "card": "N/A"
+                    "odds": "",
+                    "card": ""
                 }
             ],
             [
                 {
                     "name": "Piera Rodriguez",
                     "record": "0-0-0",
-                    "odds": "N/A",
-                    "card": "N/A"
+                    "odds": "",
+                    "card": ""
                 },
                 {
                     "name": "Gillian Robertson",
                     "record": "0-0-0",
-                    "odds": "N/A",
-                    "card": "N/A"
+                    "odds": "",
+                    "card": ""
                 }
             ],
             [
                 {
                     "name": "TJ Brown",
                     "record": "0-0-0",
-                    "odds": "N/A",
-                    "card": "N/A"
+                    "odds": "",
+                    "card": ""
                 },
                 {
                     "name": "Bill Algeo",
                     "record": "0-0-0",
-                    "odds": "N/A",
-                    "card": "N/A"
+                    "odds": "",
+                    "card": ""
                 }
             ],
             [
                 {
                     "name": "Joselyne Edwards",
                     "record": "0-0-0",
-                    "odds": "N/A",
-                    "card": "N/A"
+                    "odds": "",
+                    "card": ""
                 },
                 {
                     "name": "Lucie Pudilov\u00e1",
                     "record": "0-0-0",
-                    "odds": "N/A",
-                    "card": "N/A"
+                    "odds": "",
+                    "card": ""
                 }
             ],
             [
                 {
                     "name": "Martin Buday",
                     "record": "0-0-0",
-                    "odds": "N/A",
-                    "card": "N/A"
+                    "odds": "",
+                    "card": ""
                 },
                 {
                     "name": "Jake Collier",
                     "record": "0-0-0",
-                    "odds": "N/A",
-                    "card": "N/A"
+                    "odds": "",
+                    "card": ""
                 }
             ],
             [
                 {
                     "name": "Gast\u00f3n Bola\u00f1os",
                     "record": "0-0-0",
-                    "odds": "N/A",
-                    "card": "N/A"
+                    "odds": "",
+                    "card": ""
                 },
                 {
                     "name": "Aaron Phillips",
                     "record": "0-0-0",
-                    "odds": "N/A",
-                    "card": "N/A"
+                    "odds": "",
+                    "card": ""
                 }
             ],
             [
                 {
                     "name": "Bruna Brasil",
                     "record": "0-0-0",
-                    "odds": "N/A",
-                    "card": "N/A"
+                    "odds": "",
+                    "card": ""
                 },
                 {
                     "name": "Denise Gomes",
                     "record": "0-0-0",
-                    "odds": "N/A",
-                    "card": "N/A"
+                    "odds": "",
+                    "card": ""
                 }
             ]
         ]
@@ -1663,70 +1462,84 @@
                 {
                     "name": "Song Yadong",
                     "record": "0-0-0",
-                    "odds": "N/A",
-                    "card": "N/A"
+                    "odds": "",
+                    "card": ""
                 },
                 {
-                    "name": "Ricky Sim\u00f3n",
+                    "name": "Ricky Simon",
                     "record": "0-0-0",
-                    "odds": "N/A",
-                    "card": "N/A"
+                    "odds": "",
+                    "card": ""
                 }
             ],
             [
                 {
                     "name": "Karol Rosa",
                     "record": "0-0-0",
-                    "odds": "N/A",
-                    "card": "N/A"
+                    "odds": "",
+                    "card": ""
                 },
                 {
                     "name": "Norma Dumont Bobby Green",
                     "record": "0-0-0",
-                    "odds": "N/A",
-                    "card": "N/A"
+                    "odds": "",
+                    "card": ""
                 }
             ],
             [
                 {
                     "name": "Priscila Cachoeira",
                     "record": "0-0-0",
-                    "odds": "N/A",
-                    "card": "N/A"
+                    "odds": "",
+                    "card": ""
                 },
                 {
                     "name": "Karine Silva",
                     "record": "0-0-0",
-                    "odds": "N/A",
-                    "card": "N/A"
+                    "odds": "",
+                    "card": ""
+                }
+            ],
+            [
+                {
+                    "name": "Marcin Prachnio ",
+                    "record": "0-0-0",
+                    "odds": "-125",
+                    "card": ""
+                },
+                {
+                    "name": "William Knight",
+                    "record": "0-0-0",
+                    "odds": "-105",
+                    "card": ""
                 }
             ],
             [
                 {
                     "name": "Francis Marshall",
                     "record": "0-0-0",
-                    "odds": "N/A",
-                    "card": "N/A"
+                    "odds": "",
+                    "card": ""
                 },
                 {
                     "name": "William Gomis",
                     "record": "0-0-0",
-                    "odds": "N/A",
-                    "card": "N/A"
+                    "odds": "",
+                    "card": ""
                 }
             ],
             [
                 {
                     "name": "lasmin Lucindo",
                     "record": "0-0-0",
-                    "odds": "N/A",
-                    "card": "N/A"
+                    "odds": "",
+                    "card": ""
                 },
                 {
                     "name": "Melissa Martinez",
                     "record": "0-0-0",
-                    "odds": "N/A",
-                    "card": "N/A"
+                    "odds": "",
+                    "card": ""
                 }
             ]
         ]
@@ -1741,14 +1554,14 @@
                 {
                     "name": "Natan Levy",
                     "record": "0-0-0",
-                    "odds": "N/A",
-                    "card": "N/A"
+                    "odds": "",
+                    "card": ""
                 },
                 {
                     "name": "Pete Rodriguez",
                     "record": "0-0-0",
-                    "odds": "N/A",
-                    "card": "N/A"
+                    "odds": "",
+                    "card": ""
                 }
             ]
         ]
@@ -1763,28 +1576,28 @@
                 {
                     "name": "Charles Oliveira",
                     "record": "0-0-0",
-                    "odds": "N/A",
-                    "card": "N/A"
+                    "odds": "",
+                    "card": ""
                 },
                 {
                     "name": "Beneil Dariush",
                     "record": "0-0-0",
-                    "odds": "N/A",
-                    "card": "N/A"
+                    "odds": "",
+                    "card": ""
                 }
             ],
             [
                 {
                     "name": "Khaos Williams",
                     "record": "0-0-0",
-                    "odds": "N/A",
-                    "card": "N/A"
+                    "odds": "",
+                    "card": ""
                 },
                 {
                     "name": "Rolando Bedoya",
                     "record": "0-0-0",
-                    "odds": "N/A",
-                    "card": "N/A"
+                    "odds": "",
+                    "card": ""
                 }
             ]
         ]

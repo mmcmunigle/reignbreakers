@@ -4,7 +4,7 @@
             <img src={{card.thumbnailUrl}}>
         </div>
         <div class="content">
-            <h2>{{card.name}}</h2>
+            <h2>{{card.name}} <h1 *ngIf="card.lineup">YEAH</h1></h2>
             <div style="display: flex; color: lightgray">
                 <h5>{{card.team}}</h5>
                 <h5>&nbsp;&nbsp;#{{card.edition}}</h5>
