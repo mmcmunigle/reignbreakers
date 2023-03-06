@@ -3,18 +3,19 @@
 import json
 
 from apscheduler.schedulers.background import BackgroundScheduler
-from flask import Blueprint, Flask, jsonify
+from flask import Blueprint, Flask, jsonify, make_response
 
 from collection import Collection
-from merchandise import UFCMerchandise
-from ufc_activity import check_activity
+from marketplace import UFCMarket, GolfMarket
+from ufc.ufc_activity import check_activity
 
 app = Flask(__name__)
 api = Blueprint('api', __name__)
 
 my_collection = Collection('goober321')
-ufc_market = UFCMerchandise()
-events_file = "./events.json"
+ufc_market = UFCMarket()
+golf_market = GolfMarket()
+events_file = "./ufc/events.json"
 
 @api.after_request
 def after_request(response):
@@ -24,7 +25,7 @@ def after_request(response):
     return response
 
 
-@api.route('/inventory', methods=['GET'])
+@api.route('/ufc-inventory', methods=['GET'])
 def get_inventory():
     with open(events_file) as f:
         events =  json.load(f)
@@ -36,19 +37,24 @@ def get_inventory():
                         'name': event['title'],
                         'date': event['date'],
                     }
-        for card in my_collection.all_collectables:
+        ufc_cards = my_collection.get_ufc()
+        for card in ufc_cards:
             if fighters.get(card['name'], None):
                 card['event'] = fighters[card['name']]
+    return jsonify(ufc_cards)
 
-    return jsonify(my_collection.all_collectables)
 
-
-@api.route('/ufc_market', methods=['GET'])
+@api.route('/ufc-market', methods=['GET'])
 def get_ufc_market_data():
     return jsonify(ufc_market.merchandise)
 
 
-@api.route('/ufc_events', methods=['GET'])
+@api.route('/golf-market', methods=['GET'])
+def get_golf_market_data():
+    return jsonify(golf_market.merchandise)
+
+
+@api.route('/ufc-events', methods=['GET'])
 def get_ufc_events():
     with open(events_file) as f:
         events =  json.load(f)
@@ -59,17 +65,28 @@ def get_ufc_events():
         return events
 
 
-@api.route('/ranked_fighters', methods=['GET'])
+@api.route('/ranked-fighters', methods=['GET'])
 def get_ranked_fighters():
     ranked_fighters = []
-    with open('./ranked_fighters.txt') as ranked_file:
-        fighter_names = ranked_file.read().splitlines()
-        for name in fighter_names:
+    with open('./ufc/ranked_fighters.txt') as ranked_file:
+        for name in ranked_file.read().splitlines():
             ranked_fighters.append({
                 'name': name,
                 'details': ufc_market.merchandise.get(name)
             })
         return jsonify(ranked_fighters)
+
+
+@api.route('/ranked-golfers', methods=['GET'])
+def get_ranked_golfers():
+    ranked_golfers = []
+    with open('./pga/ranked_golfers.txt') as ranked_file:
+        for name in ranked_file.read().splitlines():
+            ranked_golfers.append({
+                'name': name,
+                'details': golf_market.merchandise.get(name)
+            })
+        return jsonify(ranked_golfers)
 
 
 def update_collectables():
@@ -78,11 +95,12 @@ def update_collectables():
 
 def update_market_data():
     ufc_market.update_merchandise()
+    golf_market.update_merchandise()
 
 
 def initialize_app():
     scheduler = BackgroundScheduler({'apscheduler.job_defaults.max_instances': 50})
-    scheduler.add_job(check_activity, 'interval', seconds=5)
+    # scheduler.add_job(check_activity, 'interval', seconds=5)
     scheduler.add_job(update_collectables, 'interval', minutes=2)
     scheduler.add_job(update_market_data, 'interval', minutes=1)
     scheduler.start()
