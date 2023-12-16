@@ -49,8 +49,8 @@ def get_ufc_market_data():
     return jsonify(ufc_market.merchandise)
 
 
-@api.route('/golf-market', methods=['GET'])
-def get_golf_market_data():
+@api.route('/pga-market', methods=['GET'])
+def get_pga_market_data():
     return jsonify(golf_market.merchandise)
 
 
@@ -77,13 +77,19 @@ def get_ranked_fighters():
         return jsonify(ranked_fighters)
 
 
-@api.route('/ranked-golfers', methods=['GET'])
+@api.route('/pga-rankings', methods=['GET'])
 def get_ranked_golfers():
     ranked_golfers = []
-    with open('./pga/ranked_golfers.txt') as ranked_file:
-        for name in ranked_file.read().splitlines():
+    # wgr = {}
+    # with open('./pga/rankings.txt') as rankings_file:
+    #     for rank, name in enumerate(rankings_file.read().splitlines()):
+    #         wgr[name] = rank
+    with open('./pga/rankings.txt') as ranked_file:
+        for rank, name in enumerate(ranked_file.read().splitlines()):
             ranked_golfers.append({
                 'name': name,
+                'rank': rank + 1,
+                # 'wgr': wgr.get(name),
                 'details': golf_market.merchandise.get(name)
             })
         return jsonify(ranked_golfers)
@@ -91,10 +97,14 @@ def get_ranked_golfers():
 
 def update_collectables():
     my_collection.update_collection(ufc_market.merchandise)
+    my_collection.update_collection(golf_market.merchandise)
 
 
-def update_market_data():
+def update_ufc_market_data():
     ufc_market.update_merchandise()
+
+
+def update_golf_market_data():
     golf_market.update_merchandise()
 
 
@@ -102,10 +112,11 @@ def initialize_app():
     scheduler = BackgroundScheduler({'apscheduler.job_defaults.max_instances': 50})
     # scheduler.add_job(check_activity, 'interval', seconds=5)
     scheduler.add_job(update_collectables, 'interval', minutes=2)
-    scheduler.add_job(update_market_data, 'interval', minutes=1)
+    scheduler.add_job(update_ufc_market_data, 'interval', minutes=1)
+    scheduler.add_job(update_golf_market_data, 'interval', seconds=20)
     scheduler.start()
 
-    update_market_data()
+    update_golf_market_data()
     update_collectables()
 
     app.register_blueprint(api, url_prefix='/api')

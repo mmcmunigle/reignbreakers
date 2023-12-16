@@ -33,6 +33,7 @@ import { UfcEventsComponent } from './components/ufc-events/ufc-events.component
 import { CollectionCountPipe } from './pipes/collection-count.pipe';
 import { CollectionSpendPipe } from './pipes/collection-spend.pipe';
 import { CollectionValuePipe } from './pipes/collection-value.pipe';
+import { PgaRankingsComponent } from './components/pga-rankings/pga-rankings.component';
 
 @NgModule({
   declarations: [
@@ -46,7 +47,8 @@ import { CollectionValuePipe } from './pipes/collection-value.pipe';
     UfcEventsComponent,
     EventFighterComponent,
     ContestsComponent,
-    CardFilterComponent
+    CardFilterComponent,
+    PgaRankingsComponent
   ],
   imports: [
     BrowserModule,

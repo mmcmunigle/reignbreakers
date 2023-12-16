@@ -4,7 +4,7 @@ COLLECTION_KEYS = {
     'f226cd946f594de99b5c6aaf2ffcf4a0': 'pass',
     '8b8f14fb451944aca580a1e6bcb95cd4': 'ufc',
     '5eae2563006d4fe0ae1405a31567c60c': 'football',
-    '6972B16D088C41EA860B598B397AED5F': 'golf',
+    '6972b16d088c41ea860b598b397aed5f': 'golf',
 }
 
 
@@ -16,11 +16,14 @@ class Collection:
 
     def update_collection(self, market):
         response = requests.get(self.portfolio_url)
-        cards = []
-        for card in response.json()['collectibleEditions']:
-            cards.append(card)
+        if not response.ok:
+            print("COULD NOT GET PORTFOLIO DATA")
+            return
 
-        self.process_cards(cards, market)
+        self._all_collectables = []
+        for card in response.json()['collectibleEditions']:
+            self.process_cards(card, market)
+
 
     def get_all(self):
         return self._all_collectables
@@ -37,25 +40,23 @@ class Collection:
     def get_pass(self):
         return [card.__dict__ for card in self._all_collectables if card.type == 'pass']
 
-    def process_cards(self, cards, market):
-        """process a number of ids, storing the results in a dict"""
-        for card in cards:
-            collection_key = card['collectionKey']
+    def process_cards(self, card, market):
+        collection_key = card['collectionKey']
 
-            if (COLLECTION_KEYS.get(collection_key) == 'pass'):
-                collectable = Pass(card)
-            elif (COLLECTION_KEYS.get(collection_key) == 'ufc'):
-                collectable = UFCard(card)
-            elif (COLLECTION_KEYS.get(collection_key) == 'football'):
-                collectable = FootballCard(card)
-            elif (COLLECTION_KEYS.get(collection_key) == 'golf'):
-                collectable = GolfCard(card)
-            else:
-                collectable = Collectable(card)
-                print(f"Unsupported collection: {card['collectionName']}")
-            
-            collectable.add_market_data(market)
-            self._all_collectables.append(collectable)
+        if (COLLECTION_KEYS.get(collection_key) == 'pass'):
+            collectable = Pass(card)
+        elif (COLLECTION_KEYS.get(collection_key) == 'ufc'):
+            collectable = UFCard(card)
+        elif (COLLECTION_KEYS.get(collection_key) == 'football'):
+            collectable = FootballCard(card)
+        elif (COLLECTION_KEYS.get(collection_key) == 'golf'):
+            collectable = GolfCard(card)
+        else:
+            collectable = Collectable(card)
+            print(f"Unsupported collection: {card['collectionName']}")
+        
+        collectable.add_market_data(market)
+        self._all_collectables.append(collectable)
 
 
 class Collectable:
@@ -105,18 +106,19 @@ class PlayerCard(Collectable):
         self.name = self.attributes.get('athlete_name')
 
     def add_market_data(self, market):
-        market_data = market_price = diff = None
-        if market.get(self.name):
-            market_data = market[self.name][self.rarity].get(self.set_name)
+        pass
+        # market_data = market_price = diff = None
+        # if market.get(self.name):
+        #     market_data = market[self.name][self.rarity].get(self.set_name)
 
-        purchase_price = self.purchase_price or 0
+        # purchase_price = self.purchase_price or 0
 
-        if market_data:
-            market_price = market_data['price']
-            diff = round(market_price - purchase_price, 2)
+        # if market_data:
+        #     market_price = market_data['price']
+        #     diff = round(market_price - purchase_price, 2)
 
-        self.market = market_price or 0
-        self.diff = diff or 0
+        # self.market = market_price or 0
+        # self.diff = diff or 0
 
 
 class Pass(Collectable):

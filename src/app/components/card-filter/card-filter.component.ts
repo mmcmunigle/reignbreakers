@@ -1,4 +1,5 @@
 import { Component, EventEmitter, OnInit, Output } from '@angular/core';
+import { ActivatedRoute, Params, Router } from '@angular/router';
 import { ReignmakerApiService } from 'src/app/services/api.service';
 
 @Component({
@@ -12,20 +13,26 @@ export class CardFilterComponent implements OnInit {
   public events: string[] = [];
   public sportsFilter?: string = 'all';
   public cardTypeFilter?: string = 'all';
-  public sortBy: string = 'name';
-  public setFilter: string = 'all';
+  public sortBy: string;
+  public setFilter: string;
+  public eventFilter:string;
   public showCore = true;
   public showRare = true;
   public showElite = true;
   public showLegendary = true;
   public showReignmaker = true;
-  public eventFilter = 'all';
 
   constructor(
-    public apiService: ReignmakerApiService,
+    private apiService: ReignmakerApiService,
+    private activatedRoute: ActivatedRoute,
+    private router: Router,
   ) { }
 
   ngOnInit(): void {
+    this.sortBy = this.activatedRoute.snapshot.queryParams.sort || 'name-up';
+    this.eventFilter = this.activatedRoute.snapshot.queryParams.event || 'all';
+    this.setFilter = this.activatedRoute.snapshot.queryParams.set || 'all';
+    this.updateFilters();
     this.apiService.getUfcEvents()
     .subscribe((events: any) => {
       events.forEach((event: any) => {
@@ -36,11 +43,6 @@ export class CardFilterComponent implements OnInit {
 
   close() {
     this.closeClicked.emit();
-  }
-
-  setCore(selected: boolean) {
-    this.showCore = selected;
-    this.updateFilters();
   }
 
   setSportsSelector(selected: boolean, selection: string) {
@@ -57,26 +59,23 @@ export class CardFilterComponent implements OnInit {
     this.updateFilters();
   }
 
-  setEventFilter(selected: boolean, selection: string) {
-    if (selected) {
-      this.cardTypeFilter = selection;
-    }
-    this.updateFilters();
-  }
 
   setSort(sortBy: any) {
     this.sortBy = sortBy;
     this.updateFilters();
+    this.updateQueryParams({'sort': this.sortBy});
   }
 
   setEvent(event: any) {
     this.eventFilter = event;
     this.updateFilters();
+    this.updateQueryParams({'event': this.eventFilter});
   }
 
   setSetFilter(setName: any) {
     this.setFilter = setName;
     this.updateFilters();
+    this.updateQueryParams({'set': this.setFilter});
   }
 
   updateFilters() {
@@ -92,6 +91,18 @@ export class CardFilterComponent implements OnInit {
       showLegendary: this.showLegendary,
       showReignmaker: this.showReignmaker
     });
+  }
+
+  public updateQueryParams(param: object) {
+    const queryParams: Params = param;
+  
+    this.router.navigate(
+      [], 
+      {
+        relativeTo: this.activatedRoute,
+        queryParams: queryParams,
+        queryParamsHandling: 'merge',
+      });
   }
 
 }

@@ -44,10 +44,9 @@ export class EventFighterComponent implements OnInit {
 
   cardBySet(cards: any): any {
     if (!this.set && Object.keys(cards).length) {
-      const result = Object.values(cards).reduce(function(res: any, obj: any) {
+      return Object.values(cards).reduce(function(res: any, obj: any) {
         return (obj.price < res.price) ? obj : res;
       });
-      return result
     }
     return Object.keys(cards).length ? cards[this.set] : null
   }

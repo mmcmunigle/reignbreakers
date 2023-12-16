@@ -15,21 +15,32 @@ export class ReignmakerApiService {
 
   getInventory() {
     return this.httpClient
-    .get(`${this.baseURL}/inventory`)
+    .get(`${this.baseURL}/ufc-inventory`)
   }
 
   getUfcEvents() {
     return this.httpClient
-    .get(`${this.baseURL}/ufc_events`)
+    .get(`${this.baseURL}/ufc-events`)
   }
 
   getUfcMarketData() {
     return this.httpClient
-    .get(`${this.baseURL}/ufc_market`)
+    .get(`${this.baseURL}/ufc-market`)
   }
 
   getRankedFighters() {
     return this.httpClient
-    .get(`${this.baseURL}/ranked_fighters`)
+    .get(`${this.baseURL}/ranked-fighters`)
   }
+
+  getPgaMaketData() {
+    return this.httpClient
+    .get(`${this.baseURL}/pga-market`)
+  }
+
+  getPgaRankings() {
+    return this.httpClient
+    .get(`${this.baseURL}/pga-rankings`)
+  }
+
 }

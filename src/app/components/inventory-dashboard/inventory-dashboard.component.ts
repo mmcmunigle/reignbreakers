@@ -38,20 +38,25 @@ export class InventoryDashboardComponent implements OnInit {
 
   @ViewChild('nameInput') nameInput: ElementRef<HTMLInputElement>;
 
-  constructor(public apiService: ReignmakerApiService) {}
+  constructor(
+    private apiService: ReignmakerApiService,
+  ) {}
 
   ngOnInit(): void {
     this.apiService.getInventory()
     .subscribe((cards: any) => {
       this.cards = cards;
-      this.applyFilters();
-      this.sortCards('name');
-      this.setCols();
+      this.apiService.getUfcMarketData()
+        .subscribe((market: any) => {
+          this.mergeMarketData(market);
+          this.applyFilters();
+          this.setCols();
+        })
     })
 
     setInterval(() => {
       this.setCols();
-    }, 500);
+    }, 250);
 
     this.filteredCardNames = this.nameControl.valueChanges.pipe(
       debounceTime(200),
@@ -66,6 +71,17 @@ export class InventoryDashboardComponent implements OnInit {
         return of(matchingNames);
       }
     ));
+  }
+
+  mergeMarketData(market: any) {
+    this.cards.forEach((card) => {
+      if (market[card.name]) {
+        const marketData = market[card.name][card.rarity][card.set_name];
+        card.market = marketData ? marketData.price : 0;
+      } else {
+        card.market = 0;
+      }
+    });
   }
   
   nameSelected(event: MatAutocompleteSelectedEvent) {
@@ -164,20 +180,35 @@ export class InventoryDashboardComponent implements OnInit {
     }
 
     switch(this.filters.sortBy) {
-      case 'name':
+      case 'name-up':
+        this.filteredCards.sort((a: any, b: any) => (a.name < b.name) ? -1 : 1);
+        break;
+      case 'name-down':
         this.filteredCards.sort((a: any, b: any) => (a.name > b.name) ? -1 : 1);
         break;
-      case 'purchase':
-        this.filteredCards.sort((a: any, b: any) => (a.pp < b.pp) ? 1 : -1);
+      case 'purchase-up':
+        this.filteredCards.sort((a: any, b: any) => (a.purchase < b.purchase) ? 1 : -1);
         break;
-      case 'market':
-        this.filteredCards.sort((a: any, b: any) => (a.lp < b.lp) ? 1 : -1);
+      case 'purchase-down':
+        this.filteredCards.sort((a: any, b: any) => (a.purchase > b.purchase) ? 1 : -1);
         break;
-      case 'list':
+      case 'market-up':
+        this.filteredCards.sort((a: any, b: any) => (a.market < b.market) ? 1 : -1);
+        break;
+      case 'market-down':
+        this.filteredCards.sort((a: any, b: any) => (a.market > b.market) ? 1 : -1);
+        break;
+      case 'list-up':
         this.filteredCards.sort((a: any, b: any) => (a.sale < b.sale) ? 1 : -1);
         break;
-      case 'diff':
+      case 'list-down':
+        this.filteredCards.sort((a: any, b: any) => (a.sale > b.sale) ? 1 : -1);
+        break;
+      case 'diff-up':
         this.filteredCards.sort((a: any, b: any) => (a.diff < b.diff) ? 1 : -1);
+        break;
+      case 'diff-down':
+        this.filteredCards.sort((a: any, b: any) => (a.diff > b.diff) ? 1 : -1);
         break;
     };
 
@@ -189,6 +220,4 @@ export class InventoryDashboardComponent implements OnInit {
     this.applyFilters();
   }
 
-  sortCards(sortBy: any) {
-  }
 }

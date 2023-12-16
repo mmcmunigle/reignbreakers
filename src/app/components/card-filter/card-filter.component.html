@@ -81,11 +81,16 @@
   <mat-form-field class="filter-group filter-selector" appearance="fill">
     <mat-label>Sort By</mat-label>
     <mat-select [(value)]="sortBy" (selectionChange)="setSort($event.value)">
-      <mat-option value="name">Name</mat-option>
-      <mat-option value="purchase">Purchase</mat-option>
-      <mat-option value="market">Market</mat-option>
-      <mat-option value="list">Listed</mat-option>
-      <mat-option value="diff">Diff</mat-option>
+      <mat-option value="name-up">Name ⤊</mat-option>
+      <mat-option value="name-down">Name ⤋</mat-option>
+      <mat-option value="purchase-up">Purchase ⤊</mat-option>
+      <mat-option value="purchase-down">Purchase ⤋</mat-option>
+      <mat-option value="market-up">Market ⤊</mat-option>
+      <mat-option value="market-down">Market ⤋</mat-option>
+      <mat-option value="list-up">Listed ⤊</mat-option>
+      <mat-option value="list-down">Listed ⤋</mat-option>
+      <mat-option value="diff-up">Diff ⤊</mat-option>
+      <mat-option value="diff-down">Diff ⤋</mat-option>
     </mat-select>
   </mat-form-field>
 
@@ -100,9 +105,11 @@
   <mat-form-field class="filter-group filter-selector" appearance="fill">
     <mat-label>Set</mat-label>
     <mat-select [(value)]="setFilter" (selectionChange)="setSetFilter($event.value)">
-      <mat-option value="Genesis">All</mat-option>
+      <mat-option value="all">All</mat-option>
       <mat-option value="Genesis">Genesis</mat-option>
       <mat-option value="Heatwave">Heatwave</mat-option>
+      <mat-option value="UFC Fight Night 3.11.23">Fight Night 3.11.23</mat-option>
+      <mat-option value="UFC 285">UFC 285</mat-option>
       <mat-option value="UFC Fight Night 2.25.23">Fight Night 2.25.23</mat-option>
       <mat-option value="UFC Fight Night 2.18.23">Fight Night 2.18.23</mat-option>
       <mat-option value="UFC 284">UFC 284</mat-option>

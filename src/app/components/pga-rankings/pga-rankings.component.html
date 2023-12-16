@@ -1,0 +1,12 @@
+<div>
+    <mat-card>
+        <mat-card-header>
+            <mat-card-title>PGA RANKINGS</mat-card-title>
+        </mat-card-header>
+    </mat-card>
+    <mat-grid-list [cols]="1" rowHeight="40px" gutterSize="10px">
+        <mat-grid-tile *ngFor="let golfer of rankings">
+          <app-event-fighter [fighter]=golfer style="width:100%"></app-event-fighter>
+        </mat-grid-tile>
+    </mat-grid-list>
+</div>

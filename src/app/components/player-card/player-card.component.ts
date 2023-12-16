@@ -8,9 +8,7 @@ import { PlayerCard } from 'src/app/interfaces/player-card';
 })
 export class PlayerCardComponent implements OnInit {
   @Input() card!: PlayerCard;
-  constructor() {
-    console.log(this.card)
-  }
+  constructor() {}
 
   ngOnInit(): void {
   }

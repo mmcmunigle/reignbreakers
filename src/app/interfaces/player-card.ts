@@ -1,6 +1,8 @@
 export interface PlayerCard {
     name: string,
-    thumbnailUrl: string,
+    rarity: string,
+    set_name: string,
+    thumbnail_url: string,
     team: string,
     lineup: boolean,
     edition: number,
