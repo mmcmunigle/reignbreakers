@@ -111,5 +111,8 @@
       }
     }
   },
-  "defaultProject": "reignbreaker"
+  "defaultProject": "reignbreaker",
+  "cli": {
+    "analytics": false
+  }
 }

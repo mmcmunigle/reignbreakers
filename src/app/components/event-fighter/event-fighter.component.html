@@ -1,22 +1,55 @@
 <mat-card>
-    <mat-card-content style="display:flex">
-        <h3 style="margin: 0px 15px; width: 15px">{{fighter.rank}}</h3>
-        <h3 class="name">{{fighter.name}}</h3>
-        <h4 class="odds">{{fighter.odds || fighter.vote}}</h4>
-        <h3 class="sales-property common" matBadge="{{collected.core}}" matBadgeColor="primary">
-            <a *ngIf="core?.price" href="{{core.link}}" target="_blank">{{core.price}}</a>
-        </h3>
-        <h3 class="sales-property rare" matBadge="{{collected.rare}}" matBadgeColor="primary">
-            <a *ngIf="rare?.price" href="{{rare.link}}" target="_blank">{{rare.price.toFixed(0)}}</a>
-        </h3>
-        <h3 class="sales-property elite" matBadge="{{collected.elite}}" matBadgeColor="primary">
-            <a *ngIf="elite?.price" href="{{elite.link}}" target="_blank">{{elite.price.toFixed(0)}}</a>
-        </h3>
-        <h3 class="sales-property legendary" matBadge="{{collected.legendary}}" matBadgeColor="primary">
-            <a *ngIf="legendary?.price" href="{{legendary.link}}" target="_blank">{{legendary.price.toFixed(0)}}</a>
-        </h3>
-        <h3 class="sales-property reignmaker" matBadge="{{collected.reignmaker}}" matBadgeColor="primary">
-            <a *ngIf="reignmaker?.price" href="{{reignmaker.link}}" target="_blank">{{reignmaker.price.toFixed(0)}}</a>
-        </h3>
-    </mat-card-content>
+  <mat-card-content style="display: flex">
+    <h3 style="margin: 0px 15px; width: 15px">{{ fighter.rank }}</h3>
+    <h3 class="name">{{ fighter.name }}</h3>
+    <h4 class="odds">{{ fighter.price || fighter.vote }}</h4>
+    <h3
+      class="sales-property common"
+      matBadge="{{ collected.core }}"
+      matBadgeColor="primary"
+    >
+      <a *ngIf="core?.price" href="{{ core.link }}" target="_blank">{{
+        core.price
+      }}</a>
+    </h3>
+    <h3
+      class="sales-property rare"
+      matBadge="{{ collected.rare }}"
+      matBadgeColor="primary"
+    >
+      <a *ngIf="rare?.price" href="{{ rare.link }}" target="_blank">{{
+        rare.price.toFixed(0)
+      }}</a>
+    </h3>
+    <h3
+      class="sales-property elite"
+      matBadge="{{ collected.elite }}"
+      matBadgeColor="primary"
+    >
+      <a *ngIf="elite?.price" href="{{ elite.link }}" target="_blank">{{
+        elite.price.toFixed(0)
+      }}</a>
+    </h3>
+    <h3
+      class="sales-property legendary"
+      matBadge="{{ collected.legendary }}"
+      matBadgeColor="primary"
+    >
+      <a *ngIf="legendary?.price" href="{{ legendary.link }}" target="_blank">{{
+        legendary.price.toFixed(0)
+      }}</a>
+    </h3>
+    <h3
+      class="sales-property reignmaker"
+      matBadge="{{ collected.reignmaker }}"
+      matBadgeColor="primary"
+    >
+      <a
+        *ngIf="reignmaker?.price"
+        href="{{ reignmaker.link }}"
+        target="_blank"
+        >{{ reignmaker.price.toFixed(0) }}</a
+      >
+    </h3>
+  </mat-card-content>
 </mat-card>

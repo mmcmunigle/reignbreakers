@@ -12,13 +12,16 @@ from twisted.internet.error import TimeoutError, TCPTimedOutError
 
 
 EVENT_PAGES = [
-    "https://www.tapology.com/fightcenter/events/101868-ufc",
-    "https://www.tapology.com/fightcenter/events/105485-ufc-fight-night",
-    "https://www.tapology.com/fightcenter/events/105840-ufc-297",
-    "https://www.tapology.com/fightcenter/events/106801-ufc-fight-night",
     "https://www.tapology.com/fightcenter/events/107367-ufc-fight-night",
-    "https://www.tapology.com/fightcenter/events/107060-ufc-298"
-
+    "https://www.tapology.com/fightcenter/events/107060-ufc-298",
+    "https://www.tapology.com/fightcenter/events/107471-ufc-fight-night",
+    "https://www.tapology.com/fightcenter/events/106064-ufc-fight-night",
+    "https://www.tapology.com/fightcenter/events/107061-ufc-299",
+    "https://www.tapology.com/fightcenter/events/108288-ufc-fight-night",
+    "https://www.tapology.com/fightcenter/events/108462-ufc-fight-night",
+    "https://www.tapology.com/fightcenter/events/107896-ufc-fight-night",
+    "https://www.tapology.com/fightcenter/events/108721-ufc-fight-night",
+    "https://www.tapology.com/fightcenter/events/108579-ufc-300"
 ]
 
 EVENT_INDEX = 0
@@ -59,8 +62,10 @@ class OddsSpider(scrapy.Spider):
 
     def parse_match(self, response):
         left_name = response.css(".fName.left").xpath('./a/text()').extract_first()
+        print(response.body)
+        return
         right_name = response.css(".fName.right").xpath('./a/text()').extract_first()
-        stats = response.css("table.fighterStats").xpath('./tr').getall()
+        stats = response.css("table.boutComparisonTable").xpath('./tr').getall()
 
         left_odds = right_odds = left_record = right_record = None
         for row in stats:
@@ -113,6 +118,8 @@ class OddsSpider(scrapy.Spider):
 
     @staticmethod
     def sanitize_name(name: str):
+        if name in FIGHTER_SANITIZATION:
+            name = FIGHTER_SANITIZATION[name]
         return name.replace("ç", "c").replace("é", "e").replace("ã", "a").replace("Ľ", "L").replace("Ł", "L").replace("š", "s").replace("ć", "c")
 
 
@@ -165,3 +172,6 @@ if __name__ == '__main__':
         p.join() # this blocks until the process terminates
 
 
+FIGHTER_SANITIZATION = {
+    "Marcos Rogerio de Lima": "Marcos Rogerio De Lima"
+}

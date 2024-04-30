@@ -1,1046 +1,742 @@
 [
-    {
-        "title": "UFC Fight Night: Song vs. Gutierrez",
-        "date": "12.09.2023",
-        "matchups": [
-            [
-                {
-                    "name": "Yadong Song",
-                    "odds": "-375",
-                    "record": "20-7-1",
-                    "vote": "91%"
-                },
-                {
-                    "name": "Chris Gutierrez",
-                    "odds": "+290",
-                    "record": "20-4-2",
-                    "vote": "9%"
-                }
-            ],
-            [
-                {
-                    "name": "Sumudaerji",
-                    "odds": "+115",
-                    "record": "16-5-0",
-                    "vote": "25%"
-                },
-                {
-                    "name": "Tim Elliott",
-                    "odds": "-135",
-                    "record": "19-13-1",
-                    "vote": "75%"
-                }
-            ],
-            [
-                {
-                    "name": "Andre Muniz",
-                    "odds": "+145",
-                    "record": "23-6-0",
-                    "vote": "20%"
-                },
-                {
-                    "name": "Jun Yong Park",
-                    "odds": "-175",
-                    "record": "17-5-0",
-                    "vote": "80%"
-                }
-            ],
-            [
-                {
-                    "name": "Anthony Smith",
-                    "odds": "+165",
-                    "record": "37-18-0",
-                    "vote": "23%"
-                },
-                {
-                    "name": "Khalil Rountree Jr.",
-                    "odds": "-200",
-                    "record": "12-5-0",
-                    "vote": "77%"
-                }
-            ],
-            [
-                {
-                    "name": "Hyunsung Park",
-                    "odds": "-600",
-                    "record": "8-0-0",
-                    "vote": "96%"
-                },
-                {
-                    "name": "Shannon Ross",
-                    "odds": "+440",
-                    "record": "13-8-0",
-                    "vote": "4%"
-                }
-            ],
-            [
-                {
-                    "name": "Nasrat Haqparast",
-                    "odds": "-195",
-                    "record": "15-5-0",
-                    "vote": "80%"
-                },
-                {
-                    "name": "Jamie Mullarkey",
-                    "odds": "+160",
-                    "record": "17-6-0",
-                    "vote": "20%"
-                }
-            ],
-            [
-                {
-                    "name": "Steve Garcia",
-                    "odds": "+215",
-                    "record": "14-5-0",
-                    "vote": "25%"
-                },
-                {
-                    "name": "Melquizael Costa",
-                    "odds": "-270",
-                    "record": "20-6-0",
-                    "vote": "75%"
-                }
-            ],
-            [
-                {
-                    "name": "Stephanie Egger",
-                    "odds": "+125",
-                    "record": "8-4-0",
-                    "vote": "18%"
-                },
-                {
-                    "name": "Luana Santos",
-                    "odds": "-150",
-                    "record": "6-1-0",
-                    "vote": "82%"
-                }
-            ],
-            [
-                {
-                    "name": "Kenan Song",
-                    "odds": "+130",
-                    "record": "21-7-0",
-                    "vote": "33%"
-                },
-                {
-                    "name": "Kevin Jousset",
-                    "odds": "-165",
-                    "record": "9-2-0",
-                    "vote": "67%"
-                }
-            ],
-            [
-                {
-                    "name": "Tatsuro Taira",
-                    "odds": "-600",
-                    "record": "14-0-0",
-                    "vote": "96%"
-                },
-                {
-                    "name": "Carlos Hernandez",
-                    "odds": "+430",
-                    "record": "9-2-0",
-                    "vote": "4%"
-                }
-            ],
-            [
-                {
-                    "name": "Rayanne dos Santos",
-                    "odds": "-165",
-                    "record": "14-6-0",
-                    "vote": "61%"
-                },
-                {
-                    "name": "Talita Alencar",
-                    "odds": "+135",
-                    "record": "4-0-1",
-                    "vote": "39%"
-                }
-            ]
-        ]
-    },
-    {
-        "title": "UFC 296: Edwards vs. Covington",
-        "date": "12.16.2023",
-        "matchups": [
-            [
-                {
-                    "name": "Leon Edwards",
-                    "odds": "-135",
-                    "record": "21-3-0",
-                    "vote": "66%"
-                },
-                {
-                    "name": "Colby Covington",
-                    "odds": "+110",
-                    "record": "17-3-0",
-                    "vote": "34%"
-                }
-            ],
-            [
-                {
-                    "name": "Shavkat Rakhmonov",
-                    "odds": "-550",
-                    "record": "17-0-0",
-                    "vote": "89%"
-                },
-                {
-                    "name": "Stephen Thompson",
-                    "odds": "+400",
-                    "record": "17-6-1",
-                    "vote": "11%"
-                }
-            ],
-            [
-                {
-                    "name": "Vicente Luque",
-                    "odds": "+240",
-                    "record": "22-9-1",
-                    "vote": "22%"
-                },
-                {
-                    "name": "Ian Machado Garry",
-                    "odds": "-300",
-                    "record": "13-0-0",
-                    "vote": "78%"
-                }
-            ],
-            [
-                {
-                    "name": "Alexandre Pantoja",
-                    "odds": "-175",
-                    "record": "26-5-0",
-                    "vote": "89%"
-                },
-                {
-                    "name": "Brandon Royval",
-                    "odds": "+145",
-                    "record": "15-6-0",
-                    "vote": "11%"
-                }
-            ],
-            [
-                {
-                    "name": "Irene Aldana",
-                    "odds": "-210",
-                    "record": "14-7-0",
-                    "vote": "88%"
-                },
-                {
-                    "name": "Karol Rosa",
-                    "odds": "+175",
-                    "record": "17-5-0",
-                    "vote": "12%"
-                }
-            ],
-            [
-                {
-                    "name": "Tony Ferguson",
-                    "odds": "+215",
-                    "record": "25-9-0",
-                    "vote": "38%"
-                },
-                {
-                    "name": "Paddy Pimblett",
-                    "odds": "-265",
-                    "record": "20-3-0",
-                    "vote": "62%"
-                }
-            ],
-            [
-                {
-                    "name": "Casey O'Neill",
-                    "odds": "-190",
-                    "record": "9-1-0",
-                    "vote": "76%"
-                },
-                {
-                    "name": "Ariane Lipski",
-                    "odds": "+160",
-                    "record": "16-8-0",
-                    "vote": "24%"
-                }
-            ],
-            [
-                {
-                    "name": "Randy Brown",
-                    "odds": "-245",
-                    "record": "17-5-0",
-                    "vote": "79%"
-                },
-                {
-                    "name": "Muslim Salikhov",
-                    "odds": "+200",
-                    "record": "19-4-0",
-                    "vote": "21%"
-                }
-            ],
-            [
-                {
-                    "name": "Tagir Ulanbekov",
-                    "odds": "-160",
-                    "record": "14-2-0",
-                    "vote": "66%"
-                },
-                {
-                    "name": "Cody Durden",
-                    "odds": "+135",
-                    "record": "16-4-1",
-                    "vote": "34%"
-                }
-            ],
-            [
-                {
-                    "name": "Alonzo Menifield",
-                    "odds": "+200",
-                    "record": "14-3-1",
-                    "vote": "33%"
-                },
-                {
-                    "name": "Dustin Jacoby",
-                    "odds": "-245",
-                    "record": "19-7-1",
-                    "vote": "67%"
-                }
-            ],
-            [
-                {
-                    "name": "Cody Garbrandt",
-                    "odds": "-220",
-                    "record": "13-5-0",
-                    "vote": "88%"
-                },
-                {
-                    "name": "Brian Kelleher",
-                    "odds": "+180",
-                    "record": "24-14-0",
-                    "vote": "12%"
-                }
-            ],
-            [
-                {
-                    "name": "Shamil Gaziev",
-                    "odds": "+150",
-                    "record": "11-0-0",
-                    "vote": "71%"
-                },
-                {
-                    "name": "Martin Buday",
-                    "odds": "-180",
-                    "record": "13-1-0",
-                    "vote": "29%"
-                }
-            ],
-            [
-                {
-                    "name": "Josh Emmett",
-                    "odds": null,
-                    "record": "18-4-0",
-                    "vote": "35%"
-                },
-                {
-                    "name": "Bryce Mitchell",
-                    "odds": null,
-                    "record": "16-1-0",
-                    "vote": "65%"
-                }
-            ],
-            [
-                {
-                    "name": "Andre Fili",
-                    "odds": "-180",
-                    "record": "22-10-0",
-                    "vote": "80%"
-                },
-                {
-                    "name": "Lucas Almeida",
-                    "odds": "+145",
-                    "record": "14-2-0",
-                    "vote": "20%"
-                }
-            ]
-        ]
-    },
-    {
-        "title": "UFC Fight Night: Ankalaev vs. Walker",
-        "date": "01.13.2024",
-        "matchups": [
-            [
-                {
-                    "name": "Magomed Ankalaev",
-                    "odds": null,
-                    "record": "18-1-1",
-                    "vote": "66%"
-                },
-                {
-                    "name": "Johnny Walker",
-                    "odds": null,
-                    "record": "21-7-0",
-                    "vote": "34%"
-                }
-            ],
-            [
-                {
-                    "name": "Ricky Sim\u00f3n",
-                    "odds": null,
-                    "record": "20-4-0",
-                    "vote": "74%"
-                },
-                {
-                    "name": "Mario Bautista",
-                    "odds": null,
-                    "record": "13-2-0",
-                    "vote": "26%"
-                }
-            ],
-            [
-                {
-                    "name": "Phil Hawes",
-                    "odds": null,
-                    "record": "12-5-0",
-                    "vote": "14%"
-                },
-                {
-                    "name": "Brunno Ferreira",
-                    "odds": null,
-                    "record": "10-1-0",
-                    "vote": "86%"
-                }
-            ],
-            [
-                {
-                    "name": "Matheus Nicolau",
-                    "odds": null,
-                    "record": "19-3-1",
-                    "vote": "14%"
-                },
-                {
-                    "name": "Manel Kape",
-                    "odds": null,
-                    "record": "19-6-0",
-                    "vote": "86%"
-                }
-            ],
-            [
-                {
-                    "name": "Andrei Arlovski",
-                    "odds": null,
-                    "record": "34-22-0",
-                    "vote": "13%"
-                },
-                {
-                    "name": "Waldo Cortes-Acosta",
-                    "odds": null,
-                    "record": "10-1-0",
-                    "vote": "87%"
-                }
-            ],
-            [
-                {
-                    "name": "Ketlen Vieira",
-                    "odds": null,
-                    "record": "14-3-0",
-                    "vote": "89%"
-                },
-                {
-                    "name": "Macy Chiasson",
-                    "odds": null,
-                    "record": "8-3-0",
-                    "vote": "11%"
-                }
-            ],
-            [
-                {
-                    "name": "Yana Santos",
-                    "odds": null,
-                    "record": "14-8-0",
-                    "vote": "5%"
-                },
-                {
-                    "name": "Norma Dumont",
-                    "odds": null,
-                    "record": "10-2-0",
-                    "vote": "95%"
-                }
-            ],
-            [
-                {
-                    "name": "Marcus McGhee",
-                    "odds": null,
-                    "record": "8-1-0",
-                    "vote": "91%"
-                },
-                {
-                    "name": "Gaston Bola\u00f1os",
-                    "odds": null,
-                    "record": "7-3-0",
-                    "vote": "9%"
-                }
-            ],
-            [
-                {
-                    "name": "Jim Miller",
-                    "odds": null,
-                    "record": "36-17-0",
-                    "vote": "94%"
-                },
-                {
-                    "name": "Gabriel Ben\u00edtez",
-                    "odds": null,
-                    "record": "23-10-0",
-                    "vote": "6%"
-                }
-            ],
-            [
-                {
-                    "name": "Preston Parsons",
-                    "odds": null,
-                    "record": "10-4-0",
-                    "vote": "15%"
-                },
-                {
-                    "name": "Bassil Hafez",
-                    "odds": null,
-                    "record": "8-4-1",
-                    "vote": "85%"
-                }
-            ],
-            [
-                {
-                    "name": "Gabriel Santos",
-                    "odds": null,
-                    "record": "10-2-0",
-                    "vote": "93%"
-                },
-                {
-                    "name": "Westin Wilson",
-                    "odds": null,
-                    "record": "16-8-0",
-                    "vote": "7%"
-                }
-            ],
-            [
-                {
-                    "name": "Felipe Bunes",
-                    "odds": null,
-                    "record": "13-6-0",
-                    "vote": "72%"
-                },
-                {
-                    "name": "Denys Bondar",
-                    "odds": null,
-                    "record": "19-4-0",
-                    "vote": "28%"
-                }
-            ],
-            [
-                {
-                    "name": "Tom Nolan",
-                    "odds": null,
-                    "record": "6-0-0",
-                    "vote": "93%"
-                },
-                {
-                    "name": "Nikolas Motta",
-                    "odds": null,
-                    "record": "13-5-0",
-                    "vote": "7%"
-                }
-            ],
-            [
-                {
-                    "name": "Farid Basharat",
-                    "odds": null,
-                    "record": "11-0-0",
-                    "vote": "82%"
-                },
-                {
-                    "name": "Taylor Lapilus",
-                    "odds": null,
-                    "record": "19-3-0",
-                    "vote": "18%"
-                }
-            ]
-        ]
-    },
-    {
-        "title": "UFC 297: Strickland vs. Du Plessis",
-        "date": "01.20.2024",
-        "matchups": [
-            [
-                {
-                    "name": "Sean Strickland",
-                    "odds": null,
-                    "record": "28-5-0",
-                    "vote": "48%"
-                },
-                {
-                    "name": "Dricus Du Plessis",
-                    "odds": null,
-                    "record": "20-2-0",
-                    "vote": "52%"
-                }
-            ],
-            [
-                {
-                    "name": "Arnold Allen",
-                    "odds": null,
-                    "record": "19-2-0",
-                    "vote": "67%"
-                },
-                {
-                    "name": "Movsar Evloev",
-                    "odds": null,
-                    "record": "17-0-0",
-                    "vote": "33%"
-                }
-            ],
-            [
-                {
-                    "name": "Brad Katona",
-                    "odds": null,
-                    "record": "13-2-0",
-                    "vote": "92%"
-                },
-                {
-                    "name": "Garrett Armfield",
-                    "odds": null,
-                    "record": "9-3-0",
-                    "vote": "8%"
-                }
-            ],
-            [
-                {
-                    "name": "Raquel Pennington",
-                    "odds": null,
-                    "record": "15-8-0",
-                    "vote": "31%"
-                },
-                {
-                    "name": "Mayra Bueno Silva",
-                    "odds": null,
-                    "record": "10-2-1",
-                    "vote": "69%"
-                }
-            ],
-            [
-                {
-                    "name": "Serhiy Sidey",
-                    "odds": null,
-                    "record": "10-1-0",
-                    "vote": "85%"
-                },
-                {
-                    "name": "Ramon Taveras",
-                    "odds": null,
-                    "record": "9-2-0",
-                    "vote": "15%"
-                }
-            ],
-            [
-                {
-                    "name": "Neil Magny",
-                    "odds": null,
-                    "record": "28-11-0",
-                    "vote": "20%"
-                },
-                {
-                    "name": "Mike Malott",
-                    "odds": null,
-                    "record": "10-1-1",
-                    "vote": "80%"
-                }
-            ],
-            [
-                {
-                    "name": "Chris Curtis",
-                    "odds": null,
-                    "record": "30-10-0",
-                    "vote": "81%"
-                },
-                {
-                    "name": "Marc-Andre Barriault",
-                    "odds": null,
-                    "record": "16-6-0",
-                    "vote": "19%"
-                }
-            ],
-            [
-                {
-                    "name": "Malcolm Gordon",
-                    "odds": null,
-                    "record": "14-7-0",
-                    "vote": "69%"
-                },
-                {
-                    "name": "Jimmy Flick",
-                    "odds": null,
-                    "record": "16-7-0",
-                    "vote": "31%"
-                }
-            ],
-            [
-                {
-                    "name": "Gillian Robertson",
-                    "odds": null,
-                    "record": "12-8-0",
-                    "vote": "79%"
-                },
-                {
-                    "name": "Polyana Viana",
-                    "odds": null,
-                    "record": "13-6-0",
-                    "vote": "21%"
-                }
-            ],
-            [
-                {
-                    "name": "Yohan Lainesse",
-                    "odds": null,
-                    "record": "9-2-0",
-                    "vote": "35%"
-                },
-                {
-                    "name": "Sam Patterson",
-                    "odds": null,
-                    "record": "10-2-1",
-                    "vote": "65%"
-                }
-            ],
-            [
-                {
-                    "name": "Charles Jourdain",
-                    "odds": null,
-                    "record": "15-6-1",
-                    "vote": "83%"
-                },
-                {
-                    "name": "Sean Woodson",
-                    "odds": null,
-                    "record": "10-1-1",
-                    "vote": "17%"
-                }
-            ],
-            [
-                {
-                    "name": "Jasmine Jasudavicius",
-                    "odds": null,
-                    "record": "9-3-0",
-                    "vote": "92%"
-                },
-                {
-                    "name": "Priscila Cachoeira",
-                    "odds": null,
-                    "record": "12-5-0",
-                    "vote": "8%"
-                }
-            ],
-            [
-                {
-                    "name": "Dominick Reyes",
-                    "odds": null,
-                    "record": "12-4-0",
-                    "vote": "15%"
-                },
-                {
-                    "name": "Carlos Ulberg",
-                    "odds": null,
-                    "record": "9-1-0",
-                    "vote": "85%"
-                }
-            ]
-        ]
-    },
-    {
-        "title": "UFC Fight Night: Dolidze vs. Imavov",
-        "date": "02.03.2024",
-        "matchups": [
-            [
-                {
-                    "name": "Roman Dolidze",
-                    "odds": null,
-                    "record": "12-2-0",
-                    "vote": "54%"
-                },
-                {
-                    "name": "Nassourdine Imavov",
-                    "odds": null,
-                    "record": "12-4-0",
-                    "vote": "46%"
-                }
-            ],
-            [
-                {
-                    "name": "Julija Stoliarenko",
-                    "odds": null,
-                    "record": "11-7-1",
-                    "vote": "76%"
-                },
-                {
-                    "name": "Luana Carolina",
-                    "odds": null,
-                    "record": "9-4-0",
-                    "vote": "24%"
-                }
-            ],
-            [
-                {
-                    "name": "Themba Gorimbo",
-                    "odds": null,
-                    "record": "11-4-0",
-                    "vote": "87%"
-                },
-                {
-                    "name": "Kiefer Crosbie",
-                    "odds": null,
-                    "record": "10-4-0",
-                    "vote": "13%"
-                }
-            ],
-            [
-                {
-                    "name": "Thomas Petersen",
-                    "odds": null,
-                    "record": "8-1-0",
-                    "vote": "87%"
-                },
-                {
-                    "name": "Jamal Pogues",
-                    "odds": null,
-                    "record": "10-4-0",
-                    "vote": "13%"
-                }
-            ],
-            [
-                {
-                    "name": "Blake Bilder",
-                    "odds": null,
-                    "record": "8-1-1",
-                    "vote": "15%"
-                },
-                {
-                    "name": "Jeong Yeong Lee",
-                    "odds": null,
-                    "record": "10-1-0",
-                    "vote": "85%"
-                }
-            ],
-            [
-                {
-                    "name": "Viviane Araujo",
-                    "odds": null,
-                    "record": "12-5-0",
-                    "vote": "9%"
-                },
-                {
-                    "name": "Nat\u00e1lia Silva",
-                    "odds": null,
-                    "record": "16-5-1",
-                    "vote": "91%"
-                }
-            ],
-            [
-                {
-                    "name": "Marquel Mederos",
-                    "odds": null,
-                    "record": "8-1-0",
-                    "vote": "85%"
-                },
-                {
-                    "name": "Landon Qui\u00f1ones",
-                    "odds": null,
-                    "record": "7-2-1",
-                    "vote": "15%"
-                }
-            ],
-            [
-                {
-                    "name": "Gilbert Urbina",
-                    "odds": null,
-                    "record": "7-2-0",
-                    "vote": "72%"
-                },
-                {
-                    "name": "Charles Radtke",
-                    "odds": null,
-                    "record": "8-3-0",
-                    "vote": "28%"
-                }
-            ],
-            [
-                {
-                    "name": "Melsik Baghdasaryan",
-                    "odds": null,
-                    "record": "8-2-0",
-                    "vote": "29%"
-                },
-                {
-                    "name": "William Gomis",
-                    "odds": null,
-                    "record": "13-2-0",
-                    "vote": "71%"
-                }
-            ],
-            [
-                {
-                    "name": "Aliaskhab Khizriev",
-                    "odds": null,
-                    "record": "14-0-0",
-                    "vote": "83%"
-                },
-                {
-                    "name": "Makhmud Muradov",
-                    "odds": null,
-                    "record": "26-8-0",
-                    "vote": "17%"
-                }
-            ],
-            [
-                {
-                    "name": "Molly McCann",
-                    "odds": null,
-                    "record": "13-6-0",
-                    "vote": "66%"
-                },
-                {
-                    "name": "Diana Belbi\u0163\u0103",
-                    "odds": null,
-                    "record": "15-8-0",
-                    "vote": "34%"
-                }
-            ]
-        ]
-    },
-    {
-        "title": "UFC Fight Night: Hermansson vs. Pyfer",
-        "date": "02.10.2024",
-        "matchups": [
-            [
-                {
-                    "name": "Jack Hermansson",
-                    "odds": null,
-                    "record": "23-8-0",
-                    "vote": "18%"
-                },
-                {
-                    "name": "Joe Pyfer",
-                    "odds": null,
-                    "record": "12-2-0",
-                    "vote": "82%"
-                }
-            ],
-            [
-                {
-                    "name": "Rodolfo Vieira",
-                    "odds": null,
-                    "record": "9-2-0",
-                    "vote": "18%"
-                },
-                {
-                    "name": "Armen Petrosyan",
-                    "odds": null,
-                    "record": "8-2-0",
-                    "vote": "82%"
-                }
-            ],
-            [
-                {
-                    "name": "Trevin Giles",
-                    "odds": null,
-                    "record": "16-5-0",
-                    "vote": "12%"
-                },
-                {
-                    "name": "Carlos Prates",
-                    "odds": null,
-                    "record": "17-6-0",
-                    "vote": "88%"
-                }
-            ],
-            [
-                {
-                    "name": "Brad Tavares",
-                    "odds": null,
-                    "record": "20-8-0",
-                    "vote": "21%"
-                },
-                {
-                    "name": "Gregory Rodrigues",
-                    "odds": null,
-                    "record": "14-5-0",
-                    "vote": "79%"
-                }
-            ],
-            [
-                {
-                    "name": "Jeremiah Wells",
-                    "odds": null,
-                    "record": "12-3-1",
-                    "vote": "82%"
-                },
-                {
-                    "name": "Max Griffin",
-                    "odds": null,
-                    "record": "19-10-0",
-                    "vote": "18%"
-                }
-            ],
-            [
-                {
-                    "name": "Dan Ige",
-                    "odds": null,
-                    "record": "17-7-0",
-                    "vote": "31%"
-                },
-                {
-                    "name": "Lerone Murphy",
-                    "odds": null,
-                    "record": "13-0-1",
-                    "vote": "69%"
-                }
-            ],
-            [
-                {
-                    "name": "Daniel Marcos",
-                    "odds": null,
-                    "record": "15-0-0",
-                    "vote": "95%"
-                },
-                {
-                    "name": "Aoriqileng",
-                    "odds": null,
-                    "record": "25-11-0",
-                    "vote": "5%"
-                }
-            ],
-            [
-                {
-                    "name": "Hyder Amil",
-                    "odds": null,
-                    "record": "8-0-0",
-                    "vote": "43%"
-                },
-                {
-                    "name": "Shayilan Nuerdanbieke",
-                    "odds": null,
-                    "record": "39-11-0",
-                    "vote": "57%"
-                }
-            ],
-            [
-                {
-                    "name": "Loma Lookboonmee",
-                    "odds": null,
-                    "record": "8-3-0",
-                    "vote": "87%"
-                },
-                {
-                    "name": "Bruna Brasil",
-                    "odds": null,
-                    "record": "9-3-1",
-                    "vote": "13%"
-                }
-            ]
-        ]
-    }
+  {
+    "title": "UFC 299: O'Malley vs. Vera 2",
+    "date": "03.09.2024",
+    "matchups": [
+      [
+        {
+          "name": "Sean O'Malley",
+          "odds": -205,
+          "record": "17-1-0",
+          "vote": "75%"
+        },
+        {
+          "name": "Marlon Vera",
+          "odds": 170,
+          "record": "23-8-1",
+          "vote": "25%"
+        }
+      ],
+      [
+        {
+          "name": "Gilbert Burns",
+          "odds": -120,
+          "record": "22-6-0",
+          "vote": "51%"
+        },
+        {
+          "name": "Jack Della Maddalena",
+          "odds": -110,
+          "record": "16-2-0",
+          "vote": "49%"
+        }
+      ],
+      [
+        { "name": "Petr Yan", "odds": -140, "record": "16-5-0", "vote": "55%" },
+        {
+          "name": "Yadong Song",
+          "odds": 120,
+          "record": "21-7-1",
+          "vote": "45%"
+        }
+      ],
+      [
+        {
+          "name": "Benoit Saint-Denis",
+          "odds": -150,
+          "record": "13-1-0",
+          "vote": "60%"
+        },
+        {
+          "name": "Dustin Poirier",
+          "odds": 120,
+          "record": "29-8-0",
+          "vote": "40%"
+        }
+      ],
+      [
+        {
+          "name": "Kyler Phillips",
+          "odds": -192,
+          "record": "11-2-0",
+          "vote": "56%"
+        },
+        {
+          "name": "Pedro Munhoz",
+          "odds": 160,
+          "record": "20-8-0",
+          "vote": "44%"
+        }
+      ],
+      [
+        {
+          "name": "Assu Almabayev",
+          "odds": -370,
+          "record": "18-2-0",
+          "vote": "94%"
+        },
+        {
+          "name": "CJ Vergara",
+          "odds": 280,
+          "record": "12-4-1",
+          "vote": "6%"
+        }
+      ],
+      [
+        {
+          "name": "Jailton Almeida",
+          "odds": -120,
+          "record": "20-2-0",
+          "vote": "61%"
+        },
+        {
+          "name": "Curtis Blaydes",
+          "odds": -110,
+          "record": "17-4-0",
+          "vote": "39%"
+        }
+      ],
+      [
+        {
+          "name": "Maycee Barber",
+          "odds": -180,
+          "record": "13-2-0",
+          "vote": "82%"
+        },
+        {
+          "name": "Katlyn Chookagian",
+          "odds": 145,
+          "record": "18-5-0",
+          "vote": "18%"
+        }
+      ],
+      [
+        {
+          "name": "Kevin Holland",
+          "odds": -140,
+          "record": "25-10-0",
+          "vote": "58%"
+        },
+        {
+          "name": "Michael Page",
+          "odds": 120,
+          "record": "21-2-0",
+          "vote": "42%"
+        }
+      ],
+      [
+        {
+          "name": "Mateusz Gamrot",
+          "odds": -270,
+          "record": "23-2-0",
+          "vote": "94%"
+        },
+        {
+          "name": "Rafael dos Anjos",
+          "odds": 200,
+          "record": "32-15-0",
+          "vote": "6%"
+        }
+      ],
+      [
+        {
+          "name": "Robelis Despaigne",
+          "odds": -440,
+          "record": "4-0-0",
+          "vote": "97%"
+        },
+        {
+          "name": "Josh Parisian",
+          "odds": 300,
+          "record": "15-7-0",
+          "vote": "3%"
+        }
+      ],
+      [
+        {
+          "name": "Michel Pereira",
+          "odds": -170,
+          "record": "29-11-0",
+          "vote": "78%"
+        },
+        {
+          "name": "Michal Oleksiejczuk",
+          "odds": 130,
+          "record": "19-6-0",
+          "vote": "22%"
+        }
+      ]
+    ]
+  },
+  {
+    "title": "UFC Fight Night: Tuivasa vs. Tybura",
+    "date": "03.16.2024",
+    "matchups": [
+      [
+        {
+          "name": "Tai Tuivasa",
+          "odds": -125,
+          "record": "15-6-0",
+          "vote": "78%"
+        },
+        {
+          "name": "Marcin Tybura",
+          "odds": 100,
+          "record": "24-8-0",
+          "vote": "23%"
+        }
+      ],
+      [
+        {
+          "name": "Ode Osbourne",
+          "odds": null,
+          "record": "12-6-0",
+          "vote": "15%"
+        },
+        {
+          "name": "Jafel Filho",
+          "odds": null,
+          "record": "15-3-0",
+          "vote": "85%"
+        }
+      ],
+      [
+        {
+          "name": "Thiago Moises",
+          "odds": null,
+          "record": "17-7-0",
+          "vote": "77%"
+        },
+        {
+          "name": "Brad Riddell",
+          "odds": null,
+          "record": "10-4-0",
+          "vote": "23%"
+        }
+      ],
+      [
+        {
+          "name": "Bryan Battle",
+          "odds": null,
+          "record": "10-2-0",
+          "vote": "82%"
+        },
+        {
+          "name": "Ange Loosa",
+          "odds": null,
+          "record": "10-3-0",
+          "vote": "18%"
+        }
+      ],
+      [
+        {
+          "name": "Christian Rodriguez",
+          "odds": null,
+          "record": "10-1-0",
+          "vote": "65%"
+        },
+        {
+          "name": "Isaac Dulgarian",
+          "odds": null,
+          "record": "6-0-0",
+          "vote": "35%"
+        }
+      ],
+      [
+        {
+          "name": "Cory McKenna",
+          "odds": null,
+          "record": "8-2-0",
+          "vote": "48%"
+        },
+        {
+          "name": "Jaqueline Amorim",
+          "odds": null,
+          "record": "7-1-0",
+          "vote": "52%"
+        }
+      ]
+    ]
+  },
+  {
+    "title": "UFC Fight Night: Ribas vs. Namajunas",
+    "date": "03.23.2024",
+    "matchups": [
+      [
+        {
+          "name": "Amanda Ribas",
+          "odds": null,
+          "record": "12-4-0",
+          "vote": "27%"
+        },
+        {
+          "name": "Rose Namajunas",
+          "odds": null,
+          "record": "11-6-0",
+          "vote": "73%"
+        }
+      ],
+      [
+        {
+          "name": "Davey Grant",
+          "odds": null,
+          "record": "13-7-0",
+          "vote": "84%"
+        },
+        {
+          "name": "Cody Gibson",
+          "odds": null,
+          "record": "19-9-0",
+          "vote": "16%"
+        }
+      ],
+      [
+        {
+          "name": "Stephanie Luciano",
+          "odds": null,
+          "record": "5-1-1",
+          "vote": "72%"
+        },
+        {
+          "name": "Shauna Bannon",
+          "odds": null,
+          "record": "5-1-0",
+          "vote": "28%"
+        }
+      ],
+      [
+        {
+          "name": "Ricardo Ramos",
+          "odds": null,
+          "record": "16-5-0",
+          "vote": "73%"
+        },
+        {
+          "name": "Julian Erosa",
+          "odds": null,
+          "record": "28-11-0",
+          "vote": "27%"
+        }
+      ],
+      [
+        {
+          "name": "Steven Nguyen",
+          "odds": null,
+          "record": "9-1-0",
+          "vote": "89%"
+        },
+        {
+          "name": "Jarno Errens",
+          "odds": null,
+          "record": "13-5-1",
+          "vote": "11%"
+        }
+      ],
+      [
+        {
+          "name": "Trey Ogden",
+          "odds": null,
+          "record": "16-6-0",
+          "vote": "31%"
+        },
+        {
+          "name": "Kurt Holobaugh",
+          "odds": null,
+          "record": "20-7-0",
+          "vote": "69%"
+        }
+      ],
+      [
+        {
+          "name": "Luis Pajuelo",
+          "odds": null,
+          "record": "8-1-0",
+          "vote": "71%"
+        },
+        {
+          "name": "Fernando Padilla",
+          "odds": null,
+          "record": "15-5-0",
+          "vote": "29%"
+        }
+      ],
+      [
+        {
+          "name": "Montserrat Rendon",
+          "odds": null,
+          "record": "6-0-0",
+          "vote": "68%"
+        },
+        {
+          "name": "Darya Zheleznyakova",
+          "odds": null,
+          "record": "8-1-0",
+          "vote": "33%"
+        }
+      ]
+    ]
+  },
+  {
+    "title": "UFC Fight Night: Brady vs. Luque",
+    "date": "03.30.2024",
+    "matchups": [
+      [
+        {
+          "name": "Sean Brady",
+          "odds": null,
+          "record": "16-1-0",
+          "vote": "73%"
+        },
+        {
+          "name": "Vicente Luque",
+          "odds": null,
+          "record": "22-9-1",
+          "vote": "27%"
+        }
+      ],
+      [
+        {
+          "name": "Virna Jandiroba",
+          "odds": null,
+          "record": "19-3-0",
+          "vote": "26%"
+        },
+        {
+          "name": "Lupita Godinez",
+          "odds": null,
+          "record": "12-3-0",
+          "vote": "74%"
+        }
+      ],
+      [
+        {
+          "name": "Bruno Silva",
+          "odds": null,
+          "record": "23-10-0",
+          "vote": "86%"
+        },
+        {
+          "name": "Chris Weidman",
+          "odds": null,
+          "record": "15-7-0",
+          "vote": "14%"
+        }
+      ],
+      [
+        {
+          "name": "Erin Blanchfield",
+          "odds": null,
+          "record": "12-1-0",
+          "vote": "77%"
+        },
+        {
+          "name": "Manon Fiorot",
+          "odds": null,
+          "record": "11-1-0",
+          "vote": "23%"
+        }
+      ],
+      [
+        {
+          "name": "Chidi Njokuani",
+          "odds": null,
+          "record": "22-10-0",
+          "vote": "66%"
+        },
+        {
+          "name": "Rhys McKee",
+          "odds": null,
+          "record": "13-5-1",
+          "vote": "34%"
+        }
+      ],
+      [
+        {
+          "name": "Connor Matthews",
+          "odds": null,
+          "record": "7-1-0",
+          "vote": "78%"
+        },
+        {
+          "name": "Dennis Buzukja",
+          "odds": null,
+          "record": "11-4-0",
+          "vote": "22%"
+        }
+      ],
+      [
+        {
+          "name": "Andre Petroski",
+          "odds": null,
+          "record": "10-2-0",
+          "vote": "70%"
+        },
+        {
+          "name": "Jacob Malkoun",
+          "odds": null,
+          "record": "7-3-0",
+          "vote": "30%"
+        }
+      ],
+      [
+        {
+          "name": "Angel Pacheco",
+          "odds": null,
+          "record": "7-2-0",
+          "vote": "10%"
+        },
+        {
+          "name": "Caol\u00e1n Loughran",
+          "odds": null,
+          "record": "8-1-0",
+          "vote": "90%"
+        }
+      ],
+      [
+        {
+          "name": "Julio Arce",
+          "odds": null,
+          "record": "18-6-0",
+          "vote": "89%"
+        },
+        {
+          "name": "Herbert Burns",
+          "odds": null,
+          "record": "11-4-0",
+          "vote": "11%"
+        }
+      ],
+      [
+        {
+          "name": "Dominick Reyes",
+          "odds": null,
+          "record": "12-4-0",
+          "vote": "10%"
+        },
+        {
+          "name": "Carlos Ulberg",
+          "odds": null,
+          "record": "9-1-0",
+          "vote": "90%"
+        }
+      ],
+      [
+        {
+          "name": "Nursulton Ruziboev",
+          "odds": null,
+          "record": "35-8-2",
+          "vote": "94%"
+        },
+        {
+          "name": "Sedriques Dumas",
+          "odds": null,
+          "record": "9-1-0",
+          "vote": "6%"
+        }
+      ]
+    ]
+  },
+  {
+    "title": "UFC Fight Night: Vettori vs. Allen",
+    "date": "04.06.2024",
+    "matchups": [
+      [
+        {
+          "name": "Marvin Vettori",
+          "odds": null,
+          "record": "19-6-1",
+          "vote": "37%"
+        },
+        {
+          "name": "Brendan Allen",
+          "odds": null,
+          "record": "23-5-0",
+          "vote": "63%"
+        }
+      ],
+      [
+        {
+          "name": "Norma Dumont",
+          "odds": null,
+          "record": "10-2-0",
+          "vote": "70%"
+        },
+        {
+          "name": "Germaine de Randamie",
+          "odds": null,
+          "record": "10-4-0",
+          "vote": "30%"
+        }
+      ],
+      [
+        {
+          "name": "Ignacio Bahamondes",
+          "odds": null,
+          "record": "14-5-0",
+          "vote": "93%"
+        },
+        {
+          "name": "Christos Giagos",
+          "odds": null,
+          "record": "20-11-0",
+          "vote": "7%"
+        }
+      ],
+      [
+        {
+          "name": "Seung Woo Choi",
+          "odds": null,
+          "record": "11-6-0",
+          "vote": "15%"
+        },
+        {
+          "name": "Morgan Charriere",
+          "odds": null,
+          "record": "19-9-1",
+          "vote": "85%"
+        }
+      ],
+      [
+        {
+          "name": "Alexander Hernandez",
+          "odds": null,
+          "record": "14-7-0",
+          "vote": "64%"
+        },
+        {
+          "name": "Damon Jackson",
+          "odds": null,
+          "record": "22-6-1",
+          "vote": "36%"
+        }
+      ],
+      [
+        {
+          "name": "Lukasz Brzeski",
+          "odds": null,
+          "record": "8-4-1",
+          "vote": "7%"
+        },
+        {
+          "name": "Valter Walker",
+          "odds": null,
+          "record": "11-0-0",
+          "vote": "93%"
+        }
+      ],
+      [
+        {
+          "name": "Melissa Tonya Mullins",
+          "odds": null,
+          "record": "6-0-0",
+          "vote": "89%"
+        },
+        {
+          "name": "Nora Cornolle",
+          "odds": null,
+          "record": "7-1-0",
+          "vote": "11%"
+        }
+      ]
+    ]
+  },
+  {
+    "title": "UFC 300",
+    "date": "04.13.2024",
+    "matchups": [
+      [
+        {
+          "name": "Leon Edwards",
+          "odds": null,
+          "record": "22-3-0",
+          "vote": "78%"
+        },
+        {
+          "name": "Belal Muhammad",
+          "odds": null,
+          "record": "23-3-0",
+          "vote": "22%"
+        }
+      ],
+      [
+        {
+          "name": "Ji\u0159\u00ed Proch\u00e1zka",
+          "odds": null,
+          "record": "29-4-1",
+          "vote": "80%"
+        },
+        {
+          "name": "Aleksandar Rakic",
+          "odds": null,
+          "record": "14-3-0",
+          "vote": "20%"
+        }
+      ],
+      [
+        {
+          "name": "Calvin Kattar",
+          "odds": null,
+          "record": "23-7-0",
+          "vote": "28%"
+        },
+        {
+          "name": "Aljamain Sterling",
+          "odds": null,
+          "record": "23-4-0",
+          "vote": "72%"
+        }
+      ],
+      [
+        {
+          "name": "Weili Zhang",
+          "odds": null,
+          "record": "24-3-0",
+          "vote": "95%"
+        },
+        {
+          "name": "Xiaonan Yan",
+          "odds": null,
+          "record": "17-3-0",
+          "vote": "5%"
+        }
+      ],
+      [
+        {
+          "name": "Deiveson Figueiredo",
+          "odds": null,
+          "record": "22-3-1",
+          "vote": "84%"
+        },
+        {
+          "name": "Cody Garbrandt",
+          "odds": null,
+          "record": "14-5-0",
+          "vote": "16%"
+        }
+      ],
+      [
+        {
+          "name": "Charles Oliveira",
+          "odds": null,
+          "record": "34-9-0",
+          "vote": "66%"
+        },
+        {
+          "name": "Arman Tsarukyan",
+          "odds": null,
+          "record": "21-3-0",
+          "vote": "34%"
+        }
+      ],
+      [
+        { "name": "Bo Nickal", "odds": null, "record": "5-0-0", "vote": "97%" },
+        {
+          "name": "Cody Brundage",
+          "odds": null,
+          "record": "10-5-0",
+          "vote": "3%"
+        }
+      ]
+    ]
+  }
 ]

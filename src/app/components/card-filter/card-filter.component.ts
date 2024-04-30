@@ -1,6 +1,6 @@
 import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { ActivatedRoute, Params, Router } from '@angular/router';
-import { ReignmakerApiService } from 'src/app/services/api.service';
+import { ReignmakerApiService } from 'src/app/services/reinbreaker-api.service';
 
 @Component({
   selector: 'app-card-filter',

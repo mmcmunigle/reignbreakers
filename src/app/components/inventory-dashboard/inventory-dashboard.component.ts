@@ -5,7 +5,7 @@ import { MatChipInputEvent } from '@angular/material/chips';
 import { Observable, of } from 'rxjs';
 import { debounceTime, switchMap } from 'rxjs/operators';
 import { PlayerCard } from 'src/app/interfaces/player-card';
-import { ReignmakerApiService } from 'src/app/services/api.service';
+import { ReignmakerApiService } from 'src/app/services/reinbreaker-api.service';
 
 @Component({
   selector: 'inventory-dashboard',
@@ -46,7 +46,7 @@ export class InventoryDashboardComponent implements OnInit {
     this.apiService.getInventory()
     .subscribe((cards: any) => {
       this.cards = cards;
-      this.apiService.getUfcMarketData()
+      this.apiService.getUfcMarketData('2024')
         .subscribe((market: any) => {
           this.mergeMarketData(market);
           this.applyFilters();

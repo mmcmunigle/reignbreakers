@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ReignmakerApiService } from 'src/app/services/api.service';
+import { ReignmakerApiService } from 'src/app/services/reinbreaker-api.service';
 
 @Component({
   selector: 'app-pga-rankings',

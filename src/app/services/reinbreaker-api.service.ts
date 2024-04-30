@@ -4,7 +4,7 @@ import { Injectable } from '@angular/core';
 @Injectable({
   providedIn: 'root'
 })
-export class ReignmakerApiService {
+export class ReignbreakerApiService {
 
   // public baseURL: string = `https://flask-service.pqf2epmnql9p2.us-west-2.cs.amazonlightsail.com/api`
   public baseURL: string = `http://localhost:5000/api`
@@ -20,12 +20,12 @@ export class ReignmakerApiService {
 
   getUfcEvents() {
     return this.httpClient
-    .get(`${this.baseURL}/ufc-events`)
+    .get(`${this.baseURL}/ufc-events/v2`)
   }
 
-  getUfcMarketData() {
+  getUfcMarketData(series: string) {
     return this.httpClient
-    .get(`${this.baseURL}/ufc-market`)
+    .get(`${this.baseURL}/ufc-market-${series}`)
   }
 
   getRankedFighters() {

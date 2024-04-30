@@ -1,8 +1,10 @@
 import requests
+from datetime import datetime
 
 COLLECTION_KEYS = {
     'f226cd946f594de99b5c6aaf2ffcf4a0': 'pass',
     '8b8f14fb451944aca580a1e6bcb95cd4': 'ufc',
+    '27c4291759404392ab5db212ea61597e': 'ufc',
     '5eae2563006d4fe0ae1405a31567c60c': 'football',
     '6972b16d088c41ea860b598b397aed5f': 'golf',
 }
@@ -53,8 +55,11 @@ class Collection:
             collectable = GolfCard(card)
         else:
             collectable = Collectable(card)
-            print(f"Unsupported collection: {card['collectionName']}")
-        
+
+        # Filter out cards that are no longer useabel        
+        if collectable.type == 'ufc' and 'Event' in collectable.set_name and datetime.strptime(collectable.event_date, "%m/%d/%Y") < datetime.today():
+            return
+
         collectable.add_market_data(market)
         self._all_collectables.append(collectable)
 
@@ -80,6 +85,7 @@ class Collectable:
         self.rarity = self.attributes['rarity_tier'].lower()
         self.edition = edition
         self.set_name = self.attributes.get('set_name')
+        self.collection = card.get('collectionName', '')
         self.name = card['name']
         self.thumbnail_url = card.get('thumbnailUrl')
         self.purchase = card.get('purchasePrice', 0)
@@ -134,6 +140,7 @@ class UFCard(PlayerCard):
         super().__init__(card)
         self.type = 'ufc'
         self.event = None
+        self.event_date = self.attributes.get('event_date', None)
 
 
 class FootballCard(PlayerCard):
@@ -144,7 +151,7 @@ class FootballCard(PlayerCard):
         super().__init__(card)
         self.type = 'football'
         self.team = self.attributes.get('team')
-        self.position: self.attributes.get('position')
+        self.position = self.attributes.get('position')
 
 
 class GolfCard(PlayerCard):
@@ -173,4 +180,4 @@ class GolfCard(PlayerCard):
 #                 'status': card['competitionSummaries']['competitionStatus']
 #             }
 #     print(cards_in_lineups)
-#     return cards_in_lineups
+#     return cards_in_lineupss

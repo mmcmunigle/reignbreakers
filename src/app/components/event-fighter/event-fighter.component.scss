@@ -26,7 +26,7 @@ h2, h3, h4, h5 {
     .name {
         margin-left: 10px;
         font-size: 12px;
-        width: 18%;
+        width: 12%;
     }
 
     .odds {
@@ -53,8 +53,8 @@ h2, h3, h4, h5 {
     }
 
     .odds {
-        margin-left: 10px;
-        width: 100px;
+        margin-right: 20px;
+        width: min-content;
     }
 
     .sales-property {
@@ -87,4 +87,5 @@ h2, h3, h4, h5 {
 
 .reignmaker {
     background-color: rgb(207, 108, 8);
+    margin-right: 20px;
 }

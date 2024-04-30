@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { ReignmakerApiService } from 'src/app/services/api.service';
+import { CollectionType } from 'src/app/enums/collection-type';
+import { ReignmakerApiService } from 'src/app/services/reinbreaker-api.service';
 import { CollectionService } from 'src/app/services/collection.service';
 
 @Component({
@@ -24,13 +25,13 @@ export class ContestsComponent implements OnInit {
 
   ngOnInit(): void {
     setInterval(() => {
-      this.apiService.getUfcMarketData()
+      this.apiService.getUfcMarketData('2024')
       .subscribe((merchandise: any) => {
         this.merchandise = merchandise;
       });
     }, 30000)
 
-    this.apiService.getUfcMarketData()
+    this.apiService.getUfcMarketData('2024')
     .subscribe((merchandise: any) => {
       this.merchandise = merchandise;
     });
@@ -39,7 +40,7 @@ export class ContestsComponent implements OnInit {
     .subscribe((fighters: any) => {
       this.rankedFighters = fighters;
       this.rankedFighters.forEach((fighter: any) => {
-        const cards = this.collectionService.fighterCardsOwned(fighter.name, 'Genesis');
+        const cards = this.collectionService.fighterCardsOwned(fighter.name, CollectionType.UFC24, 'Genesis');
         this.collected.core += cards.filter((card: any) => card.rarity == 'core').length ? 1 : 0;
         this.collected.rare += cards.filter((card: any) => card.rarity == 'rare').length ? 1 : 0;
         this.collected.elite += cards.filter((card: any) => {

@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { CollectionService } from 'src/app/services/collection.service';
+import {CollectionType} from 'src/app/enums/collection-type';
 
 @Component({
   selector: 'app-event-fighter',
@@ -31,7 +32,7 @@ export class EventFighterComponent implements OnInit {
     }
 
     setTimeout(() => {
-      const cardsOwned = this.collectionService.fighterCardsOwned(this.fighter.name);
+      const cardsOwned = this.collectionService.fighterCardsOwned(this.fighter.name, CollectionType.UFC24);
       cardsOwned.forEach((card: any) => {
         if (this.collected[card.rarity]) {
           this.collected[card.rarity] += 1;
