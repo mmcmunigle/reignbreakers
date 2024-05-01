@@ -31,7 +31,7 @@ class Collection:
         return self._all_collectables
 
     def get_ufc(self):
-        return [card.__dict__ for card in self._all_collectables if card.type == 'ufc']
+        return [card.__dict__ for card in self._all_collectables if card.type == 'ufc' and card.useable_all_season]
     
     def get_golf(self):
         return [card.__dict__ for card in self._all_collectables if card.type == 'golf']
@@ -56,9 +56,8 @@ class Collection:
         else:
             collectable = Collectable(card)
 
-        # Filter out cards that are no longer useabel        
-        if collectable.type == 'ufc' and 'Event' in collectable.set_name and datetime.strptime(collectable.event_date, "%m/%d/%Y") < datetime.today():
-            return
+        # Filter out cards that are no longer useabel    
+
 
         collectable.add_market_data(market)
         self._all_collectables.append(collectable)
@@ -71,6 +70,7 @@ class Collectable:
     edition = None
     set_name = None
     name = None
+    useable_all_season = None
     thumbnail_url = None
     purchase = None
     sale = None
@@ -87,6 +87,7 @@ class Collectable:
         self.set_name = self.attributes.get('set_name')
         self.collection = card.get('collectionName', '')
         self.name = card['name']
+        self.useable_all_season = True,
         self.thumbnail_url = card.get('thumbnailUrl')
         self.purchase = card.get('purchasePrice', 0)
         self.sale = card.get('saleListingPrice', 0)
@@ -141,6 +142,11 @@ class UFCard(PlayerCard):
         self.type = 'ufc'
         self.event = None
         self.event_date = self.attributes.get('event_date', None)
+
+        if '23' in self.collection and 'UFC' in self.set_name:
+            self.useable_all_season = False
+        if 'Event' in self.set_name and datetime.strptime(self.event_date, "%m/%d/%Y") < datetime.today():
+            self.useable_all_season = False
 
 
 class FootballCard(PlayerCard):

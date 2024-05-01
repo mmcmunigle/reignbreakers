@@ -8,12 +8,18 @@ class UFCOdds:
     
 
     def get_odds(self):
+        # for date, event_details in self._fight_odds.items():
+        #     print(event_details)
+        #     for matchup in event_details:
+        #         for fighter in matchup:
+        #             print(fighter)
+
         event_odds = []
         for date, event_details in self._fight_odds.items():
             event_odds.append({
                 'title': date,
                 'date': date,
-                'matchups': event_details,
+                'fighters': [fighter for matchup in event_details for fighter in matchup],
             })
 
         return event_odds
@@ -35,6 +41,8 @@ class UFCOdds:
 
                 if len(fight['bookmakers']):
                     odds = fight['bookmakers'][0]['markets'][0]['outcomes']
+                    if odds[0]['price'] > 0:
+                        odds[0], odds[1] = odds[1], odds[0]
 
                     if date_str in fights:
                         fights[date_str].append(odds)

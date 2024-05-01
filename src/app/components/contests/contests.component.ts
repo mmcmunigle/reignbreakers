@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { CollectionType } from 'src/app/enums/collection-type';
-import { ReignmakerApiService } from 'src/app/services/reinbreaker-api.service';
+import { ReignbreakerApiService } from 'src/app/services/reinbreaker-api.service';
 import { CollectionService } from 'src/app/services/collection.service';
 
 @Component({
@@ -19,7 +19,7 @@ export class ContestsComponent implements OnInit {
     reignmaker: 0,
   }
   constructor(
-    public apiService: ReignmakerApiService,
+    public apiService: ReignbreakerApiService,
     public collectionService: CollectionService,
   ) { }
 

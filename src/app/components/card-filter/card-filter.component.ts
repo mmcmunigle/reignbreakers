@@ -1,6 +1,6 @@
 import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { ActivatedRoute, Params, Router } from '@angular/router';
-import { ReignmakerApiService } from 'src/app/services/reinbreaker-api.service';
+import { ReignbreakerApiService } from 'src/app/services/reinbreaker-api.service';
 
 @Component({
   selector: 'app-card-filter',
@@ -23,7 +23,7 @@ export class CardFilterComponent implements OnInit {
   public showReignmaker = true;
 
   constructor(
-    private apiService: ReignmakerApiService,
+    private apiService: ReignbreakerApiService,
     private activatedRoute: ActivatedRoute,
     private router: Router,
   ) { }

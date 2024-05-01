@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnInit, SimpleChanges } from '@angular/core';
 import { CollectionService } from 'src/app/services/collection.service';
 import {CollectionType} from 'src/app/enums/collection-type';
 
@@ -9,6 +9,7 @@ import {CollectionType} from 'src/app/enums/collection-type';
 })
 export class EventFighterComponent implements OnInit {
   @Input() fighter!: any;
+  @Input() contestYear: string;
   @Input() set: string = '';
   core: any = {};
   rare: any = {};
@@ -22,28 +23,39 @@ export class EventFighterComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    const cards = this.fighter.details
-    if (this.fighter.details) {
-      this.core = this.cardBySet(cards.core);
-      this.rare = this.cardBySet(cards.rare);
-      this.elite = this.cardBySet(cards.elite);
-      this.legendary = this.cardBySet(cards.legendary);
-      this.reignmaker = this.cardBySet(cards.reignmaker);
-    }
-
-    setTimeout(() => {
-      const cardsOwned = this.collectionService.fighterCardsOwned(this.fighter.name, CollectionType.UFC24);
-      cardsOwned.forEach((card: any) => {
-        if (this.collected[card.rarity]) {
-          this.collected[card.rarity] += 1;
-        } else {
-          this.collected[card.rarity] = 1;
-        }
-      });
-    }, 200);
+    this.updateFighterDetails();
   }
 
-  cardBySet(cards: any): any {
+  ngOnChanges(changes: SimpleChanges) {
+    this.collected = {};
+    this.updateFighterDetails();
+  }
+
+  updateFighterDetails(): void {
+    const cards = this.fighter.details ? this.fighter.details[this.contestYear] : null;
+    if (cards) {
+      this.core = this.getCheapestCardBySet(cards.core);
+      this.rare = this.getCheapestCardBySet(cards.rare);
+      this.elite = this.getCheapestCardBySet(cards.elite);
+      this.legendary = this.getCheapestCardBySet(cards.legendary);
+      this.reignmaker = this.getCheapestCardBySet(cards.reignmaker);
+    } else {
+      this.core = this.rare = this.elite = this.legendary = this.reignmaker = {};
+    }
+
+    const collectionType: CollectionType = this.contestYear === '2024' ? CollectionType.UFC24 : CollectionType.UFC23;
+    
+    const cardsOwned = this.collectionService.fighterCardsOwned(this.fighter.name, collectionType);
+    cardsOwned.forEach((card: any) => {
+      if (this.collected[card.rarity]) {
+        this.collected[card.rarity] += 1;
+      } else {
+        this.collected[card.rarity] = 1;
+      }
+    });
+  }
+
+  getCheapestCardBySet(cards: any): any {
     if (!this.set && Object.keys(cards).length) {
       return Object.values(cards).reduce(function(res: any, obj: any) {
         return (obj.price < res.price) ? obj : res;

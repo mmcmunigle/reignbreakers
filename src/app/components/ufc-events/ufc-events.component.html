@@ -1,10 +1,6 @@
 <div id="ufc-container">
   <mat-form-field id="year-selector">
-    <mat-select
-      [(value)]="selectedYear"
-      placeholder="Contest Year"
-      (selectionChange)="yearSelected()"
-    >
+    <mat-select [(value)]="selectedYear" placeholder="Contest Year">
       <mat-option value="2024">2024</mat-option>
       <mat-option value="2023">2023</mat-option>
     </mat-select>
@@ -12,18 +8,15 @@
   <span *ngFor="let event of events">
     <mat-card class="fight-details">
       <mat-card-header>
-        <mat-card-title class="fight-title">{{ event.title }}</mat-card-title>
+        <mat-card-title class="fight-title">{{ event.date }}</mat-card-title>
         <mat-card-subtitle>{{ event.date }}</mat-card-subtitle>
       </mat-card-header>
     </mat-card>
-    <mat-grid-list [cols]="1" rowHeight="40px" gutterSize="10px">
-      <mat-grid-tile *ngFor="let matchup of event['matchups']">
+    <mat-grid-list [cols]="columnSize" rowHeight="40px" gutterSize="10px">
+      <mat-grid-tile *ngFor="let fighter of event['fighters']">
         <app-event-fighter
-          [fighter]="matchup[0]"
-          style="width: 100%"
-        ></app-event-fighter>
-        <app-event-fighter
-          [fighter]="matchup[1]"
+          [fighter]="fighter"
+          [contestYear]="selectedYear"
           style="width: 100%"
         ></app-event-fighter>
       </mat-grid-tile>

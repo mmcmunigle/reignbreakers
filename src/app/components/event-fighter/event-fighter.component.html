@@ -1,7 +1,8 @@
 <mat-card>
-  <mat-card-content style="display: flex">
-    <h3 style="margin: 0px 15px; width: 15px">{{ fighter.rank }}</h3>
-    <h3 class="name">{{ fighter.name }}</h3>
+  <mat-card-content style="display: flex; height: 40px">
+    <h3 style="margin: 5px 0 5px 20px" class="name">
+      {{ fighter.name }}
+    </h3>
     <h4 class="odds">{{ fighter.price || fighter.vote }}</h4>
     <h3
       class="sales-property common"

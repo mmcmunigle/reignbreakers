@@ -5,7 +5,7 @@ import { MatChipInputEvent } from '@angular/material/chips';
 import { Observable, of } from 'rxjs';
 import { debounceTime, switchMap } from 'rxjs/operators';
 import { PlayerCard } from 'src/app/interfaces/player-card';
-import { ReignmakerApiService } from 'src/app/services/reinbreaker-api.service';
+import { ReignbreakerApiService } from 'src/app/services/reinbreaker-api.service';
 
 @Component({
   selector: 'inventory-dashboard',
@@ -39,7 +39,7 @@ export class InventoryDashboardComponent implements OnInit {
   @ViewChild('nameInput') nameInput: ElementRef<HTMLInputElement>;
 
   constructor(
-    private apiService: ReignmakerApiService,
+    private apiService: ReignbreakerApiService,
   ) {}
 
   ngOnInit(): void {

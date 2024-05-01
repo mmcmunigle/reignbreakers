@@ -1,5 +1,6 @@
-import { ChangeDetectorRef, Component, OnInit } from '@angular/core';
-import { ReignmakerApiService } from 'src/app/services/reinbreaker-api.service';
+import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
+import { Component, OnInit } from '@angular/core';
+import { ReignbreakerApiService } from 'src/app/services/reinbreaker-api.service';
 
 @Component({
   selector: 'app-ufc-events',
@@ -8,38 +9,42 @@ import { ReignmakerApiService } from 'src/app/services/reinbreaker-api.service';
 })
 export class UfcEventsComponent implements OnInit {
 
-  events: any;
-  merchandise: any;
-  selectedYear: string = '2024';
+  public events: any;
+  public selectedYear: string = '2024';
+  public columnSize: number = 2;
 
-  constructor(public apiService: ReignmakerApiService, private changeRef: ChangeDetectorRef) { }
+  constructor(public apiService: ReignbreakerApiService, private responsive: BreakpointObserver) { }
 
   ngOnInit(): void {
-    setInterval(() => {
-      this.apiService.getUfcMarketData(this.selectedYear)
-      .subscribe((merchandise: any) => {
-        this.merchandise = merchandise;
-      });
-    }, 30000)
-
-    this.apiService.getUfcMarketData(this.selectedYear)
-    .subscribe((merchandise: any) => {
-      this.merchandise = merchandise;
-    });
-
     this.apiService.getUfcEvents()
     .subscribe((events: any) => {
       this.events = events;
     });
-  }
 
-  yearSelected(): void {
-    this.apiService.getUfcMarketData(this.selectedYear)
-    .subscribe((merchandise: any) => {
-      this.merchandise = merchandise;
-      this.changeRef.detectChanges()
-      This does not work - need to make a merchandise manager or include with the fighters
-    });
+    this.responsive.observe([
+      Breakpoints.TabletPortrait,
+      Breakpoints.HandsetPortrait,
+      Breakpoints.Medium])
+      .subscribe(result => {
+    
+        const breakpoints = result.breakpoints;
+    
+        if (breakpoints[Breakpoints.TabletPortrait]) {
+          console.log("screens matches TabletPortrait");
+          this.columnSize = 1;
+        }
+        else if (breakpoints[Breakpoints.HandsetPortrait]) {
+          console.log("screens matches HandsetPortrait");
+          this.columnSize = 1;
+        }
+        else if (breakpoints[Breakpoints.Medium]) {
+          console.log("screens matches Medium");
+          this.columnSize = 1;
+        }
+        else {
+          this.columnSize = 2;
+        }
+    
+      });
   }
-
 }

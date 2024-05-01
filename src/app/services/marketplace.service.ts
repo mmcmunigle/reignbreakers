@@ -23,5 +23,9 @@ export class MarketplaceService implements OnInit {
       this.marketplaceData[year] = this.apiService.getUfcMarketData(year);
     });
   }
+
+  getPlayerMarketData(year: string, player: string) {
+    return this.marketplaceData[year][player]
+  }
 }
 

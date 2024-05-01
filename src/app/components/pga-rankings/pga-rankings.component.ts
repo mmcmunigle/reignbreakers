@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ReignmakerApiService } from 'src/app/services/reinbreaker-api.service';
+import { ReignbreakerApiService } from 'src/app/services/reinbreaker-api.service';
 
 @Component({
   selector: 'app-pga-rankings',
@@ -10,7 +10,7 @@ export class PgaRankingsComponent implements OnInit {
 
   rankings: any;
   market: any;
-  constructor(public apiService: ReignmakerApiService) { }
+  constructor(public apiService: ReignbreakerApiService) { }
 
   ngOnInit(): void {
     setInterval(() => {
