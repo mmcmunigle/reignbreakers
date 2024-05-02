@@ -49,3 +49,13 @@ Thumbs.db
 # Virtualenvs
 .venv
 node_modules
+
+
+# Certs
+server.crt
+server.csr
+server.key
+
+
+# Angular builds
+docs/*

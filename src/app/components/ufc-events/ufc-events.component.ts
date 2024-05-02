@@ -24,21 +24,22 @@ export class UfcEventsComponent implements OnInit {
     this.responsive.observe([
       Breakpoints.TabletPortrait,
       Breakpoints.HandsetPortrait,
-      Breakpoints.Medium])
+      Breakpoints.Medium,
+      Breakpoints.Small])
       .subscribe(result => {
     
         const breakpoints = result.breakpoints;
     
         if (breakpoints[Breakpoints.TabletPortrait]) {
-          console.log("screens matches TabletPortrait");
           this.columnSize = 1;
         }
         else if (breakpoints[Breakpoints.HandsetPortrait]) {
-          console.log("screens matches HandsetPortrait");
           this.columnSize = 1;
         }
         else if (breakpoints[Breakpoints.Medium]) {
-          console.log("screens matches Medium");
+          this.columnSize = 1;
+        }
+        else if (breakpoints[Breakpoints.Small]) {
           this.columnSize = 1;
         }
         else {

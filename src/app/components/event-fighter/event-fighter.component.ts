@@ -11,12 +11,13 @@ export class EventFighterComponent implements OnInit {
   @Input() fighter!: any;
   @Input() contestYear: string;
   @Input() set: string = '';
-  core: any = {};
-  rare: any = {};
-  elite: any = {};
-  legendary: any = {};
-  reignmaker: any = {};
-  collected: any = {};
+
+  public core: any = {};
+  public rare: any = {};
+  public elite: any = {};
+  public legendary: any = {};
+  public reignmaker: any = {};
+  public collected: any = {};
 
   constructor(
     public collectionService: CollectionService,
@@ -24,6 +25,11 @@ export class EventFighterComponent implements OnInit {
 
   ngOnInit(): void {
     this.updateFighterDetails();
+
+    this.collectionService.collectionUpdated.subscribe((value) => {
+      console.log(value);
+      this.mapFightersInCollection()
+    });
   }
 
   ngOnChanges(changes: SimpleChanges) {
@@ -43,6 +49,10 @@ export class EventFighterComponent implements OnInit {
       this.core = this.rare = this.elite = this.legendary = this.reignmaker = {};
     }
 
+    this.mapFightersInCollection();
+  }
+
+  private mapFightersInCollection(): void {
     const collectionType: CollectionType = this.contestYear === '2024' ? CollectionType.UFC24 : CollectionType.UFC23;
     
     const cardsOwned = this.collectionService.fighterCardsOwned(this.fighter.name, collectionType);

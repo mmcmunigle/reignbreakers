@@ -1,25 +1,29 @@
 import { Injectable, OnInit } from '@angular/core';
 import { ReignbreakerApiService } from './reinbreaker-api.service';
 import { CollectionType } from '../enums/collection-type';
+import { BehaviorSubject } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
-export class CollectionService implements OnInit {
+export class CollectionService {
 
   private collection: any;
+  private collectionSubject = new BehaviorSubject(false);
+  public collectionUpdated = this.collectionSubject.asObservable();
 
   constructor(
     public apiService: ReignbreakerApiService,
   ) {
-    this.apiService.getInventory()
-      .subscribe((cards: any) => {
-        this.collection = cards;
-      });
+    this.initialize();
   }
 
-  ngOnInit(): void {
-    this.collection = this.apiService.getInventory();
+  initialize(): void {
+    this.apiService.getInventory()
+    .subscribe((cards: any) => {
+      this.collection = cards;
+      this.collectionSubject.next(true);
+    });
   }
 
   fighterCardsOwned(fighter: string, collection: CollectionType, set_name: string = '') {

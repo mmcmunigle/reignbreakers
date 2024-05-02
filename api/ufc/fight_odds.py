@@ -44,6 +44,9 @@ class UFCOdds:
                     if odds[0]['price'] > 0:
                         odds[0], odds[1] = odds[1], odds[0]
 
+                    odds[0]['name'] = correct_names(odds[0]['name'])
+                    odds[1]['name'] = correct_names(odds[1]['name'])
+
                     if date_str in fights:
                         fights[date_str].append(odds)
                     else:
@@ -52,3 +55,14 @@ class UFCOdds:
         self._fight_odds = fights
     
 
+def correct_names(name):
+    name_corrections = {
+        'Sergey Pavlovich': 'Sergei Pavlovich',
+        'Elves Brenner': 'Elves Brener',
+        'José Aldo': 'Jose Aldo',
+        'Paulo Henrique Costa': 'Paulo Costa',
+    }
+    if name in name_corrections:
+        return name_corrections[name]
+    else:
+        return name

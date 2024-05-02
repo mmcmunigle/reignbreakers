@@ -1,0 +1,15 @@
+# frontend/Dockerfile
+# Build Angular
+FROM node:16-alpine as builder
+WORKDIR /app
+COPY . ./
+RUN npm install
+RUN export NODE_OPTIONS=--openssl-legacy-provider
+RUN node_modules/.bin/ng build --prod
+
+# Serve Angular using Nginx
+FROM nginx:alpine
+COPY --from=builder /app/docs /usr/share/nginx/html
+COPY ./nginx/nginx.conf /etc/nginx/conf.d/default.conf
+
+CMD ["nginx", "-g", "daemon off;"]

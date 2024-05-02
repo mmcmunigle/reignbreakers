@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { environment } from 'src/environments/environment';
 
 @Injectable({
   providedIn: 'root'
@@ -7,11 +8,14 @@ import { Injectable } from '@angular/core';
 export class ReignbreakerApiService {
 
   // public baseURL: string = `https://flask-service.pqf2epmnql9p2.us-west-2.cs.amazonlightsail.com/api`
-  public baseURL: string = `http://localhost:5000/api`
+  public baseURL: string = `${environment.apiUrl}/api`
 
   constructor(
     private httpClient: HttpClient
-  ) {}
+  ) {
+    console.log(environment.production);
+    console.log(environment.apiUrl);
+  }
 
   getInventory() {
     return this.httpClient
