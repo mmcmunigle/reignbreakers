@@ -59,7 +59,7 @@ export class InventoryDashboardComponent implements OnInit {
     }, 250);
 
     this.filteredCardNames = this.nameControl.valueChanges.pipe(
-      debounceTime(200),
+      debounceTime(250),
       switchMap((value: string) => {
         const matches = this.names
           .filter(name => {
@@ -73,7 +73,7 @@ export class InventoryDashboardComponent implements OnInit {
     ));
   }
 
-  mergeMarketData(market: any) {
+  private mergeMarketData(market: any) {
     this.cards.forEach((card) => {
       if (market[card.name]) {
         const marketData = market[card.name][card.rarity][card.set_name];
@@ -84,14 +84,14 @@ export class InventoryDashboardComponent implements OnInit {
     });
   }
   
-  nameSelected(event: MatAutocompleteSelectedEvent) {
+  public nameSelected(event: MatAutocompleteSelectedEvent) {
     this.selectedNames.push(event.option.viewValue);
     this.nameInput.nativeElement.value = '';
     this.nameControl.setValue(null);
     this.applyFilters();
   }
 
-  addName(event: MatChipInputEvent): void {
+  public addName(event: MatChipInputEvent): void {
     const value = (event.value || '').trim();
 
     if (value && this.names?.includes(value)) {
@@ -104,7 +104,7 @@ export class InventoryDashboardComponent implements OnInit {
   }
 
 
-  removeName(name: string): void {
+  public removeName(name: string): void {
     const index = this.selectedNames.indexOf(name);
 
     if (index >= 0) {
@@ -113,7 +113,7 @@ export class InventoryDashboardComponent implements OnInit {
     }
   }
 
-  setCols() {
+  private setCols() {
     if (window.innerWidth < 1000) {
       this.cols = "1"
     } else if (window.innerWidth < 1600) {
@@ -123,11 +123,11 @@ export class InventoryDashboardComponent implements OnInit {
     }
   }
 
-  closeFilters() {
+  public closeFilters() {
     this.filterOpened = false;
   }
 
-  applyFilters() {
+  private applyFilters() {
     switch (this.filters.sportsFilter) {
       case 'ufc':
         this.filteredCards = this.cards.filter((card: any) => card.team === 'UFC');

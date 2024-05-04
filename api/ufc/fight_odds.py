@@ -4,25 +4,19 @@ from datetime import datetime, timedelta
 class UFCOdds:
     def __init__(self):
         self._odds_url = "https://api.the-odds-api.com/v4/sports/mma_mixed_martial_arts/odds?regions=us&markets=h2h&oddsFormat=american&apiKey=b2d720a23ab769a3d0697a74ff069a2e"
-        self._fight_odds = {}
+        self._fight_odds = []
     
 
     def get_odds(self):
-        # for date, event_details in self._fight_odds.items():
-        #     print(event_details)
-        #     for matchup in event_details:
-        #         for fighter in matchup:
-        #             print(fighter)
+        return self._fight_odds
 
-        event_odds = []
-        for date, event_details in self._fight_odds.items():
-            event_odds.append({
-                'title': date,
-                'date': date,
-                'fighters': [fighter for matchup in event_details for fighter in matchup],
-            })
+    def get_event_fighters(self):
+        fighter_events = {}
+        for event in self._fight_odds:
+            for fighter in event['fighters']:
+                fighter_events[fighter] = event['date']
 
-        return event_odds
+        return fighter_events
 
     def pull_latest_odds(self):
         resp = requests.get(self._odds_url, timeout=10).json()
@@ -52,7 +46,15 @@ class UFCOdds:
                     else:
                         fights[date_str] = [odds]
         
-        self._fight_odds = fights
+        fight_odds = []
+        for date, event_details in fights.items():
+            fight_odds.append({
+                'title': date,
+                'date': date,
+                'fighters': [fighter for matchup in event_details for fighter in matchup],
+            })
+
+        self._fight_odds = fight_odds
     
 
 def correct_names(name):

@@ -16,7 +16,7 @@ class Collection:
         self.portfolio_url = "https://marketplace.draftkings.com/api/users/v1/portfolios/4278d426-173a-4c2c-826d-045a7424859f?format=json"
         self._all_collectables = []
 
-    def update_collection(self, market):
+    def update_collection(self):
         response = requests.get(self.portfolio_url)
         if not response.ok:
             print("COULD NOT GET PORTFOLIO DATA")
@@ -24,8 +24,13 @@ class Collection:
 
         self._all_collectables = []
         for card in response.json()['collectibleEditions']:
-            self.process_cards(card, market)
+            self.process_cards(card)
 
+    def add_ufc_event_details(self, event_details):
+        for ufc_card in self.get_ufc():
+            if ufc_card['name'] in event_details:
+                ufc_card['event'] = event_details[ufc_card['name']]
+                print(ufc_card['name'], ufc_card['event'])
 
     def get_all(self):
         return self._all_collectables
@@ -42,7 +47,7 @@ class Collection:
     def get_pass(self):
         return [card.__dict__ for card in self._all_collectables if card.type == 'pass']
 
-    def process_cards(self, card, market):
+    def process_cards(self, card):
         collection_key = card['collectionKey']
 
         if (COLLECTION_KEYS.get(collection_key) == 'pass'):
@@ -56,10 +61,7 @@ class Collection:
         else:
             collectable = Collectable(card)
 
-        # Filter out cards that are no longer useabel    
-
-
-        collectable.add_market_data(market)
+        # collectable.add_market_data(market)
         self._all_collectables.append(collectable)
 
 

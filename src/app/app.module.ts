@@ -23,6 +23,10 @@ import { MatMenuModule } from '@angular/material/menu';
 import { MatSelectModule } from '@angular/material/select';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatSortModule } from '@angular/material/sort'; 
+import { MatTableModule } from '@angular/material/table';
+
 import { RouterModule } from '@angular/router';
 import { CardFilterComponent } from './components/card-filter/card-filter.component';
 import { CollectionOverviewComponent } from './components/collection-overview/collection-overview.component';
@@ -34,6 +38,7 @@ import { CollectionCountPipe } from './pipes/collection-count.pipe';
 import { CollectionSpendPipe } from './pipes/collection-spend.pipe';
 import { CollectionValuePipe } from './pipes/collection-value.pipe';
 import { PgaRankingsComponent } from './components/pga-rankings/pga-rankings.component';
+import { InventoryTableComponent } from './components/inventory-table/inventory-table.component';
 
 @NgModule({
   declarations: [
@@ -48,7 +53,8 @@ import { PgaRankingsComponent } from './components/pga-rankings/pga-rankings.com
     EventFighterComponent,
     ContestsComponent,
     CardFilterComponent,
-    PgaRankingsComponent
+    PgaRankingsComponent,
+    InventoryTableComponent
   ],
   imports: [
     BrowserModule,
@@ -68,6 +74,9 @@ import { PgaRankingsComponent } from './components/pga-rankings/pga-rankings.com
     MatFormFieldModule,
     MatInputModule,
     MatBadgeModule,
+    MatPaginatorModule,
+    MatSortModule,
+    MatTableModule,
     FormsModule,
     ReactiveFormsModule,
     RouterModule,

@@ -74,9 +74,14 @@ def get_ufc_events_v2():
 
     return events
 
-@api.route('/ufc-odds/v2', methods=['GET'])
-def get_ufc_odds_v2():
+@api.route('/ufc-odds', methods=['GET'])
+def get_ufc_odds():
     return ufc_odds.get_odds()
+
+
+@api.route('/ufc-event-fighters', methods=['GET'])
+def get_ufc_event_fighters():
+    return ufc_odds.get_event_fighters()
 
 
 @api.route('/pga-rankings', methods=['GET'])
@@ -98,8 +103,10 @@ def get_ranked_golfers():
 
 
 def update_collectables():
-    my_collection.update_collection(ufc_market_24.merchandise)
-    my_collection.update_collection(ufc_market_23.merchandise)
+    my_collection.update_collection()
+    print(ufc_odds.get_event_fighters())
+    my_collection.add_ufc_event_details(ufc_odds.get_event_fighters())
+    # my_collection.update_collection(ufc_market_23.merchandise)
     # my_collection.update_collection(golf_market.merchandise)
 
 
@@ -118,16 +125,16 @@ def update_ufc_odds():
 def initialize_app():
     scheduler = BackgroundScheduler({'apscheduler.job_defaults.max_instances': 50})
     # scheduler.add_job(check_activity, 'interval', seconds=5)
-    scheduler.add_job(update_collectables, 'interval', minutes=7, replace_existing=True)
+    scheduler.add_job(update_collectables, 'interval', minutes=1, replace_existing=True)
     scheduler.add_job(update_ufc_market_data, 'interval', minutes=15, replace_existing=True)
     scheduler.add_job(update_golf_market_data, 'interval', minutes=200)
     scheduler.add_job(update_ufc_odds, 'interval', minutes=600, replace_existing=True)
     scheduler.start()
 
+    update_ufc_odds()
     update_ufc_market_data()
     # update_golf_market_data()
     update_collectables()
-    update_ufc_odds()
 
     app.register_blueprint(api, url_prefix='/api')
     app.run(host='0.0.0.0')

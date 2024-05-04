@@ -59,4 +59,4 @@ certs/*
 
 
 # Angular builds
-docs/*
+/docs

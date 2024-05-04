@@ -1,5 +1,5 @@
 import requests
-from datetime import datetime
+from datetime import datetime, timedelta
 
 class Market:
     def __init__(self):
@@ -45,7 +45,7 @@ class UFCMarket(Market):
         event_date = attributes.get('event_date')
         series = attributes.get('series', '')
 
-        if '2024' in series and set_name == 'Event' and datetime.strptime(event_date, "%m/%d/%Y") < datetime.today():
+        if '2024' in series and set_name == 'Event' and datetime.strptime(event_date, "%m/%d/%Y") < (datetime.today - timedelta(days=3)()):
             return
 
         if '2023' in series and not useable_all_season:
