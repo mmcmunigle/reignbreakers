@@ -1,6 +1,15 @@
 @use '@angular/material' as mat;
 @import '@angular/material/theming';
-@include mat.core();
+// TODO(v15): As of v15 mat.legacy-core no longer includes default typography styles.
+//  The following line adds:
+//    1. Default typography styles for all components
+//    2. Styles for typography hierarchy classes (e.g. .mat-headline-1)
+//  If you specify typography styles for the components you use elsewhere, you should delete this line.
+//  If you don't need the default component typographies but still want the hierarchy styles,
+//  you can delete this line and instead use:
+//    `@include mat.legacy-typography-hierarchy(mat.define-legacy-typography-config());`
+@include mat.all-legacy-component-typographies();
+@include mat.legacy-core();
 
 // Define a dark theme
 $dark-theme: mat.define-dark-theme((
@@ -9,7 +18,7 @@ $dark-theme: mat.define-dark-theme((
    accent: mat.define-palette(mat.$blue-palette),
  ),
   // Only include `typography` and `density` in the default dark theme.
-  typography: mat.define-typography-config(),
+  typography: mat.define-legacy-typography-config(),
   density: 0,
 ));
 
@@ -36,17 +45,17 @@ $angular-dark-theme: mat.define-dark-theme(
 );
 
 .darkMode {
-  @include mat.all-component-colors($angular-dark-theme);
+  @include mat.all-legacy-component-colors($angular-dark-theme);
 }
 
 // Apply the dark theme by default
-@include mat.core-theme($dark-theme);
-@include mat.button-theme($dark-theme);
+@include mat.legacy-core-theme($dark-theme);
+@include mat.legacy-button-theme($dark-theme);
 
 // Apply the light theme only when the user prefers light themes.
 @media (prefers-color-scheme: light) {
  // Use the `-color` mixins to only apply color styles without reapplying the same
  // typography and density styles.
- @include mat.core-color($light-theme);
- @include mat.button-color($light-theme);
+ @include mat.legacy-core-color($light-theme);
+ @include mat.legacy-button-color($light-theme);
 }
