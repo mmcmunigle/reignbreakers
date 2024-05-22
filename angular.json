@@ -71,10 +71,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "reignbreaker:build:production"
+              "buildTarget": "reignbreaker:build:production"
             },
             "development": {
-              "browserTarget": "reignbreaker:build:development"
+              "buildTarget": "reignbreaker:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -82,7 +82,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "reignbreaker:build"
+            "buildTarget": "reignbreaker:build"
           }
         },
         "test": {
