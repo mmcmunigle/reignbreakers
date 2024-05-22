@@ -2,15 +2,17 @@
 /* TODO(mdc-migration): The following rule targets internal classes of card that may no longer apply for the MDC version.*/
 mat-card {
     margin: auto;
-
-    a {
-        cursor: pointer;
-    }
 }
 
 /* TODO(mdc-migration): The following rule targets internal classes of card that may no longer apply for the MDC version.*/
 mat-card-content {
     align-items: center;
+    display: flex;
+    height: 40px;
+}
+
+.mat-mdc-card-content {
+    padding: 0;
 }
 
 .owned {
@@ -54,7 +56,6 @@ h2, h3, h4, h5 {
         font-size: 12px;
         margin: 0 0 0 1em;
         border-radius: 5px;
-        color: white;
         padding: 0px;
         width: 15%;
         height: fit-content;
@@ -79,7 +80,7 @@ h2, h3, h4, h5 {
 
     .sales-property {
         border-radius: 5px;
-        color: white;
+        // color: white;
         width: fit-content;
         padding: 0px 5px;
         width: 50px;

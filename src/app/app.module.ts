@@ -42,6 +42,7 @@ import { CollectionOfferPipe } from './pipes/collection-offer.pipe';
 import { PgaRankingsComponent } from './components/pga-rankings/pga-rankings.component';
 import { InventoryTableComponent } from './components/inventory-table/inventory-table.component';
 import { CollectionComponent } from './components/collection/collection.component';
+import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 
 @NgModule({
   declarations: [
@@ -89,7 +90,9 @@ import { CollectionComponent } from './components/collection/collection.componen
     LayoutModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [
+    provideAnimationsAsync()
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

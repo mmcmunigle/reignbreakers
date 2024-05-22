@@ -1,33 +1,52 @@
-
 <div>
   <div id="close">
     <button mat-button (click)="close()"><mat-icon>close</mat-icon></button>
   </div>
   <section class="filter-group" id="raritySelection">
-    <mat-checkbox class="checkSpacing" [checked]="showCore" color=primary 
-                  (change)="showCore=$event.checked; updateFilters()">
+    <mat-checkbox
+      class="checkSpacing"
+      [checked]="showCore"
+      color="primary"
+      (change)="showCore = $event.checked; updateFilters()"
+    >
       Core
     </mat-checkbox>
-    <mat-checkbox class="checkSpacing" [checked]="showRare" color=primary 
-                  (change)="showRare=$event.checked; updateFilters()">
+    <mat-checkbox
+      class="checkSpacing"
+      [checked]="showRare"
+      color="primary"
+      (change)="showRare = $event.checked; updateFilters()"
+    >
       Rare
     </mat-checkbox>
-    <mat-checkbox class="checkSpacing" [checked]="showElite" color=primary 
-                  (change)="showElite=$event.checked; updateFilters()">
+    <mat-checkbox
+      class="checkSpacing"
+      [checked]="showElite"
+      color="primary"
+      (change)="showElite = $event.checked; updateFilters()"
+    >
       Elite
     </mat-checkbox>
-    <mat-checkbox class="checkSpacing" [checked]="showLegendary" color=primary 
-                  (change)="showLegendary=$event.checked; updateFilters()">
+    <mat-checkbox
+      class="checkSpacing"
+      [checked]="showLegendary"
+      color="primary"
+      (change)="showLegendary = $event.checked; updateFilters()"
+    >
       Legendary
     </mat-checkbox>
-    <mat-checkbox class="checkSpacing" [checked]="showReignmaker" color=primary 
-                  (change)="showReignmaker=$event.checked; updateFilters()">
-    RM
-  </mat-checkbox>
+    <mat-checkbox
+      class="checkSpacing"
+      [checked]="showReignmaker"
+      color="primary"
+      (change)="showReignmaker = $event.checked; updateFilters()"
+    >
+      RM
+    </mat-checkbox>
   </section>
 
   <div class="filter-group">
-    <mat-chip-listbox aria-label="Sport Selector">
+    <!-- <mat-chip-listbox aria-label="Sport Selector">
       <mat-chip-option [selectable]="true" selected
                 (selectionChange)="setCardTypeFilter($event.selected, 'all')"
                 (click)="chip.toggleSelected()"
@@ -52,30 +71,37 @@
                 #chip2="matChip">
           Packs
       </mat-chip-option>
-    </mat-chip-listbox>
+    </mat-chip-listbox> -->
   </div>
 
   <div class="filter-group">
-    <mat-chip-listbox  aria-label="Sport Selector">
-      <mat-chip-option [selectable]="true" selected
-                (selectionChange)="setSportsSelector($event.selected, 'all')"
-                (click)="chip4.toggleSelected()"
-                #chip4="matChip">
-          All
+    <!-- <mat-chip-listbox aria-label="Sport Selector">
+      <mat-chip-option
+        [selectable]="true"
+        selected
+        (selectionChange)="setSportsSelector($event.selected, 'all')"
+        (click)="chip4.toggleSelected()"
+        #chip4="matChip"
+      >
+        All
       </mat-chip-option>
-      <mat-chip-option [selectable]="true" 
-                (selectionChange)="setSportsSelector($event.selected, 'ufc')"
-                (click)="chip5.toggleSelected()"
-                #chip5="matChip">
-          UFC
+      <mat-chip-option
+        [selectable]="true"
+        (selectionChange)="setSportsSelector($event.selected, 'ufc')"
+        (click)="chip5.toggleSelected()"
+        #chip5="matChip"
+      >
+        UFC
       </mat-chip-option>
-      <mat-chip-option [selectable]="true"
-                (selectionChange)="setSportsSelector($event.selected, 'football')"
-                (click)="chip6.toggleSelected()"
-                #chip6="matChip">
-          Football
+      <mat-chip-option
+        [selectable]="true"
+        (selectionChange)="setSportsSelector($event.selected, 'football')"
+        (click)="chip6.toggleSelected()"
+        #chip6="matChip"
+      >
+        Football
       </mat-chip-option>
-    </mat-chip-listbox>
+    </mat-chip-listbox> -->
   </div>
 
   <mat-form-field class="filter-group filter-selector" appearance="fill">
@@ -96,26 +122,39 @@
 
   <mat-form-field class="filter-group filter-selector" appearance="fill">
     <mat-label>Event</mat-label>
-    <mat-select [(value)]="eventFilter" (selectionChange)="setEvent($event.value)">
+    <mat-select
+      [(value)]="eventFilter"
+      (selectionChange)="setEvent($event.value)"
+    >
       <mat-option selected="true" value="all">All</mat-option>
-      <mat-option *ngFor="let event of events" [value]="event">{{event}}</mat-option>
+      <mat-option *ngFor="let event of events" [value]="event">{{
+        event
+      }}</mat-option>
     </mat-select>
   </mat-form-field>
 
   <mat-form-field class="filter-group filter-selector" appearance="fill">
     <mat-label>Set</mat-label>
-    <mat-select [(value)]="setFilter" (selectionChange)="setSetFilter($event.value)">
+    <mat-select
+      [(value)]="setFilter"
+      (selectionChange)="setSetFilter($event.value)"
+    >
       <mat-option value="all">All</mat-option>
       <mat-option value="Genesis">Genesis</mat-option>
       <mat-option value="Heatwave">Heatwave</mat-option>
-      <mat-option value="UFC Fight Night 3.11.23">Fight Night 3.11.23</mat-option>
+      <mat-option value="UFC Fight Night 3.11.23"
+        >Fight Night 3.11.23</mat-option
+      >
       <mat-option value="UFC 285">UFC 285</mat-option>
-      <mat-option value="UFC Fight Night 2.25.23">Fight Night 2.25.23</mat-option>
-      <mat-option value="UFC Fight Night 2.18.23">Fight Night 2.18.23</mat-option>
+      <mat-option value="UFC Fight Night 2.25.23"
+        >Fight Night 2.25.23</mat-option
+      >
+      <mat-option value="UFC Fight Night 2.18.23"
+        >Fight Night 2.18.23</mat-option
+      >
       <mat-option value="UFC 284">UFC 284</mat-option>
       <mat-option value="UFC Fight Night 2.4.23">Fight Night 2.4.23</mat-option>
       <mat-option value="UFC 283">UFC 283</mat-option>
     </mat-select>
   </mat-form-field>
-
 </div>

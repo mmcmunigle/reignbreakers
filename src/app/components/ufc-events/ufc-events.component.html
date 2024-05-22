@@ -1,12 +1,12 @@
 <div id="ufc-container">
-  <mat-form-field id="year-selector">
+  <mat-form-field id="year-selector" color="primary">
     <mat-select [(value)]="selectedYear" placeholder="Contest Year">
       <mat-option value="2024">2024</mat-option>
       <mat-option value="2023">2023</mat-option>
     </mat-select>
   </mat-form-field>
   <span *ngFor="let event of events">
-    <mat-card appearance="outlined" class="fight-details">
+    <mat-card class="fight-details">
       <mat-card-header>
         <mat-card-title class="fight-title">{{ event.title }}</mat-card-title>
         <mat-card-subtitle>{{ event.date }}</mat-card-subtitle>

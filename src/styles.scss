@@ -1,30 +1,9 @@
-/* You can add global styles to this file, and also import other style files */
+html, body { height: 100%; }
+body { color:whitesmoke; margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; background-color: rgb(5, 5, 5)}
+// body { background-color: rgb(5, 5, 5); margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
-html, body { height: 100%}
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; background-color: rgb(5, 5, 5)}
-
-@import '@angular/material/theming';
-@include mat-core();
-
-$my-app-primary: mat-palette($mat-indigo);
-$my-app-accent:  mat-palette($mat-grey, 500, 900, A100);
-$my-app-warn:    mat-palette($mat-deep-orange);
-$my-app-theme: mat-light-theme($my-app-primary, $my-app-accent, $my-app-warn);
-$my-app-dark-theme: mat-dark-theme($my-app-primary, $my-app-accent, $my-app-warn);
-@include angular-material-theme($my-app-theme);
-@include angular-material-theme($my-app-dark-theme);
-
-mat-card-header, mat-card {
-    align-items: center !important;
-    background-color: #2A2A2A;
-}
-
-.mat-mdc-table, .mat-mdc-paginator {
-    background-color: #2A2A2A;
-  }
-
-.mat-mdc-slide-toggle, .mat-mdc-form-field {
-    color: white;
+mat-card-header {
+    padding: 0 16px 10px 16px !important;
 }
 
 .mat-toolbar-row, .mat-toolbar-single-row {

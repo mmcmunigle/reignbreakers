@@ -1,13 +1,15 @@
 import { Component, Input, OnInit, SimpleChanges } from '@angular/core';
 import { CollectionService } from 'src/app/services/collection.service';
-import {CollectionType} from 'src/app/enums/collection-type';
+import { CollectionType } from 'src/app/enums/collection-type';
+import { MatCardModule } from '@angular/material/card';
 // import { ChartType, ChartOptions } from 'chart.js';
 
 @Component({
   selector: 'app-event-fighter',
   templateUrl: './event-fighter.component.html',
-  styleUrls: ['./event-fighter.component.scss']
+  styleUrls: ['./event-fighter.component.scss'],
 })
+
 export class EventFighterComponent implements OnInit {
   @Input() fighter!: any;
   @Input() contestYear: string;
