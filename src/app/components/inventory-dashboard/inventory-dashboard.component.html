@@ -24,8 +24,8 @@
 
       <mat-form-field id="name-lookup" appearance="outline">
         <mat-label>Search By Name</mat-label>
-        <mat-chip-list #chipList aria-label="Fruit selection">
-          <mat-chip
+        <mat-chip-grid #chipList aria-label="Fruit selection">
+          <mat-chip-row
             *ngFor="let name of selectedNames"
             selectable="true"
             removable="true"
@@ -35,7 +35,7 @@
             <button matChipRemove>
               <mat-icon>cancel</mat-icon>
             </button>
-          </mat-chip>
+          </mat-chip-row>
           <input
             placeholder="Search By Name..."
             #nameInput
@@ -44,7 +44,7 @@
             [matChipInputFor]="chipList"
             (matChipInputTokenEnd)="addName($event)"
           />
-        </mat-chip-list>
+        </mat-chip-grid>
         <mat-autocomplete
           #auto="matAutocomplete"
           autoActiveFirstOption="tre"

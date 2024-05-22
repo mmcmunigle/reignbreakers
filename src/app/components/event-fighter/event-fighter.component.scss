@@ -1,3 +1,5 @@
+
+/* TODO(mdc-migration): The following rule targets internal classes of card that may no longer apply for the MDC version.*/
 mat-card {
     margin: auto;
 
@@ -6,6 +8,7 @@ mat-card {
     }
 }
 
+/* TODO(mdc-migration): The following rule targets internal classes of card that may no longer apply for the MDC version.*/
 mat-card-content {
     align-items: center;
 }
@@ -30,6 +33,7 @@ h2, h3, h4, h5 {
 }
 
 @media (max-width: 480px){
+    /* TODO(mdc-migration): The following rule targets internal classes of card that may no longer apply for the MDC version.*/
     mat-card {
         width: 100%;
     }
@@ -59,6 +63,7 @@ h2, h3, h4, h5 {
 }
 
 @media (min-width: 480px){
+    /* TODO(mdc-migration): The following rule targets internal classes of card that may no longer apply for the MDC version.*/
     mat-card {
         width: 700px;
     }

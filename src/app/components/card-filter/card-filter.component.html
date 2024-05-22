@@ -27,55 +27,55 @@
   </section>
 
   <div class="filter-group">
-    <mat-chip-list aria-label="Sport Selector">
-      <mat-chip [selectable]="true" selected
+    <mat-chip-listbox aria-label="Sport Selector">
+      <mat-chip-option [selectable]="true" selected
                 (selectionChange)="setCardTypeFilter($event.selected, 'all')"
                 (click)="chip.toggleSelected()"
                 #chip="matChip">
           All
-      </mat-chip>
-      <mat-chip [selectable]="true" 
+      </mat-chip-option>
+      <mat-chip-option [selectable]="true" 
                 (selectionChange)="setCardTypeFilter($event.selected, 'players')"
                 (click)="chip1.toggleSelected()"
                 #chip1="matChip">
           Players
-      </mat-chip>
-      <mat-chip [selectable]="true"
+      </mat-chip-option>
+      <mat-chip-option [selectable]="true"
                 (selectionChange)="setCardTypeFilter($event.selected, 'passes')"
                 (click)="chip3.toggleSelected()"
                 #chip3="matChip">
           Passes
-        </mat-chip>
-      <mat-chip [selectable]="true"
+        </mat-chip-option>
+      <mat-chip-option [selectable]="true"
                 (selectionChange)="setCardTypeFilter($event.selected, 'packs')"
                 (click)="chip2.toggleSelected()"
                 #chip2="matChip">
           Packs
-      </mat-chip>
-    </mat-chip-list>
+      </mat-chip-option>
+    </mat-chip-listbox>
   </div>
 
   <div class="filter-group">
-    <mat-chip-list  aria-label="Sport Selector">
-      <mat-chip [selectable]="true" selected
+    <mat-chip-listbox  aria-label="Sport Selector">
+      <mat-chip-option [selectable]="true" selected
                 (selectionChange)="setSportsSelector($event.selected, 'all')"
                 (click)="chip4.toggleSelected()"
                 #chip4="matChip">
           All
-      </mat-chip>
-      <mat-chip [selectable]="true" 
+      </mat-chip-option>
+      <mat-chip-option [selectable]="true" 
                 (selectionChange)="setSportsSelector($event.selected, 'ufc')"
                 (click)="chip5.toggleSelected()"
                 #chip5="matChip">
           UFC
-      </mat-chip>
-      <mat-chip [selectable]="true"
+      </mat-chip-option>
+      <mat-chip-option [selectable]="true"
                 (selectionChange)="setSportsSelector($event.selected, 'football')"
                 (click)="chip6.toggleSelected()"
                 #chip6="matChip">
           Football
-      </mat-chip>
-    </mat-chip-list>
+      </mat-chip-option>
+    </mat-chip-listbox>
   </div>
 
   <mat-form-field class="filter-group filter-selector" appearance="fill">

@@ -1,8 +1,11 @@
+
+/* TODO(mdc-migration): The following rule targets internal classes of card that may no longer apply for the MDC version. */
 mat-card-header {
     height: 150px;
     margin-left: 0px;
 }
 
+/* TODO(mdc-migration): The following rule targets internal classes of card that may no longer apply for the MDC version. */
 ::ng-deep .mat-card-header-text {
     margin: 0 6px;
 }
