@@ -1,5 +1,5 @@
 import { Component, ElementRef, Input, OnInit, SimpleChanges, ViewChild } from '@angular/core';
-import { FormControl } from '@angular/forms';
+import { UntypedFormControl } from '@angular/forms';
 import { MatAutocompleteSelectedEvent } from '@angular/material/autocomplete';
 import { MatChipInputEvent } from '@angular/material/chips';
 import { Observable, of } from 'rxjs';
@@ -18,7 +18,7 @@ export class InventoryDashboardComponent implements OnInit {
 
   public cols = "0";
   public menuOpen: boolean = false;
-  public nameControl = new FormControl();
+  public nameControl = new UntypedFormControl();
   public cards: PlayerCard[] = [];
   public filteredCards: PlayerCard[] = [];
   public names: string[] = [];
