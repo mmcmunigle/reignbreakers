@@ -24,7 +24,7 @@ export class ReignbreakerApiService {
 
   getUfcEvents() {
     return this.httpClient
-    .get(`${this.baseURL}/ufc-events/v2`)
+    .get(`${this.baseURL}/ufc-events`)
   }
 
   getUfcMarketData(series: string) {

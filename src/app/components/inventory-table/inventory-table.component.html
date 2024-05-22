@@ -6,35 +6,65 @@
 
 <div class="example-container mat-elevation-z8">
   <mat-table [dataSource]="dataSource" matSort>
-    <!-- ID Column -->
-    <ng-container matColumnDef="id">
-      <mat-header-cell *matHeaderCellDef mat-sort-header> ID </mat-header-cell>
-      <mat-cell *matCellDef="let row"> {{ row.id }} </mat-cell>
-    </ng-container>
-
-    <!-- Progress Column -->
-    <ng-container matColumnDef="progress">
-      <mat-header-cell *matHeaderCellDef mat-sort-header>
-        Progress
-      </mat-header-cell>
-      <mat-cell *matCellDef="let row"> {{ row.progress }}% </mat-cell>
-    </ng-container>
-
     <!-- Name Column -->
     <ng-container matColumnDef="name">
       <mat-header-cell *matHeaderCellDef mat-sort-header>
         Name
       </mat-header-cell>
-      <mat-cell *matCellDef="let row"> {{ row.name }} </mat-cell>
+      <mat-cell *matCellDef="let row">
+        <a href="{{ row.link }}" target="_blank">{{ row.name }}</a>
+      </mat-cell>
+    </ng-container>
+
+    <!-- Set Column -->
+    <ng-container matColumnDef="set">
+      <mat-header-cell *matHeaderCellDef mat-sort-header> Set </mat-header-cell>
+      <mat-cell *matCellDef="let row"> {{ row.set_name }} </mat-cell>
     </ng-container>
 
     <!-- Color Column -->
-    <ng-container matColumnDef="color">
+    <ng-container matColumnDef="rarity">
       <mat-header-cell *matHeaderCellDef mat-sort-header>
-        Color
+        Rarity
       </mat-header-cell>
-      <mat-cell *matCellDef="let row" [style.color]="row.color">
-        {{ row.color }}
+      <mat-cell *matCellDef="let row">
+        <div [ngClass]="row.rarity + '-badge'" class="edition-badge">
+          <a href="{{ row.link }}" target="_blank">#{{ row.edition }}</a>
+        </div>
+      </mat-cell>
+    </ng-container>
+
+    <!-- Event Column -->
+    <ng-container matColumnDef="event">
+      <mat-header-cell *matHeaderCellDef mat-sort-header>
+        Event
+      </mat-header-cell>
+      <mat-cell *matCellDef="let row"> {{ row.event }} </mat-cell>
+    </ng-container>
+
+    <!-- Market Column -->
+    <ng-container matColumnDef="market">
+      <mat-header-cell *matHeaderCellDef mat-sort-header>
+        Market
+      </mat-header-cell>
+      <mat-cell *matCellDef="let row"> {{ row.market }} </mat-cell>
+    </ng-container>
+
+    <!-- Top Offer Column -->
+    <ng-container matColumnDef="offer">
+      <mat-header-cell *matHeaderCellDef mat-sort-header>
+        Top Offer
+      </mat-header-cell>
+      <mat-cell *matCellDef="let row"> {{ row.offer }} </mat-cell>
+    </ng-container>
+
+    <!-- Market Column -->
+    <ng-container matColumnDef="sale">
+      <mat-header-cell *matHeaderCellDef mat-sort-header>
+        Sale
+      </mat-header-cell>
+      <mat-cell *matCellDef="let row">
+        {{ row.sale ? row.sale : "" }}
       </mat-cell>
     </ng-container>
 
@@ -42,5 +72,5 @@
     <mat-row *matRowDef="let row; columns: displayedColumns"> </mat-row>
   </mat-table>
 
-  <mat-paginator [pageSizeOptions]="[5, 10, 25, 100]"></mat-paginator>
+  <mat-paginator [pageSizeOptions]="[15, 30, 50, 100]"></mat-paginator>
 </div>

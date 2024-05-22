@@ -1,4 +1,5 @@
 import requests
+import json
 from datetime import datetime
 
 COLLECTION_KEYS = {
@@ -8,7 +9,6 @@ COLLECTION_KEYS = {
     '5eae2563006d4fe0ae1405a31567c60c': 'football',
     '6972b16d088c41ea860b598b397aed5f': 'golf',
 }
-
 
 class Collection:
     def __init__(self, username):
@@ -30,7 +30,6 @@ class Collection:
         for ufc_card in self.get_ufc():
             if ufc_card['name'] in event_details:
                 ufc_card['event'] = event_details[ufc_card['name']]
-                print(ufc_card['name'], ufc_card['event'])
 
     def get_all(self):
         return self._all_collectables
@@ -75,7 +74,9 @@ class Collectable:
     useable_all_season = None
     thumbnail_url = None
     purchase = None
+    market = None
     sale = None
+    offer = None
     link = None
     attributes = {}
 
@@ -92,7 +93,9 @@ class Collectable:
         self.useable_all_season = True,
         self.thumbnail_url = card.get('thumbnailUrl')
         self.purchase = card.get('purchasePrice', 0)
+        self.market = card.get('lowestListedEditionPrice', 0)
         self.sale = card.get('saleListingPrice', 0)
+        self.offer = card.get('topOfferPrice', 0)
         self.link = f'https://marketplace.draftkings.com/listings/collectibles/{ckey}/editions/{edition}'
 
     def parse_attributes(self, card):

@@ -1,11 +1,9 @@
 .example-container {
     display: flex;
     flex-direction: column;
-    min-width: 300px;
   }
   
   .example-header {
-    min-height: 64px;
     padding: 8px 24px 0;
   }
   
@@ -14,8 +12,32 @@
     width: 100%;
   }
   
-  .mat-table {
-    overflow: auto;
-    max-height: 500px;
+  mat-header-cell, mat-cell {
+    justify-content: center;
   }
-  
+
+  mat-row {
+    min-height: 35px;
+  }
+
+  .edition-badge {
+    height: 20px;
+    width: 50px;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  @media (max-width: 480px){
+    mat-cell {
+        font-size: 12px;
+    }
+    mat-header-cell:last-of-type, mat-cell:last-of-type {
+      padding: 0;
+    }
+  }
+  @media (min-width: 480px){
+    mat-cell {
+      font-size: 14px;
+    }
+  }

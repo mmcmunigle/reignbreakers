@@ -55,7 +55,6 @@ h2, h3, h4, h5 {
         width: 15%;
         height: fit-content;
         text-align: center;
-        
     }
 }
 
@@ -67,6 +66,10 @@ h2, h3, h4, h5 {
     .name {
         margin: 5px 0 5px 20px;
         width: 230px;
+    }
+
+    .odds {
+        width: 40px;
     }
 
     .sales-property {
@@ -81,23 +84,6 @@ h2, h3, h4, h5 {
     }
 }
 
-.common {
-    background-color: rgb(123, 121, 121);
-}
-
-.rare {
-    background-color: rgb(9, 116, 9);
-}
-
-.elite {
-    background-color: rgb(19, 19, 143);
-}
-
-.legendary {
-    background-color: rgb(193, 134, 25);
-}
-
-.reignmaker {
-    background-color: rgb(207, 108, 8);
+.reignmaker-badge {
     margin-right: 1em;
 }

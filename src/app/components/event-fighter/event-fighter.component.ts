@@ -1,6 +1,7 @@
 import { Component, Input, OnInit, SimpleChanges } from '@angular/core';
 import { CollectionService } from 'src/app/services/collection.service';
 import {CollectionType} from 'src/app/enums/collection-type';
+// import { ChartType, ChartOptions } from 'chart.js';
 
 @Component({
   selector: 'app-event-fighter',
@@ -18,6 +19,8 @@ export class EventFighterComponent implements OnInit {
   public legendary: any = {};
   public reignmaker: any = {};
   public collected: any = {};
+
+  // public voteChartOptions = ChartOptions
 
   constructor(
     public collectionService: CollectionService,
@@ -53,7 +56,7 @@ export class EventFighterComponent implements OnInit {
   }
 
   private mapFightersInCollection(): void {
-    const collectionType: CollectionType = this.contestYear === '2024' ? CollectionType.UFC24 : CollectionType.UFC23;
+    const collectionType: CollectionType = this.contestYear === '2024' ? CollectionType.UFC_2024 : CollectionType.UFC_2023;
     
     const cardsOwned = this.collectionService.fighterCardsOwned(this.fighter.name, collectionType);
     cardsOwned.forEach((card: any) => {

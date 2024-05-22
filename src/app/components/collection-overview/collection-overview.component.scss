@@ -1,5 +1,5 @@
 #collection-container {
-    width: 40%;
+    width: 60%;
     margin: auto;
 
     h3 {
@@ -8,5 +8,17 @@
 
     mat-card-title {
         margin-top: 5px;
+    }
+}
+
+@media (min-width: 480px){
+    #collection-container {
+        width: 450px;
+    }
+}
+
+@media (max-width: 480px){
+    #collection-container {
+        width: 75%;
     }
 }

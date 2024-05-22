@@ -1,0 +1,34 @@
+<div style="display: flex">
+  <span id="dummy-span" style="width: 320px; visibility: hidden"></span>
+
+  <app-collection-overview
+    style="flex: auto"
+    [collection]="initialized ? filteredCollection : []"
+  ></app-collection-overview>
+
+  <div id="collection-filters">
+    <mat-slide-toggle id="view-toggle" ngDefaultControl [(ngModel)]="tableView"
+      >Table View</mat-slide-toggle
+    >
+    <mat-form-field id="collection-selector">
+      <mat-select
+        [(value)]="selectedCollection"
+        (selectionChange)="setCollection($event.value)"
+        placeholder="Collection"
+      >
+        <mat-option *ngFor="let type of collectionTypes" [value]="type">{{
+          type
+        }}</mat-option>
+      </mat-select>
+    </mat-form-field>
+  </div>
+</div>
+
+<inventory-table
+  [collection]="filteredCollection"
+  *ngIf="initialized && tableView"
+></inventory-table>
+<inventory-dashboard
+  [collection]="filteredCollection"
+  *ngIf="initialized && !tableView"
+></inventory-dashboard>

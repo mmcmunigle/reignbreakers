@@ -40,7 +40,7 @@ export class ContestsComponent implements OnInit {
     .subscribe((fighters: any) => {
       this.rankedFighters = fighters;
       this.rankedFighters.forEach((fighter: any) => {
-        const cards = this.collectionService.fighterCardsOwned(fighter.name, CollectionType.UFC24, 'Genesis');
+        const cards = this.collectionService.fighterCardsOwned(fighter.name, CollectionType.UFC_2024, 'Genesis');
         this.collected.core += cards.filter((card: any) => card.rarity == 'core').length ? 1 : 0;
         this.collected.rare += cards.filter((card: any) => card.rarity == 'rare').length ? 1 : 0;
         this.collected.elite += cards.filter((card: any) => {

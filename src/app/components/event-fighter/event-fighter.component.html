@@ -3,9 +3,21 @@
     <h3 class="name">
       {{ fighter.name }}
     </h3>
-    <h4 class="odds">{{ fighter.price || fighter.vote }}</h4>
+    <!-- <canvas
+      baseChart
+      [data]=
+      [labels]="pieChartLabels"
+      [chartType]="pieChartType"
+      [options]="pieChartOptions"
+      [plugins]="pieChartPlugins"
+      [legend]="pieChartLegend"
+    >
+    </canvas> -->
+    <h4 class="odds">
+      {{ fighter.moneyline || fighter.vote.win_percentage }}
+    </h4>
     <h3
-      class="sales-property common"
+      class="sales-property core-badge"
       matBadge="{{ collected.core }}"
       matBadgeColor="primary"
     >
@@ -14,7 +26,7 @@
       }}</a>
     </h3>
     <h3
-      class="sales-property rare"
+      class="sales-property rare-badge"
       matBadge="{{ collected.rare }}"
       matBadgeColor="primary"
     >
@@ -23,7 +35,7 @@
       }}</a>
     </h3>
     <h3
-      class="sales-property elite"
+      class="sales-property elite-badge"
       matBadge="{{ collected.elite }}"
       matBadgeColor="primary"
     >
@@ -32,7 +44,7 @@
       }}</a>
     </h3>
     <h3
-      class="sales-property legendary"
+      class="sales-property legendary-badge"
       matBadge="{{ collected.legendary }}"
       matBadgeColor="primary"
     >
@@ -41,7 +53,7 @@
       }}</a>
     </h3>
     <h3
-      class="sales-property reignmaker"
+      class="sales-property reignmaker-badge"
       matBadge="{{ collected.reignmaker }}"
       matBadgeColor="primary"
     >

@@ -26,6 +26,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort'; 
 import { MatTableModule } from '@angular/material/table';
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 
 import { RouterModule } from '@angular/router';
 import { CardFilterComponent } from './components/card-filter/card-filter.component';
@@ -37,8 +38,10 @@ import { UfcEventsComponent } from './components/ufc-events/ufc-events.component
 import { CollectionCountPipe } from './pipes/collection-count.pipe';
 import { CollectionSpendPipe } from './pipes/collection-spend.pipe';
 import { CollectionValuePipe } from './pipes/collection-value.pipe';
+import { CollectionOfferPipe } from './pipes/collection-offer.pipe';
 import { PgaRankingsComponent } from './components/pga-rankings/pga-rankings.component';
 import { InventoryTableComponent } from './components/inventory-table/inventory-table.component';
+import { CollectionComponent } from './components/collection/collection.component';
 
 @NgModule({
   declarations: [
@@ -49,12 +52,14 @@ import { InventoryTableComponent } from './components/inventory-table/inventory-
     CollectionCountPipe,
     CollectionSpendPipe,
     CollectionValuePipe,
+    CollectionOfferPipe,
     UfcEventsComponent,
     EventFighterComponent,
     ContestsComponent,
     CardFilterComponent,
     PgaRankingsComponent,
-    InventoryTableComponent
+    InventoryTableComponent,
+    CollectionComponent
   ],
   imports: [
     BrowserModule,
@@ -77,6 +82,7 @@ import { InventoryTableComponent } from './components/inventory-table/inventory-
     MatPaginatorModule,
     MatSortModule,
     MatTableModule,
+    MatSlideToggleModule,
     FormsModule,
     ReactiveFormsModule,
     RouterModule,

@@ -45,7 +45,7 @@ class UFCMarket(Market):
         event_date = attributes.get('event_date')
         series = attributes.get('series', '')
 
-        if '2024' in series and set_name == 'Event' and datetime.strptime(event_date, "%m/%d/%Y") + timedelta(days=3) < datetime.today:
+        if '2024' in series and set_name == 'Event' and datetime.strptime(event_date, "%m/%d/%Y") + timedelta(days=3) < datetime.today():
             return
 
         if '2023' in series and not useable_all_season:

@@ -1,4 +1,4 @@
-import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
+import { Component, ElementRef, Input, OnInit, SimpleChanges, ViewChild } from '@angular/core';
 import { FormControl } from '@angular/forms';
 import { MatAutocompleteSelectedEvent } from '@angular/material/autocomplete';
 import { MatChipInputEvent } from '@angular/material/chips';
@@ -12,7 +12,10 @@ import { ReignbreakerApiService } from 'src/app/services/reinbreaker-api.service
   templateUrl: './inventory-dashboard.component.html',
   styleUrls: ['./inventory-dashboard.component.scss']
 })
+
 export class InventoryDashboardComponent implements OnInit {
+  @Input() collection: any;
+
   public cols = "0";
   public menuOpen: boolean = false;
   public nameControl = new FormControl();
@@ -38,21 +41,12 @@ export class InventoryDashboardComponent implements OnInit {
 
   @ViewChild('nameInput') nameInput: ElementRef<HTMLInputElement>;
 
-  constructor(
-    private apiService: ReignbreakerApiService,
-  ) {}
+  constructor() {}
 
   ngOnInit(): void {
-    this.apiService.getInventory()
-    .subscribe((cards: any) => {
-      this.cards = cards;
-      this.apiService.getUfcMarketData('2024')
-        .subscribe((market: any) => {
-          this.mergeMarketData(market);
-          this.applyFilters();
-          this.setCols();
-        })
-    })
+    this.cards = this.collection;
+    this.applyFilters();
+    this.setCols();
 
     setInterval(() => {
       this.setCols();
@@ -73,15 +67,9 @@ export class InventoryDashboardComponent implements OnInit {
     ));
   }
 
-  private mergeMarketData(market: any) {
-    this.cards.forEach((card) => {
-      if (market[card.name]) {
-        const marketData = market[card.name][card.rarity][card.set_name];
-        card.market = marketData ? marketData.price : 0;
-      } else {
-        card.market = 0;
-      }
-    });
+  ngOnChanges(changes: SimpleChanges) {
+    this.cards = changes.collection.currentValue;
+    this.applyFilters();
   }
   
   public nameSelected(event: MatAutocompleteSelectedEvent) {

@@ -1,0 +1,2257 @@
+[
+  {
+    "date": "2024-05-18",
+    "event_id": 808,
+    "fighters": [
+      {
+        "details": {
+          "2023": {
+            "core": {
+              "Booster": {
+                "champion": "No",
+                "division": "Men's Featherweight",
+                "edition_tier": "Challengers",
+                "event_date": null,
+                "link": "https://reignmakers.draftkings.com/collectibles/43d68e827f5341da803568c65c92c2d2/",
+                "price": 1.75,
+                "quantity": 160,
+                "useable_all_season": true
+              },
+              "Crafting": {
+                "champion": "No",
+                "division": "Men's Featherweight",
+                "edition_tier": "Challengers",
+                "event_date": null,
+                "link": "https://reignmakers.draftkings.com/collectibles/71f972b86636475d8485fa52af863b09/",
+                "price": 1.49,
+                "quantity": 160,
+                "useable_all_season": true
+              }
+            },
+            "elite": {
+              "Takedown": {
+                "champion": "No",
+                "division": "Men's Featherweight",
+                "edition_tier": "Challengers",
+                "event_date": null,
+                "link": "https://reignmakers.draftkings.com/collectibles/d1535d87a4d24e31b76ca63e88620a23/",
+                "price": 38,
+                "quantity": 56,
+                "useable_all_season": true
+              }
+            },
+            "legendary": {
+              "Crafting": {
+                "champion": "No",
+                "division": "Men's Featherweight",
+                "edition_tier": "Challengers",
+                "event_date": null,
+                "link": "https://reignmakers.draftkings.com/collectibles/596ef1dfae1349ae9fe68dfe14031c6a/",
+                "price": 75,
+                "quantity": 3,
+                "useable_all_season": true
+              }
+            },
+            "rare": {
+              "Takedown": {
+                "champion": "No",
+                "division": "Men's Featherweight",
+                "edition_tier": "Challengers",
+                "event_date": null,
+                "link": "https://reignmakers.draftkings.com/collectibles/2e6bf4367c864849a299ffbaeaa784db/",
+                "price": 3,
+                "quantity": 156,
+                "useable_all_season": true
+              }
+            },
+            "reignmaker": {}
+          },
+          "2024": null
+        },
+        "moneyline": -254,
+        "name": "Lerone Murphy",
+        "record": "22- "
+      },
+      {
+        "details": {
+          "2023": {
+            "core": {
+              "Booster": {
+                "champion": "No",
+                "division": "Men's Featherweight",
+                "edition_tier": "Ranked",
+                "event_date": null,
+                "link": "https://reignmakers.draftkings.com/collectibles/ce0ef6e1c69f4b2b9f5a962673f8b94b/",
+                "price": 0.67,
+                "quantity": 350,
+                "useable_all_season": true
+              },
+              "Crafting": {
+                "champion": "No",
+                "division": "Men's Featherweight",
+                "edition_tier": "Ranked",
+                "event_date": null,
+                "link": "https://reignmakers.draftkings.com/collectibles/f3f7d54780f04e0ba77a9af2741419c0/",
+                "price": 0.67,
+                "quantity": 400,
+                "useable_all_season": true
+              },
+              "Cryptoon Goonz": {
+                "champion": "No",
+                "division": "Men's Featherweight",
+                "edition_tier": null,
+                "event_date": null,
+                "link": "https://reignmakers.draftkings.com/collectibles/a3ce1ac865ff48d6ab32cb7fc536cd07/",
+                "price": 1.25,
+                "quantity": 400,
+                "useable_all_season": true
+              },
+              "Genesis": {
+                "champion": "No",
+                "division": "Men's Featherweight",
+                "edition_tier": "Ranked",
+                "event_date": null,
+                "link": "https://reignmakers.draftkings.com/collectibles/f55802a38af7432d8c2fbdcd4a32c678/",
+                "price": 0.67,
+                "quantity": 720,
+                "useable_all_season": true
+              },
+              "Prizing": {
+                "champion": "No",
+                "division": "Men's Featherweight",
+                "edition_tier": "Ranked",
+                "event_date": null,
+                "link": "https://reignmakers.draftkings.com/collectibles/081cb0d904294dc9a08b0ca9f732f073/",
+                "price": 0.68,
+                "quantity": 800,
+                "useable_all_season": true
+              }
+            },
+            "elite": {
+              "Crafting": {
+                "champion": "No",
+                "division": "Men's Featherweight",
+                "edition_tier": "Ranked",
+                "event_date": null,
+                "link": "https://reignmakers.draftkings.com/collectibles/95e21ee3dbc34810adccda5254cdf285/",
+                "price": 25,
+                "quantity": 24,
+                "useable_all_season": true
+              },
+              "Genesis": {
+                "champion": "No",
+                "division": "Men's Featherweight",
+                "edition_tier": "Ranked",
+                "event_date": null,
+                "link": "https://reignmakers.draftkings.com/collectibles/55d9d7a5de2e47b7a294513f080e64da/",
+                "price": 50,
+                "quantity": 45,
+                "useable_all_season": true
+              },
+              "Prizing": {
+                "champion": "No",
+                "division": "Men's Featherweight",
+                "edition_tier": "Ranked",
+                "event_date": null,
+                "link": "https://reignmakers.draftkings.com/collectibles/85a8168dcca4428a88d5956aa4d9a422/",
+                "price": 44,
+                "quantity": 48,
+                "useable_all_season": true
+              },
+              "Takedown": {
+                "champion": "No",
+                "division": "Men's Featherweight",
+                "edition_tier": "Ranked",
+                "event_date": null,
+                "link": "https://reignmakers.draftkings.com/collectibles/5c1364d6b9c040dcab1ed07169ce4cce/",
+                "price": 28,
+                "quantity": 116,
+                "useable_all_season": true
+              }
+            },
+            "legendary": {
+              "Genesis": {
+                "champion": "No",
+                "division": "Men's Featherweight",
+                "edition_tier": "Ranked",
+                "event_date": null,
+                "link": "https://reignmakers.draftkings.com/collectibles/d96c09e9b53743e9a175818dcf0d9a41/",
+                "price": 189,
+                "quantity": 15,
+                "useable_all_season": true
+              },
+              "Prizing": {
+                "champion": "No",
+                "division": "Men's Featherweight",
+                "edition_tier": "Ranked",
+                "event_date": null,
+                "link": "https://reignmakers.draftkings.com/collectibles/69a086accc2a4f2ca340d640f5a24c32/",
+                "price": 159,
+                "quantity": 10,
+                "useable_all_season": true
+              },
+              "Takedown": {
+                "champion": "No",
+                "division": "Men's Featherweight",
+                "edition_tier": "Ranked",
+                "event_date": null,
+                "link": "https://reignmakers.draftkings.com/collectibles/ee381266dd3b4ec2b0f1f68442448c7b/",
+                "price": 58,
+                "quantity": 28,
+                "useable_all_season": true
+              }
+            },
+            "rare": {
+              "Booster": {
+                "champion": "No",
+                "division": "Men's Featherweight",
+                "edition_tier": "Ranked",
+                "event_date": null,
+                "link": "https://reignmakers.draftkings.com/collectibles/8487374a33564408aad207e93f5bb632/",
+                "price": 5,
+                "quantity": 70,
+                "useable_all_season": true
+              },
+              "Crafting": {
+                "champion": "No",
+                "division": "Men's Featherweight",
+                "edition_tier": "Ranked",
+                "event_date": null,
+                "link": "https://reignmakers.draftkings.com/collectibles/a11d5c11a5cb43bd84d4c53028894bb3/",
+                "price": 2.25,
+                "quantity": 100,
+                "useable_all_season": true
+              },
+              "Cryptoon Goonz": {
+                "champion": "No",
+                "division": "Men's Featherweight",
+                "edition_tier": null,
+                "event_date": null,
+                "link": "https://reignmakers.draftkings.com/collectibles/bd0284ad94964620bca9498ba1902bc9/",
+                "price": 2.25,
+                "quantity": 200,
+                "useable_all_season": true
+              },
+              "Genesis": {
+                "champion": "No",
+                "division": "Men's Featherweight",
+                "edition_tier": "Ranked",
+                "event_date": null,
+                "link": "https://reignmakers.draftkings.com/collectibles/bd7e259add8947f1a47fd13b2d8e6324/",
+                "price": 3.75,
+                "quantity": 180,
+                "useable_all_season": true
+              },
+              "Prizing": {
+                "champion": "No",
+                "division": "Men's Featherweight",
+                "edition_tier": "Ranked",
+                "event_date": null,
+                "link": "https://reignmakers.draftkings.com/collectibles/f0a94ebcd85a43a1ba5c9fa68b07bf41/",
+                "price": 2.25,
+                "quantity": 200,
+                "useable_all_season": true
+              },
+              "Takedown": {
+                "champion": "No",
+                "division": "Men's Featherweight",
+                "edition_tier": "Ranked",
+                "event_date": null,
+                "link": "https://reignmakers.draftkings.com/collectibles/6d4ddb7c38db49068835cf84913b2047/",
+                "price": 2.8,
+                "quantity": 216,
+                "useable_all_season": true
+              }
+            },
+            "reignmaker": {
+              "Crafting": {
+                "champion": "No",
+                "division": "Men's Featherweight",
+                "edition_tier": "Ranked",
+                "event_date": null,
+                "link": "https://reignmakers.draftkings.com/collectibles/54d7c843fa3148d09cd5c23933ffaaef/",
+                "price": 300,
+                "quantity": 1,
+                "useable_all_season": true
+              }
+            }
+          },
+          "2024": null
+        },
+        "moneyline": 212,
+        "name": "Edson Barboza",
+        "record": "41-19"
+      },
+      {
+        "details": {
+          "2023": null,
+          "2024": null
+        },
+        "moneyline": -212,
+        "name": "Khaos Williams",
+        "record": "24-9"
+      },
+      {
+        "details": {
+          "2023": {
+            "core": {
+              "Prizing": {
+                "champion": "No",
+                "division": "Men's Welterweight",
+                "edition_tier": "Challengers",
+                "event_date": null,
+                "link": "https://reignmakers.draftkings.com/collectibles/a5ca4abb5f06460c9cee8225826eb6d6/",
+                "price": 1.75,
+                "quantity": 320,
+                "useable_all_season": true
+              }
+            },
+            "elite": {},
+            "legendary": {},
+            "rare": {
+              "Prizing": {
+                "champion": "No",
+                "division": "Men's Welterweight",
+                "edition_tier": "Challengers",
+                "event_date": null,
+                "link": "https://reignmakers.draftkings.com/collectibles/fecf8d9724db493ca82fb314f6dcae32/",
+                "price": 3.25,
+                "quantity": 80,
+                "useable_all_season": true
+              }
+            },
+            "reignmaker": {}
+          },
+          "2024": null
+        },
+        "moneyline": 178,
+        "name": "Carlston Harris",
+        "record": "32-14"
+      },
+      {
+        "details": {
+          "2023": {
+            "core": {
+              "DWCS": {
+                "champion": "No",
+                "division": "Men's Light Heavyweight",
+                "edition_tier": null,
+                "event_date": null,
+                "link": "https://reignmakers.draftkings.com/collectibles/4d6829714a43406abcaa3b5bf2a97569/",
+                "price": 5.5,
+                "quantity": 800,
+                "useable_all_season": true
+              }
+            },
+            "elite": {},
+            "legendary": {},
+            "rare": {
+              "DWCS": {
+                "champion": "No",
+                "division": "Men's Light Heavyweight",
+                "edition_tier": null,
+                "event_date": null,
+                "link": "https://reignmakers.draftkings.com/collectibles/b9ef31675c294f538d7c595ea28f2348/",
+                "price": 28,
+                "quantity": 200,
+                "useable_all_season": true
+              }
+            },
+            "reignmaker": {}
+          },
+          "2024": {
+            "core": {
+              "Booster": {
+                "champion": null,
+                "division": "Men's Light Heavyweight",
+                "edition_tier": null,
+                "event_date": "All Events",
+                "link": "https://reignmakers.draftkings.com/collectibles/0f50fda0cd3f46a290622e7867533141/",
+                "price": 2.7,
+                "quantity": 1500,
+                "useable_all_season": true
+              },
+              "Walkout": {
+                "champion": null,
+                "division": "Men's Light Heavyweight",
+                "edition_tier": "DWCS",
+                "event_date": "All Events",
+                "link": "https://reignmakers.draftkings.com/collectibles/b8a67e2367f641a085222f5dd2656556/",
+                "price": 2.5,
+                "quantity": 2400,
+                "useable_all_season": true
+              }
+            },
+            "elite": {
+              "Walkout": {
+                "champion": null,
+                "division": "Men's Light Heavyweight",
+                "edition_tier": "DWCS",
+                "event_date": "All Events",
+                "link": "https://reignmakers.draftkings.com/collectibles/2063ae05abe94565b76f22bd0e0189b8/",
+                "price": 40,
+                "quantity": 140,
+                "useable_all_season": true
+              }
+            },
+            "legendary": {
+              "Walkout": {
+                "champion": null,
+                "division": "Men's Light Heavyweight",
+                "edition_tier": "DWCS",
+                "event_date": "All Events",
+                "link": "https://reignmakers.draftkings.com/collectibles/c4e079907178463aada5242cefbf2670/",
+                "price": 220,
+                "quantity": 35,
+                "useable_all_season": true
+              }
+            },
+            "rare": {
+              "Booster": {
+                "champion": null,
+                "division": "Men's Light Heavyweight",
+                "edition_tier": null,
+                "event_date": "All Events",
+                "link": "https://reignmakers.draftkings.com/collectibles/4adbc3f68f0e4ec4a936042a708c6ae8/",
+                "price": 8.88,
+                "quantity": 300,
+                "useable_all_season": true
+              },
+              "Walkout": {
+                "champion": null,
+                "division": "Men's Light Heavyweight",
+                "edition_tier": "DWCS",
+                "event_date": "All Events",
+                "link": "https://reignmakers.draftkings.com/collectibles/1fb60ec17ac9439092c1194abe635805/",
+                "price": 8.95,
+                "quantity": 500,
+                "useable_all_season": true
+              }
+            },
+            "reignmaker": {
+              "Walkout": {
+                "champion": null,
+                "division": "Men's Light Heavyweight",
+                "edition_tier": "DWCS",
+                "event_date": "All Events",
+                "link": "https://reignmakers.draftkings.com/collectibles/9911b7adefbc441e817e0485a6387a43/",
+                "price": 699.99,
+                "quantity": 6,
+                "useable_all_season": true
+              }
+            }
+          }
+        },
+        "moneyline": null,
+        "name": "Rodolfo Bellato",
+        "record": "20-6"
+      },
+      {
+        "details": {
+          "2023": null,
+          "2024": null
+        },
+        "moneyline": null,
+        "name": "Oumar Sy",
+        "record": "15- "
+      },
+      {
+        "details": {
+          "2023": {
+            "core": {
+              "Booster": {
+                "champion": "No",
+                "division": "Men's Bantamweight",
+                "edition_tier": "Ranked",
+                "event_date": null,
+                "link": "https://reignmakers.draftkings.com/collectibles/404a59cf52d34203ac675630cd6106dc/",
+                "price": 1.39,
+                "quantity": 350,
+                "useable_all_season": true
+              },
+              "Crafting": {
+                "champion": "No",
+                "division": "Men's Bantamweight",
+                "edition_tier": "Ranked",
+                "event_date": null,
+                "link": "https://reignmakers.draftkings.com/collectibles/88627ef178fc458b845e4133a41a9152/",
+                "price": 1.25,
+                "quantity": 400,
+                "useable_all_season": true
+              },
+              "Cryptoon Goonz": {
+                "champion": "No",
+                "division": "Men's Bantamweight",
+                "edition_tier": null,
+                "event_date": null,
+                "link": "https://reignmakers.draftkings.com/collectibles/a7f02168d1064aa8bd53e491247c9a5b/",
+                "price": 1.2,
+                "quantity": 400,
+                "useable_all_season": true
+              },
+              "Genesis": {
+                "champion": "No",
+                "division": "Men's Bantamweight",
+                "edition_tier": "Ranked",
+                "event_date": null,
+                "link": "https://reignmakers.draftkings.com/collectibles/fb59a1541e3c4cbaac4a2ff1db2011f2/",
+                "price": 1.19,
+                "quantity": 720,
+                "useable_all_season": true
+              },
+              "Prizing": {
+                "champion": "No",
+                "division": "Men's Bantamweight",
+                "edition_tier": "Ranked",
+                "event_date": null,
+                "link": "https://reignmakers.draftkings.com/collectibles/fe5cbf75e9f142fc88fbae32ec862bf6/",
+                "price": 1.2,
+                "quantity": 800,
+                "useable_all_season": true
+              }
+            },
+            "elite": {
+              "Crafting": {
+                "champion": "No",
+                "division": "Men's Bantamweight",
+                "edition_tier": "Ranked",
+                "event_date": null,
+                "link": "https://reignmakers.draftkings.com/collectibles/0f6ded9f80164d78bb3063f814517e0a/",
+                "price": 35,
+                "quantity": 24,
+                "useable_all_season": true
+              },
+              "Genesis": {
+                "champion": "No",
+                "division": "Men's Bantamweight",
+                "edition_tier": "Ranked",
+                "event_date": null,
+                "link": "https://reignmakers.draftkings.com/collectibles/67ae28f5a01f46e58d26dce7995bc840/",
+                "price": 169.99,
+                "quantity": 45,
+                "useable_all_season": true
+              },
+              "Takedown": {
+                "champion": "No",
+                "division": "Men's Bantamweight",
+                "edition_tier": "Ranked",
+                "event_date": null,
+                "link": "https://reignmakers.draftkings.com/collectibles/3a0424b8b5f64b7ba36671514bdb4cbe/",
+                "price": 24,
+                "quantity": 116,
+                "useable_all_season": true
+              }
+            },
+            "legendary": {
+              "Genesis": {
+                "champion": "No",
+                "division": "Men's Bantamweight",
+                "edition_tier": "Ranked",
+                "event_date": null,
+                "link": "https://reignmakers.draftkings.com/collectibles/d8d001fddeb54493a9316d451bb6c2a1/",
+                "price": 99,
+                "quantity": 15,
+                "useable_all_season": true
+              },
+              "Takedown": {
+                "champion": "No",
+                "division": "Men's Bantamweight",
+                "edition_tier": "Ranked",
+                "event_date": null,
+                "link": "https://reignmakers.draftkings.com/collectibles/0c7e46b1c35b4ce9b0d2c028f4965e3f/",
+                "price": 77,
+                "quantity": 28,
+                "useable_all_season": true
+              }
+            },
+            "rare": {
+              "Booster": {
+                "champion": "No",
+                "division": "Men's Bantamweight",
+                "edition_tier": "Ranked",
+                "event_date": null,
+                "link": "https://reignmakers.draftkings.com/collectibles/3d21d1a4f4f64b6e950f7f05cb72934a/",
+                "price": 2.95,
+                "quantity": 70,
+                "useable_all_season": true
+              },
+              "Crafting": {
+                "champion": "No",
+                "division": "Men's Bantamweight",
+                "edition_tier": "Ranked",
+                "event_date": null,
+                "link": "https://reignmakers.draftkings.com/collectibles/128dbab9e530497aa8f08c67e6073d77/",
+                "price": 4.79,
+                "quantity": 100,
+                "useable_all_season": true
+              },
+              "Cryptoon Goonz": {
+                "champion": "No",
+                "division": "Men's Bantamweight",
+                "edition_tier": null,
+                "event_date": null,
+                "link": "https://reignmakers.draftkings.com/collectibles/27482924f35d4d9b8a04c7230e3f1684/",
+                "price": 3.2,
+                "quantity": 200,
+                "useable_all_season": true
+              },
+              "Genesis": {
+                "champion": "No",
+                "division": "Men's Bantamweight",
+                "edition_tier": "Ranked",
+                "event_date": null,
+                "link": "https://reignmakers.draftkings.com/collectibles/20e644def3264770a1c1032ccbb766df/",
+                "price": 5.95,
+                "quantity": 180,
+                "useable_all_season": true
+              },
+              "Prizing": {
+                "champion": "No",
+                "division": "Men's Bantamweight",
+                "edition_tier": "Ranked",
+                "event_date": null,
+                "link": "https://reignmakers.draftkings.com/collectibles/60774cb516ea4b7f9494bd1e83629339/",
+                "price": 2,
+                "quantity": 200,
+                "useable_all_season": true
+              },
+              "Takedown": {
+                "champion": "No",
+                "division": "Men's Bantamweight",
+                "edition_tier": "Ranked",
+                "event_date": null,
+                "link": "https://reignmakers.draftkings.com/collectibles/30fb2486323a424b85597742ea82fbb1/",
+                "price": 2.75,
+                "quantity": 216,
+                "useable_all_season": true
+              }
+            },
+            "reignmaker": {}
+          },
+          "2024": null
+        },
+        "moneyline": -677,
+        "name": "Adrian Yanez",
+        "record": "27-11"
+      },
+      {
+        "details": {
+          "2023": {
+            "core": {
+              "Booster": {
+                "champion": "No",
+                "division": "Men's Flyweight",
+                "edition_tier": "Contender Series",
+                "event_date": null,
+                "link": "https://reignmakers.draftkings.com/collectibles/126359f09d5b44f38b4e9c4136abd07e/",
+                "price": 1.1,
+                "quantity": 160,
+                "useable_all_season": true
+              },
+              "Crafting": {
+                "champion": "No",
+                "division": "Men's Flyweight",
+                "edition_tier": "Contender Series",
+                "event_date": null,
+                "link": "https://reignmakers.draftkings.com/collectibles/ac0e363f255c4584b6b7767c71c14363/",
+                "price": 3,
+                "quantity": 160,
+                "useable_all_season": true
+              },
+              "Genesis": {
+                "champion": "No",
+                "division": "Men's Flyweight",
+                "edition_tier": "Contender Series",
+                "event_date": null,
+                "link": "https://reignmakers.draftkings.com/collectibles/35cbbc635feb4c2bac154eef6fd9d100/",
+                "price": 1.2,
+                "quantity": 160,
+                "useable_all_season": true
+              },
+              "UFC 282": {
+                "champion": "No",
+                "division": "Men's Flyweight",
+                "edition_tier": null,
+                "event_date": null,
+                "link": "https://reignmakers.draftkings.com/collectibles/71900c4753ae4e58b4873ccced4542fb/",
+                "price": 1.1,
+                "quantity": 300,
+                "useable_all_season": true
+              }
+            },
+            "elite": {
+              "Takedown": {
+                "champion": "No",
+                "division": "Men's Flyweight",
+                "edition_tier": "Contender Series",
+                "event_date": null,
+                "link": "https://reignmakers.draftkings.com/collectibles/1faabff4fcc64e80bc330d07844c4b1e/",
+                "price": 33,
+                "quantity": 97,
+                "useable_all_season": true
+              }
+            },
+            "legendary": {
+              "Takedown": {
+                "champion": "No",
+                "division": "Men's Flyweight",
+                "edition_tier": "Contender Series",
+                "event_date": null,
+                "link": "https://reignmakers.draftkings.com/collectibles/e81606fedb0d4344bbde58458bb7bcb7/",
+                "price": 75,
+                "quantity": 24,
+                "useable_all_season": true
+              }
+            },
+            "rare": {
+              "Booster": {
+                "champion": "No",
+                "division": "Men's Flyweight",
+                "edition_tier": "Contender Series",
+                "event_date": null,
+                "link": "https://reignmakers.draftkings.com/collectibles/e99c2909d31a47b9abb4ad5460d4ce05/",
+                "price": 14,
+                "quantity": 32,
+                "useable_all_season": true
+              },
+              "Genesis": {
+                "champion": "No",
+                "division": "Men's Flyweight",
+                "edition_tier": "Contender Series",
+                "event_date": null,
+                "link": "https://reignmakers.draftkings.com/collectibles/cc7313090fc946fb8e5e9bd2a7ebdffc/",
+                "price": 9,
+                "quantity": 40,
+                "useable_all_season": true
+              },
+              "Takedown": {
+                "champion": "No",
+                "division": "Men's Flyweight",
+                "edition_tier": "Contender Series",
+                "event_date": null,
+                "link": "https://reignmakers.draftkings.com/collectibles/2a52647e6e244927b74b4e2128f31ece/",
+                "price": 3,
+                "quantity": 264,
+                "useable_all_season": true
+              },
+              "UFC 282": {
+                "champion": "No",
+                "division": "Men's Flyweight",
+                "edition_tier": null,
+                "event_date": null,
+                "link": "https://reignmakers.draftkings.com/collectibles/2975b33f9c554ea193bf5ad5f5c73a74/",
+                "price": 2.95,
+                "quantity": 75,
+                "useable_all_season": true
+              }
+            },
+            "reignmaker": {
+              "Crafting": {
+                "champion": "No",
+                "division": "Men's Flyweight",
+                "edition_tier": "Contender Series",
+                "event_date": null,
+                "link": "https://reignmakers.draftkings.com/collectibles/5a1a9aa0c0bf44f9ab2ae28dd263834a/",
+                "price": 465,
+                "quantity": 1,
+                "useable_all_season": true
+              }
+            }
+          },
+          "2024": null
+        },
+        "moneyline": 508,
+        "name": "Vinicius Salvador",
+        "record": "24-10"
+      },
+      {
+        "details": {
+          "2023": {
+            "core": {
+              "Booster": {
+                "champion": "No",
+                "division": "Women's Strawweight",
+                "edition_tier": "Ranked",
+                "event_date": null,
+                "link": "https://reignmakers.draftkings.com/collectibles/4a901972fce24785b422d215686bb489/",
+                "price": 1,
+                "quantity": 350,
+                "useable_all_season": true
+              },
+              "Crafting": {
+                "champion": "No",
+                "division": "Women's Strawweight",
+                "edition_tier": "Ranked",
+                "event_date": null,
+                "link": "https://reignmakers.draftkings.com/collectibles/f6c5a29c240c45a1a5c7c5ac1dd433c8/",
+                "price": 1,
+                "quantity": 400,
+                "useable_all_season": true
+              },
+              "Genesis": {
+                "champion": "No",
+                "division": "Women's Strawweight",
+                "edition_tier": "Ranked",
+                "event_date": null,
+                "link": "https://reignmakers.draftkings.com/collectibles/c566efe2f8ac48d7ba8fa26ad879f013/",
+                "price": 1.2,
+                "quantity": 720,
+                "useable_all_season": true
+              }
+            },
+            "elite": {
+              "Crafting": {
+                "champion": "No",
+                "division": "Women's Strawweight",
+                "edition_tier": "Ranked",
+                "event_date": null,
+                "link": "https://reignmakers.draftkings.com/collectibles/0391014a417c4d179ba77d03644bc18a/",
+                "price": 250,
+                "quantity": 24,
+                "useable_all_season": true
+              },
+              "Genesis": {
+                "champion": "No",
+                "division": "Women's Strawweight",
+                "edition_tier": "Ranked",
+                "event_date": null,
+                "link": "https://reignmakers.draftkings.com/collectibles/b8ba1b2fe8ca4e72b177a0068f0374ca/",
+                "price": 44.99,
+                "quantity": 45,
+                "useable_all_season": true
+              }
+            },
+            "legendary": {
+              "Crafting": {
+                "champion": "No",
+                "division": "Women's Strawweight",
+                "edition_tier": "Ranked",
+                "event_date": null,
+                "link": "https://reignmakers.draftkings.com/collectibles/3fc7c7a81c6e4164bd70ed2e417b804b/",
+                "price": 500,
+                "quantity": 5,
+                "useable_all_season": true
+              },
+              "Genesis": {
+                "champion": "No",
+                "division": "Women's Strawweight",
+                "edition_tier": "Ranked",
+                "event_date": null,
+                "link": "https://reignmakers.draftkings.com/collectibles/82f7e7cc98c54decac0d23fc452d2b0e/",
+                "price": 149,
+                "quantity": 15,
+                "useable_all_season": true
+              }
+            },
+            "rare": {
+              "Booster": {
+                "champion": "No",
+                "division": "Women's Strawweight",
+                "edition_tier": "Ranked",
+                "event_date": null,
+                "link": "https://reignmakers.draftkings.com/collectibles/2c90717274084572a2a8fb59b41f5627/",
+                "price": 2.2,
+                "quantity": 70,
+                "useable_all_season": true
+              },
+              "Crafting": {
+                "champion": "No",
+                "division": "Women's Strawweight",
+                "edition_tier": "Ranked",
+                "event_date": null,
+                "link": "https://reignmakers.draftkings.com/collectibles/8bb0c7ffeeaa4071ac16c7ee255a42af/",
+                "price": 2.25,
+                "quantity": 100,
+                "useable_all_season": true
+              },
+              "Genesis": {
+                "champion": "No",
+                "division": "Women's Strawweight",
+                "edition_tier": "Ranked",
+                "event_date": null,
+                "link": "https://reignmakers.draftkings.com/collectibles/2eaee2832dc54402a7a886aadabc3383/",
+                "price": 1.99,
+                "quantity": 180,
+                "useable_all_season": true
+              }
+            },
+            "reignmaker": {
+              "Genesis": {
+                "champion": "No",
+                "division": "Women's Strawweight",
+                "edition_tier": "Ranked",
+                "event_date": null,
+                "link": "https://reignmakers.draftkings.com/collectibles/30c0c81f08414dfeb1c98118527914a0/",
+                "price": 999,
+                "quantity": 1,
+                "useable_all_season": true
+              }
+            }
+          },
+          "2024": {
+            "core": {
+              "Booster": {
+                "champion": null,
+                "division": "Women's Strawweight",
+                "edition_tier": null,
+                "event_date": "All Events",
+                "link": "https://reignmakers.draftkings.com/collectibles/b68f24599e9c4f1b8bfd505b36a7d062/",
+                "price": 1.88,
+                "quantity": 1500,
+                "useable_all_season": true
+              },
+              "Collide": {
+                "champion": null,
+                "division": "Women's Strawweight",
+                "edition_tier": "Ranked",
+                "event_date": "All Events",
+                "link": "https://reignmakers.draftkings.com/collectibles/879c3f4e51454b529695808e5ddfcd9d/",
+                "price": 1.25,
+                "quantity": 3000,
+                "useable_all_season": true
+              }
+            },
+            "elite": {
+              "Collide": {
+                "champion": null,
+                "division": "Women's Strawweight",
+                "edition_tier": "Ranked",
+                "event_date": "All Events",
+                "link": "https://reignmakers.draftkings.com/collectibles/7d90f90af2bf45d9b90736e00d668c90/",
+                "price": 45,
+                "quantity": 250,
+                "useable_all_season": true
+              }
+            },
+            "legendary": {
+              "Collide": {
+                "champion": null,
+                "division": "Women's Strawweight",
+                "edition_tier": "Ranked",
+                "event_date": "All Events",
+                "link": "https://reignmakers.draftkings.com/collectibles/59d844204d1f4c4aa431d33c56004ba4/",
+                "price": 127,
+                "quantity": 60,
+                "useable_all_season": true
+              }
+            },
+            "rare": {
+              "Booster": {
+                "champion": null,
+                "division": "Women's Strawweight",
+                "edition_tier": null,
+                "event_date": "All Events",
+                "link": "https://reignmakers.draftkings.com/collectibles/75684573e9cc4e608c74d6bfc91c210d/",
+                "price": 8,
+                "quantity": 300,
+                "useable_all_season": true
+              },
+              "Collide": {
+                "champion": null,
+                "division": "Women's Strawweight",
+                "edition_tier": "Ranked",
+                "event_date": "All Events",
+                "link": "https://reignmakers.draftkings.com/collectibles/9082965bfccf4b8ea267e5d346fd657f/",
+                "price": 5.85,
+                "quantity": 700,
+                "useable_all_season": true
+              }
+            },
+            "reignmaker": {
+              "Collide": {
+                "champion": null,
+                "division": "Women's Strawweight",
+                "edition_tier": "Ranked",
+                "event_date": "All Events",
+                "link": "https://reignmakers.draftkings.com/collectibles/18ec771e06e644e89c8927ce2115c6f9/",
+                "price": 333.34,
+                "quantity": 6,
+                "useable_all_season": true
+              }
+            }
+          }
+        },
+        "moneyline": -262,
+        "name": "Angela Hill",
+        "record": "27-22"
+      },
+      {
+        "details": {
+          "2023": {
+            "core": {
+              "Booster": {
+                "champion": "No",
+                "division": "Women's Strawweight",
+                "edition_tier": "Ranked",
+                "event_date": null,
+                "link": "https://reignmakers.draftkings.com/collectibles/7fef3a32e35447318609865a8a7893a8/",
+                "price": 0.96,
+                "quantity": 350,
+                "useable_all_season": true
+              },
+              "Cryptoon Goonz": {
+                "champion": "No",
+                "division": "Women's Strawweight",
+                "edition_tier": null,
+                "event_date": null,
+                "link": "https://reignmakers.draftkings.com/collectibles/fea10fcf12fa43af958d35a5e8a86d80/",
+                "price": 0.99,
+                "quantity": 400,
+                "useable_all_season": true
+              },
+              "Genesis": {
+                "champion": "No",
+                "division": "Women's Strawweight",
+                "edition_tier": "Ranked",
+                "event_date": null,
+                "link": "https://reignmakers.draftkings.com/collectibles/26461175eeb34f888d6da369af189655/",
+                "price": 0.89,
+                "quantity": 720,
+                "useable_all_season": true
+              }
+            },
+            "elite": {
+              "Genesis": {
+                "champion": "No",
+                "division": "Women's Strawweight",
+                "edition_tier": "Ranked",
+                "event_date": null,
+                "link": "https://reignmakers.draftkings.com/collectibles/7a4f20315d9e450cb12bdda24a267291/",
+                "price": 32,
+                "quantity": 45,
+                "useable_all_season": true
+              }
+            },
+            "legendary": {
+              "Genesis": {
+                "champion": "No",
+                "division": "Women's Strawweight",
+                "edition_tier": "Ranked",
+                "event_date": null,
+                "link": "https://reignmakers.draftkings.com/collectibles/67ca29bef5ce4d178374a99490799f07/",
+                "price": 75,
+                "quantity": 15,
+                "useable_all_season": true
+              }
+            },
+            "rare": {
+              "Booster": {
+                "champion": "No",
+                "division": "Women's Strawweight",
+                "edition_tier": "Ranked",
+                "event_date": null,
+                "link": "https://reignmakers.draftkings.com/collectibles/e8f00a1207514146b63ba0223696bd19/",
+                "price": 2.25,
+                "quantity": 70,
+                "useable_all_season": true
+              },
+              "Cryptoon Goonz": {
+                "champion": "No",
+                "division": "Women's Strawweight",
+                "edition_tier": null,
+                "event_date": null,
+                "link": "https://reignmakers.draftkings.com/collectibles/f4bb9503002146f4bccb1c69ae5f5b91/",
+                "price": 2.88,
+                "quantity": 200,
+                "useable_all_season": true
+              },
+              "Genesis": {
+                "champion": "No",
+                "division": "Women's Strawweight",
+                "edition_tier": "Ranked",
+                "event_date": null,
+                "link": "https://reignmakers.draftkings.com/collectibles/c40030a9d30346db884619d1300fcda1/",
+                "price": 3.3,
+                "quantity": 180,
+                "useable_all_season": true
+              }
+            },
+            "reignmaker": {
+              "Genesis": {
+                "champion": "No",
+                "division": "Women's Strawweight",
+                "edition_tier": "Ranked",
+                "event_date": null,
+                "link": "https://reignmakers.draftkings.com/collectibles/f77a20f3392d40339e8fd58e8b6af6d0/",
+                "price": 300,
+                "quantity": 1,
+                "useable_all_season": true
+              }
+            }
+          },
+          "2024": {
+            "core": {
+              "Collide": {
+                "champion": null,
+                "division": "Women's Strawweight",
+                "edition_tier": "Ranked",
+                "event_date": "All Events",
+                "link": "https://reignmakers.draftkings.com/collectibles/44ba9fdbb7614777967d172959029a23/",
+                "price": 0.95,
+                "quantity": 3000,
+                "useable_all_season": true
+              }
+            },
+            "elite": {
+              "Collide": {
+                "champion": null,
+                "division": "Women's Strawweight",
+                "edition_tier": "Ranked",
+                "event_date": "All Events",
+                "link": "https://reignmakers.draftkings.com/collectibles/0801b3bec07a453f822063fde7b57fe7/",
+                "price": 28.95,
+                "quantity": 250,
+                "useable_all_season": true
+              }
+            },
+            "legendary": {
+              "Collide": {
+                "champion": null,
+                "division": "Women's Strawweight",
+                "edition_tier": "Ranked",
+                "event_date": "All Events",
+                "link": "https://reignmakers.draftkings.com/collectibles/9bf8320b4eb14c70ae51a5d79cb01e34/",
+                "price": 99,
+                "quantity": 60,
+                "useable_all_season": true
+              }
+            },
+            "rare": {
+              "Collide": {
+                "champion": null,
+                "division": "Women's Strawweight",
+                "edition_tier": "Ranked",
+                "event_date": "All Events",
+                "link": "https://reignmakers.draftkings.com/collectibles/e1093c1ec4bc43a89b8b2b0f6f57bebf/",
+                "price": 5.99,
+                "quantity": 700,
+                "useable_all_season": true
+              }
+            },
+            "reignmaker": {}
+          }
+        },
+        "moneyline": 220,
+        "name": "Luana Pinheiro",
+        "record": "19-6"
+      },
+      {
+        "details": {
+          "2023": null,
+          "2024": {
+            "core": {
+              "Booster": {
+                "champion": null,
+                "division": "Men's Welterweight",
+                "edition_tier": null,
+                "event_date": "All Events",
+                "link": "https://reignmakers.draftkings.com/collectibles/f9cd2277c3954a93a2c916687afa7fd6/",
+                "price": 1.99,
+                "quantity": 1500,
+                "useable_all_season": true
+              },
+              "Walkout": {
+                "champion": null,
+                "division": "Men's Welterweight",
+                "edition_tier": "Challengers",
+                "event_date": "All Events",
+                "link": "https://reignmakers.draftkings.com/collectibles/8a751183c54346bab8d3cb2ffeac3484/",
+                "price": 1.99,
+                "quantity": 3000,
+                "useable_all_season": true
+              }
+            },
+            "elite": {
+              "Walkout": {
+                "champion": null,
+                "division": "Men's Welterweight",
+                "edition_tier": "Challengers",
+                "event_date": "All Events",
+                "link": "https://reignmakers.draftkings.com/collectibles/089e76932d344071ba6ce365b5cdedd5/",
+                "price": 69.99,
+                "quantity": 140,
+                "useable_all_season": true
+              }
+            },
+            "legendary": {
+              "Walkout": {
+                "champion": null,
+                "division": "Men's Welterweight",
+                "edition_tier": "Challengers",
+                "event_date": "All Events",
+                "link": "https://reignmakers.draftkings.com/collectibles/abda9bc0789f43a59dc0c4bddfec5b2d/",
+                "price": 289,
+                "quantity": 35,
+                "useable_all_season": true
+              }
+            },
+            "rare": {
+              "Booster": {
+                "champion": null,
+                "division": "Men's Welterweight",
+                "edition_tier": null,
+                "event_date": "All Events",
+                "link": "https://reignmakers.draftkings.com/collectibles/6fce45a1f3bd4dc7aca00cded4c0f669/",
+                "price": 17,
+                "quantity": 300,
+                "useable_all_season": true
+              },
+              "Walkout": {
+                "champion": null,
+                "division": "Men's Welterweight",
+                "edition_tier": "Challengers",
+                "event_date": "All Events",
+                "link": "https://reignmakers.draftkings.com/collectibles/64326ec9482c41e0aeee6bd723355da0/",
+                "price": 9.29,
+                "quantity": 700,
+                "useable_all_season": true
+              }
+            },
+            "reignmaker": {
+              "Walkout": {
+                "champion": null,
+                "division": "Men's Welterweight",
+                "edition_tier": "Challengers",
+                "event_date": "All Events",
+                "link": "https://reignmakers.draftkings.com/collectibles/26aa543d1bd04c6ba11741ec31598014/",
+                "price": 749,
+                "quantity": 6,
+                "useable_all_season": true
+              }
+            }
+          }
+        },
+        "moneyline": -355,
+        "name": "Themba Gorimbo",
+        "record": "20-11"
+      },
+      {
+        "details": {
+          "2023": {
+            "core": {
+              "Booster": {
+                "champion": "No",
+                "division": "Men's Welterweight",
+                "edition_tier": "Challengers",
+                "event_date": null,
+                "link": "https://reignmakers.draftkings.com/collectibles/b93d0cfc91d14acbac810c59532e4a33/",
+                "price": 0.99,
+                "quantity": 160,
+                "useable_all_season": true
+              },
+              "Genesis": {
+                "champion": "No",
+                "division": "Men's Welterweight",
+                "edition_tier": "Challengers",
+                "event_date": null,
+                "link": "https://reignmakers.draftkings.com/collectibles/1ba9b5ba63214f1f92e0456847863650/",
+                "price": 0.99,
+                "quantity": 160,
+                "useable_all_season": true
+              }
+            },
+            "elite": {
+              "Genesis": {
+                "champion": "No",
+                "division": "Men's Welterweight",
+                "edition_tier": "Challengers",
+                "event_date": null,
+                "link": "https://reignmakers.draftkings.com/collectibles/1731b2c684384a8b8507c3295289fb97/",
+                "price": 89,
+                "quantity": 12,
+                "useable_all_season": true
+              }
+            },
+            "legendary": {},
+            "rare": {
+              "Booster": {
+                "champion": "No",
+                "division": "Men's Welterweight",
+                "edition_tier": "Challengers",
+                "event_date": null,
+                "link": "https://reignmakers.draftkings.com/collectibles/64cda8edee624fb4a373165be1772fab/",
+                "price": 12,
+                "quantity": 32,
+                "useable_all_season": true
+              },
+              "Genesis": {
+                "champion": "No",
+                "division": "Men's Welterweight",
+                "edition_tier": "Challengers",
+                "event_date": null,
+                "link": "https://reignmakers.draftkings.com/collectibles/db409a2f67e24174b0cd483fa3386b59/",
+                "price": 17,
+                "quantity": 40,
+                "useable_all_season": true
+              }
+            },
+            "reignmaker": {}
+          },
+          "2024": null
+        },
+        "moneyline": 296,
+        "name": "Ramiz Brahimaj",
+        "record": "17-11"
+      },
+      {
+        "details": {
+          "2023": {
+            "core": {
+              "Booster": {
+                "champion": "No",
+                "division": "Men's Middleweight",
+                "edition_tier": "Challengers",
+                "event_date": null,
+                "link": "https://reignmakers.draftkings.com/collectibles/e2461b0774ca44dd8132be1c74bd1dfc/",
+                "price": 1.45,
+                "quantity": 160,
+                "useable_all_season": true
+              },
+              "Crafting": {
+                "champion": "No",
+                "division": "Men's Middleweight",
+                "edition_tier": "Challengers",
+                "event_date": null,
+                "link": "https://reignmakers.draftkings.com/collectibles/e3f7c1cf682c47239bd8030759a2a911/",
+                "price": 1.49,
+                "quantity": 160,
+                "useable_all_season": true
+              },
+              "Genesis": {
+                "champion": "No",
+                "division": "Men's Middleweight",
+                "edition_tier": "Challengers",
+                "event_date": null,
+                "link": "https://reignmakers.draftkings.com/collectibles/44e3f27e97d74c04aff4ffb7b6378b9b/",
+                "price": 1.75,
+                "quantity": 160,
+                "useable_all_season": true
+              }
+            },
+            "elite": {},
+            "legendary": {},
+            "rare": {
+              "Booster": {
+                "champion": "No",
+                "division": "Men's Middleweight",
+                "edition_tier": "Challengers",
+                "event_date": null,
+                "link": "https://reignmakers.draftkings.com/collectibles/89a94b2845f94262b5619b6d1f8cccde/",
+                "price": 10,
+                "quantity": 32,
+                "useable_all_season": true
+              },
+              "Crafting": {
+                "champion": "No",
+                "division": "Men's Middleweight",
+                "edition_tier": "Challengers",
+                "event_date": null,
+                "link": "https://reignmakers.draftkings.com/collectibles/bb7f6e27974b47488bc8c44e90fb7c2d/",
+                "price": 3.25,
+                "quantity": 40,
+                "useable_all_season": true
+              },
+              "Genesis": {
+                "champion": "No",
+                "division": "Men's Middleweight",
+                "edition_tier": "Challengers",
+                "event_date": null,
+                "link": "https://reignmakers.draftkings.com/collectibles/2653c74647fe4c61a111b46b888bbb5b/",
+                "price": 3.25,
+                "quantity": 40,
+                "useable_all_season": true
+              }
+            },
+            "reignmaker": {}
+          },
+          "2024": {
+            "core": {
+              "Booster": {
+                "champion": null,
+                "division": "Men's Middleweight",
+                "edition_tier": null,
+                "event_date": "All Events",
+                "link": "https://reignmakers.draftkings.com/collectibles/6db252f3f7f44b36bacd6db335a92331/",
+                "price": 2.5,
+                "quantity": 1500,
+                "useable_all_season": true
+              },
+              "Collide": {
+                "champion": null,
+                "division": "Men's Middleweight",
+                "edition_tier": "Challengers",
+                "event_date": "All Events",
+                "link": "https://reignmakers.draftkings.com/collectibles/c713ed28f8ba415da5cb89794557273e/",
+                "price": 1.99,
+                "quantity": 3000,
+                "useable_all_season": true
+              }
+            },
+            "elite": {
+              "Collide": {
+                "champion": null,
+                "division": "Men's Middleweight",
+                "edition_tier": "Challengers",
+                "event_date": "All Events",
+                "link": "https://reignmakers.draftkings.com/collectibles/3ce3505442e045d7b958d3567540f886/",
+                "price": 76.99,
+                "quantity": 140,
+                "useable_all_season": true
+              }
+            },
+            "legendary": {
+              "Collide": {
+                "champion": null,
+                "division": "Men's Middleweight",
+                "edition_tier": "Challengers",
+                "event_date": "All Events",
+                "link": "https://reignmakers.draftkings.com/collectibles/3ed954e6888843e7a301a2da6c04d606/",
+                "price": 250,
+                "quantity": 35,
+                "useable_all_season": true
+              }
+            },
+            "rare": {
+              "Booster": {
+                "champion": null,
+                "division": "Men's Middleweight",
+                "edition_tier": null,
+                "event_date": "All Events",
+                "link": "https://reignmakers.draftkings.com/collectibles/505d6345a01a445b81dbcce330b8e400/",
+                "price": 16.98,
+                "quantity": 300,
+                "useable_all_season": true
+              },
+              "Collide": {
+                "champion": null,
+                "division": "Men's Middleweight",
+                "edition_tier": "Challengers",
+                "event_date": "All Events",
+                "link": "https://reignmakers.draftkings.com/collectibles/70f0832413cd4927aa84fd7f7b826e74/",
+                "price": 12,
+                "quantity": 700,
+                "useable_all_season": true
+              }
+            },
+            "reignmaker": {
+              "Collide": {
+                "champion": null,
+                "division": "Men's Middleweight",
+                "edition_tier": "Challengers",
+                "event_date": "All Events",
+                "link": "https://reignmakers.draftkings.com/collectibles/a106f63f3b5944f1a670f7a9eb5f426a/",
+                "price": 699,
+                "quantity": 6,
+                "useable_all_season": true
+              }
+            }
+          }
+        },
+        "moneyline": -423,
+        "name": "Abus Magomedov",
+        "record": "42-10"
+      },
+      {
+        "details": {
+          "2023": null,
+          "2024": null
+        },
+        "moneyline": 347,
+        "name": "Warlley Alves",
+        "record": "25-12"
+      },
+      {
+        "details": {
+          "2023": {
+            "core": {
+              "DWCS": {
+                "champion": "No",
+                "division": "Men's Lightweight",
+                "edition_tier": null,
+                "event_date": null,
+                "link": "https://reignmakers.draftkings.com/collectibles/9e493078ca2540f38cce0051a8e96df6/",
+                "price": 21.5,
+                "quantity": 800,
+                "useable_all_season": true
+              }
+            },
+            "elite": {
+              "DWCS": {
+                "champion": "No",
+                "division": "Men's Lightweight",
+                "edition_tier": null,
+                "event_date": null,
+                "link": "https://reignmakers.draftkings.com/collectibles/1713c97f828e4810baf93b66127837f7/",
+                "price": 1300,
+                "quantity": 50,
+                "useable_all_season": true
+              }
+            },
+            "legendary": {},
+            "rare": {
+              "DWCS": {
+                "champion": "No",
+                "division": "Men's Lightweight",
+                "edition_tier": null,
+                "event_date": null,
+                "link": "https://reignmakers.draftkings.com/collectibles/41132ba1ec7e430ea63d173302899b66/",
+                "price": 50,
+                "quantity": 200,
+                "useable_all_season": true
+              }
+            },
+            "reignmaker": {}
+          },
+          "2024": {
+            "core": {
+              "Booster": {
+                "champion": null,
+                "division": "Men's Lightweight",
+                "edition_tier": null,
+                "event_date": "All Events",
+                "link": "https://reignmakers.draftkings.com/collectibles/e35e68fd63344050b3fc3cce68bb25dd/",
+                "price": 3.34,
+                "quantity": 1500,
+                "useable_all_season": true
+              },
+              "Walkout": {
+                "champion": null,
+                "division": "Men's Lightweight",
+                "edition_tier": "DWCS",
+                "event_date": "All Events",
+                "link": "https://reignmakers.draftkings.com/collectibles/1bdb6174daf147d09a627cfc10135f37/",
+                "price": 3.99,
+                "quantity": 2400,
+                "useable_all_season": true
+              }
+            },
+            "elite": {
+              "Walkout": {
+                "champion": null,
+                "division": "Men's Lightweight",
+                "edition_tier": "DWCS",
+                "event_date": "All Events",
+                "link": "https://reignmakers.draftkings.com/collectibles/d521f78b29fe4976983f2adce1347aa3/",
+                "price": 119,
+                "quantity": 140,
+                "useable_all_season": true
+              }
+            },
+            "legendary": {
+              "Walkout": {
+                "champion": null,
+                "division": "Men's Lightweight",
+                "edition_tier": "DWCS",
+                "event_date": "All Events",
+                "link": "https://reignmakers.draftkings.com/collectibles/b7d8a0d7047549a98b40d902ef9fe25d/",
+                "price": 350,
+                "quantity": 35,
+                "useable_all_season": true
+              }
+            },
+            "rare": {
+              "Booster": {
+                "champion": null,
+                "division": "Men's Lightweight",
+                "edition_tier": null,
+                "event_date": "All Events",
+                "link": "https://reignmakers.draftkings.com/collectibles/6204df32399c43f1afccf8537e626395/",
+                "price": 16,
+                "quantity": 300,
+                "useable_all_season": true
+              },
+              "Royal": {
+                "champion": null,
+                "division": "Men's Lightweight",
+                "edition_tier": "DWCS",
+                "event_date": "All Events",
+                "link": "https://reignmakers.draftkings.com/collectibles/f8fb54b82fb44ea6b05725347c540665/",
+                "price": 54.99,
+                "quantity": 100,
+                "useable_all_season": true
+              },
+              "Walkout": {
+                "champion": null,
+                "division": "Men's Lightweight",
+                "edition_tier": "DWCS",
+                "event_date": "All Events",
+                "link": "https://reignmakers.draftkings.com/collectibles/ffdb7c7c85924bc083682978e3e0192c/",
+                "price": 17,
+                "quantity": 500,
+                "useable_all_season": true
+              }
+            },
+            "reignmaker": {}
+          }
+        },
+        "moneyline": -888,
+        "name": "Tom Nolan",
+        "record": "10-3"
+      },
+      {
+        "details": {
+          "2023": null,
+          "2024": null
+        },
+        "moneyline": 609,
+        "name": "Victor Martinez",
+        "record": "22-14"
+      },
+      {
+        "details": {
+          "2023": {
+            "core": {
+              "Booster": {
+                "champion": "No",
+                "division": "Women's Bantamweight",
+                "edition_tier": "Contender Series",
+                "event_date": null,
+                "link": "https://reignmakers.draftkings.com/collectibles/3bc7524e8bcc4bf6bb0f9147e38c35ee/",
+                "price": 2.25,
+                "quantity": 160,
+                "useable_all_season": true
+              },
+              "Crafting": {
+                "champion": "No",
+                "division": "Women's Bantamweight",
+                "edition_tier": "Contender Series",
+                "event_date": null,
+                "link": "https://reignmakers.draftkings.com/collectibles/d2543edf552d49ef8efb108438f1f83c/",
+                "price": 0.75,
+                "quantity": 160,
+                "useable_all_season": true
+              },
+              "Genesis": {
+                "champion": "No",
+                "division": "Women's Bantamweight",
+                "edition_tier": "Contender Series",
+                "event_date": null,
+                "link": "https://reignmakers.draftkings.com/collectibles/3e7899e525714357918cc77f82dc3df1/",
+                "price": 1.12,
+                "quantity": 160,
+                "useable_all_season": true
+              },
+              "Prizing": {
+                "champion": "No",
+                "division": "Women's Bantamweight",
+                "edition_tier": "Contender Series",
+                "event_date": null,
+                "link": "https://reignmakers.draftkings.com/collectibles/7035d02ad3194deaa5db04fd76850f1d/",
+                "price": 1,
+                "quantity": 320,
+                "useable_all_season": true
+              }
+            },
+            "elite": {
+              "Crafting": {
+                "champion": "No",
+                "division": "Women's Bantamweight",
+                "edition_tier": "Contender Series",
+                "event_date": null,
+                "link": "https://reignmakers.draftkings.com/collectibles/7bd36ec921144aed86f5892b78a881cd/",
+                "price": 57.99,
+                "quantity": 9,
+                "useable_all_season": true
+              },
+              "Genesis": {
+                "champion": "No",
+                "division": "Women's Bantamweight",
+                "edition_tier": "Contender Series",
+                "event_date": null,
+                "link": "https://reignmakers.draftkings.com/collectibles/1f8a4662ff4f4eed975aa8c460400916/",
+                "price": 74,
+                "quantity": 12,
+                "useable_all_season": true
+              },
+              "Prizing": {
+                "champion": "No",
+                "division": "Women's Bantamweight",
+                "edition_tier": "Contender Series",
+                "event_date": null,
+                "link": "https://reignmakers.draftkings.com/collectibles/a92c1025d7cf437da38c9decc554aab1/",
+                "price": 18,
+                "quantity": 20,
+                "useable_all_season": true
+              }
+            },
+            "legendary": {
+              "Crafting": {
+                "champion": "No",
+                "division": "Women's Bantamweight",
+                "edition_tier": "Contender Series",
+                "event_date": null,
+                "link": "https://reignmakers.draftkings.com/collectibles/82a555d5ef634f969b9c7c52eae67825/",
+                "price": 333.33,
+                "quantity": 2,
+                "useable_all_season": true
+              }
+            },
+            "rare": {
+              "Booster": {
+                "champion": "No",
+                "division": "Women's Bantamweight",
+                "edition_tier": "Contender Series",
+                "event_date": null,
+                "link": "https://reignmakers.draftkings.com/collectibles/c7d8451fea8146df869d3a1b081d6396/",
+                "price": 3,
+                "quantity": 32,
+                "useable_all_season": true
+              },
+              "Crafting": {
+                "champion": "No",
+                "division": "Women's Bantamweight",
+                "edition_tier": "Contender Series",
+                "event_date": null,
+                "link": "https://reignmakers.draftkings.com/collectibles/fcbe156ea60c4a98876e1f993a8f76a2/",
+                "price": 5.75,
+                "quantity": 40,
+                "useable_all_season": true
+              },
+              "Genesis": {
+                "champion": "No",
+                "division": "Women's Bantamweight",
+                "edition_tier": "Contender Series",
+                "event_date": null,
+                "link": "https://reignmakers.draftkings.com/collectibles/dde6cd257c0e43e3b4a92148a736206b/",
+                "price": 5.99,
+                "quantity": 40,
+                "useable_all_season": true
+              },
+              "Prizing": {
+                "champion": "No",
+                "division": "Women's Bantamweight",
+                "edition_tier": "Contender Series",
+                "event_date": null,
+                "link": "https://reignmakers.draftkings.com/collectibles/b30c7c28baf949bd89cdf6221bbab65e/",
+                "price": 5.5,
+                "quantity": 80,
+                "useable_all_season": true
+              }
+            },
+            "reignmaker": {
+              "Crafting": {
+                "champion": "No",
+                "division": "Women's Bantamweight",
+                "edition_tier": "Contender Series",
+                "event_date": null,
+                "link": "https://reignmakers.draftkings.com/collectibles/9153a805a7744c1fa8781448233168f0/",
+                "price": 800,
+                "quantity": 1,
+                "useable_all_season": true
+              },
+              "Genesis": {
+                "champion": "No",
+                "division": "Women's Bantamweight",
+                "edition_tier": "Contender Series",
+                "event_date": null,
+                "link": "https://reignmakers.draftkings.com/collectibles/4e90b1bbc11d4bc59695e9d3a235fd68/",
+                "price": 280,
+                "quantity": 1,
+                "useable_all_season": true
+              }
+            }
+          },
+          "2024": null
+        },
+        "moneyline": null,
+        "name": "Hailey Cowan",
+        "record": "12-9"
+      },
+      {
+        "details": {
+          "2023": null,
+          "2024": null
+        },
+        "moneyline": null,
+        "name": "Tamires Vidal",
+        "record": "12-6"
+      },
+      {
+        "details": {
+          "2023": {
+            "core": {
+              "Booster": {
+                "champion": "No",
+                "division": "Women's Strawweight",
+                "edition_tier": "Challengers",
+                "event_date": null,
+                "link": "https://reignmakers.draftkings.com/collectibles/453000c5f05d4762b0ab9049146e083c/",
+                "price": 5,
+                "quantity": 160,
+                "useable_all_season": true
+              },
+              "Genesis": {
+                "champion": "No",
+                "division": "Women's Strawweight",
+                "edition_tier": "Challengers",
+                "event_date": null,
+                "link": "https://reignmakers.draftkings.com/collectibles/95b52911e77c43d38288e8e49fb8a311/",
+                "price": 5,
+                "quantity": 160,
+                "useable_all_season": true
+              }
+            },
+            "elite": {
+              "Genesis": {
+                "champion": "No",
+                "division": "Women's Strawweight",
+                "edition_tier": "Challengers",
+                "event_date": null,
+                "link": "https://reignmakers.draftkings.com/collectibles/b6a6091dd633420ea1ffffe809a366e9/",
+                "price": 99.99,
+                "quantity": 12,
+                "useable_all_season": true
+              }
+            },
+            "legendary": {},
+            "rare": {
+              "Booster": {
+                "champion": "No",
+                "division": "Women's Strawweight",
+                "edition_tier": "Challengers",
+                "event_date": null,
+                "link": "https://reignmakers.draftkings.com/collectibles/90a02a54957b40969e1e58a3706cd4bb/",
+                "price": 16,
+                "quantity": 32,
+                "useable_all_season": true
+              },
+              "Genesis": {
+                "champion": "No",
+                "division": "Women's Strawweight",
+                "edition_tier": "Challengers",
+                "event_date": null,
+                "link": "https://reignmakers.draftkings.com/collectibles/c31806ce2c5f46b5bf049ab7ed393733/",
+                "price": 8.88,
+                "quantity": 40,
+                "useable_all_season": true
+              },
+              "Takedown": {
+                "champion": "No",
+                "division": "Women's Strawweight",
+                "edition_tier": "Challengers",
+                "event_date": null,
+                "link": "https://reignmakers.draftkings.com/collectibles/2e831066b05541fd85ea92c5eb5a93e1/",
+                "price": 4.97,
+                "quantity": 156,
+                "useable_all_season": true
+              }
+            },
+            "reignmaker": {}
+          },
+          "2024": null
+        },
+        "moneyline": -296,
+        "name": "Piera Rodriguez",
+        "record": "15-3"
+      },
+      {
+        "details": {
+          "2023": null,
+          "2024": null
+        },
+        "moneyline": 245,
+        "name": "Ariane Carnelossi",
+        "record": "24-9"
+      },
+      {
+        "details": {
+          "2023": {
+            "core": {
+              "Booster": {
+                "champion": "No",
+                "division": "Women's Strawweight",
+                "edition_tier": "Ranked",
+                "event_date": null,
+                "link": "https://reignmakers.draftkings.com/collectibles/f210bbbaa56b4f479c8a01a637e3c439/",
+                "price": 1,
+                "quantity": 350,
+                "useable_all_season": true
+              },
+              "Crafting": {
+                "champion": "No",
+                "division": "Women's Strawweight",
+                "edition_tier": "Ranked",
+                "event_date": null,
+                "link": "https://reignmakers.draftkings.com/collectibles/6d38b4a81ba54c98b44ebb623b3a20f3/",
+                "price": 1,
+                "quantity": 400,
+                "useable_all_season": true
+              },
+              "Genesis": {
+                "champion": "No",
+                "division": "Women's Strawweight",
+                "edition_tier": "Ranked",
+                "event_date": null,
+                "link": "https://reignmakers.draftkings.com/collectibles/233d03027de54d6aa40f28b7dc1a3b18/",
+                "price": 1,
+                "quantity": 720,
+                "useable_all_season": true
+              },
+              "Prizing": {
+                "champion": "No",
+                "division": "Women's Strawweight",
+                "edition_tier": "Ranked",
+                "event_date": null,
+                "link": "https://reignmakers.draftkings.com/collectibles/6cbea97f8afb43f280682bec5af8ad94/",
+                "price": 1.19,
+                "quantity": 800,
+                "useable_all_season": true
+              }
+            },
+            "elite": {
+              "Crafting": {
+                "champion": "No",
+                "division": "Women's Strawweight",
+                "edition_tier": "Ranked",
+                "event_date": null,
+                "link": "https://reignmakers.draftkings.com/collectibles/c504f97e9c924f60964e1a6a9efe57cd/",
+                "price": 66.66,
+                "quantity": 24,
+                "useable_all_season": true
+              },
+              "Genesis": {
+                "champion": "No",
+                "division": "Women's Strawweight",
+                "edition_tier": "Ranked",
+                "event_date": null,
+                "link": "https://reignmakers.draftkings.com/collectibles/46aa6cc3396a44d9affb67715da17567/",
+                "price": 60,
+                "quantity": 45,
+                "useable_all_season": true
+              },
+              "Prizing": {
+                "champion": "No",
+                "division": "Women's Strawweight",
+                "edition_tier": "Ranked",
+                "event_date": null,
+                "link": "https://reignmakers.draftkings.com/collectibles/bb2d140833a7460fb991f54893d3eba0/",
+                "price": 45.55,
+                "quantity": 48,
+                "useable_all_season": true
+              }
+            },
+            "legendary": {
+              "Crafting": {
+                "champion": "No",
+                "division": "Women's Strawweight",
+                "edition_tier": "Ranked",
+                "event_date": null,
+                "link": "https://reignmakers.draftkings.com/collectibles/b20dbdcf81dc411e84d0726db76fe000/",
+                "price": 222.22,
+                "quantity": 5,
+                "useable_all_season": true
+              },
+              "Genesis": {
+                "champion": "No",
+                "division": "Women's Strawweight",
+                "edition_tier": "Ranked",
+                "event_date": null,
+                "link": "https://reignmakers.draftkings.com/collectibles/fd279951675242a3a0a99896b51682fc/",
+                "price": 255.55,
+                "quantity": 15,
+                "useable_all_season": true
+              }
+            },
+            "rare": {
+              "Booster": {
+                "champion": "No",
+                "division": "Women's Strawweight",
+                "edition_tier": "Ranked",
+                "event_date": null,
+                "link": "https://reignmakers.draftkings.com/collectibles/be2caa55f51c4a6aa8061bd1ec94cfce/",
+                "price": 3.25,
+                "quantity": 70,
+                "useable_all_season": true
+              },
+              "Crafting": {
+                "champion": "No",
+                "division": "Women's Strawweight",
+                "edition_tier": "Ranked",
+                "event_date": null,
+                "link": "https://reignmakers.draftkings.com/collectibles/f9e7ae9cd1124e19a1e7585fb3fa818d/",
+                "price": 2.7,
+                "quantity": 100,
+                "useable_all_season": true
+              },
+              "Genesis": {
+                "champion": "No",
+                "division": "Women's Strawweight",
+                "edition_tier": "Ranked",
+                "event_date": null,
+                "link": "https://reignmakers.draftkings.com/collectibles/be531d3f61554634ba9014b743ef3019/",
+                "price": 4,
+                "quantity": 180,
+                "useable_all_season": true
+              },
+              "Prizing": {
+                "champion": "No",
+                "division": "Women's Strawweight",
+                "edition_tier": "Ranked",
+                "event_date": null,
+                "link": "https://reignmakers.draftkings.com/collectibles/3eeb0ec30ee8402dafc45a3c687aa224/",
+                "price": 2.99,
+                "quantity": 200,
+                "useable_all_season": true
+              }
+            },
+            "reignmaker": {}
+          },
+          "2024": {
+            "core": {
+              "Collide": {
+                "champion": null,
+                "division": "Women's Strawweight",
+                "edition_tier": "Challengers",
+                "event_date": "All Events",
+                "link": "https://reignmakers.draftkings.com/collectibles/4b12be2849414c748ac7715a4b470491/",
+                "price": 1.4,
+                "quantity": 3000,
+                "useable_all_season": true
+              }
+            },
+            "elite": {
+              "Collide": {
+                "champion": null,
+                "division": "Women's Strawweight",
+                "edition_tier": "Challengers",
+                "event_date": "All Events",
+                "link": "https://reignmakers.draftkings.com/collectibles/68dea025d91c4bf68441e90cc3e1010d/",
+                "price": 69.99,
+                "quantity": 140,
+                "useable_all_season": true
+              }
+            },
+            "legendary": {
+              "Collide": {
+                "champion": null,
+                "division": "Women's Strawweight",
+                "edition_tier": "Challengers",
+                "event_date": "All Events",
+                "link": "https://reignmakers.draftkings.com/collectibles/ffb3abc3a0fe47188365fb8a76d8f93f/",
+                "price": 189,
+                "quantity": 35,
+                "useable_all_season": true
+              }
+            },
+            "rare": {
+              "Collide": {
+                "champion": null,
+                "division": "Women's Strawweight",
+                "edition_tier": "Challengers",
+                "event_date": "All Events",
+                "link": "https://reignmakers.draftkings.com/collectibles/a7498275a31e4a88b219e5d95d183b6b/",
+                "price": 7.78,
+                "quantity": 700,
+                "useable_all_season": true
+              }
+            },
+            "reignmaker": {
+              "Collide": {
+                "champion": null,
+                "division": "Women's Strawweight",
+                "edition_tier": "Challengers",
+                "event_date": "All Events",
+                "link": "https://reignmakers.draftkings.com/collectibles/95c69ead308f490c865317d6d5a37395/",
+                "price": 600,
+                "quantity": 6,
+                "useable_all_season": true
+              }
+            }
+          }
+        },
+        "moneyline": null,
+        "name": "Emily Ducote",
+        "record": "22-14"
+      },
+      {
+        "details": {
+          "2023": {
+            "core": {
+              "Crafting": {
+                "champion": "No",
+                "division": "Women's Strawweight",
+                "edition_tier": "Challengers",
+                "event_date": null,
+                "link": "https://reignmakers.draftkings.com/collectibles/d4b682488433468a80767a38b0a72f4e/",
+                "price": 0.84,
+                "quantity": 160,
+                "useable_all_season": true
+              },
+              "Genesis": {
+                "champion": "No",
+                "division": "Women's Strawweight",
+                "edition_tier": "Challengers",
+                "event_date": null,
+                "link": "https://reignmakers.draftkings.com/collectibles/5cc884c2297d48ae9930982944fbd8a7/",
+                "price": 1.08,
+                "quantity": 160,
+                "useable_all_season": true
+              },
+              "Prizing": {
+                "champion": "No",
+                "division": "Women's Strawweight",
+                "edition_tier": "Challengers",
+                "event_date": null,
+                "link": "https://reignmakers.draftkings.com/collectibles/a6b959d07ae44052a16fc7a957840b70/",
+                "price": 0.84,
+                "quantity": 320,
+                "useable_all_season": true
+              }
+            },
+            "elite": {
+              "Crafting": {
+                "champion": "No",
+                "division": "Women's Strawweight",
+                "edition_tier": "Challengers",
+                "event_date": null,
+                "link": "https://reignmakers.draftkings.com/collectibles/75f92b2bb0b14f889387799f1403adbb/",
+                "price": 34,
+                "quantity": 10,
+                "useable_all_season": true
+              },
+              "Genesis": {
+                "champion": "No",
+                "division": "Women's Strawweight",
+                "edition_tier": "Challengers",
+                "event_date": null,
+                "link": "https://reignmakers.draftkings.com/collectibles/167a74b36b9e4652b68eaa4df880d9e6/",
+                "price": 22,
+                "quantity": 12,
+                "useable_all_season": true
+              }
+            },
+            "legendary": {},
+            "rare": {
+              "Crafting": {
+                "champion": "No",
+                "division": "Women's Strawweight",
+                "edition_tier": "Challengers",
+                "event_date": null,
+                "link": "https://reignmakers.draftkings.com/collectibles/a9d90eb1871d4e6590e72be77a46fbb3/",
+                "price": 3.6,
+                "quantity": 40,
+                "useable_all_season": true
+              },
+              "Genesis": {
+                "champion": "No",
+                "division": "Women's Strawweight",
+                "edition_tier": "Challengers",
+                "event_date": null,
+                "link": "https://reignmakers.draftkings.com/collectibles/f1ec9bdef73c420c897dae3bafba2552/",
+                "price": 7.95,
+                "quantity": 40,
+                "useable_all_season": true
+              },
+              "Prizing": {
+                "champion": "No",
+                "division": "Women's Strawweight",
+                "edition_tier": "Challengers",
+                "event_date": null,
+                "link": "https://reignmakers.draftkings.com/collectibles/8315b040347b4cf4a4571abe8a55ab64/",
+                "price": 3.95,
+                "quantity": 80,
+                "useable_all_season": true
+              }
+            },
+            "reignmaker": {
+              "Crafting": {
+                "champion": "No",
+                "division": "Women's Strawweight",
+                "edition_tier": "Challengers",
+                "event_date": null,
+                "link": "https://reignmakers.draftkings.com/collectibles/97d15237ecbe40c197dbc72987b3bf0d/",
+                "price": 298,
+                "quantity": 1,
+                "useable_all_season": true
+              }
+            }
+          },
+          "2024": {
+            "core": {
+              "Collide": {
+                "champion": null,
+                "division": "Women's Strawweight",
+                "edition_tier": "Challengers",
+                "event_date": "All Events",
+                "link": "https://reignmakers.draftkings.com/collectibles/7a469968bd1441768bfdf938ae8cb6dd/",
+                "price": 0.95,
+                "quantity": 3000,
+                "useable_all_season": true
+              }
+            },
+            "elite": {
+              "Collide": {
+                "champion": null,
+                "division": "Women's Strawweight",
+                "edition_tier": "Challengers",
+                "event_date": "All Events",
+                "link": "https://reignmakers.draftkings.com/collectibles/a125725d7aa149d7a28455ec2fb69647/",
+                "price": 49.88,
+                "quantity": 140,
+                "useable_all_season": true
+              }
+            },
+            "legendary": {
+              "Collide": {
+                "champion": null,
+                "division": "Women's Strawweight",
+                "edition_tier": "Challengers",
+                "event_date": "All Events",
+                "link": "https://reignmakers.draftkings.com/collectibles/b0cdf538c0084faca5d87abff34c5d10/",
+                "price": 220,
+                "quantity": 35,
+                "useable_all_season": true
+              }
+            },
+            "rare": {
+              "Collide": {
+                "champion": null,
+                "division": "Women's Strawweight",
+                "edition_tier": "Challengers",
+                "event_date": "All Events",
+                "link": "https://reignmakers.draftkings.com/collectibles/5a7958eb1d754b0698afe576e1cdd89d/",
+                "price": 3.49,
+                "quantity": 700,
+                "useable_all_season": true
+              }
+            },
+            "reignmaker": {
+              "Collide": {
+                "champion": null,
+                "division": "Women's Strawweight",
+                "edition_tier": "Challengers",
+                "event_date": "All Events",
+                "link": "https://reignmakers.draftkings.com/collectibles/f000e67a63ec4a76b6de20dc9ce797cf/",
+                "price": 700,
+                "quantity": 6,
+                "useable_all_season": true
+              }
+            }
+          }
+        },
+        "moneyline": null,
+        "name": "Vanessa Demopoulos",
+        "record": "17-14"
+      },
+      {
+        "details": {
+          "2023": null,
+          "2024": null
+        },
+        "moneyline": null,
+        "name": "Alatengheili ",
+        "record": "27-15"
+      },
+      {
+        "details": {
+          "2023": null,
+          "2024": null
+        },
+        "moneyline": null,
+        "name": "Kleidison Rodrigues",
+        "record": "14-9"
+      }
+    ],
+    "title": "UFC Fight Night: Barboza vs. Murphy"
+  }
+]
