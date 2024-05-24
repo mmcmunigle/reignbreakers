@@ -1,11 +1,11 @@
 # frontend/Dockerfile
 # Build Angular
-FROM node:16-alpine as builder
+FROM node:20-alpine as builder
 WORKDIR /app
 COPY . ./
 RUN npm install
 RUN export NODE_OPTIONS=--openssl-legacy-provider
-RUN node_modules/.bin/ng build --prod
+RUN node_modules/.bin/ng build --configuration production
 
 # Serve Angular using Nginx
 FROM nginx:alpine
