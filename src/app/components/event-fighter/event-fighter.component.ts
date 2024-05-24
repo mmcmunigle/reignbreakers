@@ -1,8 +1,7 @@
 import { Component, Input, OnInit, SimpleChanges } from '@angular/core';
 import { CollectionService } from 'src/app/services/collection.service';
 import { CollectionType } from 'src/app/enums/collection-type';
-import { MatCardModule } from '@angular/material/card';
-// import { ChartType, ChartOptions } from 'chart.js';
+import Chart from 'chart.js/auto';
 
 @Component({
   selector: 'app-event-fighter',
@@ -22,7 +21,8 @@ export class EventFighterComponent implements OnInit {
   public reignmaker: any = {};
   public collected: any = {};
 
-  // public voteChartOptions = ChartOptions
+  public chart: any;
+  public chartId: string = Math.random().toString();
 
   constructor(
     public collectionService: CollectionService,
@@ -32,14 +32,49 @@ export class EventFighterComponent implements OnInit {
     this.updateFighterDetails();
 
     this.collectionService.collectionUpdated.subscribe((value) => {
-      console.log(value);
-      this.mapFightersInCollection()
+      this.mapFightersInCollection();
     });
+  }
+
+  ngAfterViewInit(): void {
+    // this.createChart();
   }
 
   ngOnChanges(changes: SimpleChanges) {
     this.collected = {};
     this.updateFighterDetails();
+  }
+
+  createChart(){
+
+    this.chart = new Chart(this.fighter.name, {
+      type: 'doughnut',
+      data: {
+        labels: ['KO/SUB','DEC'],
+        datasets: [{
+          // label: 'My First Dataset',
+          data: [this.fighter.vote.tko_percentage + this.fighter.vote.sub_percentage, this.fighter.vote.dec_percentage],
+          backgroundColor: [
+            'green',
+            'orange'
+          ],
+        }],
+      },
+      options: {
+        aspectRatio: 3,
+        plugins: {
+          legend: {
+              display: false
+          },
+        },
+        elements: {
+          arc: {
+              borderWidth: 0,
+          }
+        }
+      }
+
+    });
   }
 
   updateFighterDetails(): void {

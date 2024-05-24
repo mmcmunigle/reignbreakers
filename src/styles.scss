@@ -1,13 +1,12 @@
 html, body { height: 100%; }
 body { color:whitesmoke; margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; background-color: rgb(5, 5, 5)}
-// body { background-color: rgb(5, 5, 5); margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
-
-mat-card-header {
-    padding: 0 16px 10px 16px !important;
-}
 
 .mat-toolbar-row, .mat-toolbar-single-row {
     height: 48px;
+}
+
+mat-row {
+    -webkit-font-smoothing: auto !important;
 }
 
 .core-badge {

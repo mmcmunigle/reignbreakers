@@ -3,18 +3,18 @@
     <h3 class="name">
       {{ fighter.name }}
     </h3>
-    <!-- <canvas
-      baseChart
-      [data]=
-      [labels]="pieChartLabels"
-      [chartType]="pieChartType"
-      [options]="pieChartOptions"
-      [plugins]="pieChartPlugins"
-      [legend]="pieChartLegend"
-    >
-    </canvas> -->
+
     <h4 class="odds">
       {{ fighter.moneyline || fighter.vote.win_percentage }}
+      <mat-progress-bar
+        *ngIf="fighter.vote.win_percentage"
+        mode="determinate"
+        color="warn"
+        value="{{ fighter.vote.tko_percentage + fighter.vote.sub_percentage }}"
+        matTooltip="Finish - {{
+          fighter.vote.tko_percentage + fighter.vote.sub_percentage
+        }}%"
+      ></mat-progress-bar>
     </h4>
     <h3
       class="sales-property core-badge"

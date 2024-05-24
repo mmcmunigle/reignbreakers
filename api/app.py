@@ -52,6 +52,7 @@ def get_pga_market_data():
 @api.route('/ufc-events', methods=['GET'])
 def get_ufc_events():
     events = ufc_events.get_ufc_event_details()
+    print(len(ufc_market_24.merchandise.keys()))
     for event_details in events:
         for fighter in event_details.get('fighters', []):
                 fighter['details'] = {

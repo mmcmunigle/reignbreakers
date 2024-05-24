@@ -54,8 +54,8 @@ class UFCOdds:
                     else:
                         fights[date_str] = [odds]
                 
-                self._fighter_odds[odds[0]['name']] = odds[0]['price']
-                self._fighter_odds[odds[1]['name']] = odds[1]['price']
+                    self._fighter_odds[odds[0]['name']] = odds[0]['price']
+                    self._fighter_odds[odds[1]['name']] = odds[1]['price']
 
         fight_odds = []
         for date, event_details in fights.items():

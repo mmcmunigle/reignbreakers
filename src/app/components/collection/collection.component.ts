@@ -21,13 +21,14 @@ export class CollectionComponent implements OnInit {
     this.apiService.getInventory()
     .subscribe((cards: any) => {
       this.collection = cards;
-      this.filteredCollection = cards;
+      this.filteredCollection = cards.filter((x: any) => x.collection == this.selectedCollection);
       this.initialized = true;
     })
   }
 
   setCollection(target: string) {
     const result = CollectionType[target as keyof typeof CollectionType];
+    this.selectedCollection = result;
     if (result === CollectionType.ALL) {
       this.filteredCollection = this.collection;
     } else {

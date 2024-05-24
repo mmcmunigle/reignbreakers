@@ -11,6 +11,14 @@ mat-card-content {
     height: 40px;
 }
 
+.mat-mdc-progress-bar {
+    --mdc-linear-progress-active-indicator-color: green;
+    --mdc-linear-progress-track-height: 6px;
+    --mdc-linear-progress-active-indicator-height: 6px;
+    // --mdc-linear-progress-track-color: rgba(255, 155, 0, 0.75);
+}
+
+
 .mat-mdc-card-content {
     padding: 0;
 }

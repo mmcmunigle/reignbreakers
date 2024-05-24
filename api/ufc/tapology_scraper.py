@@ -57,7 +57,7 @@ class TapologyScraper:
             dec_percentage = fight.find('div', class_='dec_bar')['style'].split('width:')[1].strip('%')
             
             fight_predictions[fighter_full_name] = {
-                'win_percentage': round(float(prediction_percentage.replace('%', ''))),
+                'win_percentage': str(round(float(prediction_percentage.replace('%', '')))) + '%',
                 'tko_percentage': round(float(tko_percentage)),
                 'sub_percentage': round(float(sub_percentage)),
                 'dec_percentage': round(float(dec_percentage))
