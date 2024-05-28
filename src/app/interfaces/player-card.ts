@@ -9,6 +9,7 @@ export interface PlayerCard {
     purchase: number,
     market: number,
     sale: number,
+    offer: number,
     diff: number,
     link: string,
     event: any,

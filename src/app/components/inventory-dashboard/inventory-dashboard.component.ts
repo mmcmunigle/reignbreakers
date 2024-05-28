@@ -2,6 +2,7 @@ import { Component, ElementRef, Input, OnInit, SimpleChanges, ViewChild } from '
 import { UntypedFormControl } from '@angular/forms';
 import { MatAutocompleteSelectedEvent } from '@angular/material/autocomplete';
 import { MatChipInputEvent } from '@angular/material/chips';
+import { PageEvent } from '@angular/material/paginator';
 import { Observable, of } from 'rxjs';
 import { debounceTime, switchMap } from 'rxjs/operators';
 import { PlayerCard } from 'src/app/interfaces/player-card';
@@ -25,6 +26,11 @@ export class InventoryDashboardComponent implements OnInit {
   public filteredCardNames?: Observable<any>;
   public filterOpened: boolean = false;
   public selectedNames: string[] = []; 
+
+  public pagedCards: PlayerCard[] = [];
+  public length: number = 0;
+  public pageSize: number = 20;
+  public pageSizeOptions: number[] = [20, 40, 100, 500];
 
   private filters: any = {
     sportsFilter: 'ufc',
@@ -71,6 +77,15 @@ export class InventoryDashboardComponent implements OnInit {
     this.cards = changes.collection.currentValue;
     this.applyFilters();
   }
+
+  public onPageChange(event: PageEvent){
+    let startIndex = event.pageIndex * event.pageSize;
+    let endIndex = startIndex + event.pageSize;
+    if(endIndex > this.filteredCards.length){
+      endIndex = this.filteredCards.length;
+    }
+    this.pagedCards = this.filteredCards.slice(startIndex, endIndex);
+  }
   
   public nameSelected(event: MatAutocompleteSelectedEvent) {
     this.selectedNames.push(event.option.viewValue);
@@ -102,12 +117,14 @@ export class InventoryDashboardComponent implements OnInit {
   }
 
   private setCols() {
-    if (window.innerWidth < 1000) {
-      this.cols = "1"
-    } else if (window.innerWidth < 1600) {
-      this.cols = "2"
-    }else {
+    if (window.innerWidth < 800) {
+      this.cols = "1";
+    } else if (window.innerWidth < 1300) {
+      this.cols = "2";
+    } else if (window.innerWidth < 1800) {
       this.cols = "3";
+    }else {
+      this.cols = "4";
     }
   }
 
@@ -201,6 +218,8 @@ export class InventoryDashboardComponent implements OnInit {
     };
 
     this.names = this.cards.map(card => card.name);
+
+    this.pagedCards = this.filteredCards.slice(0, this.pageSize);
   }
 
   updateFilters(newFilters: any) {

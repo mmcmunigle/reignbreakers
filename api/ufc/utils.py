@@ -9,9 +9,10 @@ def correct_name(name):
         'Alatengheili': 'Heili Alateng',
         'Kleydson Rodrigues': 'Kleidiso Rodrigues',
         'Alexander Romanov': 'Alexandr Romanov',
+        'Elizeu Zaleski dos Santos': 'Elizeu Zaleski Dos Santos'
     }
 
-    name = name.replace('é', 'e').replace('ł', 'l').replace('á', 'a')
+    name = name.replace('é', 'e').replace('ł', 'l').replace('á', 'a').replace('Ľ', 'L')
     if name in name_corrections:
         return name_corrections[name]
     else:

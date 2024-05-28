@@ -15,13 +15,8 @@
         </h4>
       </div>
       <div style="display: flex">
-        <h4 class="card-property">Cost: ${{ card.purchase }}</h4>
-        <h4
-          class="card-property"
-          [ngClass]="{ gain: card.diff > 0, loss: card.diff <= 0 }"
-        >
-          Market: ${{ card.market }}
-        </h4>
+        <h4 class="card-property">Market: ${{ card.market }}</h4>
+        <h4 class="card-property">Offer: ${{ card.offer }}</h4>
         <h4 *ngIf="card.sale" class="card-property">List: ${{ card.sale }}</h4>
       </div>
     </div>

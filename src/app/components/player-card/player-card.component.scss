@@ -1,7 +1,7 @@
 
 /* TODO(mdc-migration): The following rule targets internal classes of card that may no longer apply for the MDC version. */
 mat-card-header {
-    height: 150px;
+    height: 130px;
     margin-left: 0px;
 }
 
@@ -11,12 +11,7 @@ mat-card-header {
 }
 
 h2 {
-    margin-top: 10px;
     margin-bottom: 0px;
-}
-
-h5 {
-    margin-bottom: 25px;
 }
 
 h4 {
@@ -30,6 +25,7 @@ h4 {
     color: white;
     width: fit-content;
     padding: 0px 5px;
+    font-size: 14px;
 }
 
 .gain {
@@ -47,15 +43,15 @@ h4 {
 }
 
 .crop {
-    width: 180px;
-    height: 135px;
+    width: 135px;
+    height: 110px;
     overflow: hidden;
 }
 
 .crop img {
-    width: 215px;
-    height: 190px;
-    margin: -27px 0 0 -17px;
+    width: 150px;
+    height: 130px;
+    margin: -10px 0 0 -10px;
 }
 
 .content {
@@ -63,5 +59,8 @@ h4 {
 }
 
 .links {
-    margin-right: 10px;
+    position: absolute;
+    top: 50px;
+    right: 15px;
+    transform: scale(0.8);
 }

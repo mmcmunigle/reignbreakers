@@ -63,10 +63,10 @@
     <mat-grid-list
       *ngIf="filteredCards.length"
       [cols]="cols"
-      rowHeight="150px"
+      rowHeight="140px"
       gutterSize="20px"
     >
-      <mat-grid-tile *ngFor="let card of filteredCards">
+      <mat-grid-tile *ngFor="let card of pagedCards">
         <app-player-card [card]="card" style="width: 100%"></app-player-card>
       </mat-grid-tile>
     </mat-grid-list>
@@ -75,3 +75,11 @@
     </h3>
   </mat-drawer-container>
 </div>
+
+<mat-paginator
+  [length]="filteredCards.length"
+  [pageSize]="pageSize"
+  [pageSizeOptions]="pageSizeOptions"
+  (page)="onPageChange($event)"
+>
+</mat-paginator>
