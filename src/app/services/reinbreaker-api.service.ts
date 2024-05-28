@@ -19,6 +19,11 @@ export class ReignbreakerApiService {
 
   getInventory() {
     return this.httpClient
+    .get(`${this.baseURL}/inventory`)
+  }
+
+  getUfcInventory() {
+    return this.httpClient
     .get(`${this.baseURL}/ufc-inventory`)
   }
 

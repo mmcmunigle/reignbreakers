@@ -7,5 +7,8 @@ build-api:
 up:
 	docker-compose up -d
 
+up-db:
+	docke-compose up app-db -d
+
 down:
 	docker-compose down

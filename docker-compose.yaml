@@ -1,21 +1,50 @@
 services:
-    app-backend:
-        build: 
-          context: ./
-          dockerfile: ./deploy/Dockerfile_python
-        image: reignbreaker_api
-        container_name: api_backend
-        restart: always
-        ports:
-            - 5000:5000
-    app-frontend:
-        build:
-          context: ./
-          dockerfile: ./deploy/Dockerfile_nginx
-        image: reignbreaker_nginx
-        container_name: web_frontend
-        restart: always
-        ports:
-            - 80:80
-        expose:
-            - "80"
+  app-backend:
+    build: 
+      context: ./
+      dockerfile: ./deploy/Dockerfile_python
+    image: reignbreaker_api
+    container_name: api_backend
+    restart: always
+    ports:
+        - 5000:5000
+
+  app-frontend:
+    build:
+      context: ./
+      dockerfile: ./deploy/Dockerfile_nginx
+    image: reignbreaker_nginx
+    container_name: web_frontend
+    restart: always
+    ports:
+        - 80:80
+    expose:
+        - "80"
+ 
+  app-postgres:
+    image: postgres:latest
+    container_name: postgres_db
+    environment:
+      - POSTGRES_USER=${POSTGRES_USER}
+      - POSTGRES_PASSWORD=${POSTGRES_PW}
+      - POSTGRES_DB=${POSTGRES_DB}
+    ports:
+      - "5432:5432"
+    restart: always
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+  pgadmin:
+    image: dpage/pgadmin4:latest
+    container_name: pgadmin
+    environment:
+      - PGADMIN_DEFAULT_EMAIL=${PGADMIN_MAIL}
+      - PGADMIN_DEFAULT_PASSWORD=${PGADMIN_PW}
+    ports:
+      - "5050:80"
+    restart: always
+    depends_on:
+      - app-postgres
+ 
+volumes:
+  pgdata:

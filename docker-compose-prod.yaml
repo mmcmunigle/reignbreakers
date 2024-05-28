@@ -1,23 +1,41 @@
 services:
-    app-backend:
-        build: 
-          context: ./
-          dockerfile: ./deploy/Dockerfile_python
-        image: reignbreaker_api
-        container_name: api_backend
-        restart: always
-        ports:
-            - 5000:5000
-    app-frontend:
-        build:
-          context: ./
-          dockerfile: ./deploy/Dockerfile_nginx
-        image: reignbreaker_nginx
-        container_name: web_frontend
-        restart: always
-        ports:
-            - 443:443
-            - 80:80
-        expose:
-            - "80"
-            - "443"
+  app-backend:
+    build: 
+      context: ./
+      dockerfile: ./deploy/Dockerfile_python
+    image: reignbreaker_api
+    container_name: api_backend
+    restart: always
+    ports:
+        - 5000:5000
+
+  app-frontend:
+    build:
+      context: ./
+      dockerfile: ./deploy/Dockerfile_nginx
+    image: reignbreaker_nginx
+    container_name: web_frontend
+    restart: always
+    ports:
+        - 443:443
+        - 80:80
+    expose:
+        - "80"
+        - "443"
+
+  app-db:
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: password
+    volumes:
+      - pgdata:/var/lib/postgresql/data 
+ 
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - 8080:8080
+
+volumes:
+  pgdata:

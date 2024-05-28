@@ -29,9 +29,15 @@ def after_request(response):
 
 
 @api.route('/ufc-inventory', methods=['GET'])
-def get_inventory():
+def get_ufc_inventory():
     ufc_cards = my_collection.get_ufc()
     return jsonify(ufc_cards)
+
+
+@api.route('/inventory', methods=['GET'])
+def get_inventory():
+    collection = my_collection.get_all()
+    return jsonify(collection)
 
 
 @api.route('/ufc-market-2023', methods=['GET'])

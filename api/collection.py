@@ -60,7 +60,6 @@ class Collection:
         else:
             collectable = Collectable(card)
 
-        # collectable.add_market_data(market)
         self._all_collectables.append(collectable)
 
 

@@ -9,7 +9,8 @@ def correct_name(name):
         'Alatengheili': 'Heili Alateng',
         'Kleydson Rodrigues': 'Kleidiso Rodrigues',
         'Alexander Romanov': 'Alexandr Romanov',
-        'Elizeu Zaleski dos Santos': 'Elizeu Zaleski Dos Santos'
+        'Elizeu Zaleski dos Santos': 'Elizeu Zaleski Dos Santos',
+        'Phil Rowe': 'Philip Rowe',
     }
 
     name = name.replace('é', 'e').replace('ł', 'l').replace('á', 'a').replace('Ľ', 'L')
