@@ -12,3 +12,6 @@ up-db:
 
 down:
 	docker-compose down
+
+db-migrate:
+	docker exec -it api_backend sh -c "python -m flask db migrate"

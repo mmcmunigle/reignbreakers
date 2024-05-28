@@ -1,6 +1,6 @@
 import requests
 
-from send_email import gmail_send_message
+from archive.send_email import gmail_send_message
 
 ACTIVITY_API = 'https://marketplace.draftkings.com/api/activity/v1/transactions'
 

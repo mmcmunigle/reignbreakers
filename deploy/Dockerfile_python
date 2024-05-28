@@ -1,17 +1,20 @@
 # Set base image (host OS)
-FROM --platform=linux/x86_64 python:3.9.6-alpine
+FROM --platform=linux/x86_64 python:3.9.5-slim
 
 # By default, listen on port 5000
 EXPOSE 5000/tcp
 
 # Set the working directory in the container
-WORKDIR /app
+WORKDIR /api
 
 # Copy the dependencies file to the working directory
-COPY ../requirements.txt .
+COPY ../api/requirements.txt .
 
 # 
 RUN pip install --upgrade pip setuptools wheel
+
+RUN apt-get update \
+    && apt-get -y install libpq-dev gcc
 
 # Install any dependencies
 RUN pip install -r requirements.txt
@@ -20,4 +23,7 @@ RUN pip install -r requirements.txt
 COPY ../api .
 
 # Specify the command to run on container start
-CMD [ "python", "./app.py" ]
+RUN chmod u+x ./entrypoint.sh
+ENTRYPOINT ["./entrypoint.sh"]
+# CMD [ "python", "-m", "app" ]
+# CMD ["sleep", "1000"]

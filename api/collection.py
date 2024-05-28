@@ -32,7 +32,7 @@ class Collection:
                 ufc_card['event'] = event_details[ufc_card['name']]
 
     def get_all(self):
-        return self._all_collectables
+        return [card.__dict__ for card in self._all_collectables]
 
     def get_ufc(self):
         return [card.__dict__ for card in self._all_collectables if card.type == 'ufc' and card.useable_all_season]

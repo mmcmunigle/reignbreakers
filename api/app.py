@@ -4,21 +4,30 @@ from datetime import datetime, timedelta
 
 from apscheduler.schedulers.background import BackgroundScheduler
 from flask import Blueprint, Flask, jsonify, make_response
+from flask_migrate import Migrate
 
+from config import DefaultConfig
 from collection import Collection
 from marketplace import UFCMarket, GolfMarket
-# from ufc.fight_odds import UFCOdds
 from ufc.event_details import UfcEvents
+from database import db
 
-
-app = Flask(__name__)
-api = Blueprint('api', __name__)
+from schema.users import User
 
 my_collection = Collection('goober321')
 ufc_market_23 = UFCMarket("8b8f14fb451944aca580a1e6bcb95cd4")
 ufc_market_24 = UFCMarket("27c4291759404392ab5db212ea61597e")
 golf_market = GolfMarket()
 ufc_events = UfcEvents()
+
+app = Flask(__name__)
+api = Blueprint('api', __name__)
+
+app.config.from_object(DefaultConfig)
+
+# Database Setup
+db.init_app(app)
+migrate = Migrate(app, db)
 
 @api.after_request
 def after_request(response):
@@ -113,7 +122,7 @@ def update_golf_market_data():
 def update_ufc_events():
     ufc_events.get_all_future_events()
 
-def initialize_app():
+def create_app():
     scheduler = BackgroundScheduler({'apscheduler.job_defaults.max_instances': 50})
     # scheduler.add_job(check_activity, 'interval', seconds=5)
     scheduler.add_job(update_ufc_events, 'interval', minutes=600, replace_existing=True, next_run_time=datetime.now() + timedelta(milliseconds=50))
@@ -121,10 +130,11 @@ def initialize_app():
     scheduler.add_job(update_ufc_market_data, 'interval', minutes=15, replace_existing=True, next_run_time=datetime.now() + timedelta(milliseconds=500))
     # scheduler.add_job(update_golf_market_data, 'interval', minutes=200)
     scheduler.start()
+    
 
     app.register_blueprint(api, url_prefix='/api')
     app.run(host='0.0.0.0')
 
 
 if __name__ == '__main__':
-    initialize_app()
+    create_app()
