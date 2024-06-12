@@ -9,6 +9,7 @@ from flask_migrate import Migrate
 from config import DefaultConfig
 from collection import Collection
 from marketplace import UFCMarket, GolfMarket
+# from offers import Offers
 from ufc.event_details import UfcEvents
 from database import db
 
@@ -19,6 +20,7 @@ ufc_market_23 = UFCMarket("8b8f14fb451944aca580a1e6bcb95cd4")
 ufc_market_24 = UFCMarket("27c4291759404392ab5db212ea61597e")
 golf_market = GolfMarket()
 ufc_events = UfcEvents()
+# offers = Offers()
 
 app = Flask(__name__)
 api = Blueprint('api', __name__)
@@ -86,6 +88,9 @@ def get_ufc_odds():
 def get_ufc_event_fighters():
     return ufc_events.get_fighter_events()
 
+# @api.route('/sent-offers', methods=['GET'])
+# def get_sent_offers():
+    # return jsonify(offers.offers)
 
 @api.route('/pga-rankings', methods=['GET'])
 def get_ranked_golfers():
@@ -122,16 +127,19 @@ def update_golf_market_data():
 def update_ufc_events():
     ufc_events.get_all_future_events()
 
+# def update_sent_offers():
+#     offers.get_latest_offers()
+
 def create_app():
     scheduler = BackgroundScheduler({'apscheduler.job_defaults.max_instances': 50})
     # scheduler.add_job(check_activity, 'interval', seconds=5)
-    scheduler.add_job(update_ufc_events, 'interval', minutes=600, replace_existing=True, next_run_time=datetime.now() + timedelta(milliseconds=50))
-    scheduler.add_job(update_collectables, 'interval', minutes=1, replace_existing=True, next_run_time=datetime.now() + timedelta(milliseconds=500))
-    scheduler.add_job(update_ufc_market_data, 'interval', minutes=15, replace_existing=True, next_run_time=datetime.now() + timedelta(milliseconds=500))
     # scheduler.add_job(update_golf_market_data, 'interval', minutes=200)
+    # scheduler.add_job(update_sent_offers, 'interval', minutes=5, replace_existing=True, next_run_time=datetime.now() + timedelta(milliseconds=50))
+    scheduler.add_job(update_ufc_events, 'interval', minutes=600, replace_existing=True, next_run_time=datetime.now() + timedelta(milliseconds=50))
+    scheduler.add_job(update_collectables, 'interval', minutes=5, replace_existing=True, next_run_time=datetime.now() + timedelta(milliseconds=500))
+    scheduler.add_job(update_ufc_market_data, 'interval', minutes=15, replace_existing=True, next_run_time=datetime.now() + timedelta(milliseconds=500))
     scheduler.start()
     
-
     app.register_blueprint(api, url_prefix='/api')
     app.run(host='0.0.0.0')
 

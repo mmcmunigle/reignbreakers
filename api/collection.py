@@ -2,6 +2,8 @@ import requests
 import json
 from datetime import datetime
 
+from ufc.utils import parse_attributes
+
 COLLECTION_KEYS = {
     'f226cd946f594de99b5c6aaf2ffcf4a0': 'pass',
     '8b8f14fb451944aca580a1e6bcb95cd4': 'ufc',
@@ -32,7 +34,7 @@ class Collection:
                 ufc_card['event'] = event_details[ufc_card['name']]
 
     def get_all(self):
-        return [card.__dict__ for card in self._all_collectables]
+        return [card.__dict__ for card in self._all_collectables if card.useable_all_season]
 
     def get_ufc(self):
         return [card.__dict__ for card in self._all_collectables if card.type == 'ufc' and card.useable_all_season]
@@ -80,11 +82,11 @@ class Collectable:
     attributes = {}
 
     def __init__(self, card):
-        self.parse_attributes(card)
+        self.attributes = parse_attributes(card, 'collectibleAttributes')
 
         ckey = card['collectibleKey']
         edition = card['editionNumber']
-        self.rarity = self.attributes['rarity_tier'].lower()
+        self.rarity = self.attributes.get('rarity_tier', '').lower()
         self.edition = edition
         self.set_name = self.attributes.get('set_name')
         self.collection = card.get('collectionName', '')
@@ -96,11 +98,6 @@ class Collectable:
         self.sale = card.get('saleListingPrice', 0)
         self.offer = card.get('topOfferPrice', 0)
         self.link = f'https://marketplace.draftkings.com/listings/collectibles/{ckey}/editions/{edition}'
-
-    def parse_attributes(self, card):
-        for attribute in card['collectibleAttributes']:
-            name = attribute['displayName'].replace(' ', '_').lower()
-            self.attributes[name] = attribute['value']
     
     def add_market_data(self, market):
         pass
@@ -118,18 +115,6 @@ class PlayerCard(Collectable):
 
     def add_market_data(self, market):
         pass
-        # market_data = market_price = diff = None
-        # if market.get(self.name):
-        #     market_data = market[self.name][self.rarity].get(self.set_name)
-
-        # purchase_price = self.purchase_price or 0
-
-        # if market_data:
-        #     market_price = market_data['price']
-        #     diff = round(market_price - purchase_price, 2)
-
-        # self.market = market_price or 0
-        # self.diff = diff or 0
 
 
 class Pass(Collectable):

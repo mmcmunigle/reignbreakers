@@ -1,9 +1,10 @@
 import requests
 from datetime import datetime, timedelta
+from ufc.utils import parse_attributes
 
 class Market:
     def __init__(self):
-        self._marketplace_url = "https://marketplace.draftkings.com/fetcher/{}/merchandise?offset=50&limit=10000&collectionKey={}&isDescending=false&merchandiseType=Collectible&includeOfferDetails=true{}"
+        self._marketplace_url = "https://marketplace.draftkings.com/fetcher/{}/merchandise?offset=0&limit=50000&collectionKey={}&isDescending=false&merchandiseType=Collectible&includeOfferDetails=true{}"
         self._collection_key = None
         self._request_params = ""
         self.merchandise = {}
@@ -22,7 +23,7 @@ class Market:
     def process_merchandise(self, market_data):
         """process a all merchandice cards"""
         for collectable in market_data:
-            attributes = parse_attributes(collectable)
+            attributes = parse_attributes(collectable, 'collectionAttributes')
             self.parse_collectable(collectable, attributes)
 
     def parse_collectable(self, collectable, attributes):
@@ -107,12 +108,3 @@ class GolfMarket(Market):
             'link': link,
             'edition_tier': attributes.get('edition_tier'),
         }
-
-
-def parse_attributes(content):
-    attributes = {}
-    for attribute in content['collectionAttributes']:
-        name = attribute['displayName'].replace(' ', '_').lower()
-        attributes[name] = attribute['value']
-
-    return attributes

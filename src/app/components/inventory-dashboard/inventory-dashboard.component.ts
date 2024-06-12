@@ -6,7 +6,6 @@ import { PageEvent } from '@angular/material/paginator';
 import { Observable, of } from 'rxjs';
 import { debounceTime, switchMap } from 'rxjs/operators';
 import { PlayerCard } from 'src/app/interfaces/player-card';
-import { ReignbreakerApiService } from 'src/app/services/reinbreaker-api.service';
 
 @Component({
   selector: 'inventory-dashboard',

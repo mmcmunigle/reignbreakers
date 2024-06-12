@@ -11,6 +11,17 @@ def correct_name(name):
         'Alexander Romanov': 'Alexandr Romanov',
         'Elizeu Zaleski dos Santos': 'Elizeu Zaleski Dos Santos',
         'Phil Rowe': 'Philip Rowe',
+        'Zachary Reese': 'Zach Reese',
+        'Douglas Silva de Andrade': 'Douglas Silva',
+        'Asu Almabayev': 'Assu Almabayev',
+        'Melquizael Costa': 'Melquizael Conceicao',
+        'Shayilan Nuerdanbieke': 'Nuerdanbieke Shayilan',
+        'Timmy Cuamba': 'Timothy Cuamba',
+        'Muhammad Naimov': 'Muhammadjon Naimov',
+        'Kyung Ho Kang': 'Kyungho Kang',
+        'ChangHo Lee': 'Chang Ho Lee',
+        'Michelle Waterson-Gomez': 'Michelle Gomez',
+        'Ian Garry': 'Ian Machado Garry',
     }
 
     name = name.replace('é', 'e').replace('ł', 'l').replace('á', 'a').replace('Ľ', 'L')
@@ -18,3 +29,12 @@ def correct_name(name):
         return name_corrections[name]
     else:
         return name
+
+
+def parse_attributes(content, key):
+    attributes = {}
+    for attribute in content[key]:
+        name = attribute['displayName'].replace(' ', '_').lower()
+        attributes[name] = attribute['value']
+
+    return attributes

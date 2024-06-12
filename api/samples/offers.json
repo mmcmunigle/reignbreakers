@@ -1,0 +1,17 @@
+{
+  "merchandiseOffers": [
+    {
+      "offerKey": "3d9a882dee99485fa895335f6a0e156a",
+      "offerPrice": 0.31,
+      "merchandiseKey": "0f50fda0cd3f46a290622e7867533141",
+      "merchandiseType": "Collectible",
+      "userKey": "b1d30f93-f1e2-477b-9917-ab13bedfa0ee",
+      "userName": "harverad",
+      "expirationDate": "2024-05-31T17:09:33.0000000+00:00"
+    }
+  ],
+  "lowestListedEditionPrice": 1.9,
+  "topOfferKey": "3d9a882dee99485fa895335f6a0e156a",
+  "currentResultIndex": 1,
+  "totalResultCount": 3
+}
