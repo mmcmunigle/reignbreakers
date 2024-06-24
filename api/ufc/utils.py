@@ -22,9 +22,11 @@ def correct_name(name):
         'ChangHo Lee': 'Chang Ho Lee',
         'Michelle Waterson-Gomez': 'Michelle Gomez',
         'Ian Garry': 'Ian Machado Garry',
+        'Christian Leroy Duncan': 'Christian Duncan',
+        'Jirí Prochazka': 'Jiri Prochazka',
     }
 
-    name = name.replace('é', 'e').replace('ł', 'l').replace('á', 'a').replace('Ľ', 'L')
+    name = name.replace('é', 'e').replace('ł', 'l').replace('á', 'a').replace('Ľ', 'L').replace('í', 'i')
     if name in name_corrections:
         return name_corrections[name]
     else:
