@@ -30,8 +30,11 @@ class UfcEvents:
 
         future_events = []
         for event in resp.json():
-            if not event['Active'] or datetime.strptime(event['Day'], "%Y-%m-%dT%H:%M:%S") < datetime.today():
+            if not event['Active'] or datetime.strptime(event['Day'], "%Y-%m-%dT%H:%M:%S") < (datetime.today() + timedelta(days=1)):
                 continue
+            if 'Dana White' in event['Name'] or 'Ultimate' in event['Name']:
+                continue
+
             future_events.append({
                 'event_id': event['EventId'],
                 'title': event['Name'],
