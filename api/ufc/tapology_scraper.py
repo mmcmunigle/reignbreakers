@@ -1,6 +1,7 @@
 import requests
 from bs4 import BeautifulSoup
 from ufc.utils import correct_name
+from time import sleep
 
 class TapologyScraper:
     def __init__(self) -> None:
@@ -85,6 +86,7 @@ class TapologyScraper:
         for url in event_urls[:8]:
             print(f"Scraping {url} ...")
             fight_links = self._extract_fight_links(url)
+            sleep(3)  # Scraping too fast can cause issues - pause between fight nights
             for fight_link in fight_links:
                 fight_url = 'https://www.tapology.com' + fight_link
                 print(f"Scraping Fight {fight_url} ...")
