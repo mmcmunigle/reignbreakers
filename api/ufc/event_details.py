@@ -30,7 +30,7 @@ class UfcEvents:
 
         future_events = []
         for event in resp.json():
-            if not event['Active'] or datetime.strptime(event['Day'], "%Y-%m-%dT%H:%M:%S") < (datetime.today() + timedelta(days=1)):
+            if not event['Active'] or datetime.strptime(event['Day'], "%Y-%m-%dT%H:%M:%S") < (datetime.today() - timedelta(days=1)):
                 continue
             if 'Dana White' in event['Name'] or 'Ultimate' in event['Name']:
                 continue
@@ -40,6 +40,8 @@ class UfcEvents:
                 'title': event['Name'],
                 'date': event['Day'].split('T')[0]
             })
+        
+        print(future_events)
 
         return future_events
 
@@ -70,6 +72,8 @@ class UfcEvents:
             # Ensure favorite is stored in the array first for consistency
             if fighters[-1]['moneyline'] and fighters[-1]['moneyline'] < 0:
                 fighters[-1], fighters[-2] = fighters[-2], fighters[-1]
+        
+        print(fighters)
 
         return fighters
 
@@ -88,5 +92,7 @@ class UfcEvents:
                     event['title'].split(':')[0].strip() + '  ' +
                     datetime.strptime(event['date'], "%Y-%m-%d").strftime("%m-%d")
                 )
+
+        print(event_details)
             
         self._event_details = event_details
