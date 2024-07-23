@@ -9,7 +9,10 @@ COLLECTION_KEYS = {
     '8b8f14fb451944aca580a1e6bcb95cd4': 'ufc',
     '27c4291759404392ab5db212ea61597e': 'ufc',
     '5eae2563006d4fe0ae1405a31567c60c': 'football',
+    '01c6aa7f89674ec9b5255ab6157c2a5e': 'football',
+    'e3bc8069c5b44b17acc8be947f719ffa': 'football',
     '6972b16d088c41ea860b598b397aed5f': 'golf',
+    'a7d16b8442f945aeb7a613c77e5cd652': 'golf'
 }
 
 class Collection:

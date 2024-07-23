@@ -31,7 +31,11 @@ export class CollectionComponent implements OnInit {
     this.selectedCollection = result;
     if (result === CollectionType.ALL) {
       this.filteredCollection = this.collection;
-    } else {
+    }
+    else if (result === CollectionType.OTHER) {
+      this.filteredCollection = this.collection.filter((x:any) => !Object.values(CollectionType).includes(x.collection))
+    }
+     else {
       this.filteredCollection = this.collection.filter((x: any) => x.collection == result);
     }
   }

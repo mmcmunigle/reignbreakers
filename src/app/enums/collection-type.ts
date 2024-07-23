@@ -6,4 +6,5 @@ export enum CollectionType {
     FOOT_2024 = "2024 Reignmakers Football",
     GOLF_2023 = "2023 Reignmakers PGA TOUR",
     GOLF_2024 = "2024 Reignmakers PGA TOUR",
+    OTHER = "OTHER",
   }
