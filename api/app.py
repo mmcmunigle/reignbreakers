@@ -135,9 +135,9 @@ def create_app():
     # scheduler.add_job(check_activity, 'interval', seconds=5)
     # scheduler.add_job(update_golf_market_data, 'interval', minutes=200)
     # scheduler.add_job(update_sent_offers, 'interval', minutes=5, replace_existing=True, next_run_time=datetime.now() + timedelta(milliseconds=50))
-    # scheduler.add_job(update_ufc_events, 'interval', minutes=600, replace_existing=True, next_run_time=datetime.now() + timedelta(milliseconds=50))
+    scheduler.add_job(update_ufc_events, 'interval', minutes=600, replace_existing=True, next_run_time=datetime.now() + timedelta(milliseconds=50))
     scheduler.add_job(update_collectables, 'interval', minutes=5, replace_existing=True, next_run_time=datetime.now() + timedelta(milliseconds=500))
-    # scheduler.add_job(update_ufc_market_data, 'interval', minutes=15, replace_existing=True, next_run_time=datetime.now() + timedelta(milliseconds=500))
+    scheduler.add_job(update_ufc_market_data, 'interval', minutes=15, replace_existing=True, next_run_time=datetime.now() + timedelta(milliseconds=500))
     scheduler.start()
     
     app.register_blueprint(api, url_prefix='/api')
