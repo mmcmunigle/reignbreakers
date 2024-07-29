@@ -28,7 +28,7 @@ def correct_name(name):
         'SeungWoo Choi': 'Choi Seungwoo',
         'Dooho Choi': 'DooHo Choi',
         'JeongYeong Lee': 'Jeongyeong Lee',
-        'Stephen Erceg': 'Steve Erceg',
+        'Steve Erceg': 'Stephen Erceg',
         'Ode\' Osbourne': 'Ode Osbourne'
     }
 
