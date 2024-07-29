@@ -27,10 +27,12 @@ def correct_name(name):
         'JunYong Park': 'Jun Yong Park',
         'SeungWoo Choi': 'Choi Seungwoo',
         'Dooho Choi': 'DooHo Choi',
-        'JeongYeong Lee': 'Jeongyeong Lee'
+        'JeongYeong Lee': 'Jeongyeong Lee',
+        'Stephen Erceg': 'Steve Erceg',
+        'Ode\' Osbourne': 'Ode Osbourne'
     }
 
-    name = name.replace('é', 'e').replace('ê', 'e').replace('ł', 'l').replace('á', 'a').replace('Ľ', 'L').replace('í', 'i')
+    name = name.replace('é', 'e').replace('ê', 'e').replace('ł', 'l').replace('á', 'a').replace('Á', 'A').replace('Ľ', 'L').replace('í', 'i')
     if name in name_corrections:
         return name_corrections[name]
     else:
