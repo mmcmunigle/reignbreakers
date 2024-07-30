@@ -29,7 +29,8 @@ def correct_name(name):
         'Dooho Choi': 'DooHo Choi',
         'JeongYeong Lee': 'Jeongyeong Lee',
         'Steve Erceg': 'Stephen Erceg',
-        'Ode\' Osbourne': 'Ode Osbourne'
+        'Ode\' Osbourne': 'Ode Osbourne',
+        'Jairzinho Rozenstruik': 'Jair Rozenstruik'
     }
 
     name = name.replace('é', 'e').replace('ê', 'e').replace('ł', 'l').replace('á', 'a').replace('Á', 'A').replace('Ľ', 'L').replace('í', 'i')
